@@ -1,0 +1,9 @@
+# Local development files
+.jekyll-cache/
+_site/
+.cursor/
+
+# Unnecessary files for deployment
+README.md
+LICENSE
+.gitignore 
