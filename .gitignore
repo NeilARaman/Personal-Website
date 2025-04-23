@@ -3,3 +3,8 @@
 .jekyll-cache
 _site/*
 _snap_md5.txt
+Gemfile.lock
+Gemfile
+.gitignore
+.cursor
+.mdc

@@ -13,6 +13,14 @@ h4 {
 .main-description .fa {
   font-size: 22px;
   margin-top: 5px; }
+.main-description .fa-brands {
+  font-size: 20px;
+  margin-top: 5px;
+  color: #333;
+}
+.main-description span[onclick] {
+  margin-right: 6px !important; /* Reduce spacing between icons */
+}
 .paper {
   margin-bottom: 20px }
 .paper .title {
@@ -52,23 +60,12 @@ h4 {
 .image {
   text-align: center; }
 
-/*  ================ Project styling  ================ */
-.project-container {
-  margin-bottom: 30px;
-}
-.project-image-container {
-  border: 1px solid rgba(0,0,0,0.2);
-  padding: 3px;
-  transition: 0.3s;
-}
-.project-image-container:hover {
-  transition: 0.3s;
-}
-.project-image-container:hover img {
-  opacity: 0.4;
-}
-.project-caption {
-  padding: 3px;
+/* Updated styling for profile image */
+.header .three.columns img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #eee;
 }
 
 /* Larger than phone */
@@ -190,4 +187,23 @@ h4 {
   .popover-link:hover,
   .popover-item:first-child .popover-link:hover:after {
     border-bottom-color: #33C3F0; }
+}
+
+/*  ================ Project styling  ================ */
+.project-container {
+  margin-bottom: 30px;
+}
+.project-image-container {
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 3px;
+  transition: 0.3s;
+}
+.project-image-container:hover {
+  transition: 0.3s;
+}
+.project-image-container:hover img {
+  opacity: 0.4;
+}
+.project-caption {
+  padding: 3px;
 }

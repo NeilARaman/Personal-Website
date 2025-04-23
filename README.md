@@ -1,36 +1,52 @@
-# Martin Saveski's Website
+# Personal Website
 
-## Updates guide
-Change one of the files in `_data`, unless you are changing the look of the website.
+This repository contains the source code for my personal website. Full credits go to Martin Saveski for the template.
 
-Test changes with:
+## Getting Started
+
+### Prerequisites
+- [Jekyll](http://jekyllrb.com/) (installation instructions at [Jekyll Docs](https://jekyllrb.com/docs/installation/))
+- Ruby and Bundler
+
+### Running Locally
+Clone the repository and run:
 ```
+bundle install
 jekyll serve
 ```
+This will start a local server at `http://localhost:4000`.
 
-Push to the ML web directory:
-```
-rm -rf public_html
-mkdir public_html
-```
-```
-./__deploy.sh
-```
+## Development
 
-More info on the [Media Lab wiki](http://wiki.media.mit.edu/view/Necsys/WebPagePersonal).
+### Making Updates
+The website content is primarily stored in the `_data` directory. To update the website's content without modifying the layout:
 
-**Stanford links**
-- Use fetch!
-- [Basic WWW for Individual Users](https://uit.stanford.edu/service/web/centralhosting/howto_user)
-- [AFS File Transfer](https://uit.stanford.edu/service/afs/file-transfer/macintosh)
+1. Edit the relevant files in the `_data` directory
+2. Test your changes locally using `jekyll serve`
+3. Deploy when satisfied with the results
 
+### Customization
+For more extensive customization, you may want to explore:
+- `_layouts` directory for page templates
+- `_includes` directory for reusable components
+- `assets` directory for styles, images, and other resources
 
-## External Libraries
-- Framework: [Jekyll](http://jekyllrb.com/)
-- CSS
-  - [Skeleton](getskeleton.com)
-  - Tabs: [Skeleton Tabs](https://github.com/nathancahill/skeleton-tabs)
-  - Experience: [Timeline](https://codepen.io/NilsWe/pen/FemfK)
+## Deployment
+The website can be deployed to any standard web hosting service:
+
+1. Build the site with `jekyll build`
+2. The generated site will be in the `_site` directory
+3. Upload these files to your hosting provider
+
+## Built With
+- **Framework:** [Jekyll](http://jekyllrb.com/)
+- **CSS:**
+  - [Skeleton](https://getskeleton.com)
+  - [Skeleton Tabs](https://github.com/nathancahill/skeleton-tabs)
+  - Timeline: [Timeline CSS](https://codepen.io/NilsWe/pen/FemfK)
   - Icons: [Font Awesome](http://fontawesome.io/)
-- JS
-  - [Jquery (3.1.1)](https://jquery.com/)
+- **JavaScript:**
+  - [jQuery (3.1.1)](https://jquery.com/)
+
+## Acknowledgements
+- [Martin Saveski](https://github.com/msaveski) for creating this very nice website template
