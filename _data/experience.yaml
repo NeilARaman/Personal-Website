@@ -1,0 +1,31 @@
+experiences:
+
+- place: "CMU Data Science Club"
+  time: "2025 - now"
+  title: "Sponsorships Director"
+  subtitle: "Pittsburgh, PA"
+  category: "work"
+
+- place: "ScottyLabs"
+  time: "2025 - now"
+  title: "Director of Foundry"
+  subtitle: "Pittsburgh, PA"
+  category: "work"
+
+- place: "tango"
+  time: "Apr-Aug 2024"
+  title: "Operations Intern"
+  subtitle: "Phoenix, AZ"
+  category: "work"
+
+- place: "Carnegie Mellon University"
+  time: "2024 - now"
+  title: "B.S. Student"
+  subtitle: "Information Systems, Additional Major in Economics"
+  category: "school"
+
+- place: "CareOne Medical Clinic"
+  time: "Oct 2023 - Apr 2024"
+  title: "Healthcare Intern"
+  subtitle: "Frisco, TX"
+  category: "work"
