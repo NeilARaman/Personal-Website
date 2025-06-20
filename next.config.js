@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-const crypto = require('crypto')
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
@@ -10,7 +9,8 @@ const nextConfig = {
   
   // Performance optimizations (optimizeCss disabled for Stitches SSR compatibility)
   experimental: {
-    // optimizeCss: true, // Temporarily disabled for SSR stability
+    // optimizeCss: true, // Disabled for SSR stability
+    scrollRestoration: true,
   },
   
   // Image optimization
@@ -26,12 +26,6 @@ const nextConfig = {
   poweredByHeader: false,
   generateEtags: false,
   
-  // Optimize bundle size
-  experimental: {
-    // optimizeCss: true, // Disabled for SSR stability
-    scrollRestoration: true,
-  },
-  
   // Headers for security and performance
   async headers() {
     return [
@@ -43,10 +37,6 @@ const nextConfig = {
             value: 'on'
           },
           {
-            key: 'X-XSS-Protection',
-            value: '1; mode=block'
-          },
-          {
             key: 'X-Frame-Options',
             value: 'SAMEORIGIN'
           },
@@ -56,7 +46,7 @@ const nextConfig = {
           },
           {
             key: 'Referrer-Policy',
-            value: 'origin-when-cross-origin'
+            value: 'strict-origin-when-cross-origin'
           }
         ]
       }
@@ -64,47 +54,10 @@ const nextConfig = {
   },
   
   webpack: (config, { isServer, dev }) => {
-    // Production optimizations
-    if (!dev) {
-      config.optimization = {
-        ...config.optimization,
-        splitChunks: {
-          chunks: 'all',
-          cacheGroups: {
-            framework: {
-              chunks: 'all',
-              name: 'framework',
-              test: /(?<!node_modules.*)[\\/]node_modules[\\/](react|react-dom|scheduler|prop-types|use-subscription)[\\/]/,
-              priority: 40,
-              enforce: true,
-            },
-            lib: {
-              test(module) {
-                return (
-                  module.size() > 160000 &&
-                  /node_modules[/\\]/.test(module.identifier())
-                )
-              },
-              name(module) {
-                const hash = crypto.createHash('sha1')
-                hash.update(module.identifier())
-                return hash.digest('hex').substring(0, 8)
-              },
-              priority: 30,
-              minChunks: 1,
-              reuseExistingChunk: true,
-            },
-          },
-        },
-      }
-    }
-
     // Critical SSR fix for Stitches
     if (isServer) {
       config.externals = config.externals || []
-      config.externals.push({
-        '@stitches/react': '@stitches/react'
-      })
+      config.externals.push('@stitches/react')
     }
 
     // Fixes npm packages that depend on Node.js modules
@@ -115,12 +68,10 @@ const nextConfig = {
         dns: false,
         tls: false,
         assert: false,
-        // fixes proxy-agent dependencies
         request: false,
         stream: false,
         constants: false,
         vm: false,
-        // fixes jsdom dependencies
         canvas: false,
         jsdom: false,
       }

@@ -49,7 +49,7 @@ class MyDocument extends Document {
     const lang = this.props.__NEXT_DATA__.props?.pageProps?.post?.lang || 'en-US'
 
     return (
-      <Html lang={lang}>
+      <Html lang={lang} suppressHydrationWarning>
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
