@@ -130,14 +130,14 @@ const ComingSoonTitle = styled('h2', {
   '@bp3': { fontSize: '36px' },
 })
 
-const ComingSoonDescription = styled('p', {
-  fontSize: '18px',
-  color: '$secondary',
-  lineHeight: '1.6',
-  maxWidth: '600px',
-  margin: '0 auto',
-  '@bp3': { fontSize: '16px' },
-})
+  // const ComingSoonDescription = styled('p', {
+  //   fontSize: '18px',
+  //   color: '$secondary',
+  //   lineHeight: '1.6',
+  //   maxWidth: '600px',
+  //   margin: '0 auto',
+  //   '@bp3': { fontSize: '16px' },
+  // })
 
 Articles.Layout = Base
 

@@ -1,19 +1,55 @@
-import React from 'react'
+// import React from 'react' // Not needed with Next.js
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { getCssText } from '../stitches.config'
 import { GA_TRACKING_ID } from '../lib/gtag'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+    try {
+      const initialProps = await Document.getInitialProps(ctx)
+      
+      // Extract CSS for SSR - Critical for preventing constructor errors
+      const css = getCssText()
+      
+      return { 
+        ...initialProps,
+        styles: (
+          <>
+            {initialProps.styles}
+            <style
+              id="stitches"
+              dangerouslySetInnerHTML={{ __html: css }}
+              suppressHydrationWarning
+            />
+          </>
+        ),
+      }
+    } catch (error) {
+      // Fallback for SSR issues
+      const initialProps = await Document.getInitialProps(ctx)
+      console.warn('SSR CSS extraction warning:', error.message)
+      
+      return {
+        ...initialProps,
+        styles: (
+          <>
+            {initialProps.styles}
+            <style
+              id="stitches"
+              dangerouslySetInnerHTML={{ __html: '' }}
+              suppressHydrationWarning
+            />
+          </>
+        ),
+      }
+    }
   }
 
   render() {
-    const lang = this.props.__NEXT_DATA__.props.pageProps?.post?.lang
+    const lang = this.props.__NEXT_DATA__.props?.pageProps?.post?.lang || 'en-US'
 
     return (
-      <Html lang={lang ? lang : 'en-US'}>
+      <Html lang={lang}>
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -29,6 +65,10 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#08070b" />
           <meta name="format-detection" content="telephone=no" />
           
+          {/* Security Headers */}
+          <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
+          <meta httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+          
           {/* DNS Prefetch for external domains */}
           <link rel="dns-prefetch" href="//www.googletagmanager.com" />
           <link rel="dns-prefetch" href="//fonts.googleapis.com" />
@@ -37,7 +77,7 @@ class MyDocument extends Document {
           {/* Preconnect to critical domains */}
           <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" />
           
-          {/* Preload critical fonts */}
+          {/* Preload critical fonts - Fixed paths */}
           <link
             rel="preload"
             href="/static/font/Biotif-Regular.woff2"
@@ -47,7 +87,7 @@ class MyDocument extends Document {
           />
           <link
             rel="preload"
-            href="/static/font/Neuzeit-Grotesk-Bold.woff2"
+            href="/static/font/NeuzeitGrotesk-Bold.woff2"
             as="font"
             type="font/woff2"
             crossOrigin=""
@@ -58,12 +98,6 @@ class MyDocument extends Document {
             as="font"
             type="font/woff2"
             crossOrigin=""
-          />
-          
-          {/* Critical CSS */}
-          <style
-            id="stitches"
-            dangerouslySetInnerHTML={{ __html: getCssText() }}
           />
 
           {/* Favicon with proper formats */}
@@ -92,6 +126,7 @@ class MyDocument extends Document {
                 gtag('config', '${GA_TRACKING_ID}', {
                   page_title: document.title,
                   page_location: window.location.href,
+                  send_page_view: false
                 });
               `,
                 }}
@@ -99,8 +134,10 @@ class MyDocument extends Document {
             </>
           )}
         </Head>
-        <Main />
-        <NextScript />
+        <body>
+          <Main />
+          <NextScript />
+        </body>
       </Html>
     )
   }

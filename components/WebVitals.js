@@ -6,7 +6,7 @@ export default function WebVitals() {
 
     // Dynamically import web-vitals to avoid SSR issues
     import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-      function sendToGoogleAnalytics({ name, delta, value, id }) {
+      function sendToGoogleAnalytics({ name, delta, id }) {
         if (typeof window.gtag !== 'undefined') {
           window.gtag('event', name, {
             event_category: 'Web Vitals',

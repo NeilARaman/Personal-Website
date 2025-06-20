@@ -1,12 +1,12 @@
 import { styled } from '../stitches.config'
 import { useState } from 'react'
-import Link from 'next/link'
+// import Link from 'next/link' // Not currently used
 import { useRouter } from 'next/router'
 import { motion, LayoutGroup } from 'framer-motion'
 import { useKBar } from 'kbar'
 import dynamic from 'next/dynamic'
 
-const NavContainerClient = ({ children, page, path, isHovered, onHoverStart, onHoverEnd, router }) => {
+const NavContainerClient = ({ children, path, isHovered, onHoverStart, onHoverEnd, router }) => {
   return (
     <NavContainerWrapper
       as="a"
@@ -68,7 +68,6 @@ export default function Navbar() {
                 <li key={page}>
                   <Anchor>
                     <NavContainer
-                      page={page}
                       path={path}
                       isHovered={isHovered}
                       onHoverStart={() => setHovered(page)}
@@ -131,7 +130,6 @@ const ButtonHeader = styled('div', {
   border: 'none',
   borderRadius: '$borderRadius',
   color: 'white',
-  cursor: 'pointer',
   cursor: 'pointer',
   height: '34px',
   padding: '0 10px',

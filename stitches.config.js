@@ -26,9 +26,9 @@ export const {
       command: 'rgba(255, 255, 255, 0.05)',
     },
     fonts: {
-      body: 'Biotif, sans-serif',
-      code: 'Fira Code, monospace',
-      heading: 'Neuzeit Grotesk Bold, sans-serif',
+      body: 'Biotif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+      code: 'Fira Code, "SF Mono", Monaco, Inconsolata, "Roboto Mono", "Source Code Pro", monospace',
+      heading: 'Neuzeit Grotesk Bold, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
     },
     space: {
       navHeightDesktop: '60px',
@@ -47,17 +47,49 @@ export const {
     bp3: '(max-width: 780px)',
     bp4: '(max-width: 1024px)',
   },
+  utils: {
+    marginX: (value) => ({
+      marginLeft: value,
+      marginRight: value,
+    }),
+    marginY: (value) => ({
+      marginTop: value,
+      marginBottom: value,
+    }),
+    paddingX: (value) => ({
+      paddingLeft: value,
+      paddingRight: value,
+    }),
+    paddingY: (value) => ({
+      paddingTop: value,
+      paddingBottom: value,
+    }),
+  },
 })
 
 const globalStyles = globalCss({
   '*': {
     fontFamily: '$body',
+    boxSizing: 'border-box',
+  },
+  '*::before, *::after': {
+    boxSizing: 'border-box',
+  },
+  'html': {
+    lineHeight: 1.15,
+    textSizeAdjust: '100%',
   },
   'html, body': {
     margin: '0',
     padding: '0',
     WebkitFontSmoothing: 'antialiased',
+    MozOsxFontSmoothing: 'grayscale',
     background: '$background',
+    fontFeatureSettings: '"kern"',
+  },
+  'body': {
+    fontOpticalSizing: 'auto',
+    fontVariationSettings: 'normal',
   },
   kbd: {
     color: '$background',
@@ -95,16 +127,19 @@ const globalStyles = globalCss({
     lineHeight: '50px',
     margin: '0 0 20px',
     color: '$primary',
+    fontWeight: 700,
   },
   h2: {
     color: '$primary',
     margin: '60px 0 0',
     fontSize: '24px',
+    fontWeight: 600,
   },
   'h3, h3 a': {
     color: '$primary',
     fontSize: '18px',
     margin: '20px 0 0',
+    fontWeight: 600,
   },
   ul: {
     margin: 0,
@@ -113,10 +148,12 @@ const globalStyles = globalCss({
     borderRadius: '8px',
     minWidth: '100%',
     maxWidth: '100%',
+    height: 'auto',
   },
   p: {
     margin: '20px 0',
     color: '$secondary',
+    lineHeight: 1.6,
   },
   strong: {
     color: '$primary',
@@ -148,6 +185,7 @@ const globalStyles = globalCss({
         url("/static/font/NeuzeitGrotesk-Bold.woff") format("woff")`,
       fontWeight: 'normal',
       fontStyle: 'normal',
+      fontDisplay: 'swap',
     },
     {
       fontFamily: 'Fira Code',
@@ -155,6 +193,7 @@ const globalStyles = globalCss({
         url("/static/font/FiraCode-Regular.woff") format("woff")`,
       fontWeight: 'normal',
       fontStyle: 'normal',
+      fontDisplay: 'swap',
     },
     {
       fontFamily: 'Biotif',
@@ -162,6 +201,7 @@ const globalStyles = globalCss({
         url("/static/font/Biotif-Bold.woff") format("woff")`,
       fontWeight: 'bold',
       fontStyle: 'normal',
+      fontDisplay: 'swap',
     },
     {
       fontFamily: 'Biotif',
@@ -169,6 +209,7 @@ const globalStyles = globalCss({
         url("/static/font/Biotif-Book.woff") format("woff")`,
       fontWeight: 500,
       fontStyle: 'normal',
+      fontDisplay: 'swap',
     },
     {
       fontFamily: 'Biotif',
@@ -176,6 +217,7 @@ const globalStyles = globalCss({
         url("/static/font/Biotif-Regular.woff") format("woff")`,
       fontWeight: 'normal',
       fontStyle: 'normal',
+      fontDisplay: 'swap',
     },
     {
       fontFamily: 'Biotif',
@@ -183,8 +225,31 @@ const globalStyles = globalCss({
         url("/static/font/Biotif-RegularItalic.woff") format("woff")`,
       fontWeight: 'normal',
       fontStyle: 'italic',
+      fontDisplay: 'swap',
     },
   ],
+  '@media (prefers-reduced-motion: reduce)': {
+    '*': {
+      animationDuration: '0.01ms !important',
+      animationIterationCount: '1 !important',
+      transitionDuration: '0.01ms !important',
+    },
+  },
 })
 
-globalStyles()
+let stylesApplied = false
+
+export const applyGlobalStyles = () => {
+  if (!stylesApplied) {
+    globalStyles()
+    stylesApplied = true
+  }
+}
+
+try {
+  applyGlobalStyles()
+} catch (e) {
+  if (typeof window !== 'undefined') {
+    console.warn('Stitches SSR issue handled gracefully')
+  }
+}

@@ -30,7 +30,7 @@ export default async function sendEmail(req, res) {
       return res.status(400).json({ message: 'Failed to send email', error })
     }
 
-    console.log('Email sent successfully:', data)
+    console.log('Email sent successfully:', data) // eslint-disable-line no-console
     res.status(200).json({ message: 'Email sent successfully', data })
   } catch (e) {
     console.error('API error:', e)

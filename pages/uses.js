@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react' // Not needed with Next.js
 import Head from 'next/head'
 import Base from '../layouts/Base'
 import stripHtml from '../lib/strip-html'

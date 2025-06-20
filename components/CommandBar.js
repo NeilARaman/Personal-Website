@@ -1,7 +1,7 @@
 import { styled } from '../stitches.config'
 import { Box } from './Box'
 import Toast from './Toast'
-import { useRef, useState, forwardRef, useEffect } from 'react'
+import { useRef, useState, forwardRef } from 'react'
 import { useRouter } from 'next/router'
 import dynamic from 'next/dynamic'
 import {
@@ -43,11 +43,7 @@ const CommandBarClient = (props) => {
   // const reminderRef = useRef()
   const router = useRouter()
   const [showToast, setShowToast] = useState(false)
-  const [isClient, setIsClient] = useState(false)
-
-  useEffect(() => {
-    setIsClient(true)
-  }, [])
+  // Removed unused isClient state - not needed with current implementation
 
   const copyLink = async () => {
     // Ensure we're in a browser environment
@@ -121,7 +117,7 @@ const CommandBarClient = (props) => {
       keywords: 'view-source',
       section: 'General',
       perform: () =>
-        window.open('https://github.com/NeilARaman/Zeno-Rocha-Personal-Website', '_blank'),
+        window.open('https://github.com/NeilARaman/Personal-Website', '_blank'),
       icon: <LottieIcon lottieRef={sourceRef} style={iconSize} animationData={sourceIcon} loop={false} autoplay={false} />,
     },
     {

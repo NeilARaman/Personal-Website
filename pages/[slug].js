@@ -66,8 +66,9 @@ export async function getStaticProps({ params }) {
 
     const content = await convertMarkdownToHtml(post.content || '')
 
-    const isProd = process.env.NODE_ENV === 'production'
-    const base = isProd ? 'https://neilraman.com' : 'http://localhost:3000'
+    // Base URL not currently used but available for future URL generation
+    // const isProd = process.env.NODE_ENV === 'production'
+    // const base = isProd ? 'https://neilraman.com' : 'http://localhost:3000'
 
     return {
       props: {

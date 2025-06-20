@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { styled } from '../stitches.config'
 import dynamic from 'next/dynamic'
 

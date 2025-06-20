@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react' // Not needed with Next.js
 import Head from 'next/head'
 import { motion } from 'framer-motion'
 import { parseISO, format } from 'date-fns'

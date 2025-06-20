@@ -1,19 +1,15 @@
 import { styled } from '../stitches.config'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { parseISO, format, intervalToDuration } from 'date-fns'
 import Base from '../layouts/Base'
 import { ButtonPrimary } from '../components/ButtonPrimary'
-import Pronunciation from '../components/Pronunciation'
 import Toast from '../components/Toast'
-import stripHtml from '../lib/strip-html'
 import items from '../data/about'
 import dynamic from 'next/dynamic'
-import { Box } from '../components/Box'
 
 const LottieIcon = dynamic(() => import('../components/LottieIcon'), { ssr: false })
-import copyBioIcon from '../public/static/icons/copy-bio.json'
 import downloadIcon from '../public/static/icons/download.json'
 
 const CopyBioClient = ({ description, setToastTitle, setToastDescription, setShowToast }) => {
@@ -51,12 +47,11 @@ export async function getStaticProps() {
 }
 
 function About(props) {
-  const { title, description, image, tagline, primaryColor, secondaryColor } = props
+  const { title, description, image } = props
   const [toastTitle, setToastTitle] = React.useState('')
   const [toastDescription, setToastDescription] = React.useState('')
   const [showToast, setShowToast] = React.useState(false)
   const [isClient, setIsClient] = React.useState(false)
-  const copyBioRef = React.useRef()
   const downloadRef = React.useRef()
 
   React.useEffect(() => {

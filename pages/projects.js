@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react' // Not needed with Next.js
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import Base from '../layouts/Base'
