@@ -181,17 +181,3 @@ While this is a personal website, suggestions and improvements are welcome:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-### Neil Raman
-
-- Website: [neilraman.com](https://neilraman.com)
-- Email: [contact@neilraman.com](mailto:contact@neilraman.com)
-- LinkedIn: [neil-raman21](https://linkedin.com/in/neil-raman21)
-- GitHub: [NeilARaman](https://github.com/NeilARaman)
-- Twitter: [@neilraman21](https://twitter.com/neilraman21)
-
----
-
-Made with ❤️ by Neil Raman | Carnegie Mellon University
