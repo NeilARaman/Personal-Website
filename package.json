@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:fast": "cross-env NEXT_PRIVATE_SKIP_SIZE_OPTIMIZATION=1 next build",
+    "build:fast": "next build",
     "start": "next start",
     "lint": "next lint --fix",
     "lint:check": "next lint",
