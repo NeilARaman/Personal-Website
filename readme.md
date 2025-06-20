@@ -1,87 +1,197 @@
-# zenorocha.com
+# Neil Raman Personal Website
 
-> My personal website <3
+> Documenting my journey every step of the way.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fzenorocha%2Fzenorocha.com)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNeilARaman%2FPersonal-Website)
 
-## Technology stack
+## About Me
 
-- **Styling:** [Stitches](https://stitches.dev/)
-- **Content:** [Markdown](https://daringfireball.net/projects/markdown/)
-- **Back-end:** [Next.js](https://nextjs.org/)
-- **Front-end:** [React](https://reactjs.org/)
-- **Animation:** [Framer](https://www.framer.com/docs/animation/)
-- **Deployment:** [Vercel](https://vercel.com/)
+I'm Neil Raman, a sophomore at Carnegie Mellon University studying Information Systems and Economics. I have interests in computational biology/chemistry, applied AI/ML in healthcare, and research foundational models in robotics, driverless cars, and space exploration. Currently building the best entrepreneurship environment at CMU through Foundry and scouting for impactful startups via GoAhead Ventures.
 
-## Running locally
+## Features
 
-1. Clone this repo:
+- 🎨 **Modern Design** - Clean, responsive design with smooth animations
+- 📝 **Blog/Articles** - Markdown-based blog with syntax highlighting
+- 🛠️ **Projects Showcase** - Display of personal and professional projects
+- 📊 **Investment Portfolio** - Showcase of investment and venture activities
+- 🎤 **Talks & Presentations** - Speaking engagements and presentations
+- 🎧 **Podcast Appearances** - Media appearances and interviews
+- 📞 **Contact Form** - Direct communication through email integration
+- ⌨️ **Command Bar** - Quick navigation with keyboard shortcuts (⌘K)
+- 🌙 **Optimized Performance** - Built with Next.js for optimal loading speeds
+- 📱 **Mobile Responsive** - Works seamlessly across all devices
 
-```sh
-$ git clone https://github.com/zenorocha/zenorocha.com.git
-```
+## Technology Stack
 
-2. Then go to the project's folder:
+- **Framework:** [Next.js](https://nextjs.org/) - React framework for production
+- **Styling:** [Stitches](https://stitches.dev/) - CSS-in-JS with near-zero runtime
+- **Content:** [Markdown](https://daringfireball.net/projects/markdown/) - Content management
+- **Animation:** [Framer Motion](https://www.framer.com/motion/) - Smooth animations and transitions
+- **Icons:** [Lottie](https://lottiefiles.com/) - High-quality animated icons
+- **Command Bar:** [KBar](https://kbar.vercel.app/) - Fast keyboard navigation
+- **Email:** Custom email integration for contact form
+- **Deployment:** [Vercel](https://vercel.com/) - Serverless deployment platform
+- **Analytics:** Google Analytics for visitor insights
 
-```sh
-cd zenorocha.com
-```
+## Getting Started
 
-3. Install all dependencies:
+### Prerequisites
 
-```sh
-npm install
-```
+- Node.js 16.x or later
+- npm or yarn package manager
 
-4. Run locally:
+### Installation
 
-```sh
-npm run dev
-```
+1. **Clone the repository:**
 
-## File structure
+   ```bash
+   git clone https://github.com/NeilARaman/Personal-Website.git
+   cd Personal-Website
+   ```
 
-The basic file structure for the project is organized in the following way:
+2. **Install dependencies:**
 
-```
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Set up environment variables:**
+
+   Create a `.env.local` file in the root directory:
+
+   ```bash
+   NEXT_PUBLIC_GA_ID=your_google_analytics_id
+   # Add other environment variables as needed
+   ```
+
+4. **Run the development server:**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. **Open your browser:**
+
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the website.
+
+## Project Structure
+
+```text
 .
-|-- articles
-|-- components
-|-- data
-|-- layouts
-|-- lib
-|-- pages
-`-- public
+├── articles/          # Blog posts and articles (Markdown)
+├── components/        # Reusable React components
+├── data/             # JSON data files for content
+├── layouts/          # Page layout templates
+├── lib/              # Utility functions and helpers
+├── pages/            # Next.js pages and API routes
+├── public/           # Static assets (images, icons, fonts)
+├── .env              # Environment variables
+├── next.config.js    # Next.js configuration
+├── package.json      # Dependencies and scripts
+└── stitches.config.js # Styling configuration
 ```
 
-### [articles](https://github.com/zenorocha/zenorocha.com/tree/master/articles)
+### Key Directories
 
-Here you'll find a list of markdown files for each post.
+- **`articles/`** - Markdown files for blog posts and articles
+- **`components/`** - Reusable UI components like BlogDate, CommandBar, Navbar
+- **`data/`** - JSON files containing information about projects, talks, investments
+- **`pages/`** - Application pages and API endpoints
+- **`public/static/`** - Images, icons, audio files, and other static assets
 
-### [components](https://github.com/zenorocha/zenorocha.com/tree/master/components)
+## Available Scripts
 
-Here you'll find reusable blocks of React components.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint for code quality
+- `npm run export` - Export static site
 
-### [data](https://github.com/zenorocha/zenorocha.com/tree/master/data)
+## Deployment
 
-Here you'll find JSON files that populates each section.
+This website is optimized for deployment on [Vercel](https://vercel.com/):
 
-### [layouts](https://github.com/zenorocha/zenorocha.com/tree/master/layouts)
+1. **Connect your GitHub repository** to Vercel
+2. **Set environment variables** in your Vercel dashboard
+3. **Deploy automatically** on every push to main branch
 
-Here you'll find default templates for different pages.
+### Manual Deployment
 
-### [lib](https://github.com/zenorocha/zenorocha.com/tree/master/lib)
+```bash
+npm run build
+npm run export
+```
 
-Here you'll find a set of utilities.
+## Content Management
 
-### [pages](https://github.com/zenorocha/zenorocha.com/tree/master/pages)
+### Adding Blog Posts
 
-Here you'll find all the main pages of the site.
+1. Create a new Markdown file in the `articles/` directory
+2. Include frontmatter with metadata:
 
-### [public](https://github.com/zenorocha/zenorocha.com/blob/master/public)
+   ```markdown
+   ---
+   title: "Your Post Title"
+   description: "Brief description"
+   date: "2025-01-01"
+   ---
 
-Here you'll find all the CSS, images, and font files.
+   Your content here...
+   ```
+
+### Updating Projects
+
+Edit the `data/projects.js` file to add or modify project information.
+
+### Updating Personal Information
+
+- **About page:** Edit `data/about.js`
+- **Contact information:** Update `components/Footer.js`
+- **Investment portfolio:** Modify `data/investments.js`
+
+## Keyboard Shortcuts
+
+- `⌘K` / `Ctrl+K` - Open command bar
+- `⌘L` / `Ctrl+L` - Copy website link
+- `⌘E` / `Ctrl+E` - Open email contact
+- Navigate through sections using keyboard shortcuts in command bar
+
+## Performance Features
+
+- **Static Site Generation (SSG)** for optimal performance
+- **Image optimization** with Next.js Image component
+- **Code splitting** for faster page loads
+- **Lazy loading** for images and components
+- **Web Vitals monitoring** for performance tracking
+
+## Contributing
+
+While this is a personal website, suggestions and improvements are welcome:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/improvement`)
+3. Commit your changes (`git commit -am 'Add some improvement'`)
+4. Push to the branch (`git push origin feature/improvement`)
+5. Open a Pull Request
 
 ## License
 
-[MIT License](http://zenorocha.mit-license.org/) © Zeno Rocha
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+### Neil Raman
+
+- Website: [neilraman.com](https://neilraman.com)
+- Email: [contact@neilraman.com](mailto:contact@neilraman.com)
+- LinkedIn: [neil-raman21](https://linkedin.com/in/neil-raman21)
+- GitHub: [NeilARaman](https://github.com/NeilARaman)
+- Twitter: [@neilraman21](https://twitter.com/neilraman21)
+
+---
+
+Made with ❤️ by Neil Raman | Carnegie Mellon University

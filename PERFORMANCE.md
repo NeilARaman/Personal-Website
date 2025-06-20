@@ -114,4 +114,4 @@ The optimizations resulted in:
 - **web-vitals**: Core Web Vitals monitoring
 - **Intersection Observer**: Lazy loading animations
 - **Dynamic imports**: Code splitting
-- **Font preloading**: Faster font rendering 
+- **Font preloading**: Faster font rendering
