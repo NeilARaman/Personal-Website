@@ -167,7 +167,6 @@ const globalStyles = globalCss({
     paddingLeft: '20px',
   },
   a: {
-    borderBottom: '.5px solid $secondary',
     color: '$primary',
     textDecoration: 'none',
     transition: 'opacity $duration ease-in-out',

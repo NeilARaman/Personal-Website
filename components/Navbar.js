@@ -17,7 +17,7 @@ const NavContainerClient = ({ children, path, isHovered, onHoverStart, onHoverEn
         router.pathname === path
           ? {
               color: '$primary',
-              '&::after': { opacity: 1 },
+              fontWeight: 600,
             }
           : ''
       }
@@ -182,22 +182,10 @@ const NavContainerWrapper = styled(motion.span, {
   padding: '20px',
   textDecoration: 'none',
   textTransform: 'uppercase',
-  transition: 'color $duration ease-in-out',
+  transition: 'all $duration ease-in-out',
   '&:hover': {
     color: '$primary',
-  },
-  '&::after': {
-    content: '""',
-    position: 'absolute',
-    margin: '0px auto',
-    top: '18px',
-    left: '0px',
-    right: '0px',
-    height: '1px',
-    width: '20px',
-    background: 'rgb(255, 255, 255)',
-    opacity: 0,
-    transition: 'opacity $duration ease-in-out',
+    transform: 'translateY(-2px)',
   },
 })
 
@@ -210,4 +198,5 @@ const NavHovered = styled(motion.span, {
   padding: 20,
   borderRadius: '$borderRadius',
   zIndex: -1,
+  scale: 1.05,
 })
