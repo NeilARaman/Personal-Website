@@ -24,7 +24,7 @@ const items = [
   {
     jobTitle: 'Director of Foundry',
     company: 'ScottyLabs',
-    companyUrl: 'https://scottylabs.org',
+    companyUrl: 'https://foundry.scottylabs.org',
     startDate: '2025-01-01',
     location: 'Hybrid, Pittsburgh, PA',
   },
