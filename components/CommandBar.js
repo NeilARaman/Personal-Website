@@ -14,7 +14,10 @@ import {
   KBarResults,
 } from 'kbar'
 
-const LottieIcon = dynamic(() => import('./LottieIcon'), { ssr: false })
+const LottieIcon = dynamic(() => import('./LottieIcon'), { 
+  ssr: false,
+  loading: () => <div style={{ width: 24, height: 24, background: 'rgba(255, 255, 255, 0.1)', borderRadius: '4px' }} />
+})
 import copyLinkIcon from '../public/static/icons/copy-link.json'
 import emailIcon from '../public/static/icons/email.json'
 import sourceIcon from '../public/static/icons/source.json'
@@ -100,15 +103,7 @@ const CommandBarClient = (props) => {
       perform: copyLink,
       icon: <LottieIcon lottieRef={copyLinkRef} style={iconSize} animationData={copyLinkIcon} loop={false} autoplay={false} />,
     },
-    {
-      id: 'email',
-      name: 'Send Email',
-      shortcut: ['e'],
-      keywords: 'send-email',
-      section: 'General',
-      perform: () => router.push('/contact'),
-      icon: <LottieIcon lottieRef={emailRef} style={iconSize} animationData={emailIcon} loop={false} autoplay={false} />,
-    },
+
     {
       id: 'source',
       name: 'View Source',
@@ -265,18 +260,40 @@ function RenderResults() {
 }
 
 const ResultItem = forwardRef(({ action, active }, ref) => {
+  // Safely handle lottie animation controls
+  const playAnimation = () => {
+    try {
+      if (action.icon?.props?.lottieRef?.current?.play) {
+        action.icon.props.lottieRef.current.play()
+      }
+    } catch (error) {
+      // Silently handle animation errors
+    }
+  }
+
+  const stopAnimation = () => {
+    try {
+      if (action.icon?.props?.lottieRef?.current?.stop) {
+        action.icon.props.lottieRef.current.stop()
+      }
+    } catch (error) {
+      // Silently handle animation errors
+    }
+  }
+
+  // Handle active state changes
   if (active) {
-    action.icon.props.lottieRef.current?.play()
+    playAnimation()
   } else {
-    action.icon.props.lottieRef.current?.stop()
+    stopAnimation()
   }
 
   return (
     <Box
       ref={ref}
       css={getResultStyle(active)}
-      onMouseEnter={() => action.icon.props.lottieRef.current?.play()}
-      onMouseLeave={() => action.icon.props.lottieRef.current?.stop()}
+      onMouseEnter={playAnimation}
+      onMouseLeave={stopAnimation}
     >
       <Action>
         {action.icon && action.icon}
