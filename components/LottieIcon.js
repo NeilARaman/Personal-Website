@@ -18,35 +18,26 @@ export default function LottieIcon({
   useEffect(() => {
     setIsClient(true)
     
-    // Dynamically import lottie-web only on client side
+    // Dynamically import lottie-web only on client side with better error handling
     import('lottie-web').then((lottieModule) => {
-      setLottie(lottieModule.default)
-    }).catch(() => {
+      // Handle both default and named exports
+      const LottieLib = lottieModule.default || lottieModule
+      setLottie(LottieLib)
+    }).catch((error) => {
       // Handle import error gracefully
-      console.warn('Failed to load lottie-web')
+      console.warn('Failed to load lottie-web:', error)
+      // Set a fallback to prevent infinite loading
+      setLottie(null)
     })
   }, [])
 
-  // Intersection Observer for lazy loading
+  // Set visible immediately when client-side for command bar context
   useEffect(() => {
-    if (!isClient || !containerRef.current) return
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-          observer.disconnect()
-        }
-      },
-      { 
-        threshold: 0.1,
-        rootMargin: '50px'
-      }
-    )
-
-    observer.observe(containerRef.current)
-
-    return () => observer.disconnect()
+    if (isClient) {
+      // Use a small delay to ensure DOM is ready
+      const timer = setTimeout(() => setIsVisible(true), 100)
+      return () => clearTimeout(timer)
+    }
   }, [isClient])
 
   const destroyAnimation = useCallback(() => {
@@ -60,39 +51,55 @@ export default function LottieIcon({
   }, [lottieRef])
 
   useEffect(() => {
-    if (!Lottie || !isClient || !containerRef.current || !animationData || !isVisible) return
+    if (!Lottie || !isClient || !containerRef.current || !animationData || !isVisible) {
+      // Debug logging for production issues
+      if (process.env.NODE_ENV === 'development') {
+        console.log('LottieIcon not ready:', { 
+          hasLottie: !!Lottie, 
+          isClient, 
+          hasContainer: !!containerRef.current, 
+          hasAnimationData: !!animationData, 
+          isVisible 
+        })
+      }
+      return
+    }
 
     // Clean up previous animation
     destroyAnimation()
 
-    const animation = Lottie.loadAnimation({
-      container: containerRef.current,
-      renderer,
-      loop,
-      autoplay,
-      animationData,
-      // Performance optimizations
-      rendererSettings: {
-        preserveAspectRatio: 'xMidYMid slice',
-        clearCanvas: true,
-        progressiveLoad: true,
-        hideOnTransparent: true,
-      }
-    })
+    try {
+      const animation = Lottie.loadAnimation({
+        container: containerRef.current,
+        renderer,
+        loop,
+        autoplay,
+        animationData,
+        // Performance optimizations
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice',
+          clearCanvas: true,
+          progressiveLoad: true,
+          hideOnTransparent: true,
+        }
+      })
 
-    animationRef.current = animation
+      animationRef.current = animation
 
-    // Expose animation controls to parent via ref
-    if (lottieRef) {
-      lottieRef.current = {
-        play: () => animation.play(),
-        pause: () => animation.pause(),
-        stop: () => animation.stop(),
-        setSpeed: (speed) => animation.setSpeed(speed),
-        goToAndStop: (frame) => animation.goToAndStop(frame, true),
-        goToAndPlay: (frame) => animation.goToAndPlay(frame, true),
-        destroy: () => destroyAnimation(),
+      // Expose animation controls to parent via ref
+      if (lottieRef) {
+        lottieRef.current = {
+          play: () => animation.play(),
+          pause: () => animation.pause(),
+          stop: () => animation.stop(),
+          setSpeed: (speed) => animation.setSpeed(speed),
+          goToAndStop: (frame) => animation.goToAndStop(frame, true),
+          goToAndPlay: (frame) => animation.goToAndPlay(frame, true),
+          destroy: () => destroyAnimation(),
+        }
       }
+    } catch (error) {
+      console.error('Failed to create Lottie animation:', error)
     }
 
     return destroyAnimation
@@ -120,6 +127,28 @@ export default function LottieIcon({
         }} 
         {...props} 
       />
+    )
+  }
+
+  // If lottie failed to load, show a fallback icon
+  if (Lottie === null) {
+    return (
+      <div 
+        ref={containerRef} 
+        style={{
+          ...style,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          background: 'rgba(255, 255, 255, 0.1)',
+          borderRadius: '4px',
+          fontSize: '16px',
+          color: '#fff'
+        }} 
+        {...props}
+      >
+        ⚡
+      </div>
     )
   }
 
