@@ -168,14 +168,21 @@ const globalStyles = globalCss({
   },
   a: {
     color: '$primary',
-    textDecoration: 'none',
+    textDecoration: 'underline',
+    textDecorationColor: '$secondary',
+    textUnderlineOffset: '3px',
     transition: 'opacity $duration ease-in-out',
   },
   'footer a': {
     borderBottom: 'none',
+    textDecoration: 'none',
+  },
+  'nav a, button a, .no-underline': {
+    textDecoration: 'none',
   },
   'a:hover, a:focus': {
     opacity: '0.8',
+    textDecorationColor: '$primary',
   },
   '@font-face': [
     {

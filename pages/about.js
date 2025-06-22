@@ -62,15 +62,17 @@ function About(props) {
     return (
       <Container>
         <Section>
-          <Image
-            alt="Neil Raman Profile Picture"
-            src="/static/images/Water-Profile-Photo.jpg"
-            width="470"
-            height="470"
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
-            priority
-          />
+          <ImageWrapper>
+            <Image
+              alt="Neil Raman Profile Picture"
+              src="/static/images/Water-Profile-Photo.jpg"
+              width="470"
+              height="470"
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
+              priority
+            />
+          </ImageWrapper>
         </Section>
         <Section>
           <Paragraph
@@ -88,9 +90,6 @@ function About(props) {
             Currently, I&apos;m building the best entrepreneurship environment at CMU @ Foundry, 
             scouting for technically interesting and impactful startups @ GoAhead, 
             and building projects + writing in my free time.
-          </Paragraph>
-          <Paragraph>
-            For any inquiries, please reach out at: <strong>neilr[at]andrew[dot]cmu[dot]edu</strong>
           </Paragraph>
         </Section>
       </Container>
@@ -122,7 +121,7 @@ function About(props) {
             as="a"
             download="neil-raman-headshot.jpg"
             role="button"
-            href="/static/images/avatar.jpg"
+            href="/static/images/Water-Profile-Photo.jpg"
             style={btnStyle}
             onClick={downloadHeadshot}
             onMouseEnter={() => downloadRef.current?.play()}
@@ -195,7 +194,7 @@ function About(props) {
     // Only perform DOM operations on the client
     if (typeof window !== 'undefined' && typeof document !== 'undefined') {
       const link = document.createElement('a')
-      link.href = '/static/images/avatar.jpg'
+      link.href = '/static/images/Water-Profile-Photo.jpg'
       link.download = 'neil-raman-headshot.jpg'
       document.body.appendChild(link)
       link.click()
@@ -250,6 +249,19 @@ const Paragraph = styled('p', {
 const ButtonsContainer = styled('p', {
   display: 'flex',
   alignItems: 'center',
+})
+
+const ImageWrapper = styled('div', {
+  width: '100%',
+  maxWidth: '470px',
+  aspectRatio: '1 / 1',
+  overflow: 'hidden',
+  borderRadius: '8px',
+  '& img': {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+  },
 })
 
 const Section = styled('div', {

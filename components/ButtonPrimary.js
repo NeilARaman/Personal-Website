@@ -14,7 +14,7 @@ export const ButtonPrimary = styled('div', {
   margin: '0 0 0 -10px',
   outline: '0',
   padding: '8px 10px 8px',
-  textDecoration: 'none',
+  textDecoration: 'none !important',
   transition: [
     'background $duration ease-in-out',
     'color $duration ease-in-out',

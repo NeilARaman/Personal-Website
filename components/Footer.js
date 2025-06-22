@@ -19,9 +19,9 @@ export default function Footer() {
       icon: 'ri-github-line',
     },
     {
-      title: 'linkedin',
+      title: 'LinkedIn',
       url: 'https://linkedin.com/in/neil-raman21',
-      icon: 'ri-linkedin-line',
+      icon: 'ri-linkedin-box-line',
     },
     {
       title: 'Instagram',
@@ -78,7 +78,6 @@ const Anchor = styled('a', {
   borderBottom: 'none',
   marginLeft: '20px',
   textDecoration: 'none',
-  textTransform: 'lowercase',
   transition: 'color $duration ease-in-out',
   '&:hover, &:focus': {
     color: '$primary',

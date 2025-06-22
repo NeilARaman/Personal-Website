@@ -180,7 +180,7 @@ const NavContainerWrapper = styled(motion.span, {
   fontWeight: 500,
   letterSpacing: '1.2px',
   padding: '20px',
-  textDecoration: 'none',
+  textDecoration: 'none !important',
   textTransform: 'uppercase',
   transition: 'all $duration ease-in-out',
   '&:hover': {

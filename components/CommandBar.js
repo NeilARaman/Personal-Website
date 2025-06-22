@@ -43,7 +43,6 @@ const CommandBarClient = (props) => {
   // const reminderRef = useRef()
   const router = useRouter()
   const [showToast, setShowToast] = useState(false)
-  // Removed unused isClient state - not needed with current implementation
 
   const copyLink = async () => {
     // Ensure we're in a browser environment
