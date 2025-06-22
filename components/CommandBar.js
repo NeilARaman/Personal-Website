@@ -217,7 +217,11 @@ const CommandBarClient = (props) => {
         <KBarPortal>
           <Positioner>
             <Animator>
-              <Search placeholder="Type a command or search…" />
+              <Search 
+                id="command-search"
+                name="command-search"
+                placeholder="Type a command or search…" 
+              />
               <RenderResults />
             </Animator>
           </Positioner>
