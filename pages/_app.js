@@ -1,6 +1,7 @@
 import '../public/static/css/prism.css'
 import 'remixicon/fonts/remixicon.css'
 
+import Head from 'next/head'
 import Router from 'next/router'
 import dynamic from 'next/dynamic'
 import React, { useEffect } from 'react'
@@ -134,6 +135,9 @@ export default function MyApp({ Component, pageProps }) {
 
   return (
     <ErrorBoundary>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <CommandBar>
         <Layout>
           <Component {...pageProps} />

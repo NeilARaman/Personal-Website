@@ -1,41 +1,11 @@
+"use client"
+
 import { styled } from '../stitches.config'
 import { useState } from 'react'
 // import Link from 'next/link' // Not currently used
 import { useRouter } from 'next/router'
-import { motion, LayoutGroup } from 'framer-motion'
+import { motion, LayoutGroup, AnimatePresence } from 'framer-motion'
 import { useKBar } from 'kbar'
-import dynamic from 'next/dynamic'
-
-const NavContainerClient = ({ children, path, isHovered, onHoverStart, onHoverEnd, router }) => {
-  return (
-    <NavContainerWrapper
-      as="a"
-      href={path}
-      onHoverStart={onHoverStart}
-      onHoverEnd={onHoverEnd}
-      css={
-        router.pathname === path
-          ? {
-              color: '$primary',
-              fontWeight: 600,
-            }
-          : ''
-      }
-    >
-      {isHovered && (
-        <NavHovered
-          layoutId="nav"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        />
-      )}
-      {children}
-    </NavContainerWrapper>
-  )
-}
-
-const NavContainer = dynamic(() => Promise.resolve(NavContainerClient), { ssr: false })
 
 export default function Navbar() {
   const router = useRouter()
@@ -53,49 +23,74 @@ export default function Navbar() {
   const [hovered, setHovered] = useState('')
   const { query } = useKBar()
 
-  return (
-    <LayoutGroup>
-      <Header>
-        <ButtonLogo as="a" href="/">N</ButtonLogo>
+  const handleNavClick = (path) => (e) => {
+    e.preventDefault()
+    router.push(path)
+  }
 
-        <Nav>
+  return (
+    <Header>
+      <ButtonLogo as="a" href="/">N</ButtonLogo>
+
+      <Nav>
+        <LayoutGroup>
           <List>
             {pages.map(page => {
               const path = `/${page.toLowerCase()}`
               const isHovered = hovered === page
+              const isActive = router.pathname === path
 
               return (
-                <li key={page}>
-                  <Anchor>
-                    <NavContainer
-                      path={path}
-                      isHovered={isHovered}
-                      onHoverStart={() => setHovered(page)}
-                      onHoverEnd={() => setHovered('')}
-                      router={router}
-                    >
-                      {page}
-                    </NavContainer>
-                  </Anchor>
-                </li>
+                <ListItem key={page}>
+                  <NavLink
+                    as={motion.a}
+                    onClick={handleNavClick(path)}
+                    onHoverStart={() => setHovered(page)}
+                    onHoverEnd={() => setHovered('')}
+                    whileHover={{ y: -2 }}
+                    transition={{ duration: 0.2 }}
+                    css={
+                      isActive
+                        ? {
+                            color: '$primary',
+                            fontWeight: 600,
+                          }
+                        : {}
+                    }
+                  >
+                    <AnimatePresence>
+                      {isHovered && (
+                        <NavBackground
+                          as={motion.div}
+                          layoutId="navbar"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          transition={{ duration: 0.15 }}
+                        />
+                      )}
+                    </AnimatePresence>
+                    <NavText>{page}</NavText>
+                  </NavLink>
+                </ListItem>
               )
             })}
           </List>
-        </Nav>
+        </LayoutGroup>
+      </Nav>
 
-        <Aside>
-          <ButtonHeader
-            as="button"
-            type="button"
-            aria-label="Command"
-            onClick={query.toggle}
-            css={{ padding: '0 8px' }}
-          >
-            <Icon className="ri-command-line" />
-          </ButtonHeader>
-        </Aside>
-      </Header>
-    </LayoutGroup>
+      <Aside>
+        <ButtonHeader
+          as="button"
+          type="button"
+          aria-label="Command"
+          onClick={query.toggle}
+          css={{ padding: '0 8px' }}
+        >
+          <Icon className="ri-command-line" />
+        </ButtonHeader>
+      </Aside>
+    </Header>
   )
 }
 
@@ -122,6 +117,10 @@ const List = styled('ul', {
   position: 'relative',
   top: '5px',
   '@bp1': { justifyContent: 'space-around' },
+})
+
+const ListItem = styled('li', {
+  position: 'relative',
 })
 
 const ButtonHeader = styled('div', {
@@ -166,37 +165,36 @@ const Aside = styled('div', {
   marginLeft: 'auto',
 })
 
-const Anchor = styled('div', {
-  border: 0,
-  position: 'relative',
-  '&:hover, &:focus': { opacity: 1 },
-})
-
-const NavContainerWrapper = styled(motion.span, {
+const NavLink = styled('a', {
   color: '$secondary',
   cursor: 'pointer',
-  display: 'inline-block',
+  display: 'block',
   fontSize: '12px',
   fontWeight: 500,
   letterSpacing: '1.2px',
   padding: '20px',
   textDecoration: 'none !important',
   textTransform: 'uppercase',
-  transition: 'all $duration ease-in-out',
+  position: 'relative',
+  transition: 'color $duration ease-in-out',
   '&:hover': {
     color: '$primary',
-    transform: 'translateY(-2px)',
   },
 })
 
-const NavHovered = styled(motion.span, {
+const NavText = styled('span', {
+  position: 'relative',
+  zIndex: 2,
+})
+
+const NavBackground = styled('div', {
   position: 'absolute',
-  top: '-15px',
-  left: '0',
-  right: '0',
+  top: '2px',
+  left: '2px',
+  right: '2px',
+  bottom: '2px',
   background: '$hover',
-  padding: 20,
-  borderRadius: '$borderRadius',
-  zIndex: -1,
-  scale: 1.05,
+  borderRadius: '8px',
+  zIndex: 1,
+  opacity: 0.9,
 })

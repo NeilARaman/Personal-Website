@@ -1,13 +1,21 @@
-// import React from 'react' // Not needed with Next.js
+import React from 'react'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import Base from '../layouts/Base'
 import stripHtml from '../lib/strip-html'
 import items from '../data/projects'
 
-// Lazy load heavy components
+// Lazy load heavy components with proper component resolution
 const MotionLayoutGroup = dynamic(
-  () => import('framer-motion').then(mod => mod.motion.LayoutGroup),
+  () => import('framer-motion').then(mod => {
+    // Create a proper wrapper component that React recognizes
+    const LayoutGroupWrapper = ({ children }) => {
+      const LayoutGroup = mod.LayoutGroup
+      return React.createElement(LayoutGroup, null, children)
+    }
+    LayoutGroupWrapper.displayName = 'LayoutGroupWrapper'
+    return LayoutGroupWrapper
+  }),
   { ssr: false }
 )
 

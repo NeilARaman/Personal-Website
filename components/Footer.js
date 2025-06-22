@@ -38,12 +38,10 @@ export default function Footer() {
       </Anchor>
     }
 
-    return <Link key={index} href={link.url} passHref>
-      <Anchor>
-        <Title>{link.title}</Title>
-        <Icon className={link.icon} />
-      </Anchor>
-    </Link>
+    return <AnchorInternal key={index} as={Link} href={link.url}>
+      <Title>{link.title}</Title>
+      <Icon className={link.icon} />
+    </AnchorInternal>
   }
 
   return (
@@ -93,4 +91,24 @@ const Anchor = styled('a', {
 const Title = styled('span', {
   display: 'none',
   '@bp2': { display: 'block' },
+})
+
+const AnchorInternal = styled('a', {
+  color: '$secondary',
+  display: 'flex',
+  fontSize: '15px',
+  border: 0,
+  borderBottom: 'none',
+  marginLeft: '20px',
+  textDecoration: 'none',
+  transition: 'color $duration ease-in-out',
+  '&:hover, &:focus': {
+    color: '$primary',
+    opacity: 1,
+  },
+  [`&:hover ${Icon}`]: {
+    transition: 'opacity $duration ease-in-out',
+    opacity: 1,
+  },
+  '&:first-child': { margin: '0' },
 })

@@ -1,6 +1,14 @@
 // import React from 'react' // Not needed with Next.js
 import Head from 'next/head'
-import { motion } from 'framer-motion'
+import dynamic from 'next/dynamic'
+
+// Create a proper client-side LayoutGroup component
+const LayoutGroupClient = ({ children }) => {
+  const { LayoutGroup } = require('framer-motion')
+  return <LayoutGroup>{children}</LayoutGroup>
+}
+
+const LayoutGroup = dynamic(() => Promise.resolve(LayoutGroupClient), { ssr: false })
 import { parseISO, format } from 'date-fns'
 import Base from '../layouts/Base'
 import { Box } from '../components/Box'
@@ -79,7 +87,7 @@ function Talks(props) {
         <meta content={`https://neilraman.com${image}`} name="twitter:image" />
       </Head>
 
-      <motion.LayoutGroup>
+      <LayoutGroup>
         <p dangerouslySetInnerHTML={{ __html: description }} />
 
         <h2>Featured Talks</h2>
@@ -87,7 +95,7 @@ function Talks(props) {
 
         <h2>All Talks</h2>
         {renderAll()}
-      </motion.LayoutGroup>
+              </LayoutGroup>
     </>
   )
 }

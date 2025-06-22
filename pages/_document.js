@@ -52,7 +52,6 @@ class MyDocument extends Document {
       <Html lang={lang} suppressHydrationWarning>
         <Head>
           <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta content="Neil Raman" name="author" />
           <meta name="robots" content="index, follow" />
           <meta name="googlebot" content="index, follow" />

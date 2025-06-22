@@ -26,7 +26,7 @@ const nextConfig = {
   poweredByHeader: false,
   generateEtags: false,
   
-  // Headers for security and performance
+  // Headers for security and performance (CSP handled in middleware)
   async headers() {
     return [
       {

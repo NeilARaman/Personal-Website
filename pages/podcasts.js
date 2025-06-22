@@ -4,7 +4,15 @@ import stripHtml from '../lib/strip-html'
 import { bytetalk, appearances, zofe } from '../data/podcasts'
 import ListItem from '../components/ListItem'
 import { ListGroup } from '../components/ListGroup'
-import { motion } from 'framer-motion'
+import dynamic from 'next/dynamic'
+
+// Create a proper client-side LayoutGroup component
+const LayoutGroupClient = ({ children }) => {
+  const { LayoutGroup } = require('framer-motion')
+  return <LayoutGroup>{children}</LayoutGroup>
+}
+
+const LayoutGroup = dynamic(() => Promise.resolve(LayoutGroupClient), { ssr: false })
 
 export async function getStaticProps() {
   const meta = {
@@ -72,7 +80,7 @@ function Podcasts(props) {
         <meta content={`https://neilraman.com${image}`} name="twitter:image" />
       </Head>
 
-      <motion.LayoutGroup>
+      <LayoutGroup>
         <p dangerouslySetInnerHTML={{ __html: description }} />
 
         <h2>Featured Podcasts</h2>
@@ -94,7 +102,7 @@ function Podcasts(props) {
           technologies.
         </p>
         <ListGroup>{renderEpisode(zofe)}</ListGroup>
-      </motion.LayoutGroup>
+              </LayoutGroup>
     </>
   )
 }

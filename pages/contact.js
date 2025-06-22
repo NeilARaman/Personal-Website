@@ -83,11 +83,11 @@ function Contact(props) {
         <Form onSubmit={onSendEmail}>
           <FormGroup>
             <Label htmlFor="name">Name</Label>
-            <Input id="name" type="text" placeholder="James Bond" required disabled={isLoading} />
+            <Input id="name" type="text" placeholder="James Bond" autoComplete="name" required disabled={isLoading} />
           </FormGroup>
           <FormGroup>
             <Label htmlFor="email">Email</Label>
-            <Input id="email" type="email" placeholder="james@bond.com" required disabled={isLoading} />
+            <Input id="email" type="email" placeholder="james@bond.com" autoComplete="email" required disabled={isLoading} />
           </FormGroup>
           <FormGroup>
             <Label htmlFor="message">Message</Label>

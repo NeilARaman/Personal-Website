@@ -246,7 +246,7 @@ const Paragraph = styled('p', {
   '@bp2': { margin: '15px 0' },
 })
 
-const ButtonsContainer = styled('p', {
+const ButtonsContainer = styled('div', {
   display: 'flex',
   alignItems: 'center',
 })

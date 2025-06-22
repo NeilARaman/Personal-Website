@@ -6,7 +6,15 @@ import stripHtml from '../lib/strip-html'
 // import ListItem from '../components/ListItem'
 // import FeaturedArticle from '../components/FeaturedArticle'
 // import { ListGroup } from '../components/ListGroup'
-import { motion } from 'framer-motion'
+import dynamic from 'next/dynamic'
+
+// Create a proper client-side LayoutGroup component
+const LayoutGroupClient = ({ children }) => {
+  const { LayoutGroup } = require('framer-motion')
+  return <LayoutGroup>{children}</LayoutGroup>
+}
+
+const LayoutGroup = dynamic(() => Promise.resolve(LayoutGroupClient), { ssr: false })
 
 export async function getStaticProps() {
   // const allPosts = getAllPosts(['date', 'skip', 'slug', 'title'])
@@ -92,7 +100,7 @@ function Articles(props) {
         <meta content={`https://neilraman.com${image}`} name="twitter:image" />
       </Head>
 
-      <motion.LayoutGroup>
+      <LayoutGroup>
         <p dangerouslySetInnerHTML={{ __html: description }} />
 
         <ComingSoonContainer>
@@ -104,7 +112,7 @@ function Articles(props) {
 
         <h2>All Articles</h2>
         <ListGroup>{renderAll()}</ListGroup> */}
-      </motion.LayoutGroup>
+              </LayoutGroup>
     </>
   )
 }
