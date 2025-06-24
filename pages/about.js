@@ -71,6 +71,12 @@ function About(props) {
               placeholder="blur"
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
               priority
+              sizes="(max-width: 768px) 280px, 470px"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
             />
           </ImageWrapper>
         </Section>
@@ -254,13 +260,20 @@ const ButtonsContainer = styled('div', {
 const ImageWrapper = styled('div', {
   width: '100%',
   maxWidth: '470px',
-  aspectRatio: '1 / 1',
+  height: '470px',
   overflow: 'hidden',
   borderRadius: '8px',
+  position: 'relative',
+  flexShrink: 0,
   '& img': {
     width: '100%',
     height: '100%',
     objectFit: 'cover',
+    display: 'block',
+  },
+  '@media (max-width: 768px)': {
+    height: '280px',
+    maxWidth: '280px',
   },
 })
 

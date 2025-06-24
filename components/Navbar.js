@@ -2,7 +2,7 @@
 
 import { styled } from '../stitches.config'
 import { useState } from 'react'
-// import Link from 'next/link' // Not currently used
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { motion, LayoutGroup, AnimatePresence } from 'framer-motion'
 import { useKBar } from 'kbar'
@@ -23,14 +23,13 @@ export default function Navbar() {
   const [hovered, setHovered] = useState('')
   const { query } = useKBar()
 
-  const handleNavClick = (path) => (e) => {
-    e.preventDefault()
-    router.push(path)
-  }
+  // No longer needed as we use Link for instant navigation
 
   return (
     <Header>
-      <ButtonLogo as="a" href="/">N</ButtonLogo>
+      <Link href="/" passHref>
+        <ButtonLogo as="a">N</ButtonLogo>
+      </Link>
 
       <Nav>
         <LayoutGroup>
@@ -42,36 +41,37 @@ export default function Navbar() {
 
               return (
                 <ListItem key={page}>
-                  <NavLink
-                    as={motion.a}
-                    onClick={handleNavClick(path)}
-                    onHoverStart={() => setHovered(page)}
-                    onHoverEnd={() => setHovered('')}
-                    whileHover={{ y: -2 }}
-                    transition={{ duration: 0.2 }}
-                    css={
-                      isActive
-                        ? {
-                            color: '$primary',
-                            fontWeight: 600,
-                          }
-                        : {}
-                    }
-                  >
-                    <AnimatePresence>
-                      {isHovered && (
-                        <NavBackground
-                          as={motion.div}
-                          layoutId="navbar"
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          exit={{ opacity: 0 }}
-                          transition={{ duration: 0.15 }}
-                        />
-                      )}
-                    </AnimatePresence>
-                    <NavText>{page}</NavText>
-                  </NavLink>
+                  <Link href={path} passHref>
+                    <NavLink
+                      as={motion.a}
+                      onHoverStart={() => setHovered(page)}
+                      onHoverEnd={() => setHovered('')}
+                      whileHover={{ y: -2 }}
+                      transition={{ duration: 0.2 }}
+                      css={
+                        isActive
+                          ? {
+                              color: '$primary',
+                              fontWeight: 600,
+                            }
+                          : {}
+                      }
+                    >
+                      <AnimatePresence>
+                        {isHovered && (
+                          <NavBackground
+                            as={motion.div}
+                            layoutId="navbar"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.15 }}
+                          />
+                        )}
+                      </AnimatePresence>
+                      <NavText>{page}</NavText>
+                    </NavLink>
+                  </Link>
                 </ListItem>
               )
             })}

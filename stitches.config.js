@@ -180,6 +180,9 @@ const globalStyles = globalCss({
   'nav a, button a, .no-underline': {
     textDecoration: 'none',
   },
+  'header a': {
+    textDecoration: 'none !important',
+  },
   'a:hover, a:focus': {
     opacity: '0.8',
     textDecorationColor: '$primary',
