@@ -8,6 +8,7 @@ import { ButtonPrimary } from '../components/ButtonPrimary'
 import Toast from '../components/Toast'
 import items from '../data/about'
 import dynamic from 'next/dynamic'
+import profilePic from '../public/static/images/Water-Profile-Photo.jpg'
 
 const LottieIcon = dynamic(() => import('../components/LottieIcon'), { ssr: false })
 import downloadIcon from '../public/static/icons/download.json'
@@ -65,7 +66,7 @@ function About(props) {
           <ImageWrapper>
             <Image
               alt="Neil Raman Profile Picture"
-              src="/static/images/Water-Profile-Photo.jpg"
+              src={profilePic}
               width="470"
               height="470"
               placeholder="blur"
