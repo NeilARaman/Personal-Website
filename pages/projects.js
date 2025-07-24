@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic'
 import Base from '../layouts/Base'
 import stripHtml from '../lib/strip-html'
 import items from '../data/projects'
+import { sanitizeHTML } from '../lib/sanitize'
 
 // Lazy load heavy components with proper component resolution
 const MotionLayoutGroup = dynamic(
@@ -104,7 +105,7 @@ function Projects(props) {
       </Head>
 
       <MotionLayoutGroup>
-        <p dangerouslySetInnerHTML={{ __html: description }} />
+        <p dangerouslySetInnerHTML={{ __html: sanitizeHTML(description) }} />
 
         <h2>Featured Projects</h2>
         <FeaturedProjects>{renderFeatured()}</FeaturedProjects>

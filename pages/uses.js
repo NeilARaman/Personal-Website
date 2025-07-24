@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Base from '../layouts/Base'
 import stripHtml from '../lib/strip-html'
 import categories from '../data/uses'
+import { sanitizeHTML } from '../lib/sanitize'
 
 export async function getStaticProps() {
   const meta = {
@@ -35,7 +36,7 @@ function Uses(props) {
                   </a>
                   <span> - </span>
                   <span
-                    dangerouslySetInnerHTML={{ __html: item.description }}
+                    dangerouslySetInnerHTML={{ __html: sanitizeHTML(item.description) }}
                   />
                 </li>
               )
@@ -60,7 +61,7 @@ function Uses(props) {
         <meta content={`https://neilraman.com${image}`} name="twitter:image" />
       </Head>
 
-      <p dangerouslySetInnerHTML={{ __html: description }} />
+      <p dangerouslySetInnerHTML={{ __html: sanitizeHTML(description) }} />
 
       {renderAll()}
     </>

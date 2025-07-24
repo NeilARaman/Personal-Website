@@ -5,6 +5,7 @@ import stripHtml from '../lib/strip-html'
 import Toast from '../components/Toast'
 import { Box } from '../components/Box'
 import { styled } from '../stitches.config'
+import { sanitizeHTML } from '../lib/sanitize'
 
 export async function getStaticProps() {
   const meta = {
@@ -26,20 +27,118 @@ function Contact(props) {
   const [isEmailSent, setIsEmailSent] = React.useState(undefined)
   const [showToast, setShowToast] = React.useState(false)
   const [isLoading, setIsLoading] = React.useState(false)
+  const [fieldErrors, setFieldErrors] = React.useState({})
+  const [messageLength, setMessageLength] = React.useState(0)
+
+  const validateField = (name, value) => {
+    const errors = { ...fieldErrors }
+    
+    switch (name) {
+      case 'name':
+        if (!value || value.trim().length === 0) {
+          errors.name = 'Name is required'
+        } else if (value.length > 100) {
+          errors.name = 'Must be less than 100 characters'
+        } else if (!/^[a-zA-Z\s'-]+$/.test(value)) {
+          errors.name = 'Only letters, spaces, and hyphens allowed'
+        } else {
+          delete errors.name
+        }
+        break
+      case 'email':
+        if (!value || value.trim().length === 0) {
+          errors.email = 'Email is required'
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+          errors.email = 'Please enter a valid email address'
+        } else if (value.length > 254) {
+          errors.email = 'Email address is too long'
+        } else {
+          delete errors.email
+        }
+        break
+      case 'message':
+        setMessageLength(value.length)
+        if (!value || value.trim().length === 0) {
+          errors.message = 'Message is required'
+        } else if (value.length < 10) {
+          errors.message = 'Message must be at least 10 characters'
+        } else if (value.length > 5000) {
+          errors.message = 'Message must be less than 5000 characters'
+        } else {
+          delete errors.message
+        }
+        break
+    }
+    
+    setFieldErrors(errors)
+  }
+
+  const validateForm = (formData) => {
+    const errors = []
+    
+    // Validate name
+    if (!formData.name || formData.name.trim().length === 0) {
+      errors.push('Name is required')
+    } else if (formData.name.length > 100) {
+      errors.push('Name must be less than 100 characters')
+    } else if (!/^[a-zA-Z\s'-]+$/.test(formData.name)) {
+      errors.push('Name contains invalid characters')
+    }
+    
+    // Validate email
+    if (!formData.email || formData.email.trim().length === 0) {
+      errors.push('Email is required')
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      errors.push('Please enter a valid email address')
+    } else if (formData.email.length > 254) {
+      errors.push('Email address is too long')
+    }
+    
+    // Validate message
+    if (!formData.message || formData.message.trim().length === 0) {
+      errors.push('Message is required')
+    } else if (formData.message.length > 5000) {
+      errors.push('Message must be less than 5000 characters')
+    }
+    
+    return errors
+  }
 
   const onSendEmail = async (e) => {
     e.preventDefault()
     setIsLoading(true)
 
+    // Honeypot check - if filled, it's a bot
+    const honeypot = e.target.website.value
+    if (honeypot) {
+      // Bot detected, silently reject without revealing the honeypot
+      setIsEmailSent(false)
+      setShowToast(true)
+      setIsLoading(false)
+      return
+    }
+
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      message: e.target.message.value,
+    }
+
+    // Client-side validation
+    const validationErrors = validateForm(formData)
+    if (validationErrors.length > 0) {
+      console.error('Validation errors:', validationErrors)
+      setIsEmailSent(false)
+      setShowToast(true)
+      setIsLoading(false)
+      return
+    }
+
     try {
       const response = await fetch('/api/email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: e.target.name.value,
-          email: e.target.email.value,
-          message: e.target.message.value,
-        }),
+        body: JSON.stringify(formData),
       })
 
       const result = await response.json()
@@ -47,8 +146,10 @@ function Contact(props) {
       if (response.ok) {
         setIsEmailSent(true)
         setShowToast(true)
-        // Reset form
+        // Reset form and clear any validation errors
         e.target.reset()
+        setFieldErrors({})
+        setMessageLength(0)
       } else {
         console.error('Email send failed:', result)
         setIsEmailSent(false)
@@ -78,20 +179,68 @@ function Contact(props) {
       </Head>
 
       <Box>
-        <p dangerouslySetInnerHTML={{ __html: description }} />
+        <p dangerouslySetInnerHTML={{ __html: sanitizeHTML(description) }} />
         <h2>Send me an email</h2>
         <Form onSubmit={onSendEmail}>
+          {/* Honeypot field - invisible to humans, catches bots */}
+          <input 
+            type="text" 
+            name="website" 
+            style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0 }}
+            tabIndex="-1" 
+            autoComplete="off"
+            aria-hidden="true"
+          />
           <FormGroup>
             <Label htmlFor="name">Name</Label>
-            <Input id="name" type="text" placeholder="James Bond" autoComplete="name" required disabled={isLoading} />
+            <Input 
+              id="name" 
+              type="text" 
+              placeholder="James Bond" 
+              autoComplete="name" 
+              required 
+              disabled={isLoading}
+              maxLength={100}
+              minLength={2}
+              onChange={(e) => validateField('name', e.target.value)}
+              css={{ borderColor: fieldErrors.name ? '#ff6b6b' : undefined }}
+            />
+            {fieldErrors.name && <ErrorText>{fieldErrors.name}</ErrorText>}
           </FormGroup>
           <FormGroup>
             <Label htmlFor="email">Email</Label>
-            <Input id="email" type="email" placeholder="james@bond.com" autoComplete="email" required disabled={isLoading} />
+            <Input 
+              id="email" 
+              type="email" 
+              placeholder="james@bond.com" 
+              autoComplete="email" 
+              required 
+              disabled={isLoading}
+              maxLength={254}
+              onChange={(e) => validateField('email', e.target.value)}
+              css={{ borderColor: fieldErrors.email ? '#ff6b6b' : undefined }}
+            />
+            {fieldErrors.email && <ErrorText>{fieldErrors.email}</ErrorText>}
           </FormGroup>
           <FormGroup>
-            <Label htmlFor="message">Message</Label>
-            <Textarea id="message" placeholder="How can I help you?" rows="4" required disabled={isLoading} />
+            <LabelContainer>
+              <Label htmlFor="message">Message</Label>
+              <CharCounter css={{ color: messageLength > 4500 ? '#ff6b6b' : '$secondary' }}>
+                {messageLength}/5000
+              </CharCounter>
+            </LabelContainer>
+            <Textarea 
+              id="message" 
+              placeholder="How can I help you?" 
+              rows="4" 
+              required 
+              disabled={isLoading}
+              maxLength={5000}
+              minLength={10}
+              onChange={(e) => validateField('message', e.target.value)}
+              css={{ borderColor: fieldErrors.message ? '#ff6b6b' : undefined }}
+            />
+            {fieldErrors.message && <ErrorText>{fieldErrors.message}</ErrorText>}
           </FormGroup>
           <FormGroup>
             <Button type="submit" disabled={isLoading}>
@@ -124,11 +273,23 @@ const FormGroup = styled('div', {
   marginBottom: '10px',
 })
 
+const LabelContainer = styled('div', {
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  marginBottom: '4px',
+})
+
 const Label = styled('label', {
   color: '$secondary',
   textTransform: 'uppercase',
   fontSize: '12px',
   fontWeight: '500'
+})
+
+const CharCounter = styled('span', {
+  fontSize: '11px',
+  fontWeight: '500',
 })
 
 const Input = styled('input', {
@@ -163,6 +324,14 @@ const Button = styled('button', {
   '&:hover': { background: 'transparent', borderColor: '$cyan', color: '$cyan' },
   '&:focus': { background: 'transparent', borderColor: '$cyan', color: '$cyan', outline: 'none' },
   '&:disabled': { opacity: 0.6, cursor: 'not-allowed', '&:hover': { background: '#fff', borderColor: '#fff', color: '$background' } },
+})
+
+const ErrorText = styled('span', {
+  color: '#ff6b6b',
+  fontSize: '12px',
+  marginTop: '4px',
+  display: 'block',
+  fontWeight: 500,
 })
 
 Contact.Layout = Base

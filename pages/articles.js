@@ -1,3 +1,4 @@
+import React from 'react'
 import { styled } from '../stitches.config'
 import Head from 'next/head'
 import Base from '../layouts/Base'
@@ -7,14 +8,20 @@ import stripHtml from '../lib/strip-html'
 // import FeaturedArticle from '../components/FeaturedArticle'
 // import { ListGroup } from '../components/ListGroup'
 import dynamic from 'next/dynamic'
+import { sanitizeHTML } from '../lib/sanitize'
 
 // Create a proper client-side LayoutGroup component
-const LayoutGroupClient = ({ children }) => {
-  const { LayoutGroup } = require('framer-motion')
-  return <LayoutGroup>{children}</LayoutGroup>
-}
-
-const LayoutGroup = dynamic(() => Promise.resolve(LayoutGroupClient), { ssr: false })
+const LayoutGroup = dynamic(() => 
+  import('framer-motion').then(mod => {
+    const LayoutGroupComponent = ({ children }) => {
+      const { LayoutGroup } = mod
+      return React.createElement(LayoutGroup, null, children)
+    }
+    LayoutGroupComponent.displayName = 'LayoutGroup'
+    return LayoutGroupComponent
+  }), 
+  { ssr: false }
+)
 
 export async function getStaticProps() {
   // const allPosts = getAllPosts(['date', 'skip', 'slug', 'title'])
@@ -101,7 +108,7 @@ function Articles(props) {
       </Head>
 
       <LayoutGroup>
-        <p dangerouslySetInnerHTML={{ __html: description }} />
+        <p dangerouslySetInnerHTML={{ __html: sanitizeHTML(description) }} />
 
         <ComingSoonContainer>
           <ComingSoonTitle>Coming Soon!</ComingSoonTitle>

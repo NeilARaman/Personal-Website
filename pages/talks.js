@@ -1,14 +1,20 @@
-// import React from 'react' // Not needed with Next.js
+import React from 'react'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
+import { sanitizeHTML } from '../lib/sanitize'
 
 // Create a proper client-side LayoutGroup component
-const LayoutGroupClient = ({ children }) => {
-  const { LayoutGroup } = require('framer-motion')
-  return <LayoutGroup>{children}</LayoutGroup>
-}
-
-const LayoutGroup = dynamic(() => Promise.resolve(LayoutGroupClient), { ssr: false })
+const LayoutGroup = dynamic(() => 
+  import('framer-motion').then(mod => {
+    const LayoutGroupComponent = ({ children }) => {
+      const { LayoutGroup } = mod
+      return React.createElement(LayoutGroup, null, children)
+    }
+    LayoutGroupComponent.displayName = 'LayoutGroup'
+    return LayoutGroupComponent
+  }), 
+  { ssr: false }
+)
 import { parseISO, format } from 'date-fns'
 import Base from '../layouts/Base'
 import { Box } from '../components/Box'
@@ -88,7 +94,7 @@ function Talks(props) {
       </Head>
 
       <LayoutGroup>
-        <p dangerouslySetInnerHTML={{ __html: description }} />
+        <p dangerouslySetInnerHTML={{ __html: sanitizeHTML(description) }} />
 
         <h2>Featured Talks</h2>
         <Box css={{ margin: '10px 0 0 -20px' }}>{renderFeatured()}</Box>

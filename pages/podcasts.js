@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import Base from '../layouts/Base'
 import stripHtml from '../lib/strip-html'
@@ -5,14 +6,20 @@ import { bytetalk, appearances, zofe } from '../data/podcasts'
 import ListItem from '../components/ListItem'
 import { ListGroup } from '../components/ListGroup'
 import dynamic from 'next/dynamic'
+import { sanitizeHTML } from '../lib/sanitize'
 
 // Create a proper client-side LayoutGroup component
-const LayoutGroupClient = ({ children }) => {
-  const { LayoutGroup } = require('framer-motion')
-  return <LayoutGroup>{children}</LayoutGroup>
-}
-
-const LayoutGroup = dynamic(() => Promise.resolve(LayoutGroupClient), { ssr: false })
+const LayoutGroup = dynamic(() => 
+  import('framer-motion').then(mod => {
+    const LayoutGroupComponent = ({ children }) => {
+      const { LayoutGroup } = mod
+      return React.createElement(LayoutGroup, null, children)
+    }
+    LayoutGroupComponent.displayName = 'LayoutGroup'
+    return LayoutGroupComponent
+  }), 
+  { ssr: false }
+)
 
 export async function getStaticProps() {
   const meta = {
@@ -81,7 +88,7 @@ function Podcasts(props) {
       </Head>
 
       <LayoutGroup>
-        <p dangerouslySetInnerHTML={{ __html: description }} />
+        <p dangerouslySetInnerHTML={{ __html: sanitizeHTML(description) }} />
 
         <h2>Featured Podcasts</h2>
         <ListGroup>{renderFeatured(appearances)}</ListGroup>

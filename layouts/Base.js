@@ -9,6 +9,7 @@ export default function Base({ children }) {
 
   return (
     <Wrapper>
+      <SkipLink href="#main-content">Skip to main content</SkipLink>
       <Navbar />
       <PostMain
         css={{
@@ -20,7 +21,7 @@ export default function Base({ children }) {
         }}
       >
         <PostContent>
-          <PostContainer>
+          <PostContainer id="main-content" tabIndex="-1">
             <GradientTitle
               css={{
                 backgroundImage: `linear-gradient(
@@ -40,6 +41,21 @@ export default function Base({ children }) {
     </Wrapper>
   )
 }
+
+const SkipLink = styled('a', {
+  position: 'absolute',
+  top: '-40px',
+  left: '6px',
+  background: '$primary',
+  color: '$background',
+  padding: '8px',
+  textDecoration: 'none',
+  borderRadius: '4px',
+  zIndex: 1000,
+  '&:focus': {
+    top: '6px',
+  },
+})
 
 const GradientTitle = styled('h1', {
   backgroundSize: '100%',

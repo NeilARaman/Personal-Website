@@ -38,15 +38,21 @@ export default function Footer() {
       </Anchor>
     }
 
-    return <AnchorInternal key={index} as={Link} href={link.url}>
-      <Title>{link.title}</Title>
-      <Icon className={link.icon} />
-    </AnchorInternal>
+    return (
+      <Link key={index} href={link.url}>
+        <AnchorInternalDiv>
+          <Title>{link.title}</Title>
+          <Icon className={link.icon} />
+        </AnchorInternalDiv>
+      </Link>
+    )
   }
 
   return (
-    <Container>
-      {links.map(renderAnchor)}
+    <Container role="contentinfo" aria-label="Footer">
+      <NavContainer aria-label="Social media links">
+        {links.map(renderAnchor)}
+      </NavContainer>
     </Container>
   )
 }
@@ -57,6 +63,12 @@ const Container = styled('footer', {
   alignItems: 'center',
   justifyContent: 'center',
   padding: '20px 0',
+})
+
+const NavContainer = styled('nav', {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
 })
 
 const Icon = styled('i', {
@@ -93,7 +105,7 @@ const Title = styled('span', {
   '@bp2': { display: 'block' },
 })
 
-const AnchorInternal = styled('a', {
+const AnchorInternalDiv = styled('div', {
   color: '$secondary',
   display: 'flex',
   fontSize: '15px',
@@ -101,6 +113,7 @@ const AnchorInternal = styled('a', {
   borderBottom: 'none',
   marginLeft: '20px',
   textDecoration: 'none',
+  cursor: 'pointer',
   transition: 'color $duration ease-in-out',
   '&:hover, &:focus': {
     color: '$primary',
@@ -112,3 +125,5 @@ const AnchorInternal = styled('a', {
   },
   '&:first-child': { margin: '0' },
 })
+
+

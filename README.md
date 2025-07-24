@@ -31,7 +31,6 @@ I'm Neil Raman, a sophomore at Carnegie Mellon University studying Information S
 - **Command Bar:** [KBar](https://kbar.vercel.app/) - Fast keyboard navigation
 - **Email:** Custom email integration for contact form
 - **Deployment:** [Vercel](https://vercel.com/) - Serverless deployment platform
-- **Analytics:** Google Analytics for visitor insights
 
 ## Getting Started
 
@@ -62,8 +61,9 @@ I'm Neil Raman, a sophomore at Carnegie Mellon University studying Information S
    Create a `.env.local` file in the root directory:
 
    ```bash
-   NEXT_PUBLIC_GA_ID=your_google_analytics_id
-   # Add other environment variables as needed
+   # Add environment variables as needed
+   RESEND_API_KEY=your_resend_api_key
+   RESEND_DESTINATION_EMAIL=your_email@example.com
    ```
 
 4. **Run the development server:**
@@ -166,7 +166,7 @@ Edit the `data/projects.js` file to add or modify project information.
 - **Image optimization** with Next.js Image component
 - **Code splitting** for faster page loads
 - **Lazy loading** for images and components
-- **Web Vitals monitoring** for performance tracking
+- **Web Vitals monitoring** for performance insights
 
 ## Contributing
 

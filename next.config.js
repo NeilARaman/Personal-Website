@@ -11,6 +11,7 @@ const nextConfig = {
   experimental: {
     // optimizeCss: true, // Disabled for SSR stability
     scrollRestoration: true,
+    optimizePackageImports: ['@stitches/react', 'framer-motion', 'date-fns'],
   },
   
   // Image optimization
@@ -26,7 +27,7 @@ const nextConfig = {
   poweredByHeader: false,
   generateEtags: false,
   
-  // Headers for security and performance (CSP handled in middleware)
+  // Headers for security and performance
   async headers() {
     return [
       {
@@ -38,7 +39,7 @@ const nextConfig = {
           },
           {
             key: 'X-Frame-Options',
-            value: 'SAMEORIGIN'
+            value: 'DENY'
           },
           {
             key: 'X-Content-Type-Options',
@@ -47,13 +48,25 @@ const nextConfig = {
           {
             key: 'Referrer-Policy',
             value: 'strict-origin-when-cross-origin'
+          },
+          {
+            key: 'X-XSS-Protection',
+            value: '1; mode=block'
+          },
+          {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=31536000; includeSubDomains; preload'
+          },
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()'
           }
         ]
       }
     ]
   },
   
-  webpack: (config, { isServer, dev }) => {
+  webpack: (config, { isServer, _dev }) => {
     // Critical SSR fix for Stitches
     if (isServer) {
       config.externals = config.externals || []

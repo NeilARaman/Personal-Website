@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic'
 import Base from '../layouts/Base'
 import stripHtml from '../lib/strip-html'
 import investments from '../data/investments'
+import { sanitizeHTML } from '../lib/sanitize'
 
 // Lazy load heavy components
 const FeaturedProject = dynamic(() => import('../components/FeaturedProject'), {
@@ -52,7 +53,7 @@ function Investing(props) {
         <meta content={`https://neilraman.com${image}`} name="twitter:image" />
       </Head>
 
-      <p dangerouslySetInnerHTML={{ __html: description }} />
+      <p dangerouslySetInnerHTML={{ __html: sanitizeHTML(description) }} />
 
       <h2>What I invest in</h2>
       <p>

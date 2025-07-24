@@ -3,6 +3,7 @@ import { ArticleJsonLd } from 'next-seo'
 import Blogpost from '../layouts/Blogpost'
 import ErrorMessage from '../components/ErrorMessage'
 import { getPostBySlug, getAllPosts, convertMarkdownToHtml } from '../lib/blog'
+import { sanitizeMarkdownHTML } from '../lib/sanitize'
 
 function Post(props) {
   if (props.errorCode) {
@@ -46,7 +47,7 @@ function Post(props) {
         description={props.description}
       />
 
-      <div dangerouslySetInnerHTML={{ __html: props.content }} suppressHydrationWarning />
+      <div dangerouslySetInnerHTML={{ __html: sanitizeMarkdownHTML(props.content) }} suppressHydrationWarning />
     </>
   )
 }

@@ -1,56 +1,20 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextResponse } from 'next/server'
 
-export function middleware(request) {
-  // Generate a random nonce for this request
-  const nonce = Buffer.from(crypto.randomUUID()).toString('base64')
+export function middleware(_request) {
+  const response = NextResponse.next()
   
-  // Determine if we're in development or production
-  const isDevelopment = process.env.NODE_ENV === 'development'
+  // Minimal CSP to support lottie-web animations
+  const csp = `
+    default-src 'self';
+    script-src 'self' 'unsafe-eval' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' data: https: blob:;
+    connect-src 'self';
+  `.replace(/\s{2,}/g, ' ').trim()
   
-  // Create CSP header - more permissive in development
-  const cspHeader = isDevelopment
-    ? `
-      default-src 'self';
-      script-src 'self' 'unsafe-eval' 'unsafe-inline' 'nonce-${nonce}' https://www.googletagmanager.com https://www.google-analytics.com;
-      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-      font-src 'self' https://fonts.gstatic.com;
-      img-src 'self' data: https: blob:;
-      connect-src 'self' https://www.google-analytics.com;
-      frame-ancestors 'none';
-      base-uri 'self';
-      form-action 'self';
-    `
-    : `
-      default-src 'self';
-      script-src 'self' 'unsafe-eval' 'unsafe-inline' 'nonce-${nonce}' https://www.googletagmanager.com https://www.google-analytics.com;
-      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-      font-src 'self' https://fonts.gstatic.com;
-      img-src 'self' data: https: blob:;
-      connect-src 'self' https://www.google-analytics.com;
-      frame-ancestors 'none';
-      base-uri 'self';
-      form-action 'self';
-    `
-
-  // Replace newline characters and spaces
-  const contentSecurityPolicyHeaderValue = cspHeader
-    .replace(/\s{2,}/g, ' ')
-    .trim()
-
-  // Clone the request headers
-  const requestHeaders = new Headers(request.headers)
-  requestHeaders.set('x-nonce', nonce)
-
-  // Create the response
-  const response = NextResponse.next({
-    request: {
-      headers: requestHeaders,
-    },
-  })
-
-  // Set CSP header on the response
-  response.headers.set('Content-Security-Policy', contentSecurityPolicyHeaderValue)
-
+  response.headers.set('Content-Security-Policy', csp)
+  
   return response
 }
 

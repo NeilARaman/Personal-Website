@@ -27,13 +27,13 @@ export default function Navbar() {
 
   return (
     <Header>
-      <Link href="/" passHref>
-        <ButtonLogo as="a">N</ButtonLogo>
+      <Link href="/">
+        <ButtonLogo>N</ButtonLogo>
       </Link>
 
-      <Nav>
+      <Nav role="navigation" aria-label="Main navigation">
         <LayoutGroup>
-          <List>
+          <List role="list">
             {pages.map(page => {
               const path = `/${page.toLowerCase()}`
               const isHovered = hovered === page
@@ -41,9 +41,9 @@ export default function Navbar() {
 
               return (
                 <ListItem key={page}>
-                  <Link href={path} passHref>
+                  <Link href={path}>
                     <NavLink
-                      as={motion.a}
+                      as={motion.div}
                       onHoverStart={() => setHovered(page)}
                       onHoverEnd={() => setHovered('')}
                       whileHover={{ y: -2 }}

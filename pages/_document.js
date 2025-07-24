@@ -1,7 +1,6 @@
 // import React from 'react' // Not needed with Next.js
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { getCssText } from '../stitches.config'
-import { GA_TRACKING_ID } from '../lib/gtag'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -69,12 +68,16 @@ class MyDocument extends Document {
           <meta httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
           
           {/* DNS Prefetch for external domains */}
-          <link rel="dns-prefetch" href="//www.googletagmanager.com" />
           <link rel="dns-prefetch" href="//fonts.googleapis.com" />
           <link rel="dns-prefetch" href="//fonts.gstatic.com" />
           
           {/* Preconnect to critical domains */}
-          <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+          
+          {/* Module preload for critical chunks */}
+          <link rel="modulepreload" href="/_next/static/chunks/main.js" />
+          <link rel="modulepreload" href="/_next/static/chunks/webpack.js" />
           
           {/* Preload critical fonts - Fixed paths */}
           <link
@@ -109,29 +112,7 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" sizes="32x32" />
           <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-          {/* Google Analytics with optimized loading */}
-          {GA_TRACKING_ID && (
-            <>
-              <script
-                async
-                src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-              />
-              <script
-                dangerouslySetInnerHTML={{
-                  __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GA_TRACKING_ID}', {
-                  page_title: document.title,
-                  page_location: window.location.href,
-                  send_page_view: false
-                });
-              `,
-                }}
-              />
-            </>
-          )}
+
         </Head>
         <body>
           <Main />
