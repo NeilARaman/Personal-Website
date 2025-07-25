@@ -20,8 +20,8 @@ export async function getStaticProps() {
   const meta = {
     title: 'Investing // Neil Raman',
     description:
-      "<strong>Angel investing</strong> is how I help other startups to create amazing developer experiences. I'm excited to enable teams to grow and <strong>build world-class products</strong>.",
-    tagline: 'DevTools. B2B. SaaS.',
+      "On the side, <strong>angel investing</strong> is how I engage in startups outside of Foundry and do my best to support generational companies.",
+    tagline: 'Money. Money. Money.',
     image: '/static/images/projects-bw.jpg',
     primaryColor: 'purple',
     secondaryColor: 'cyan',
@@ -55,45 +55,29 @@ function Investing(props) {
 
       <p dangerouslySetInnerHTML={{ __html: sanitizeHTML(description) }} />
 
-      <h2>What I invest in</h2>
+      <h2>What I Invest In</h2>
       <p>
-        I write small checks in <strong>developer-first startups</strong>. I
-        prefer folks who are in early stages (think pre-seed or seed) and
-        products that increase productivity, avoid task repetition, or unlock
-        revenue potential.
+        Broadly I&apos;m a <strong>generalist</strong>, and I write <strong>small checks (around 5-10k)</strong> in
+        startups that solve deep problems. I usually look at startups <strong>who are early (think pre-seed or seed)</strong>, and want
+        to get to know the founders very well before I usually sign anything. I try to define a deep problem as something
+        that fundamentally does something different from the market, is something I personally believe in, and see as
+        something that
+        their customers can&apos;t stop using.
       </p>
 
-      <h2>What you get from me</h2>
-      <p>I love helping with...</p>
-      <ul>
-        <li>
-          <strong>Product</strong> - being &ldquo;user zero&rdquo; for new features,
-          providing feedback, and figuring out priorities.
-        </li>
-        <li>
-          <strong>Branding</strong> - building a company brand that developers
-          love, admire, and get inspired by.
-        </li>
-        <li>
-          <strong>Recruiting</strong> - leveraging my personal network to
-          attract talented engineers and designers.
-        </li>
-        <li>
-          <strong>Enterprise</strong> - sharing my experience moving upmarket
-          (what works and what doesn&apos;t).
-        </li>
-        <li>
-          <strong>Open Source</strong> - defining a strategy that will help with
-          monetization and hiring.
-        </li>
-      </ul>
+      <h2>What You Get from Me</h2>
+      <p>
+        While I&apos;m definitely very early-on in investing, I&apos;m never going to say
+        phrases like &quot;how can I help&quot; or &quot;what can I do for you&quot;. I want to
+        be <strong>deeply involved</strong> and help you grow in whatever way I can.
+      </p>
 
-      <h2>Who took my money</h2>
+      <h2>Who Took My Money</h2>
       <p>I&apos;ve been grateful to work with these companies as an investor.</p>
       <FeaturedProjects>{renderAll()}</FeaturedProjects>
 
-      <h2>Let&apos;s chat</h2>
-      <p>Hit me up if what you read here resonates with you.</p>
+      <h2>Let&apos;s Chat</h2>
+      <p>Contact me if what you read here resonates with you.</p>
     </>
   )
 }
