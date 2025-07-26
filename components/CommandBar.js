@@ -26,9 +26,9 @@ import homeIcon from '../public/static/icons/home.json'
 import articlesIcon from '../public/static/icons/articles.json'
 import projectsIcon from '../public/static/icons/projects.json'
 import investingIcon from '../public/static/icons/investing.json'
+import usesIcon from '../public/static/icons/uses.json'
 // import talksIcon from '../public/static/icons/talks.json'
 // import podcastsIcon from '../public/static/icons/podcasts.json'
-// import usesIcon from '../public/static/icons/uses.json'
 // import reminderIcon from '../public/static/icons/reminder.json'
 
 const CommandBarClient = (props) => {
@@ -40,6 +40,7 @@ const CommandBarClient = (props) => {
   const articlesRef = useRef()
   const projectsRef = useRef()
   const investingRef = useRef()
+  const toolsRef = useRef()
   // const talksRef = useRef()
   // const podcastsRef = useRef()
   // const usesRef = useRef()
@@ -158,6 +159,15 @@ const CommandBarClient = (props) => {
       section: 'Go To',
       perform: () => router.push('/investing'),
       icon: <LottieIcon lottieRef={investingRef} style={iconSize} animationData={investingIcon} loop={false} autoplay={false} />,
+    },
+    {
+      id: 'tools',
+      name: 'Tools',
+      shortcut: ['g', 't'],
+      keywords: 'go-tools',
+      section: 'Go To',
+      perform: () => router.push('/tools'),
+      icon: <LottieIcon lottieRef={toolsRef} style={iconSize} animationData={usesIcon} loop={false} autoplay={false} />,
     },
     // {
     //   id: 'talks',
