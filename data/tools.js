@@ -673,6 +673,11 @@ const tools = [
     title: 'Personal Websites',
     stack: [
       {
+        name: 'Deedy Das',
+        description: 'Principal at Menlo Ventures.',
+        url: 'https://debarghyadas.com/',
+      },
+      {
         name: 'Patrick Collison',
         description: 'Co-founder of Stripe.',
         url: 'https://patrickcollison.com/',
