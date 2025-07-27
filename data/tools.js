@@ -43,7 +43,7 @@ const tools = [
         url: 'https://pear.vc/pearx/',
       },
       {
-        name: 'Telora',
+        name: 'Telora*',
         description: 'Helping hackers start startups. Run by Eliam Medina.',
         url: 'https://telora.com/',
       },
@@ -123,7 +123,7 @@ const tools = [
     title: 'Authentication',
     stack: [
       {
-        name: 'Clerk',
+        name: 'Clerk*',
         description: 'Modern authentication and user management platform for developers.',
         url: 'http://clerk.com',
       },
@@ -143,7 +143,7 @@ const tools = [
     title: 'Aviation',
     stack: [
       {
-        name: 'Rove Miles',
+        name: 'Rove Miles*',
         description: 'Travel the World for Free through innovative aviation rewards.',
         url: 'https://www.rovemiles.com/',
       },
@@ -178,7 +178,7 @@ const tools = [
         url: 'https://posthaven.com/',
       },
       {
-        name: 'Medium',
+        name: 'Medium*',
         description: 'Online publishing platform for sharing ideas and stories.',
         url: 'https://medium.com/',
       },
@@ -191,6 +191,26 @@ const tools = [
         name: 'GDL Book',
         description: 'Geometric Deep Learning comprehensive book resource.',
         url: 'https://geometricdeeplearning.com/book/',
+      },
+    ],
+  },
+  {
+    title: 'Building Resources',
+    stack: [
+      {
+        name: 'Build in College*',
+        description: 'List of free tools, software credits, and fellowships for college builders.',
+        url: 'https://www.buildincollege.com/',
+      },
+      {
+        name: 'Hardware Building Resources',
+        description: 'Put together by the team at V1. Sometimes specific to UMich, but very useful nontheless.',
+        url: 'https://v1team.notion.site/Hardware-Building-Resources-20f82307c07d81fcadcadfd882479f4c',
+      },
+      {
+        name: 'Software Building Resources*',
+        description: 'Also put together by the team at V1.',
+        url: 'https://v1team.notion.site/Software-Building-Resources-dcdf772230ad4f3195d2399f74964969',
       },
     ],
   },
@@ -243,7 +263,7 @@ const tools = [
         url: 'https://www.cubic.dev/home',
       },
       {
-        name: 'Cursor',
+        name: 'Cursor*',
         description: 'AI-powered code editor that enhances development productivity.',
         url: 'http://cursor.com',
       },
@@ -353,12 +373,12 @@ const tools = [
         url: 'https://www.animaapp.com/',
       },
       {
-        name: 'BlockNote',
+        name: 'BlockNote*',
         description: 'Javascript Block-Based React rich text editor for modern applications.',
         url: 'https://www.blocknotejs.org/',
       },
       {
-        name: 'Composio',
+        name: 'Composio*',
         description: 'Access 250+ apps and services in just one line of code.',
         url: 'https://composio.dev/',
       },
@@ -368,12 +388,12 @@ const tools = [
         url: 'https://www.convex.dev/',
       },
       {
-        name: 'CrewAI',
+        name: 'CrewAI*',
         description: 'The leading multi-agent platform for AI development.',
         url: 'https://www.crewai.com/',
       },
       {
-        name: 'Linear',
+        name: 'Linear*',
         description: 'Project management tool for software development teams.',
         url: 'https://linear.app/',
       },
@@ -383,7 +403,7 @@ const tools = [
         url: 'https://www.magicpatterns.com/',
       },
       {
-        name: 'React Bits',
+        name: 'React Bits*',
         description: 'Collection of React patterns, techniques, and best practices.',
         url: 'https://reactbits.dev/',
       },
@@ -393,7 +413,7 @@ const tools = [
         url: 'https://render.com/',
       },
       {
-        name: 'Resend',
+        name: 'Resend*',
         description: 'Email API designed specifically for developers with excellent DX.',
         url: 'https://resend.com/home',
       },
@@ -418,7 +438,7 @@ const tools = [
         url: 'https://www.gitbook.com/',
       },
       {
-        name: 'Mintlify',
+        name: 'Mintlify*',
         description: 'Beautiful, easy-to-maintain documentation for developers and teams.',
         url: 'https://www.mintlify.com/',
       },
@@ -433,7 +453,7 @@ const tools = [
         url: 'https://agree.com/',
       },
       {
-        name: 'Landing AI',
+        name: 'Landing AI*',
         description: 'AI-powered document processing and automation.',
         url: 'https://landing.ai/',
       },
@@ -443,7 +463,7 @@ const tools = [
     title: 'Domain Names',
     stack: [
       {
-        name: 'Porkbun',
+        name: 'Porkbun*',
         description: 'An oddly satisfying domain registration experience.',
         url: 'https://porkbun.com/',
       },
@@ -458,12 +478,12 @@ const tools = [
         url: 'https://conversion.ai/',
       },
       {
-        name: 'Resend',
+        name: 'Resend*',
         description: 'Email API designed specifically for developers.',
         url: 'http://resend.com',
       },
       {
-        name: 'Superhuman',
+        name: 'Superhuman*',
         description: 'The most productive email app ever made for power users.',
         url: 'http://superhuman.com',
       },
@@ -478,7 +498,7 @@ const tools = [
     title: 'Event Planning',
     stack: [
       {
-        name: 'Luma',
+        name: 'Luma*',
         description: 'Delightful events platform for creating and managing gatherings.',
         url: 'http://lu.ma',
       },
@@ -528,7 +548,7 @@ const tools = [
     title: 'Guides',
     stack: [
       {
-        name: 'Starter to SF',
+        name: 'Starter to SF*',
         description: 'Comprehensive SF guide by Michelle Fang.',
         url: 'https://www.startertosf.guide/',
       },
@@ -563,7 +583,7 @@ const tools = [
         url: 'https://www.revisiondojo.com/',
       },
       {
-        name: 'YouLearn AI',
+        name: 'YouLearn AI*',
         description: 'AI-powered personalized learning experiences.',
         url: 'http://youlearn.ai',
       },
@@ -588,7 +608,7 @@ const tools = [
     title: 'Memory',
     stack: [
       {
-        name: 'Mem0',
+        name: 'Mem0*',
         description: 'The Memory layer for your AI apps and applications.',
         url: 'https://mem0.ai/',
       },
@@ -598,23 +618,23 @@ const tools = [
     title: 'Models',
     stack: [
       {
-        name: 'ChatGPT',
-        description: 'OpenAI\'s advanced AI model for various tasks.',
+        name: 'ChatGPT*',
+        description: 'OpenAI\'s advanced AI model.',
         url: 'https://chatgpt.com/',
       },
       {
-        name: 'Claude',
-        description: 'Anthropic\'s advanced AI model for various tasks.',
+        name: 'Claude*',
+        description: 'Anthropic\'s advanced AI model.',
         url: 'https://www.anthropic.com/',
       },
       {
         name: 'Gemini',
-        description: 'Google\'s advanced AI model for various tasks.',
+        description: 'Google\'s advanced AI model.',
         url: 'https://gemini.google.com/',
       },
       {
         name: 'Grok',
-        description: 'X.ai\'s advanced AI model for various tasks.',
+        description: 'X.ai\'s advanced AI model.',
         url: 'https://grok.com/',
       },
       {
@@ -643,7 +663,7 @@ const tools = [
         url: 'https://www.keywordsai.co/',
       },
       {
-        name: 'PostHog',
+        name: 'PostHog*',
         description: 'All-in-one platform for building successful products with analytics.',
         url: 'http://posthog.com',
       },
@@ -654,17 +674,17 @@ const tools = [
     stack: [
       {
         name: 'Patrick Collison',
-        description: 'Co-founder of Stripe',
+        description: 'Co-founder of Stripe.',
         url: 'https://patrickcollison.com/',
       },
       {
         name: 'Qasar Younis',
-        description: 'Co-founder of Applied Intuition',
+        description: 'Co-founder of Applied Intuition.',
         url: 'https://qy.co/about/',
       },
       {
         name: 'Todd Goldberg',
-        description: 'Early-stage VC, co-founder of Curated',
+        description: 'Early-stage VC, co-founder of Curated.',
         url: 'https://toddgoldberg.com/index.html',
       },
     ],
@@ -730,51 +750,6 @@ const tools = [
     ],
   },
   {
-    title: 'Quantitative Finance',
-    stack: [
-      {
-        name: 'Citadel',
-        description: 'Identifying the Highest and Best Uses of Capital.',
-        url: 'http://citadel.com',
-      },
-      {
-        name: 'DRW',
-        description: 'Leading quantitative trading and technology firm.',
-        url: 'http://drw.com',
-      },
-      {
-        name: 'Hudson River Trading',
-        description: 'Quantitative trading and market making firm.',
-        url: 'http://hudsonrivertrading.com',
-      },
-      {
-        name: 'IMC Trading',
-        description: 'Global market maker and trading technology firm.',
-        url: 'http://imc.com',
-      },
-      {
-        name: 'Jane Street',
-        description: 'Quantitative trading firm and market maker.',
-        url: 'http://janestreet.com',
-      },
-      {
-        name: 'Jump Trading',
-        description: 'High-frequency trading and technology firm.',
-        url: 'http://jumptrading.com',
-      },
-      {
-        name: 'Optiver',
-        description: 'Leading global market maker and trading firm.',
-        url: 'http://optiver.com',
-      },
-      {
-        name: 'WorldQuant',
-        description: 'Quantitative investment management firm.',
-        url: 'https://www.worldquant.com/',
-      },
-    ],
-  },
-  {
     title: 'Quantum Computing',
     stack: [
       {
@@ -813,7 +788,7 @@ const tools = [
     title: 'Sales/GTM',
     stack: [
       {
-        name: 'Apollo',
+        name: 'Apollo*',
         description: 'Sales Intelligence and Engagement Platform.',
         url: 'https://www.apollo.io/',
       },
@@ -913,7 +888,7 @@ const tools = [
         url: 'https://vapi.ai/',
       },
       {
-        name: 'Wispr Flow',
+        name: 'Wispr Flow*',
         description: 'Effortless Voice Dictation with AI.',
         url: 'https://wisprflow.ai/',
       },
@@ -923,7 +898,7 @@ const tools = [
     title: 'Web Browsers/Use',
     stack: [
       {
-        name: 'Browserbase',
+        name: 'Browserbase*',
         description: 'A web browser designed for AI agents & applications.',
         url: 'https://www.browserbase.com/',
       },
@@ -957,6 +932,11 @@ const tools = [
   {
     title: 'Writing',
     stack: [
+      {
+        name: 'Grammarly*',
+        description: 'AI-powered grammar and writing assistant.',
+        url: 'https://www.grammarly.com/',
+      },
       {
         name: 'Harper',
         description: 'Free, Open Source Grammar Checker for better writing.',

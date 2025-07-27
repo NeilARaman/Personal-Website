@@ -180,7 +180,7 @@ function Contact(props) {
 
       <Box>
         <p dangerouslySetInnerHTML={{ __html: sanitizeHTML(description) }} />
-        <h2>Send me an email</h2>
+        <h2>Send Me an Email</h2>
         <Form onSubmit={onSendEmail}>
           {/* Honeypot field - invisible to humans, catches bots */}
           <input 
