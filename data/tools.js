@@ -510,6 +510,16 @@ const tools = [
     ],
   },
   {
+    title: 'Finance',
+    stack: [
+      {
+        name: 'Monarch Money',
+        description: 'Personal finance management tool.',
+        url: 'https://monarchmoney.com/',
+      },
+    ],
+  },
+  {
     title: 'Generative Engine Optimization',
     stack: [
       {
