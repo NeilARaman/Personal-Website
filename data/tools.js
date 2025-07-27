@@ -513,7 +513,7 @@ const tools = [
     title: 'Finance',
     stack: [
       {
-        name: 'Monarch Money',
+        name: 'Monarch Money*',
         description: 'Personal finance management tool.',
         url: 'https://monarchmoney.com/',
       },
