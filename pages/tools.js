@@ -8,7 +8,7 @@ export async function getStaticProps() {
   const meta = {
     title: 'Tools // Neil Raman',
     description:
-      "Interesting <strong>tools and resources</strong> I've discovered across AI, development, finance, and more. This is a <strong>living document</strong> of platforms that caught my attention, <strong>ones with a * after them</strong> are something that I use or I've been a part of.",
+      "Interesting <strong>tools and resources</strong> I've discovered across AI, development, finance, and more. This is a <strong>living document</strong> of software/platforms that caught my attention, <strong>ones with a * after them</strong> are something that I use or I've been a part of.",
     tagline: 'Resources. Tools. Discoveries.',
     image: '/static/images/uses-bw.jpg',
     primaryColor: 'cyan',
