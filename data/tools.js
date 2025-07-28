@@ -683,9 +683,19 @@ const tools = [
     title: 'Personal Websites',
     stack: [
       {
+        name: 'Carter Steffes',
+        description: 'Co-founder of New Era Ventures.',
+        url: 'https://www.cartersteffes.com/',
+      },
+      {
         name: 'Deedy Das',
         description: 'Principal at Menlo Ventures.',
         url: 'https://debarghyadas.com/',
+      },
+      {
+        name: 'Elizabeth Yin',
+        description: 'Co-founder of Hustle Fund.',
+        url: 'https://www.elizabethyin.com/',
       },
       {
         name: 'Patrick Collison',
