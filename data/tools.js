@@ -48,6 +48,11 @@ const tools = [
         url: 'https://telora.com/',
       },
       {
+        name: 'Vercel AI Accelerator',
+        description: 'Vercel\'s accelerator for AI startups.',
+        url: 'https://vercel.com/ai-accelerator',
+      },
+      {
         name: 'Y Combinator',
         description: 'Enough said.',
         url: 'https://www.ycombinator.com/',
