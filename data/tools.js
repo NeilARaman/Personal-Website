@@ -583,7 +583,7 @@ const tools = [
     title: 'Learning',
     stack: [
       {
-        name: 'fast.ai',
+        name: 'Fast.ai',
         description: 'Making neural nets uncool again - practical deep learning education.',
         url: 'https://www.fast.ai/',
       },
@@ -815,7 +815,7 @@ const tools = [
     ],
   },
   {
-    title: 'Sales/GTM',
+    title: 'Sales/GTM/User Research',
     stack: [
       {
         name: 'Apollo*',
@@ -823,9 +823,14 @@ const tools = [
         url: 'https://www.apollo.io/',
       },
       {
-        name: 'clado',
+        name: 'Artificial Societies',
+        description: 'Simulate your product or idea in realistic AI-powered artificial societies.',
+        url: 'https://societies.io/',
+      },
+      {
+        name: 'Clado',
         description: 'AI-powered sales and go-to-market solutions.',
-        url: 'http://clado.ai',
+        url: 'https://clado.ai',
       },
       {
         name: 'Clay',
@@ -908,7 +913,7 @@ const tools = [
         url: 'https://usebrainbase.com/',
       },
       {
-        name: 'superwhisper',
+        name: 'Superwhisper',
         description: 'Advanced voice recognition and transcription.',
         url: 'https://superwhisper.com/',
       },
