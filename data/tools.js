@@ -888,6 +888,11 @@ const tools = [
         url: 'https://genesis-ai.company/',
       },
       {
+        name: 'Pittsburgh Robotics Network',
+        description: 'Pittsburgh\'s ecosystem supporting 125+ robotics companies.',
+        url: 'https://robopgh.org/',
+      },
+      {
         name: 'Skild AI',
         description: 'Scalable robotics foundation models.',
         url: 'https://www.skild.ai/',
