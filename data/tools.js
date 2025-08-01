@@ -558,6 +558,11 @@ const tools = [
     title: 'Finance/Fintech',
     stack: [
       {
+        name: 'Model ML',
+        description: 'Enterprise AI workspace for financial modeling, due diligence, and deal execution.',
+        url: 'https://www.modelml.com/',
+      },
+      {
         name: 'Monarch Money*',
         description: 'Personal finance management tool.',
         url: 'https://monarchmoney.com/',
