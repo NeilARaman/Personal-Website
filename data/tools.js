@@ -197,6 +197,11 @@ const tools = [
         description: 'Geometric Deep Learning comprehensive book resource.',
         url: 'https://geometricdeeplearning.com/book/',
       },
+      {
+        name: 'Machine Learning Q and AI',
+        description: '30 essential questions and answers on ML and AI concepts by Sebastian Raschka.',
+        url: 'https://sebastianraschka.com/books/#machine-learning-q-and-ai',
+      },
     ],
   },
   {
@@ -550,18 +555,28 @@ const tools = [
     ],
   },
   {
-    title: 'Finance',
+    title: 'Finance/Fintech',
     stack: [
       {
         name: 'Monarch Money*',
         description: 'Personal finance management tool.',
         url: 'https://monarchmoney.com/',
       },
+      {
+        name: 'Oscilar',
+        description: 'AI-powered risk platform handling fraud, credit, onboarding, and compliance.',
+        url: 'https://oscilar.com/',
+      },
     ],
   },
   {
     title: 'Generative Engine Optimization',
     stack: [
+      {
+        name: 'Daydream',
+        description: 'AI-driven SEO and GEO agency.',
+        url: 'https://www.withdaydream.com/',
+      },
       {
         name: 'Profound',
         description: 'AI Answer Engine Optimization for improved search visibility.',
@@ -738,6 +753,11 @@ const tools = [
         url: 'https://www.elizabethyin.com/',
       },
       {
+        name: 'Michael Seibel',
+        description: 'Partner Emeritus of Y Combinator.',
+        url: 'https://www.michaelseibel.com/',
+      },
+      {
         name: 'Patrick Collison',
         description: 'Co-founder of Stripe.',
         url: 'https://patrickcollison.com/',
@@ -751,6 +771,11 @@ const tools = [
         name: 'Todd Goldberg',
         description: 'Early-stage VC, co-founder of Curated.',
         url: 'https://toddgoldberg.com/index.html',
+      },
+      {
+        name: 'Zhou Xian',
+        description: 'Co-founder of Genesis.',
+        url: 'https://www.zhou-xian.com/',
       },
     ],
   },
@@ -853,6 +878,11 @@ const tools = [
     title: 'Robotics',
     stack: [
       {
+        name: 'Genesis AI',
+        description: 'Physical AI lab building generalist robots with universal foundation models and open-source simulation.',
+        url: 'https://genesis-ai.company/',
+      },
+      {
         name: 'Skild AI',
         description: 'Scalable robotics foundation models.',
         url: 'https://www.skild.ai/',
@@ -881,11 +911,6 @@ const tools = [
         name: 'Clay',
         description: 'AI-powered sales engagement and prospecting platform.',
         url: 'https://clay.com/',
-      },
-      {
-        name: 'Exa',
-        description: 'Advanced search and intelligence platform.',
-        url: 'https://exa.ai/',
       },
     ],
   },
@@ -981,6 +1006,11 @@ const tools = [
         name: 'Browserbase*',
         description: 'A web browser designed for AI agents & applications.',
         url: 'https://www.browserbase.com/',
+      },
+      {
+        name: 'Exa',
+        description: 'Advanced web search and intelligence platform for LLMs.',
+        url: 'https://exa.ai/',
       },
       {
         name: 'Hyperbrowser',
