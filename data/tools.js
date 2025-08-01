@@ -958,6 +958,11 @@ const tools = [
         url: 'https://www.descript.com/',
       },
       {
+        name: 'Memories.ai',
+        description: 'Large Visual Memory Model for AI-powered video search and editing.',
+        url: 'https://memories.ai/',
+      },
+      {
         name: 'Mosaic',
         description: 'AI Agents for Video Editing and content production.',
         url: 'https://usemosaic.ai/',
