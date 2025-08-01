@@ -342,6 +342,11 @@ const tools = [
         description: 'AI-powered support and documentation for your users and support team.',
         url: 'https://inkeep.com/',
       },
+      {
+        name: 'Siena',
+        description: 'AI-powered customer support and documentation for your users and support team.',
+        url: 'https://www.siena.cx/',
+      },
     ],
   },
   {
@@ -408,6 +413,11 @@ const tools = [
         url: 'https://www.magicpatterns.com/',
       },
       {
+        name: 'Orama',
+        description: 'AI-powered data search and chat engine',
+        url: 'https://orama.com/',
+      },
+      {
         name: 'React Bits*',
         description: 'Collection of React patterns, techniques, and best practices.',
         url: 'https://reactbits.dev/',
@@ -431,6 +441,31 @@ const tools = [
         name: 'Superflex',
         description: 'Turn Figma to Code in Seconds with AI-powered conversion.',
         url: 'https://www.superflex.ai/',
+      },
+    ],
+  },
+  {
+    title: 'Databases',
+    stack: [
+      {
+        name: 'Firebase',
+        description: 'Google\'s backend-as-a-service platform.',
+        url: 'https://firebase.google.com/',
+      },
+      {
+        name: 'Prisma',
+        description: 'Fast Postgres-based ORM for Node.js and TypeScript.',
+        url: 'https://www.prisma.io/',
+      },
+      {
+        name: 'Redis',
+        description: 'In-memory data structure store, used as a database, cache, and message broker.',
+        url: 'https://redis.io/',
+      },
+      {
+        name: 'Supabase*',
+        description: 'Open-source Firebase alternative.',
+        url: 'https://supabase.com/',
       },
     ],
   },
@@ -726,6 +761,16 @@ const tools = [
         name: 'Renaissance Philanthropy',
         description: 'Modern approach to philanthropic giving and impact.',
         url: 'https://renaissancephilanthropy.org/',
+      },
+    ],
+  },
+  {
+    title: 'Presentations',
+    stack: [
+      {
+        name: 'Gamma*',
+        description: 'AI-powered presentation builder.',
+        url: 'https://gamma.app/',
       },
     ],
   },
