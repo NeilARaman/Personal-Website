@@ -408,14 +408,29 @@ const tools = [
         url: 'https://www.crewai.com/',
       },
       {
+        name: 'Feather',
+        description: 'Simple open source SVG icon library.',
+        url: 'https://feathericons.com/',
+      },
+      {
         name: 'Linear*',
         description: 'Project management tool for software development teams.',
         url: 'https://linear.app/',
       },
       {
+        name: 'Liveblocks',
+        description: 'Collaboration engine with AI copilots, comments, and multiplayer editing APIs.',
+        url: 'https://liveblocks.io/',
+      },
+      {
         name: 'Magic Patterns',
         description: 'AI-powered design pattern generation and development tools.',
         url: 'https://www.magicpatterns.com/',
+      },
+      {
+        name: 'Morphik',
+        description: 'RAG platform for building AI agents with visual-first retrieval and knowledge graphs.',
+        url: 'https://morphik.ai/',
       },
       {
         name: 'Orama',
