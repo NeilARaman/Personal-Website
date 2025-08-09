@@ -268,7 +268,7 @@ const tools = [
         url: 'https://cognition-labs.com/',
       },
       {
-        name: 'cubic',
+        name: 'Cubic',
         description: 'Cursor for code review - streamlined code review process.',
         url: 'https://www.cubic.dev/home',
       },
@@ -663,9 +663,9 @@ const tools = [
         url: 'https://miyagilabs.ai/',
       },
       {
-        name: 'RevisionDojo',
-        description: 'Comprehensive learning and revision platform.',
-        url: 'https://www.revisiondojo.com/',
+        name: 'Opennote*',
+        description: 'AI-powered note-taking platform for personalized learning.',
+        url: 'https://www.opennote.com/',
       },
       {
         name: 'YouLearn AI*',
@@ -758,19 +758,9 @@ const tools = [
     title: 'Personal Websites',
     stack: [
       {
-        name: 'Carter Steffes',
-        description: 'Co-founder of New Era Ventures.',
-        url: 'https://www.cartersteffes.com/',
-      },
-      {
         name: 'Deedy Das',
         description: 'Principal at Menlo Ventures.',
         url: 'https://debarghyadas.com/',
-      },
-      {
-        name: 'Elizabeth Yin',
-        description: 'Co-founder of Hustle Fund.',
-        url: 'https://www.elizabethyin.com/',
       },
       {
         name: 'Michael Seibel',
@@ -846,16 +836,6 @@ const tools = [
         name: 'MATS Program',
         description: 'Machine learning alignment research program.',
         url: 'https://www.matsprogram.org/',
-      },
-    ],
-  },
-  {
-    title: 'Prompts',
-    stack: [
-      {
-        name: 'Awesome Claude Prompts',
-        description: 'Curated collection of Claude prompts for better AI interactions.',
-        url: 'https://github.com/langgptai/awesome-claude-prompts?tab=readme-ov-file#build-resumes-using-ai',
       },
     ],
   },
