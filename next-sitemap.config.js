@@ -5,13 +5,30 @@ module.exports = {
   sitemapSize: 7000,
   changefreq: 'daily',
   priority: 0.7,
-  exclude: ['/api/*', '/404', '/500'],
+  exclude: [
+    '/api/*',
+    '/404',
+    '/500',
+    '/uses',
+    '/podcasts',
+    '/reminder',
+    '/talks',
+    '/working-remotely',
+  ],
   robotsTxtOptions: {
     policies: [
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/_next/'],
+        disallow: [
+          '/api/',
+          '/_next/',
+          '/uses',
+          '/podcasts',
+          '/reminder',
+          '/talks',
+          '/working-remotely',
+        ],
       },
     ],
     additionalSitemaps: [

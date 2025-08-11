@@ -23,7 +23,7 @@ const LayoutGroup = dynamic(() =>
 
 export async function getStaticProps() {
   const meta = {
-    title: 'Podcasts // Zeno Rocha',
+    title: 'Podcasts // Neil Raman',
     tagline: 'Ideas. Thoughts. Opinions.',
     image: '/static/images/podcasts-bw.jpg',
     primaryColor: 'pink',

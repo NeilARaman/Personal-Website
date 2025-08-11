@@ -1,8 +1,6 @@
 import { NextResponse } from 'next/server'
 
-export function middleware(_request) {
-  const response = NextResponse.next()
-  
+export function middleware(request) {
   // Minimal CSP to support lottie-web animations
   const csp = `
     default-src 'self';
@@ -12,9 +10,19 @@ export function middleware(_request) {
     img-src 'self' data: https: blob:;
     connect-src 'self';
   `.replace(/\s{2,}/g, ' ').trim()
-  
+
+  // Blocklisted routes (exist but not publicly accessible)
+  const { pathname } = new URL(request.url)
+  const blocked = /^(?:\/uses\/?$|\/podcasts\/?$|\/reminder\/?$|\/talks\/?$|\/working-remotely\/?$)/i
+
+  if (blocked.test(pathname)) {
+    const notFound = NextResponse.rewrite(new URL('/404', request.url))
+    notFound.headers.set('Content-Security-Policy', csp)
+    return notFound
+  }
+
+  const response = NextResponse.next()
   response.headers.set('Content-Security-Policy', csp)
-  
   return response
 }
 
