@@ -16,7 +16,7 @@ const items = [
   {
     jobTitle: 'Activator Tech Sourcing Lead',
     company: 'Nucleate Pittsburgh',
-    companyUrl: 'https://www.nucleate.xyz/chapters/pittsburgh',
+    companyUrl: 'https://nucleate.org/',
     startDate: '2025-01-01',
     location: 'On-site, Pittsburgh, PA',
   },
