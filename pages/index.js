@@ -11,7 +11,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Neil Raman',
-      description: 'Director of Foundry @ ScottyLabs, Scouting @ GoAhead, Building',
+      description: 'Director of Foundry @ ScottyLabs, Scouting @ Mangusta, Building',
       image: '/static/images/home-bw.jpg',
     },
   }

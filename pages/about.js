@@ -36,8 +36,11 @@ const DynamicCopyBio = dynamic(() => Promise.resolve(CopyBioClient), { ssr: fals
 export async function getStaticProps() {
   const meta = {
     title: 'About // Neil Raman',
-    description:
-      "Neil Raman is a sophomore at Carnegie Mellon studying Information Systems and Economics. He has interests in computational biology/chemistry, applied AI/ML in healthcare, and likes to research foundational models in robotics, driverless cars, and space exploration. He is currently building the best entrepreneurship environment at CMU through Foundry and scouting for impactful startups via GoAhead Ventures.",
+    description: [
+      "Neil Raman is a sophomore at Carnegie Mellon studying Information Systems and Economics.",
+      "He has interests in computational biology/chemistry, applied AI/ML in healthcare, and likes to research foundational models in robotics, driverless cars, and space exploration.",
+      "He is currently building the best entrepreneurship environment at CMU through Foundry and scouting for impactful startups via Mangusta Capital."
+    ].join(' '),
     tagline: 'Build. Learn. Innovate.',
     image: '/static/images/about-bw.jpg',
     primaryColor: 'pink',
@@ -97,7 +100,7 @@ function About(props) {
           </Paragraph>
           <Paragraph>
             Currently, I&apos;m building the best entrepreneurship environment at CMU @ Foundry, 
-            scouting for technically interesting and impactful startups @ GoAhead, 
+            scouting for technically interesting and impactful startups @ Mangusta, 
             and building projects + writing in my free time.
           </Paragraph>
         </Section>
@@ -145,7 +148,12 @@ function About(props) {
   }
 
   const renderAll = () => {
-    return items.map((item, index) => {
+    // Reverse chronological (most recent first)
+    const sortedItems = [...items].sort((a, b) =>
+      new Date(b.startDate) - new Date(a.startDate)
+    )
+
+    return sortedItems.map((item, index) => {
       return (
         <div style={{ marginBottom: 40 }} key={index}>
           <h3>{item.jobTitle}</h3>
@@ -181,15 +189,20 @@ function About(props) {
       end: endDate ? parseISO(endDate) : new Date(),
     })
 
+    const years = Number.isFinite(durationObj.years) ? durationObj.years : 0
+    const monthsRaw = Number.isFinite(durationObj.months) ? durationObj.months : 0
+
     let durationStr = ''
 
-    if (durationObj.years > 1) {
-      durationStr = `${durationObj.years} yrs `
-    } else if (durationObj.years === 1) {
-      durationStr = `${durationObj.years} yr `
+    if (years > 1) {
+      durationStr = `${years} yrs `
+    } else if (years === 1) {
+      durationStr = `${years} yr `
     }
 
-    durationStr += `${durationObj.months} mos`
+    // Ensure minimum visible duration of 1 month for experiences under 1 month
+    const months = years === 0 && monthsRaw === 0 ? 1 : monthsRaw
+    durationStr += `${months} ${months === 1 ? 'mo' : 'mos'}`
 
     return durationStr
   }

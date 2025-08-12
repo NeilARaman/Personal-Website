@@ -1,5 +1,34 @@
 const items = [
   {
+    jobTitle: 'Venture Scout',
+    company: 'Mangusta Capital',
+    companyUrl: 'https://www.mangustacap.com/',
+    startDate: '2025-08-01',
+    location: 'Hybrid, United States',
+  },
+  {
+    jobTitle: 'Campus Ambassador',
+    company: 'Anysphere',
+    companyUrl: 'https://anysphere.inc',
+    startDate: '2025-08-01',
+    location: 'Hybrid, Pittsburgh, PA',
+  },
+  {
+    jobTitle: 'Activator Tech Sourcing Lead',
+    company: 'Nucleate Pittsburgh',
+    companyUrl: 'https://www.nucleate.xyz/chapters/pittsburgh',
+    startDate: '2025-01-01',
+    location: 'On-site, Pittsburgh, PA',
+  },
+  {
+    jobTitle: 'Venture Scout',
+    company: 'GoAhead Ventures',
+    companyUrl: 'https://www.goaheadvc.com',
+    startDate: '2025-04-01',
+    endDate: '2025-08-01',
+    location: 'Hybrid, United States',
+  },
+  {
     jobTitle: 'Product Engineer Intern',
     company: 'Lucent Health',
     companyUrl: 'https://lucenthealth.com',
@@ -35,6 +64,14 @@ const items = [
     startDate: '2024-04-01',
     endDate: '2024-08-01',
     location: 'Hybrid, Phoenix, AZ',
+  },
+  {
+    jobTitle: 'Healthcare Intern',
+    company: 'CareOne Medical Clinic',
+    companyUrl: 'https://careonemedicalclinic.com/',
+    startDate: '2023-10-01',
+    endDate: '2024-04-01',
+    location: 'In-Person',
   },
 ]
 
