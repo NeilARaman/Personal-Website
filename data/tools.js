@@ -473,6 +473,11 @@ const tools = [
         url: 'https://firebase.google.com/',
       },
       {
+        name: 'HelixDB',
+        description: 'Open-source graph-vector database built in Rust for RAG and AI applications.',
+        url: 'https://www.helix-db.com/',
+      },
+      {
         name: 'Prisma',
         description: 'Fast Postgres-based ORM for Node.js and TypeScript.',
         url: 'https://www.prisma.io/',
