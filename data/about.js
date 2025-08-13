@@ -7,7 +7,7 @@ const items = [
     location: 'Hybrid, United States',
   },
   {
-    jobTitle: 'Campus Ambassador',
+    jobTitle: 'Campus Lead',
     company: 'Anysphere',
     companyUrl: 'https://anysphere.inc',
     startDate: '2025-08-01',
