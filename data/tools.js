@@ -3,6 +3,11 @@ const tools = [
     title: 'Accelerators',
     stack: [
       {
+        name: 'Accel Atoms',
+        description: 'Pre-seed scaling program for Indian and Indian-origin founders building globally.',
+        url: 'https://atoms.accel.com/',
+      },
+      {
         name: 'AI Grant',
         description: 'Accelerator run by Nat Friedman and Daniel Gross.',
         url: 'https://aigrant.com/',
