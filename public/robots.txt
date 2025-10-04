@@ -1,0 +1,16 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /uses
+Disallow: /podcasts
+Disallow: /reminder
+Disallow: /talks
+Disallow: /working-remotely
+
+# Host
+Host: https://neilraman.com
+
+# Sitemaps
+Sitemap: https://neilraman.com/sitemap.xml
