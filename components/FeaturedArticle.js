@@ -60,6 +60,7 @@ const Article = styled('a', {
 const Container = styled('div', {
   display: 'flex',
   flexDirection: 'column',
+  overflow: 'hidden',
 })
 
 const ImageContainer = styled('div', {
@@ -69,8 +70,9 @@ const ImageContainer = styled('div', {
   marginBottom: '20px',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
-  backgroundPosition: 'center center',
+  backgroundPosition: 'center',
   filter: 'grayscale(1)',
+  overflow: 'hidden',
 })
 
 const Content = styled('div', {

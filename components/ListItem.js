@@ -34,7 +34,7 @@ export default function ListItem(props) {
   if (props.href.charAt(0) === '/') {
     return (
       <ArticleItem>
-        <Link href={props.href} passHref>
+        <Link href={props.href} passHref legacyBehavior>
           <AnchorWrapper>
             <Animation index={props.index}>
               <Title>{props.title}</Title>
@@ -70,8 +70,10 @@ const Item = styled('li', {
   '&:last-child': { border: 0 },
 })
 
-const AnchorWrapper = styled('div', {
+const AnchorWrapper = styled('a', {
   textDecoration: 'none',
+  color: 'inherit',
+  '&:hover': { textDecoration: 'none' },
 })
 
 const Anchor = styled('a', {
@@ -87,6 +89,7 @@ const Title = styled('span', {
   fontSize: '18px',
   lineHeight: '40px',
   textAlign: 'left',
+  textDecoration: 'none',
 })
 
 const Date = styled('span', {
