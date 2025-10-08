@@ -998,6 +998,11 @@ const tools = [
     title: 'Voice',
     stack: [
       {
+        name: 'AssemblyAI',
+        description: 'Speech-to-text API with industry-leading accuracy.',
+        url: 'https://www.assemblyai.com/',
+      },
+      {
         name: 'Brainbase',
         description: 'Build your own AI workforce with voice capabilities.',
         url: 'https://usebrainbase.com/',
