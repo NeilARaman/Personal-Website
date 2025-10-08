@@ -3,6 +3,11 @@ const tools = [
     title: 'Accelerators',
     stack: [
       {
+        name: 'a16z speedrun',
+        description: 'Andreessen Horowitz\'s 12-week accelerator investing up to $1M in early-stage startups.',
+        url: 'https://speedrun.a16z.com/',
+      },
+      {
         name: 'Accel Atoms',
         description: 'Pre-seed scaling program for Indian and Indian-origin founders building globally.',
         url: 'https://atoms.accel.com/',
@@ -283,6 +288,11 @@ const tools = [
         url: 'http://cursor.com',
       },
       {
+        name: 'Factory',
+        description: 'AI software development agents in a native IDE.',
+        url: 'https://factory.ai/',
+      },
+      {
         name: 'Graphite',
         description: 'End-to-end developer platform for modern software teams.',
         url: 'https://graphite.dev/homepage',
@@ -375,12 +385,22 @@ const tools = [
     ],
   },
   {
-    title: 'Design Studios',
+    title: 'Design',
     stack: [
+      {
+        name: 'Framer*',
+        description: 'AI-powered website design tool with built-in CMS, SEO, and analytics.',
+        url: 'https://www.framer.com/',
+      },
       {
         name: 'lowercase',
         description: 'Design and development done different - creative studio approach.',
         url: 'https://www.lowercase.club/',
+      },
+      {
+        name: 'Paper*',
+        description: 'Design canvas for creating art and digital experiences with fast, reliable tooling.',
+        url: 'https://paper.design/',
       },
     ],
   },
@@ -446,6 +466,11 @@ const tools = [
         name: 'React Bits*',
         description: 'Collection of React patterns, techniques, and best practices.',
         url: 'https://reactbits.dev/',
+      },
+      {
+        name: 'Rube*',
+        description: 'AI integration platform connecting 500+ apps to your chat and development environment.',
+        url: 'https://rube.composio.dev/',
       },
       {
         name: 'Render',
