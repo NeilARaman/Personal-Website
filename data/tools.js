@@ -18,6 +18,11 @@ const tools = [
         url: 'https://aigrant.com/',
       },
       {
+        name: 'Databricks AI Accelerator',
+        description: 'Invitation-only accelerator providing up to $250K funding for startups building on Databricks.',
+        url: 'https://www.databricks.com/databricks-ai-accelerator-program',
+      },
+      {
         name: 'fr8',
         description: 'Amalgamation of hacker hotel/startup incubator/research lab in Sweden.',
         url: 'https://fr8.so/',
@@ -58,6 +63,11 @@ const tools = [
         url: 'https://telora.com/',
       },
       {
+        name: 'The Cannon Project',
+        description: 'Builds founding teams from scratch and recruits GTM and engineering talent for startups.',
+        url: 'https://thecannonproject.com/',
+      },
+      {
         name: 'Vercel AI Accelerator',
         description: 'Vercel\'s accelerator for AI startups.',
         url: 'https://vercel.com/ai-accelerator',
@@ -66,6 +76,11 @@ const tools = [
         name: 'Y Combinator',
         description: 'Enough said.',
         url: 'https://www.ycombinator.com/',
+      },
+      {
+        name: 'Z Fellows',
+        description: 'Fellowship program for ambitious builders and entrepreneurs.',
+        url: 'https://zfellows.com/',
       },
     ],
   },
@@ -453,6 +468,11 @@ const tools = [
         url: 'https://www.magicpatterns.com/',
       },
       {
+        name: 'Mem0*',
+        description: 'The Memory layer for your AI apps and applications.',
+        url: 'https://mem0.ai/',
+      },
+      {
         name: 'Morphik',
         description: 'RAG platform for building AI agents with visual-first retrieval and knowledge graphs.',
         url: 'https://morphik.ai/',
@@ -725,12 +745,12 @@ const tools = [
     ],
   },
   {
-    title: 'Memory',
+    title: 'Media',
     stack: [
       {
-        name: 'Mem0*',
-        description: 'The Memory layer for your AI apps and applications.',
-        url: 'https://mem0.ai/',
+    name: 'Yesterday Media',
+        description: 'Recorded interviews and written biographies profiling founders and investors.',
+        url: 'https://yesterdayy.com/',
       },
     ],
   },
@@ -811,6 +831,11 @@ const tools = [
         name: 'Qasar Younis',
         description: 'Co-founder of Applied Intuition.',
         url: 'https://qy.co/about/',
+      },
+      {
+        name: 'Sonith Sunku',
+        description: 'Runs Z Fellows, founder of Yesterday Media.',
+        url: 'https://sonith.org/',
       },
       {
         name: 'Todd Goldberg',
