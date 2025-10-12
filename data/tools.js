@@ -818,6 +818,11 @@ const tools = [
         url: 'https://debarghyadas.com/',
       },
       {
+        name: 'Dwarkesh Patel',
+        description: 'Host of the Dwarkesh Podcast.',
+        url: 'https://www.dwarkesh.com/',
+      },
+      {
         name: 'Michael Seibel',
         description: 'Partner Emeritus of Y Combinator.',
         url: 'https://www.michaelseibel.com/',
