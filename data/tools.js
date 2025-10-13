@@ -848,6 +848,11 @@ const tools = [
         url: 'https://qy.co/about/',
       },
       {
+        name: 'Sireesh Ramesh',
+        description: 'Supporting founders at Thrive Capital.',
+        url: 'https://www.sireeshramesh.com/',
+      },
+      {
         name: 'Sonith Sunku',
         description: 'Runs Z Fellows, founder of Yesterday Media.',
         url: 'https://sonith.org/',
