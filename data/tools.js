@@ -227,6 +227,11 @@ const tools = [
         description: '30 essential questions and answers on ML and AI concepts by Sebastian Raschka.',
         url: 'https://sebastianraschka.com/books/#machine-learning-q-and-ai',
       },
+      {
+        name: 'Situational Awareness',
+        description: 'Essay series on AI progress and AGI timelines by Leopold Aschenbrenner.',
+        url: 'https://situational-awareness.ai/',
+      },
     ],
   },
   {
@@ -821,6 +826,11 @@ const tools = [
         name: 'Dwarkesh Patel',
         description: 'Host of the Dwarkesh Podcast.',
         url: 'https://www.dwarkesh.com/',
+      },
+      {
+        name: 'Emil Kowalski',
+        description: 'Design engineer at Linear, creator of Sonner and Vaul React components.',
+        url: 'https://emilkowal.ski/',
       },
       {
         name: 'Michael Seibel',
