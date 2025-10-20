@@ -590,6 +590,56 @@ const tools = [
     ],
   },
   {
+    title: 'E-commerce',
+    stack: [
+      {
+        name: 'Ario',
+        description: 'Turn Competitor Data into First Party Data.',
+        url: 'https://heyario.com/',
+      },
+      {
+        name: 'BigCommerce',
+        description: 'Open SaaS e-commerce platform for growing businesses.',
+        url: 'https://www.bigcommerce.com/',
+      },
+      {
+        name: 'Ecwid',
+        description: 'Free e-commerce platform for small businesses.',
+        url: 'https://www.ecwid.com/',
+      },
+      {
+        name: 'Fourthwall',
+        description: 'Platform for creators to sell custom products, memberships, and digital goods.',
+        url: 'https://fourthwall.com/',
+      },
+      {
+        name: 'Gumroad',
+        description: 'Simple platform for creators to sell digital products.',
+        url: 'https://gumroad.com/',
+      },
+      {
+        name: 'Lightspeed eCom',
+        description: 'E-commerce platform for retail businesses.',
+        url: 'https://www.lightspeedhq.com/ecommerce/',
+      },
+      {
+        name: 'Shopify',
+        description: 'Complete commerce platform for online stores.',
+        url: 'https://www.shopify.com/',
+      },
+      {
+        name: 'Square Online',
+        description: 'E-commerce solution integrated with Square payments.',
+        url: 'https://squareup.com/us/en/online-store',
+      },
+      {
+        name: 'WooCommerce',
+        description: 'Open-source e-commerce plugin for WordPress.',
+        url: 'https://woocommerce.com/',
+      },
+    ],
+  },
+  {
     title: 'Domain Names',
     stack: [
       {
@@ -1016,16 +1066,6 @@ const tools = [
         name: 'Tracebit',
         description: 'Expect the unexpected with security canaries and monitoring.',
         url: 'https://tracebit.com/',
-      },
-    ],
-  },
-  {
-    title: 'Shopping',
-    stack: [
-      {
-        name: 'Ario',
-        description: 'Turn Competitor Data into First Party Data.',
-        url: 'https://heyario.com/',
       },
     ],
   },
