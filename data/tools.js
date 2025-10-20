@@ -23,6 +23,11 @@ const tools = [
         url: 'https://www.databricks.com/databricks-ai-accelerator-program',
       },
       {
+        name: 'Elbow Grease',
+        description: 'AI accelerator by Gutter Capital.',
+        url: 'https://www.elbowgrease.gutter.cc/',
+      },
+      {
         name: 'fr8',
         description: 'Amalgamation of hacker hotel/startup incubator/research lab in Sweden.',
         url: 'https://fr8.so/',
@@ -46,6 +51,11 @@ const tools = [
         name: 'Neo Accelerator',
         description: 'Elite accelerator for ambitious builders and world-class founders.',
         url: 'https://neo.com/accelerator',
+      },
+      {
+        name: 'ODF (On Deck Fellowship)',
+        description: 'One-week fellowship program connecting founders and builders.',
+        url: 'https://www.joinodf.com/',
       },
       {
         name: 'Palantir Fellowship',
