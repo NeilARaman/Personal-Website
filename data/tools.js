@@ -128,6 +128,11 @@ const tools = [
     title: 'Artificial Intelligence - Miscellaneous',
     stack: [
       {
+        name: 'Essential AI',
+        description: 'Open platform for frontier AI research led by Transformer co-inventor Dr. Ashish Vaswani.',
+        url: 'https://www.essential.ai/',
+      },
+      {
         name: 'Google X',
         description: 'Advanced technology research division focused on moonshot projects.',
         url: 'https://x.company/',
@@ -147,6 +152,11 @@ const tools = [
   {
     title: 'Assistants',
     stack: [
+      {
+        name: 'Cora',
+        description: 'AI email assistant that screens, categorizes, and drafts responses while providing daily briefings.',
+        url: 'https://cora.computer/',
+      },
       {
         name: 'Fyxer AI',
         description: 'AI Executive Assistant for email and productivity.',
