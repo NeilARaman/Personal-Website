@@ -933,6 +933,11 @@ const tools = [
         url: 'https://toddgoldberg.com/index.html',
       },
       {
+        name: 'Will Robbins',
+        description: 'GP at Contrary',
+        url: 'willrobbins.com',
+      },
+      {
         name: 'Zhou Xian',
         description: 'Co-founder of Genesis.',
         url: 'https://www.zhou-xian.com/',
