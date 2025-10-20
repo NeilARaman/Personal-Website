@@ -113,6 +113,11 @@ const tools = [
     title: 'AI Art',
     stack: [
       {
+        name: 'Black Forest Labs',
+        description: 'AI research lab building FLUX image generation models with API and open-weight options.',
+        url: 'https://bfl.ai/',
+      },
+      {
         name: 'Midjourney',
         description: 'AI-powered image generation tool for creating stunning visual artwork.',
         url: 'http://midjourney.com',
@@ -141,6 +146,11 @@ const tools = [
         name: 'LABS.GOOGLE',
         description: 'Google\'s experimental AI research projects and cutting-edge technology demos.',
         url: 'https://labs.google/',
+      },
+      {
+        name: 'Periodic Labs',
+        description: 'AI research company building autonomous laboratories and AI scientists for materials discovery.',
+        url: 'https://periodic.com/',
       },
       {
         name: 'The Way of Code',
@@ -251,6 +261,11 @@ const tools = [
         name: 'Situational Awareness',
         description: 'Essay series on AI progress and AGI timelines by Leopold Aschenbrenner.',
         url: 'https://situational-awareness.ai/',
+      },
+      {
+        name: 'The Age of Em',
+        description: 'Economics book by Robin Hanson analyzing a future dominated by brain emulation technology.',
+        url: 'https://ageofem.com/',
       },
     ],
   },
@@ -427,6 +442,11 @@ const tools = [
   {
     title: 'Design',
     stack: [
+      {
+        name: 'Flint',
+        description: 'Autonomous website platform that generates on-brand landing pages from existing brand systems.',
+        url: 'https://www.tryflint.com/',
+      },
       {
         name: 'Framer*',
         description: 'AI-powered website design tool with built-in CMS, SEO, and analytics.',
