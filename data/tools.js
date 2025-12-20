@@ -1092,6 +1092,11 @@ const tools = [
         description: 'AI-powered sales engagement and prospecting platform.',
         url: 'https://clay.com/',
       },
+      {
+        name: 'Harmonic',
+        description: 'Startup discovery engine for VCs and business development teams.',
+        url: 'https://harmonic.ai/',
+      },
     ],
   },
   {
