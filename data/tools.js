@@ -425,6 +425,16 @@ const tools = [
     ],
   },
   {
+    title: 'Data Analytics',
+    stack: [
+      {
+        name: 'Conway',
+        description: 'Autonomous pattern discovery platform for data exploration using transformers.',
+        url: 'https://conway.ai/',
+      },
+    ],
+  },
+  {
     title: 'Defense Contracting',
     stack: [
       {
@@ -461,6 +471,11 @@ const tools = [
         name: 'Paper*',
         description: 'Design canvas for creating art and digital experiences with fast, reliable tooling.',
         url: 'https://paper.design/',
+      },
+      {
+        name: 'Softlight',
+        description: 'AI product discovery and design platform that learns your business and explores product ideas.',
+        url: 'https://softlight.com/',
       },
     ],
   },
@@ -985,6 +1000,21 @@ const tools = [
     ],
   },
   {
+    title: 'Principles',
+    stack: [
+      {
+        name: 'iNaval',
+        description: 'Online twin of Naval Ravikant.',
+        url: 'https://inav.al/',
+      },
+      {
+        name: 'Startup Principles by Abhay Venkatesh',
+        description: 'Collection of startup principles.',
+        url: 'https://docs.google.com/document/d/1QFR3scxuGSY848qA7JDYEHI2uVB7f5nzIj_jIH7ihZQ/edit?tab=t.0',
+      },
+    ],
+  },
+  {
     title: 'Programs/Scholarships',
     stack: [
       {
@@ -1196,6 +1226,11 @@ const tools = [
         name: 'Exa',
         description: 'Advanced web search and intelligence platform for LLMs.',
         url: 'https://exa.ai/',
+      },
+      {
+        name: 'Ladybird',
+        description: 'Truly independent web browser built from scratch by a non-profit.',
+        url: 'https://ladybird.org/',
       },
       {
         name: 'Hyperbrowser',
