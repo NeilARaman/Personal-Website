@@ -1038,6 +1038,11 @@ const tools = [
         url: 'https://www.felicis.com/fellows',
       },
       {
+        name: 'Kauffman Fellows',
+        description: 'Two-year fellowship program for venture capital professionals.',
+        url: 'https://www.kauffmanfellows.org/',
+      },
+      {
         name: 'MATS Program',
         description: 'Machine learning alignment research program.',
         url: 'https://www.matsprogram.org/',
