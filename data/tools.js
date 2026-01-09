@@ -723,6 +723,11 @@ const tools = [
         url: 'https://conversion.ai/',
       },
       {
+        name: 'Loops',
+        description: 'Email platform for product, marketing, and transactional emails.',
+        url: 'https://loops.so/',
+      },
+      {
         name: 'Resend*',
         description: 'Email API designed specifically for developers.',
         url: 'http://resend.com',
