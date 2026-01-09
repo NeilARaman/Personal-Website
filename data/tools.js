@@ -358,6 +358,11 @@ const tools = [
         url: 'https://morphllm.com/',
       },
       {
+        name: 'OB-1',
+        description: 'Terminal-based AI coding agent that\'s context-aware and model-agnostic.',
+        url: 'https://www.openblocklabs.com/',
+      },
+      {
         name: 'Windsurf',
         description: 'Powerful AI code editor (formerly Codeium) for enhanced development workflows.',
         url: 'http://windsurf.com',
@@ -432,6 +437,11 @@ const tools = [
         description: 'Autonomous pattern discovery platform for data exploration using transformers.',
         url: 'https://conway.ai/',
       },
+      {
+        name: 'Cosmograph',
+        description: 'Privacy-first graph visualization and analytics for large network graphs and ML embeddings. Built on DuckDB.',
+        url: 'https://cosmograph.app/',
+      },
     ],
   },
   {
@@ -441,6 +451,11 @@ const tools = [
         name: 'Candor',
         description: 'AI-powered defense contracting and government solutions.',
         url: 'http://usecandor.ai',
+      },
+      {
+        name: 'Sweetspot',
+        description: 'AI platform for finding, managing, and bidding on government contracts.',
+        url: 'https://www.sweetspot.so/',
       },
       {
         name: 'Usul',
@@ -506,6 +521,11 @@ const tools = [
         name: 'CrewAI*',
         description: 'The leading multi-agent platform for AI development.',
         url: 'https://www.crewai.com/',
+      },
+      {
+        name: 'Effect',
+        description: 'TypeScript framework for building composable applications with error management, concurrency, and dependency injection.',
+        url: 'https://effectful.co/',
       },
       {
         name: 'Feather',
@@ -936,6 +956,11 @@ const tools = [
         name: 'Emil Kowalski',
         description: 'Design engineer at Linear, creator of Sonner and Vaul React components.',
         url: 'https://emilkowal.ski/',
+      },
+      {
+        name: 'Jack Einhorn',
+        description: 'Investor running a fellowship program.',
+        url: 'https://jackeinhorn.com/',
       },
       {
         name: 'Michael Seibel',
