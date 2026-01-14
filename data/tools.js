@@ -148,6 +148,11 @@ const tools = [
         url: 'https://labs.google/',
       },
       {
+        name: 'Metis',
+        description: 'Applied-research lab building post-training and continual-learning intelligence for enterprise agents.',
+        url: 'https://www.withmetis.ai/',
+      },
+      {
         name: 'Periodic Labs',
         description: 'AI research company building autonomous laboratories and AI scientists for materials discovery.',
         url: 'https://periodic.com/',
@@ -762,6 +767,11 @@ const tools = [
   {
     title: 'Finance/Fintech',
     stack: [
+      {
+        name: 'Autonomous',
+        description: 'AI-powered financial advisor with 0% advisory fees, offering institutional-grade strategies.',
+        url: 'https://becomeautonomous.com/',
+      },
       {
         name: 'Model ML',
         description: 'Enterprise AI workspace for financial modeling, due diligence, and deal execution.',
