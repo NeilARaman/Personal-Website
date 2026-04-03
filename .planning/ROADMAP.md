@@ -30,12 +30,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. CSS custom properties define the complete design token set (colors, type scale, spacing, line-height) with no CSS-in-JS runtime
   4. The test page uses semantic HTML elements (header, nav, main, footer) and the layout responds correctly on mobile viewports
   5. At least one distinctive visual identity element (accent color, rule style, or spacing rhythm) is visible and intentional
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
-- [ ] 01-03: TBD
+- [ ] 01-01-PLAN.md -- Scaffold Astro 6 project on redesign branch, remove old Next.js files
+- [ ] 01-02-PLAN.md -- Design tokens, self-hosted fonts, CSS reset, and global typography
+- [ ] 01-03-PLAN.md -- Base layout with semantic HTML, navigation, navy dot, and design system test page
 
 ### Phase 2: Landing Page and Site Shell
 **Goal**: Visitors land on a complete home page with Neil's intro and can navigate to all three sections of the site on any device
@@ -106,7 +106,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Project Scaffold and Design System | 0/3 | Not started | - |
+| 1. Project Scaffold and Design System | 0/3 | Planned | - |
 | 2. Landing Page and Site Shell | 0/2 | Not started | - |
 | 3. Content Pages | 0/3 | Not started | - |
 | 4. SEO and URL Preservation | 0/2 | Not started | - |
