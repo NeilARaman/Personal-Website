@@ -32,8 +32,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Technical
 
-- [ ] **TECH-01**: Built with Astro (or equivalent simple static generator) — no React, no client-side JS framework
-- [ ] **TECH-02**: Plain CSS with scoped styles — no CSS-in-JS runtime
+- [x] **TECH-01**: Built with Astro (or equivalent simple static generator) — no React, no client-side JS framework
+- [x] **TECH-02**: Plain CSS with scoped styles — no CSS-in-JS runtime
 - [ ] **TECH-03**: Deploys to Vercel on neilraman.com from main branch
 - [ ] **TECH-04**: Existing article URLs preserved (root-level slugs like `/introducing-foundry`)
 - [ ] **TECH-05**: Removed pages (`/about`, `/contact`, `/projects`, `/investing`) redirect or 404 gracefully
@@ -96,8 +96,8 @@ Deferred to future release. Tracked but not in current roadmap.
 | DESG-02 | Phase 1 | Pending |
 | DESG-03 | Phase 1 | Pending |
 | DESG-04 | Phase 1 | Pending |
-| TECH-01 | Phase 1 | Pending |
-| TECH-02 | Phase 1 | Pending |
+| TECH-01 | Phase 1 | Complete |
+| TECH-02 | Phase 1 | Complete |
 | TECH-03 | Phase 5 | Pending |
 | TECH-04 | Phase 3 | Pending |
 | TECH-05 | Phase 4 | Pending |
