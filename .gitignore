@@ -12,10 +12,8 @@ pnpm-debug.log*
 .env.test.local
 .env.production.local
 
-# Next.js
-.next/
-out/
-build/
+# Astro
+.astro/
 dist/
 
 # Vercel
