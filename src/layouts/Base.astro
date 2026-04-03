@@ -1,0 +1,64 @@
+---
+// Base -- Semantic HTML layout shell wrapping all pages
+// Imports global styles once. Components access tokens via var().
+import '../styles/tokens.css';
+import '../styles/reset.css';
+import '../styles/global.css';
+import Nav from '../components/Nav.astro';
+
+interface Props {
+  title?: string;
+}
+
+const { title = 'Neil Raman' } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header>
+      <Nav />
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>&copy; {new Date().getFullYear()} Neil Raman</p>
+      <a href="https://www.linkedin.com/in/neilaraman/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </footer>
+  </body>
+</html>
+
+<style>
+  main {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+    padding-bottom: var(--space-3xl);
+  }
+
+  footer {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: var(--space-xl) var(--space-md);
+    border-top: 1px solid var(--color-rule);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-sm);
+    color: var(--color-muted);
+  }
+
+  footer a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+  }
+
+  footer a:hover {
+    color: var(--color-accent-hover);
+  }
+</style>

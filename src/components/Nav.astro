@@ -1,0 +1,50 @@
+---
+// Nav -- Right-aligned navigation component
+// Site name on left (Lora heading font), nav links on right (accent color).
+---
+<nav>
+  <a href="/" class="site-name">Neil Raman</a>
+  <div class="nav-links">
+    <a href="/articles">Articles</a>
+    <a href="/tools">Tools</a>
+  </div>
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .site-name {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: var(--font-size-md);
+    color: var(--color-heading);
+    text-decoration: none;
+  }
+
+  .site-name:hover {
+    color: var(--color-accent);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: var(--space-lg);
+  }
+
+  .nav-links a {
+    font-family: var(--font-body);
+    font-size: var(--font-size-sm);
+    color: var(--color-accent);
+    text-decoration: none;
+  }
+
+  .nav-links a:hover {
+    color: var(--color-accent-hover);
+  }
+</style>
