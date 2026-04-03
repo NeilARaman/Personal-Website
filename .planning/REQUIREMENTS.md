@@ -82,36 +82,36 @@ Deferred to future release. Tracked but not in current roadmap.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUN-01 | — | Pending |
-| FOUN-02 | — | Pending |
-| FOUN-03 | — | Pending |
-| FOUN-04 | — | Pending |
-| FOUN-05 | — | Pending |
-| FOUN-06 | — | Pending |
-| CONT-01 | — | Pending |
-| CONT-02 | — | Pending |
-| CONT-03 | — | Pending |
-| CONT-04 | — | Pending |
-| DESG-01 | — | Pending |
-| DESG-02 | — | Pending |
-| DESG-03 | — | Pending |
-| DESG-04 | — | Pending |
-| TECH-01 | — | Pending |
-| TECH-02 | — | Pending |
-| TECH-03 | — | Pending |
-| TECH-04 | — | Pending |
-| TECH-05 | — | Pending |
-| POLS-01 | — | Pending |
-| POLS-02 | — | Pending |
-| POLS-03 | — | Pending |
-| POLS-04 | — | Pending |
-| POLS-05 | — | Pending |
+| FOUN-01 | Phase 2 | Pending |
+| FOUN-02 | Phase 2 | Pending |
+| FOUN-03 | Phase 2 | Pending |
+| FOUN-04 | Phase 1 | Pending |
+| FOUN-05 | Phase 5 | Pending |
+| FOUN-06 | Phase 2 | Pending |
+| CONT-01 | Phase 3 | Pending |
+| CONT-02 | Phase 3 | Pending |
+| CONT-03 | Phase 3 | Pending |
+| CONT-04 | Phase 3 | Pending |
+| DESG-01 | Phase 1 | Pending |
+| DESG-02 | Phase 1 | Pending |
+| DESG-03 | Phase 1 | Pending |
+| DESG-04 | Phase 1 | Pending |
+| TECH-01 | Phase 1 | Pending |
+| TECH-02 | Phase 1 | Pending |
+| TECH-03 | Phase 5 | Pending |
+| TECH-04 | Phase 3 | Pending |
+| TECH-05 | Phase 4 | Pending |
+| POLS-01 | Phase 4 | Pending |
+| POLS-02 | Phase 4 | Pending |
+| POLS-03 | Phase 5 | Pending |
+| POLS-04 | Phase 5 | Pending |
+| POLS-05 | Phase 5 | Pending |
 
 **Coverage:**
 - v1 requirements: 24 total
-- Mapped to phases: 0
-- Unmapped: 24
+- Mapped to phases: 24
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-04-03*
-*Last updated: 2026-04-03 after initial definition*
+*Last updated: 2026-04-03 after roadmap creation*
