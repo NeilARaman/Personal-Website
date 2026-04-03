@@ -25,9 +25,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Design
 
-- [ ] **DESG-01**: Light color scheme with off-white background
-- [ ] **DESG-02**: Serif typography — display serif for headings, text serif for body, self-hosted fonts
-- [ ] **DESG-03**: Generous whitespace — modular type scale, 1.5-1.6 line-height, breathing room between elements
+- [x] **DESG-01**: Light color scheme with off-white background
+- [x] **DESG-02**: Serif typography — display serif for headings, text serif for body, self-hosted fonts
+- [x] **DESG-03**: Generous whitespace — modular type scale, 1.5-1.6 line-height, breathing room between elements
 - [ ] **DESG-04**: At least one subtle visual identity element unique to Neil (accent color, rule style, or layout cadence)
 
 ### Technical
@@ -92,9 +92,9 @@ Deferred to future release. Tracked but not in current roadmap.
 | CONT-02 | Phase 3 | Pending |
 | CONT-03 | Phase 3 | Pending |
 | CONT-04 | Phase 3 | Pending |
-| DESG-01 | Phase 1 | Pending |
-| DESG-02 | Phase 1 | Pending |
-| DESG-03 | Phase 1 | Pending |
+| DESG-01 | Phase 1 | Complete |
+| DESG-02 | Phase 1 | Complete |
+| DESG-03 | Phase 1 | Complete |
 | DESG-04 | Phase 1 | Pending |
 | TECH-01 | Phase 1 | Complete |
 | TECH-02 | Phase 1 | Complete |

@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 01-01-PLAN.md
-last_updated: "2026-04-03T21:20:42.211Z"
-last_activity: 2026-04-03 -- Completed 01-01 (Project Scaffold)
+stopped_at: Completed 01-02-PLAN.md
+last_updated: "2026-04-03T21:24:00.000Z"
+last_activity: 2026-04-03 -- Completed 01-02 (Design System)
 progress:
   total_phases: 5
   completed_phases: 0
   total_plans: 3
-  completed_plans: 1
-  percent: 33
+  completed_plans: 2
+  percent: 67
 ---
 
 # Project State
@@ -26,11 +26,11 @@ See: .planning/PROJECT.md (updated 2026-04-03)
 ## Current Position
 
 Phase: 1 of 5 (Project Scaffold and Design System)
-Plan: 1 of 3 in current phase
+Plan: 2 of 3 in current phase
 Status: executing
-Last activity: 2026-04-03 -- Completed 01-01 (Project Scaffold)
+Last activity: 2026-04-03 -- Completed 01-02 (Design System)
 
-Progress: [###.......] 33%
+Progress: [███████░░░] 67%
 
 ## Performance Metrics
 
@@ -51,6 +51,7 @@ Progress: [###.......] 33%
 
 *Updated after each plan completion*
 | Phase 01 P01 | 3min | 2 tasks | 6 files |
+| Phase 01 P02 | 2min | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -63,6 +64,8 @@ Recent decisions affecting current work:
 - [Roadmap]: Typography and design tokens established in Phase 1 before any page content
 - [Roadmap]: Existing article URLs preserved at root level (high risk item, addressed in Phase 3)
 - [Phase 01]: Manual Astro scaffold instead of create-astro to preserve existing files
+- [Phase 01]: Latin subset only for fonts -- keeps payload small (~127KB total)
+- [Phase 01]: Astro Fonts API with local provider for built-in preload optimization
 
 ### Pending Todos
 
@@ -76,6 +79,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-03T21:20:42.207Z
-Stopped at: Completed 01-01-PLAN.md
+Last session: 2026-04-03T21:24:00Z
+Stopped at: Completed 01-02-PLAN.md
 Resume file: None
