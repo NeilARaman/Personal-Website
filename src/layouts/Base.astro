@@ -4,6 +4,7 @@
 import '../styles/tokens.css';
 import '../styles/reset.css';
 import '../styles/global.css';
+import Font from 'astro/components/Font.astro';
 import Nav from '../components/Nav.astro';
 
 interface Props {
@@ -16,6 +17,8 @@ const { title = 'Neil Raman' } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <Font cssVariable="--font-lora" preload />
+    <Font cssVariable="--font-inter" preload />
     <title>{title}</title>
   </head>
   <body>
