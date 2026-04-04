@@ -131,6 +131,14 @@ const tools = [
         description: 'Bring your creative ideas to life with advanced AI art generation.',
         url: 'https://preview.reve.art/',
       },
+      {
+        name: 'Fourmula.ai',
+        url: 'https://fourmula.ai/',
+      },
+      {
+        name: 'QuiverAI',
+        url: 'https://quiver.ai/',
+      },
     ],
   },
   {
@@ -170,18 +178,6 @@ const tools = [
         url: 'https://www.primeintellect.ai/',
       },
       {
-        name: 'Anchor',
-        url: 'https://anchorbrowser.io/',
-      },
-      {
-        name: 'Sana',
-        url: 'https://sanalabs.com/',
-      },
-      {
-        name: 'TinyFish',
-        url: 'https://www.tinyfish.ai/',
-      },
-      {
         name: 'Softmax',
         url: 'https://softmax.com/',
       },
@@ -198,30 +194,6 @@ const tools = [
         url: 'https://aiuc.com/',
       },
       {
-        name: 'Extend',
-        url: 'https://www.extend.ai/',
-      },
-      {
-        name: 'Fourmula.ai',
-        url: 'https://fourmula.ai/',
-      },
-      {
-        name: 'Subconscious',
-        url: 'https://www.subconscious.dev/',
-      },
-      {
-        name: 'Eragon',
-        url: 'https://www.eragon.ai/',
-      },
-      {
-        name: 'Browser Use',
-        url: 'https://browser-use.com/',
-      },
-      {
-        name: 'Hornet',
-        url: 'https://hornet.dev/',
-      },
-      {
         name: 'Ndea',
         url: 'https://ndea.com/',
       },
@@ -234,16 +206,24 @@ const tools = [
         url: 'https://aaru.com/',
       },
       {
-        name: 'Natural',
-        url: 'https://www.natural.co/',
-      },
-      {
         name: 'Arena',
         url: 'https://www.arenaphysica.com/',
       },
       {
+        name: 'Nozomio Labs',
+        url: 'https://www.nozomio.com/',
+      },
+      {
         name: 'Brain Interfaces',
         url: 'https://www.neuralace.co/',
+      },
+      {
+        name: 'Eragon',
+        url: 'https://www.eragon.ai/',
+      },
+      {
+        name: 'Generalist AI',
+        url: 'https://generalistai.com/',
       },
     ],
   },
@@ -266,8 +246,16 @@ const tools = [
         url: 'https://www.lindy.ai/',
       },
       {
-        name: 'Town Assistant',
+        name: 'Sana',
+        url: 'https://sanalabs.com/',
+      },
+      {
+        name: 'Town',
         url: 'http://town.com/',
+      },
+      {
+        name: 'Subconscious',
+        url: 'https://www.subconscious.dev/',
       },
       {
         name: 'Pronto',
@@ -514,6 +502,10 @@ const tools = [
         name: 'Tennr',
         url: 'https://www.tennr.com/',
       },
+      {
+        name: 'Datavant',
+        url: 'https://www.datavant.com/',
+      },
     ],
   },
   {
@@ -583,16 +575,12 @@ const tools = [
         url: 'https://deepnote.com/',
       },
       {
-        name: 'Datavant',
-        url: 'https://www.datavant.com/',
-      },
-      {
-        name: 'Datacurve',
-        url: 'https://knock.app/',
+        name: 'Sixtyfour',
+        url: 'https://sixtyfour.ai/',
       },
       {
         name: 'Nominal',
-        url: 'https://nominal.io/blog/series-b2',
+        url: 'https://nominal.io/',
       },
     ],
   },
@@ -635,11 +623,6 @@ const tools = [
         url: 'https://www.lowercase.club/',
       },
       {
-        name: 'Paper',
-        description: 'Design canvas for creating art and digital experiences with fast, reliable tooling.',
-        url: 'https://paper.design/',
-      },
-      {
         name: 'Softlight',
         description: 'AI product discovery and design platform that learns your business and explores product ideas.',
         url: 'https://softlight.com/',
@@ -675,10 +658,6 @@ const tools = [
       {
         name: 'DesEngs',
         url: 'https://desengs.com/',
-      },
-      {
-        name: 'QuiverAI',
-        url: 'https://quiver.ai/',
       },
     ],
   },
@@ -785,8 +764,8 @@ const tools = [
         url: 'https://knock.app/',
       },
       {
-        name: 'Chronicle',
-        url: 'https://chroniclehq.com/',
+        name: 'Hornet',
+        url: 'https://hornet.dev/',
       },
       {
         name: 'foam',
@@ -853,8 +832,8 @@ const tools = [
         url: 'https://landing.ai/',
       },
       {
-        name: 'Legora',
-        url: 'https://legora.com/',
+        name: 'Extend',
+        url: 'https://www.extend.ai/',
       },
     ],
   },
@@ -991,8 +970,12 @@ const tools = [
         url: 'https://www.astor.app/',
       },
       {
-        name: 'Legora Series D',
-        url: 'https://legora.com/blog/series-d',
+        name: 'Natural',
+        url: 'https://www.natural.co/',
+      },
+      {
+        name: 'Legora',
+        url: 'https://legora.com/',
       },
     ],
   },
@@ -1052,6 +1035,10 @@ const tools = [
         name: 'Clay\'s EA Take-Home',
         url: 'https://docs.google.com/document/d/1Jct3sKsza5QAn-IQrdnG2Givs7WlQgn2nY5IIcwt_Vw/edit?dub_id=2Dg5uaQVeT3nT8RR&tab=t.0',
       },
+      {
+        name: 'The Transformers',
+        url: 'https://www.vizuaranewsletter.com/p/the-transformers?r=5b5pyd',
+      },
     ],
   },
   {
@@ -1059,12 +1046,7 @@ const tools = [
     stack: [
       {
         name: 'Crosby',
-        description: 'Execute Contracts Faster with AI-powered legal automation.',
         url: 'https://crosby.ai/',
-      },
-      {
-        name: 'Crosby',
-        url: 'https://www.crosby.ai/',
       },
     ],
   },
@@ -1090,6 +1072,14 @@ const tools = [
         name: 'YouLearn AI',
         description: 'AI-powered personalized learning experiences.',
         url: 'http://youlearn.ai',
+      },
+      {
+        name: 'Beej\'s Guide to Computer Science',
+        url: 'https://beej.us/guide/bglcs/html/#understanding-the-problem',
+      },
+      {
+        name: 'Learn Notion in 12 Hours',
+        url: 'https://www.freecodecamp.org/news/lean-notion-in-12-hours/',
       },
       {
         name: 'Beej\'s Guide to Computer Science',
@@ -1137,8 +1127,8 @@ const tools = [
         url: 'https://arenamag.com/',
       },
       {
-        name: 'The Transformers',
-        url: 'https://www.vizuaranewsletter.com/p/the-transformers?r=5b5pyd',
+        name: 'Chronicle',
+        url: 'https://chroniclehq.com/',
       },
     ],
   },
@@ -1194,10 +1184,6 @@ const tools = [
         name: 'PostHog',
         description: 'All-in-one platform for building successful products with analytics.',
         url: 'http://posthog.com',
-      },
-      {
-        name: 'Nozomio Labs',
-        url: 'https://www.nozomio.com/',
       },
     ],
   },
@@ -1394,10 +1380,6 @@ const tools = [
         url: 'https://www.skild.ai/',
       },
       {
-        name: 'Generalist AI',
-        url: 'https://generalistai.com/',
-      },
-      {
         name: 'Sunday Robotics',
         url: 'https://www.sunday.ai/journal/series-b',
       },
@@ -1451,10 +1433,6 @@ const tools = [
         name: 'Monaco',
         url: 'https://www.monaco.com/',
       },
-      {
-        name: 'Sixtyfour',
-        url: 'https://sixtyfour.ai/',
-      },
     ],
   },
   {
@@ -1472,10 +1450,6 @@ const tools = [
       {
         name: 'The Antifraud Company',
         url: 'https://antifraudcompany.com/',
-      },
-      {
-        name: 'Vanta',
-        url: 'https://www.vanta.com/',
       },
       {
         name: 'Vanta',
@@ -1600,6 +1574,18 @@ const tools = [
         name: 'Tavily',
         description: 'Advanced web search and information retrieval.',
         url: 'https://www.tavily.com/',
+      },
+      {
+        name: 'Anchor',
+        url: 'https://anchorbrowser.io/',
+      },
+      {
+        name: 'TinyFish',
+        url: 'https://www.tinyfish.ai/',
+      },
+      {
+        name: 'Browser Use',
+        url: 'https://browser-use.com/',
       },
     ],
   },
