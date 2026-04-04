@@ -122,6 +122,25 @@ a:hover {
   margin: 20px 0 8px;
 }
 
+.article ol,
+.article ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.article li {
+  margin-bottom: 4px;
+}
+
+.article li p {
+  margin-bottom: 4px;
+}
+
+.article strong {
+  font-weight: 600;
+  color: #333;
+}
+
 /* Tools page */
 .tool-category {
   margin-bottom: 24px;
