@@ -34,8 +34,7 @@ for (const category of tools) {
   toolsHtml += `      <h2>${category.title}</h2>\n`;
   toolsHtml += `      <ul>\n`;
   for (const tool of category.stack) {
-    const desc = tool.description ? ` — ${tool.description}` : '';
-    toolsHtml += `        <li><a href="${tool.url}" target="_blank" rel="noopener">${tool.name}</a>${desc}</li>\n`;
+    toolsHtml += `        <li><a href="${tool.url}" target="_blank" rel="noopener">${tool.name}</a></li>\n`;
   }
   toolsHtml += `      </ul>\n`;
   toolsHtml += `    </section>\n`;

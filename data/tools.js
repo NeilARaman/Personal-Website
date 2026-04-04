@@ -68,7 +68,7 @@ const tools = [
         url: 'https://pear.vc/pearx/',
       },
       {
-        name: 'Telora*',
+        name: 'Telora',
         description: 'Helping hackers start startups. Run by Eliam Medina.',
         url: 'https://telora.com/',
       },
@@ -91,6 +91,10 @@ const tools = [
         name: 'Z Fellows',
         description: 'Fellowship program for ambitious builders and entrepreneurs.',
         url: 'https://zfellows.com/',
+      },
+      {
+        name: 'Alpha by a16z speedrun',
+        url: 'https://alpha.speedrun.a16z.com/',
       },
     ],
   },
@@ -148,11 +152,6 @@ const tools = [
         url: 'https://labs.google/',
       },
       {
-        name: 'Metis',
-        description: 'Applied-research lab building post-training and continual-learning intelligence for enterprise agents.',
-        url: 'https://www.withmetis.ai/',
-      },
-      {
         name: 'Periodic Labs',
         description: 'AI research company building autonomous laboratories and AI scientists for materials discovery.',
         url: 'https://periodic.com/',
@@ -161,6 +160,90 @@ const tools = [
         name: 'The Way of Code',
         description: 'Rick Rubin\'s collaboration with Anthropic on vibe coding.',
         url: 'https://www.thewayofcode.com/',
+      },
+      {
+        name: 'BLACKBOX AI',
+        url: 'https://www.blackbox.ai/',
+      },
+      {
+        name: 'Prime Intellect',
+        url: 'https://www.primeintel.ai/',
+      },
+      {
+        name: 'Anchor',
+        url: 'https://www.useanchor.ai/',
+      },
+      {
+        name: 'Sana',
+        url: 'https://www.sana.ai/',
+      },
+      {
+        name: 'TinyFish',
+        url: 'https://tinyfish.ai/',
+      },
+      {
+        name: 'Softmax',
+        url: 'https://softmax.ai/',
+      },
+      {
+        name: 'Wordware',
+        url: 'https://www.wordware.ai/',
+      },
+      {
+        name: 'Context',
+        url: 'https://context.ai/',
+      },
+      {
+        name: 'AIUC',
+        url: 'https://aiuc.ai/',
+      },
+      {
+        name: 'Extend',
+        url: 'https://www.extend.ai/',
+      },
+      {
+        name: 'Fourmula.ai',
+        url: 'https://fourmula.ai/',
+      },
+      {
+        name: 'Subconscious',
+        url: 'https://subconscious.ai/',
+      },
+      {
+        name: 'Eragon',
+        url: 'https://eragon.ai/',
+      },
+      {
+        name: 'Browser Use',
+        url: 'https://browser-use.com/',
+      },
+      {
+        name: 'Deeptune',
+        url: 'https://deeptune.ai/',
+      },
+      {
+        name: 'Hornet',
+        url: 'https://hornet.ai/',
+      },
+      {
+        name: 'Generalist AI',
+        url: 'https://generalist.ai/',
+      },
+      {
+        name: 'Aaru',
+        url: 'https://aaru.ai/',
+      },
+      {
+        name: 'Natural',
+        url: 'https://www.natural.com/',
+      },
+      {
+        name: 'Boil the Ocean',
+        url: 'https://boiltheocean.ai/',
+      },
+      {
+        name: 'Brain Interfaces',
+        url: 'https://braininterfaces.ai/',
       },
     ],
   },
@@ -182,13 +265,21 @@ const tools = [
         description: 'Meet your AI assistant for automating workflows and tasks.',
         url: 'https://www.lindy.ai/',
       },
+      {
+        name: 'Town Assistant',
+        url: 'https://townassistant.com/',
+      },
+      {
+        name: 'Pronto',
+        url: 'https://pronto.ai/',
+      },
     ],
   },
   {
     title: 'Authentication',
     stack: [
       {
-        name: 'Clerk*',
+        name: 'Clerk',
         description: 'Modern authentication and user management platform for developers.',
         url: 'http://clerk.com',
       },
@@ -208,7 +299,7 @@ const tools = [
     title: 'Aviation',
     stack: [
       {
-        name: 'Rove Miles*',
+        name: 'Rove Miles',
         description: 'Travel the World for Free through innovative aviation rewards.',
         url: 'https://www.rovemiles.com/',
       },
@@ -243,7 +334,7 @@ const tools = [
         url: 'https://posthaven.com/',
       },
       {
-        name: 'Medium*',
+        name: 'Medium',
         description: 'Online publishing platform for sharing ideas and stories.',
         url: 'https://medium.com/',
       },
@@ -278,7 +369,7 @@ const tools = [
     title: 'Building Resources',
     stack: [
       {
-        name: 'Build in College*',
+        name: 'Build in College',
         description: 'List of free tools, software credits, and fellowships for college builders.',
         url: 'https://www.buildincollege.com/',
       },
@@ -288,7 +379,7 @@ const tools = [
         url: 'https://v1team.notion.site/Hardware-Building-Resources-20f82307c07d81fcadcadfd882479f4c',
       },
       {
-        name: 'Software Building Resources*',
+        name: 'Software Building Resources',
         description: 'Also put together by the team at V1.',
         url: 'https://v1team.notion.site/Software-Building-Resources-dcdf772230ad4f3195d2399f74964969',
       },
@@ -343,7 +434,7 @@ const tools = [
         url: 'https://www.cubic.dev/home',
       },
       {
-        name: 'Cursor*',
+        name: 'Cursor',
         description: 'AI-powered code editor that enhances development productivity.',
         url: 'http://cursor.com',
       },
@@ -372,6 +463,18 @@ const tools = [
         description: 'Powerful AI code editor (formerly Codeium) for enhanced development workflows.',
         url: 'http://windsurf.com',
       },
+      {
+        name: 'Superset',
+        url: 'https://supersetai.com/',
+      },
+      {
+        name: 'Omnara',
+        url: 'https://omnara.dev/',
+      },
+      {
+        name: 'foam',
+        url: 'https://foambubble.github.io/foam/',
+      },
     ],
   },
   {
@@ -386,6 +489,26 @@ const tools = [
         name: 'Genbio AI',
         description: 'AI-powered genomics and computational biology tools.',
         url: 'https://genbio.ai/',
+      },
+      {
+        name: 'Qualified Health',
+        url: 'https://qualifiedhealth.ai/',
+      },
+      {
+        name: 'Ambience Healthcare',
+        url: 'https://www.ambiencehealthcare.com/',
+      },
+      {
+        name: 'Latent Health',
+        url: 'https://latenthealth.com/',
+      },
+      {
+        name: 'Komodo Health',
+        url: 'https://www.komodohealth.com/',
+      },
+      {
+        name: 'Tennr',
+        url: 'https://tennr.com/',
       },
     ],
   },
@@ -406,6 +529,10 @@ const tools = [
         name: 'Zero',
         description: 'The zero-click CRM that automates customer relationship management.',
         url: 'https://zero.inc/',
+      },
+      {
+        name: 'Day.ai',
+        url: 'https://day.ai/',
       },
     ],
   },
@@ -447,6 +574,18 @@ const tools = [
         description: 'Privacy-first graph visualization and analytics for large network graphs and ML embeddings. Built on DuckDB.',
         url: 'https://cosmograph.app/',
       },
+      {
+        name: 'Datacurve',
+        url: 'https://datacurve.ai/',
+      },
+      {
+        name: 'Deepnote',
+        url: 'https://deepnote.com/',
+      },
+      {
+        name: 'Datavant',
+        url: 'https://datavant.com/',
+      },
     ],
   },
   {
@@ -478,7 +617,7 @@ const tools = [
         url: 'https://www.tryflint.com/',
       },
       {
-        name: 'Framer*',
+        name: 'Framer',
         description: 'AI-powered website design tool with built-in CMS, SEO, and analytics.',
         url: 'https://www.framer.com/',
       },
@@ -488,7 +627,7 @@ const tools = [
         url: 'https://www.lowercase.club/',
       },
       {
-        name: 'Paper*',
+        name: 'Paper',
         description: 'Design canvas for creating art and digital experiences with fast, reliable tooling.',
         url: 'https://paper.design/',
       },
@@ -496,6 +635,42 @@ const tools = [
         name: 'Softlight',
         description: 'AI product discovery and design platform that learns your business and explores product ideas.',
         url: 'https://softlight.com/',
+      },
+      {
+        name: 'Pencil',
+        url: 'https://pencil.li/',
+      },
+      {
+        name: 'Paper',
+        url: 'https://paper.design/',
+      },
+      {
+        name: 'Arcade Labs',
+        url: 'https://www.arcadelabs.co/',
+      },
+      {
+        name: 'Bundui',
+        url: 'https://bundui.com/',
+      },
+      {
+        name: 'The Component Gallery',
+        url: 'https://component.gallery/',
+      },
+      {
+        name: 'Cavalry',
+        url: 'https://cavalry.scenegroup.co/',
+      },
+      {
+        name: 'Variant',
+        url: 'https://variant.style/',
+      },
+      {
+        name: 'DesEngs',
+        url: 'https://desengs.co/',
+      },
+      {
+        name: 'QuiverAI',
+        url: 'https://quiverai.com/',
       },
     ],
   },
@@ -508,12 +683,12 @@ const tools = [
         url: 'https://www.animaapp.com/',
       },
       {
-        name: 'BlockNote*',
+        name: 'BlockNote',
         description: 'Javascript Block-Based React rich text editor for modern applications.',
         url: 'https://www.blocknotejs.org/',
       },
       {
-        name: 'Composio*',
+        name: 'Composio',
         description: 'Access 250+ apps and services in just one line of code.',
         url: 'https://composio.dev/',
       },
@@ -523,7 +698,7 @@ const tools = [
         url: 'https://www.convex.dev/',
       },
       {
-        name: 'CrewAI*',
+        name: 'CrewAI',
         description: 'The leading multi-agent platform for AI development.',
         url: 'https://www.crewai.com/',
       },
@@ -538,7 +713,7 @@ const tools = [
         url: 'https://feathericons.com/',
       },
       {
-        name: 'Linear*',
+        name: 'Linear',
         description: 'Project management tool for software development teams.',
         url: 'https://linear.app/',
       },
@@ -553,7 +728,7 @@ const tools = [
         url: 'https://www.magicpatterns.com/',
       },
       {
-        name: 'Mem0*',
+        name: 'Mem0',
         description: 'The Memory layer for your AI apps and applications.',
         url: 'https://mem0.ai/',
       },
@@ -568,12 +743,12 @@ const tools = [
         url: 'https://orama.com/',
       },
       {
-        name: 'React Bits*',
+        name: 'React Bits',
         description: 'Collection of React patterns, techniques, and best practices.',
         url: 'https://reactbits.dev/',
       },
       {
-        name: 'Rube*',
+        name: 'Rube',
         description: 'AI integration platform connecting 500+ apps to your chat and development environment.',
         url: 'https://rube.composio.dev/',
       },
@@ -583,7 +758,7 @@ const tools = [
         url: 'https://render.com/',
       },
       {
-        name: 'Resend*',
+        name: 'Resend',
         description: 'Email API designed specifically for developers with excellent DX.',
         url: 'https://resend.com/home',
       },
@@ -596,6 +771,18 @@ const tools = [
         name: 'Superflex',
         description: 'Turn Figma to Code in Seconds with AI-powered conversion.',
         url: 'https://www.superflex.ai/',
+      },
+      {
+        name: 'Knock',
+        url: 'https://knock.app/',
+      },
+      {
+        name: 'Chronicle',
+        url: 'https://chroniclehq.com/',
+      },
+      {
+        name: 'Lightfern',
+        url: 'https://lightfern.com/',
       },
     ],
   },
@@ -623,7 +810,7 @@ const tools = [
         url: 'https://redis.io/',
       },
       {
-        name: 'Supabase*',
+        name: 'Supabase',
         description: 'Open-source Firebase alternative.',
         url: 'https://supabase.com/',
       },
@@ -638,7 +825,7 @@ const tools = [
         url: 'https://www.gitbook.com/',
       },
       {
-        name: 'Mintlify*',
+        name: 'Mintlify',
         description: 'Beautiful, easy-to-maintain documentation for developers and teams.',
         url: 'https://www.mintlify.com/',
       },
@@ -653,9 +840,13 @@ const tools = [
         url: 'https://agree.com/',
       },
       {
-        name: 'Landing AI*',
+        name: 'Landing AI',
         description: 'AI-powered document processing and automation.',
         url: 'https://landing.ai/',
+      },
+      {
+        name: 'Legora',
+        url: 'https://legora.ai/',
       },
     ],
   },
@@ -713,7 +904,7 @@ const tools = [
     title: 'Domain Names',
     stack: [
       {
-        name: 'Porkbun*',
+        name: 'Porkbun',
         description: 'An oddly satisfying domain registration experience.',
         url: 'https://porkbun.com/',
       },
@@ -733,12 +924,12 @@ const tools = [
         url: 'https://loops.so/',
       },
       {
-        name: 'Resend*',
+        name: 'Resend',
         description: 'Email API designed specifically for developers.',
         url: 'http://resend.com',
       },
       {
-        name: 'Superhuman*',
+        name: 'Superhuman',
         description: 'The most productive email app ever made for power users.',
         url: 'http://superhuman.com',
       },
@@ -753,7 +944,7 @@ const tools = [
     title: 'Event Planning',
     stack: [
       {
-        name: 'Luma*',
+        name: 'Luma',
         description: 'Delightful events platform for creating and managing gatherings.',
         url: 'http://lu.ma',
       },
@@ -778,7 +969,7 @@ const tools = [
         url: 'https://www.modelml.com/',
       },
       {
-        name: 'Monarch Money*',
+        name: 'Monarch Money',
         description: 'Personal finance management tool.',
         url: 'https://monarchmoney.com/',
       },
@@ -786,6 +977,10 @@ const tools = [
         name: 'Oscilar',
         description: 'AI-powered risk platform handling fraud, credit, onboarding, and compliance.',
         url: 'https://oscilar.com/',
+      },
+      {
+        name: 'Astor',
+        url: 'https://www.astor.ai/',
       },
     ],
   },
@@ -833,7 +1028,7 @@ const tools = [
     title: 'Guides',
     stack: [
       {
-        name: 'Starter to SF*',
+        name: 'Starter to SF',
         description: 'Comprehensive SF guide by Michelle Fang.',
         url: 'https://www.startertosf.guide/',
       },
@@ -846,6 +1041,10 @@ const tools = [
         name: 'Crosby',
         description: 'Execute Contracts Faster with AI-powered legal automation.',
         url: 'https://crosby.ai/',
+      },
+      {
+        name: 'Crosby',
+        url: 'https://www.crosby.ai/',
       },
     ],
   },
@@ -863,14 +1062,22 @@ const tools = [
         url: 'https://miyagilabs.ai/',
       },
       {
-        name: 'Opennote*',
+        name: 'Opennote',
         description: 'AI-powered note-taking platform for personalized learning.',
         url: 'https://www.opennote.com/',
       },
       {
-        name: 'YouLearn AI*',
+        name: 'YouLearn AI',
         description: 'AI-powered personalized learning experiences.',
         url: 'http://youlearn.ai',
+      },
+      {
+        name: 'Beej\'s Guide to Computer Science',
+        url: 'https://beej.us/guide/',
+      },
+      {
+        name: 'Learn Notion in 12 Hours',
+        url: 'https://www.notion.so/help',
       },
     ],
   },
@@ -897,18 +1104,30 @@ const tools = [
         description: 'Recorded interviews and written biographies profiling founders and investors.',
         url: 'https://yesterdayy.com/',
       },
+      {
+        name: 'Angus Emmerson',
+        url: 'https://angusemmerson.com/',
+      },
+      {
+        name: 'TAO TAJIMA',
+        url: 'https://taotajima.jp/',
+      },
+      {
+        name: 'Arena Magazine',
+        url: 'https://arena.run/',
+      },
     ],
   },
   {
     title: 'Models',
     stack: [
       {
-        name: 'ChatGPT*',
+        name: 'ChatGPT',
         description: 'OpenAI\'s advanced AI model.',
         url: 'https://chatgpt.com/',
       },
       {
-        name: 'Claude*',
+        name: 'Claude',
         description: 'Anthropic\'s advanced AI model.',
         url: 'https://www.anthropic.com/',
       },
@@ -948,9 +1167,17 @@ const tools = [
         url: 'https://www.keywordsai.co/',
       },
       {
-        name: 'PostHog*',
+        name: 'PostHog',
         description: 'All-in-one platform for building successful products with analytics.',
         url: 'http://posthog.com',
+      },
+      {
+        name: 'Nozomio Labs',
+        url: 'https://nozomio.com/',
+      },
+      {
+        name: 'Arena',
+        url: 'https://arena.im/',
       },
     ],
   },
@@ -1017,6 +1244,14 @@ const tools = [
         description: 'Co-founder of Genesis.',
         url: 'https://www.zhou-xian.com/',
       },
+      {
+        name: 'Ndea',
+        url: 'https://ndea.co/',
+      },
+      {
+        name: 'Caretta',
+        url: 'https://www.caretta.so/',
+      },
     ],
   },
   {
@@ -1033,7 +1268,7 @@ const tools = [
     title: 'Presentations',
     stack: [
       {
-        name: 'Gamma*',
+        name: 'Gamma',
         description: 'AI-powered presentation builder.',
         url: 'https://gamma.app/',
       },
@@ -1122,6 +1357,10 @@ const tools = [
         description: 'AI talent acquisition & recruiting platform.',
         url: 'https://eightfold.ai/',
       },
+      {
+        name: 'Tsenta',
+        url: 'https://tsenta.com/',
+      },
     ],
   },
   {
@@ -1142,13 +1381,17 @@ const tools = [
         description: 'Scalable robotics foundation models.',
         url: 'https://www.skild.ai/',
       },
+      {
+        name: 'Sunday Robotics',
+        url: 'https://www.sundayrobotics.com/',
+      },
     ],
   },
   {
     title: 'Sales/GTM/User Research',
     stack: [
       {
-        name: 'Apollo*',
+        name: 'Apollo',
         description: 'Sales Intelligence and Engagement Platform.',
         url: 'https://www.apollo.io/',
       },
@@ -1172,6 +1415,30 @@ const tools = [
         description: 'Startup discovery engine for VCs and business development teams.',
         url: 'https://harmonic.ai/',
       },
+      {
+        name: 'Cardinal',
+        url: 'https://www.cardinalapp.io/',
+      },
+      {
+        name: 'Clodo',
+        url: 'https://clodo.ai/',
+      },
+      {
+        name: 'Orange Slice',
+        url: 'https://www.orangeslice.ai/',
+      },
+      {
+        name: 'GTM Goose Skills Library',
+        url: 'https://www.gtmgoose.com/',
+      },
+      {
+        name: 'Monaco',
+        url: 'https://monaco.ai/',
+      },
+      {
+        name: 'Sixtyfour',
+        url: 'https://sixtyfour.ai/',
+      },
     ],
   },
   {
@@ -1181,6 +1448,18 @@ const tools = [
         name: 'Tracebit',
         description: 'Expect the unexpected with security canaries and monitoring.',
         url: 'https://tracebit.com/',
+      },
+      {
+        name: 'Cylake',
+        url: 'https://cylake.com/',
+      },
+      {
+        name: 'The Antifraud Company',
+        url: 'https://theantifraudcompany.com/',
+      },
+      {
+        name: 'Vanta',
+        url: 'https://www.vanta.com/',
       },
     ],
   },
@@ -1253,7 +1532,7 @@ const tools = [
         url: 'https://vapi.ai/',
       },
       {
-        name: 'Wispr Flow*',
+        name: 'Wispr Flow',
         description: 'Effortless Voice Dictation with AI.',
         url: 'https://wisprflow.ai/',
       },
@@ -1263,7 +1542,7 @@ const tools = [
     title: 'Web Browsers/Use',
     stack: [
       {
-        name: 'Browserbase*',
+        name: 'Browserbase',
         description: 'A web browser designed for AI agents & applications.',
         url: 'https://www.browserbase.com/',
       },
@@ -1308,7 +1587,7 @@ const tools = [
     title: 'Writing',
     stack: [
       {
-        name: 'Grammarly*',
+        name: 'Grammarly',
         description: 'AI-powered grammar and writing assistant.',
         url: 'https://www.grammarly.com/',
       },
