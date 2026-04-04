@@ -92,7 +92,7 @@ a:hover {
 
 .articles time {
   font-size: 13px;
-  color: #999;
+  color: #767676;
 }
 
 /* Article page */
@@ -108,7 +108,7 @@ a:hover {
 
 .article-header time {
   font-size: 13px;
-  color: #999;
+  color: #767676;
 }
 
 .article h2 {
@@ -147,25 +147,6 @@ a:hover {
   max-width: 900px;
 }
 
-.tools-nav {
-  margin-bottom: 32px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #e5e5e5;
-  font-size: 13px;
-  line-height: 2;
-}
-
-.tools-nav a {
-  color: #999;
-  text-decoration: none;
-  margin-right: 16px;
-  white-space: nowrap;
-}
-
-.tools-nav a:hover {
-  color: #000;
-}
-
 .tool-category {
   margin-bottom: 32px;
   padding-top: 24px;
@@ -186,7 +167,7 @@ a:hover {
 
 .tool-category h2 span {
   font-weight: 400;
-  color: #999;
+  color: #767676;
   font-size: 13px;
   margin-left: 6px;
 }

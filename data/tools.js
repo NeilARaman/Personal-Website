@@ -128,7 +128,7 @@ const tools = [
       {
         name: 'Midjourney',
         description: "AI-powered image generation tool for creating stunning visual artwork.",
-        url: 'http://midjourney.com',
+        url: 'https://midjourney.com',
       },
       {
         name: 'Reve',
@@ -239,7 +239,7 @@ const tools = [
       },
       {
         name: 'Town Assistant',
-        url: 'http://town.com/',
+        url: 'https://town.com/',
       },
       {
         name: 'Tsenta',
@@ -257,7 +257,7 @@ const tools = [
       {
         name: 'Clerk',
         description: "Modern authentication and user management platform for developers.",
-        url: 'http://clerk.com',
+        url: 'https://clerk.com',
       },
       {
         name: 'Keycloak',
@@ -287,12 +287,12 @@ const tools = [
       {
         name: 'Brex',
         description: "Modern finance software platform for startups and growing businesses.",
-        url: 'http://brex.com',
+        url: 'https://brex.com',
       },
       {
         name: 'Mercury',
         description: "Online business banking designed for startups and small businesses.",
-        url: 'http://mercury.com',
+        url: 'https://mercury.com',
       },
       {
         name: 'Rho',
@@ -375,12 +375,12 @@ const tools = [
       {
         name: 'AngelList',
         description: "Build, Lead, Invest - Platform for startup fundraising and investing.",
-        url: 'http://angellist.com',
+        url: 'https://angellist.com',
       },
       {
         name: 'Carta',
         description: "The End-to-End Suite Connecting Private Capital.",
-        url: 'http://carta.com',
+        url: 'https://carta.com',
       },
       {
         name: 'Pulley',
@@ -405,7 +405,7 @@ const tools = [
       {
         name: 'Augment Code',
         description: "AI coding platform designed for real-world software development.",
-        url: 'http://augmentcode.com',
+        url: 'https://augmentcode.com',
       },
       {
         name: 'BLACKBOX AI',
@@ -424,7 +424,7 @@ const tools = [
       {
         name: 'Cursor',
         description: "AI-powered code editor that enhances development productivity.",
-        url: 'http://cursor.com',
+        url: 'https://cursor.com',
       },
       {
         name: 'Factory',
@@ -457,7 +457,7 @@ const tools = [
       {
         name: 'Windsurf',
         description: "Powerful AI code editor (formerly Codeium) for enhanced development workflows.",
-        url: 'http://windsurf.com',
+        url: 'https://windsurf.com',
       },
     ],
   },
@@ -467,7 +467,7 @@ const tools = [
       {
         name: 'Attio',
         description: "Next-generation CRM built for modern sales and customer success teams.",
-        url: 'http://attio.com',
+        url: 'https://attio.com',
       },
       {
         name: 'Day.ai',
@@ -476,7 +476,7 @@ const tools = [
       {
         name: 'HubSpot',
         description: "Comprehensive software and tools for your business operations.",
-        url: 'http://hubspot.com',
+        url: 'https://hubspot.com',
       },
       {
         name: 'Monaco',
@@ -495,7 +495,7 @@ const tools = [
       {
         name: 'Decagon',
         description: "Conversational AI platform for enhanced customer experience.",
-        url: 'http://decagon.ai',
+        url: 'https://decagon.ai',
       },
       {
         name: 'Forethought',
@@ -595,7 +595,7 @@ const tools = [
       {
         name: 'Candor',
         description: "AI-powered defense contracting and government solutions.",
-        url: 'http://usecandor.ai',
+        url: 'https://usecandor.ai',
       },
       {
         name: 'Sweetspot',
@@ -879,12 +879,12 @@ const tools = [
       {
         name: 'Resend',
         description: "Email API designed specifically for developers.",
-        url: 'http://resend.com',
+        url: 'https://resend.com',
       },
       {
         name: 'Superhuman',
         description: "The most productive email app ever made for power users.",
-        url: 'http://superhuman.com',
+        url: 'https://superhuman.com',
       },
       {
         name: 'Zero Email',
@@ -899,7 +899,7 @@ const tools = [
       {
         name: 'Luma',
         description: "Delightful events platform for creating and managing gatherings.",
-        url: 'http://lu.ma',
+        url: 'https://lu.ma',
       },
       {
         name: 'Partiful',
@@ -962,7 +962,7 @@ const tools = [
       {
         name: 'Split.dev',
         description: "LLM-Search Lead Attribution for Growth Teams.",
-        url: 'http://split.dev',
+        url: 'https://split.dev',
       },
     ],
   },
@@ -977,7 +977,7 @@ const tools = [
       {
         name: 'Modal',
         description: "High-performance AI infrastructure for running compute-intensive workloads.",
-        url: 'http://modal.com',
+        url: 'https://modal.com',
       },
     ],
   },
@@ -1052,16 +1052,8 @@ const tools = [
         url: 'https://crosby.ai/',
       },
       {
-        name: 'Crosby',
-        url: 'https://www.crosby.ai/',
-      },
-      {
         name: 'Legora',
         url: 'https://legora.com/',
-      },
-      {
-        name: 'Legora Series D',
-        url: 'https://legora.com/blog/series-d',
       },
     ],
   },
@@ -1098,7 +1090,7 @@ const tools = [
       {
         name: 'YouLearn AI',
         description: "AI-powered personalized learning experiences.",
-        url: 'http://youlearn.ai',
+        url: 'https://youlearn.ai',
       },
     ],
   },
@@ -1176,7 +1168,7 @@ const tools = [
       },
       {
         name: 'foam',
-        url: 'http://sdk.foam.ai/',
+        url: 'https://sdk.foam.ai/',
       },
       {
         name: 'incident.io',
@@ -1191,7 +1183,7 @@ const tools = [
       {
         name: 'PostHog',
         description: "All-in-one platform for building successful products with analytics.",
-        url: 'http://posthog.com',
+        url: 'https://posthog.com',
       },
     ],
   },
@@ -1259,7 +1251,7 @@ const tools = [
       {
         name: 'Will Robbins',
         description: "GP at Contrary",
-        url: 'willrobbins.com',
+        url: 'https://willrobbins.com',
       },
       {
         name: 'Zhou Xian',
@@ -1368,7 +1360,7 @@ const tools = [
       {
         name: 'Ashby',
         description: "All-in-one recruiting software for ambitious teams.",
-        url: 'http://ashbyhq.com',
+        url: 'https://ashbyhq.com',
       },
       {
         name: 'Eightfold.ai',

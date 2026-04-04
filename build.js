@@ -13,9 +13,18 @@ function slugify(str) {
   return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
-// Escape HTML for title attributes
+// Escape HTML for attributes and content
 function escapeAttr(str) {
   return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function escapeHtml(str) {
+  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function sanitizeUrl(url) {
+  if (/^https?:\/\//i.test(url)) return url;
+  return 'https://' + url;
 }
 
 let toolsHtml = `<!DOCTYPE html>
@@ -43,11 +52,12 @@ for (const category of tools) {
   const slug = slugify(category.title);
   const count = category.stack.length;
   toolsHtml += `    <section class="tool-category" id="${slug}">\n`;
-  toolsHtml += `      <h2>${category.title} <span>${count}</span></h2>\n`;
+  toolsHtml += `      <h2>${escapeHtml(category.title)} <span>${count}</span></h2>\n`;
   toolsHtml += `      <ul>\n`;
   for (const tool of category.stack) {
     const title = tool.description ? ` title="${escapeAttr(tool.description)}"` : '';
-    toolsHtml += `        <li><a href="${tool.url}"${title} target="_blank" rel="noopener">${tool.name}</a></li>\n`;
+    const url = sanitizeUrl(tool.url);
+    toolsHtml += `        <li><a href="${escapeAttr(url)}"${title} target="_blank" rel="noopener">${escapeHtml(tool.name)}</a></li>\n`;
   }
   toolsHtml += `      </ul>\n`;
   toolsHtml += `    </section>\n`;
@@ -63,6 +73,18 @@ console.log('Built tools/index.html');
 const matter = require('gray-matter');
 const { marked } = require('marked');
 
+// Configure marked to add target="_blank" rel="noopener" to external links
+const renderer = new marked.Renderer();
+const originalLink = renderer.link.bind(renderer);
+renderer.link = function({ href, title, text }) {
+  const titleAttr = title ? ` title="${escapeAttr(title)}"` : '';
+  if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
+    return `<a href="${escapeAttr(href)}"${titleAttr} target="_blank" rel="noopener">${text}</a>`;
+  }
+  return `<a href="${escapeAttr(href)}"${titleAttr}>${text}</a>`;
+};
+marked.setOptions({ renderer });
+
 const articleSrc = fs.readFileSync('./articles/introducing-foundry.md', 'utf8');
 const { data, content } = matter(articleSrc);
 
@@ -73,10 +95,10 @@ const articleHtml = `<!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${data.title} — Neil Raman</title>
-  <meta name="description" content="${data.description}">
-  <meta property="og:title" content="${data.title}">
-  <meta property="og:description" content="${data.description}">
+  <title>${escapeHtml(data.title)} — Neil Raman</title>
+  <meta name="description" content="${escapeAttr(data.description)}">
+  <meta property="og:title" content="${escapeAttr(data.title)}">
+  <meta property="og:description" content="${escapeAttr(data.description)}">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -89,8 +111,8 @@ const articleHtml = `<!DOCTYPE html>
   </nav>
   <main class="article">
     <header class="article-header">
-      <h1 class="article-title">${data.title}</h1>
-      <time>${new Date(data.date).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}</time>
+      <h1 class="article-title">${escapeHtml(data.title)}</h1>
+      <time datetime="${data.date}">${new Date(data.date).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}</time>
     </header>
     ${articleBody}
   </main>
