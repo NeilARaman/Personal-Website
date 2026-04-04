@@ -49,33 +49,12 @@ console.log('Built tools/index.html');
 
 // --- Article page ---
 const matter = require('gray-matter');
+const { marked } = require('marked');
 
 const articleSrc = fs.readFileSync('./articles/introducing-foundry.md', 'utf8');
 const { data, content } = matter(articleSrc);
 
-// Simple markdown to HTML (handles ##, **, links, paragraphs)
-function md(text) {
-  return text
-    .split('\n\n')
-    .map(block => {
-      block = block.trim();
-      if (!block) return '';
-      // headings
-      if (block.startsWith('## ')) return `<h2>${inline(block.slice(3))}</h2>`;
-      if (block.startsWith('### ')) return `<h3>${inline(block.slice(4))}</h3>`;
-      // paragraphs
-      return `<p>${inline(block)}</p>`;
-    })
-    .filter(Boolean)
-    .join('\n    ');
-}
-
-function inline(text) {
-  return text
-    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
-    .replace(/\n/g, ' ');
-}
+const articleBody = marked.parse(content);
 
 const articleHtml = `<!DOCTYPE html>
 <html lang="en">
@@ -101,7 +80,7 @@ const articleHtml = `<!DOCTYPE html>
       <h1 class="article-title">${data.title}</h1>
       <time>${new Date(data.date).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}</time>
     </header>
-    ${md(content)}
+    ${articleBody}
   </main>
 </body>
 </html>
