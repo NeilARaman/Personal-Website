@@ -12,7 +12,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **FOUN-01**: Landing page displays Neil's name and 1-2 sentence intro
 - [ ] **FOUN-02**: Minimal navigation with Home, Articles, and Tools links visible on all pages
 - [ ] **FOUN-03**: Site is mobile responsive — single-column layout on small screens, readable on all devices
-- [ ] **FOUN-04**: All pages use semantic HTML (`<header>`, `<nav>`, `<main>`, `<article>`, `<footer>`)
+- [x] **FOUN-04**: All pages use semantic HTML (`<header>`, `<nav>`, `<main>`, `<article>`, `<footer>`)
 - [ ] **FOUN-05**: Every page loads in under 1 second on a standard connection
 - [ ] **FOUN-06**: LinkedIn link visible in header or footer as sole contact method
 
@@ -28,7 +28,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **DESG-01**: Light color scheme with off-white background
 - [x] **DESG-02**: Serif typography — display serif for headings, text serif for body, self-hosted fonts
 - [x] **DESG-03**: Generous whitespace — modular type scale, 1.5-1.6 line-height, breathing room between elements
-- [ ] **DESG-04**: At least one subtle visual identity element unique to Neil (accent color, rule style, or layout cadence)
+- [x] **DESG-04**: At least one subtle visual identity element unique to Neil (accent color, rule style, or layout cadence)
 
 ### Technical
 
@@ -85,7 +85,7 @@ Deferred to future release. Tracked but not in current roadmap.
 | FOUN-01 | Phase 2 | Pending |
 | FOUN-02 | Phase 2 | Pending |
 | FOUN-03 | Phase 2 | Pending |
-| FOUN-04 | Phase 1 | Pending |
+| FOUN-04 | Phase 1 | Complete |
 | FOUN-05 | Phase 5 | Pending |
 | FOUN-06 | Phase 2 | Pending |
 | CONT-01 | Phase 3 | Pending |
@@ -95,7 +95,7 @@ Deferred to future release. Tracked but not in current roadmap.
 | DESG-01 | Phase 1 | Complete |
 | DESG-02 | Phase 1 | Complete |
 | DESG-03 | Phase 1 | Complete |
-| DESG-04 | Phase 1 | Pending |
+| DESG-04 | Phase 1 | Complete |
 | TECH-01 | Phase 1 | Complete |
 | TECH-02 | Phase 1 | Complete |
 | TECH-03 | Phase 5 | Pending |
