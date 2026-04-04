@@ -19,6 +19,7 @@ const tools = [
       },
       {
         name: 'Alpha by a16z speedrun',
+        description: "Fellowship placing early-career engineers at a16z portfolio companies or funding their startups.",
         url: 'https://alpha.a16zspeedrun.com/',
       },
       {
@@ -123,6 +124,7 @@ const tools = [
       },
       {
         name: 'Fourmula.ai',
+        description: "AI platform that generates product photography, lifestyle images, and videos from uploaded photos.",
         url: 'https://fourmula.ai/',
       },
       {
@@ -142,18 +144,22 @@ const tools = [
     stack: [
       {
         name: 'Deeptune',
+        description: "Simulation environments where AI agents practice tasks like coding and spreadsheets to improve.",
         url: 'https://deeptune.com/',
       },
       {
         name: 'Hornet',
+        description: "Retrieval engine built for AI agents, handling iterative queries across multiple data sources.",
         url: 'https://hornet.dev/',
       },
       {
         name: 'Nozomio Labs',
+        description: "Applied research lab building context infrastructure for AI systems.",
         url: 'https://www.nozomio.com/',
       },
       {
         name: 'Subconscious',
+        description: "Infrastructure platform enabling LLMs to run as autonomous background agents with tool calling.",
         url: 'https://www.subconscious.dev/',
       },
     ],
@@ -163,10 +169,12 @@ const tools = [
     stack: [
       {
         name: 'Arena',
+        description: "Company developing electromagnetic intelligence and sensing technology.",
         url: 'https://www.arenaphysica.com/',
       },
       {
         name: 'Brain Interfaces',
+        description: "Research team building personal brain-computer interfaces for direct neural communication.",
         url: 'https://www.neuralace.co/',
       },
       {
@@ -176,6 +184,7 @@ const tools = [
       },
       {
         name: 'Generalist AI',
+        description: "Robotics company developing embodied foundation models for physical world manipulation.",
         url: 'https://generalistai.com/',
       },
       {
@@ -190,6 +199,7 @@ const tools = [
       },
       {
         name: 'Ndea',
+        description: "AI research lab pursuing artificial general intelligence through deep learning and program synthesis.",
         url: 'https://ndea.com/',
       },
       {
@@ -199,10 +209,12 @@ const tools = [
       },
       {
         name: 'Prime Intellect',
+        description: "Distributed compute platform for training, evaluating, and deploying agentic AI models on GPUs.",
         url: 'https://www.primeintellect.ai/',
       },
       {
         name: 'Softmax',
+        description: "Research lab behind Cogames, a multiplayer benchmark for measuring AI social intelligence.",
         url: 'https://softmax.com/',
       },
     ],
@@ -212,6 +224,7 @@ const tools = [
     stack: [
       {
         name: 'Context',
+        description: "Enterprise AI platform deploying autonomous agents that execute real workflows in company systems.",
         url: 'https://www.context.ai/',
       },
       {
@@ -231,22 +244,27 @@ const tools = [
       },
       {
         name: 'Pronto',
+        description: "On-demand home cleaning app connecting users with verified professionals for household tasks.",
         url: 'https://www.withpronto.com/',
       },
       {
         name: 'Sana',
+        description: "Enterprise AI platform for integrating AI into business apps, knowledge systems, and workflows.",
         url: 'https://sanalabs.com/',
       },
       {
         name: 'Town Assistant',
+        description: "AI assistant that integrates with work tools to automate email, scheduling, and task management.",
         url: 'https://town.com/',
       },
       {
         name: 'Tsenta',
+        description: "Desktop app that automatically fills out and submits job applications across hiring platforms.",
         url: 'https://www.tsenta.com/',
       },
       {
         name: 'Wordware',
+        description: "IDE for building AI agents and apps using natural language, with API deployment and tracing.",
         url: 'https://www.wordware.ai/',
       },
     ],
@@ -351,6 +369,7 @@ const tools = [
       },
       {
         name: 'Caretta',
+        description: "Real-time AI assistant that helps sales reps handle objections and questions during live calls.",
         url: 'https://www.caretta.so/',
       },
       {
@@ -365,6 +384,7 @@ const tools = [
       },
       {
         name: 'Tulip',
+        description: "Frontline operations platform for manufacturers to build apps and manage production workflows.",
         url: 'https://tulip.co/',
       },
     ],
@@ -409,6 +429,7 @@ const tools = [
       },
       {
         name: 'BLACKBOX AI',
+        description: "Enterprise platform dispatching parallel AI coding agents with a chairman LLM selecting the best output.",
         url: 'https://www.blackbox.ai/',
       },
       {
@@ -448,10 +469,12 @@ const tools = [
       },
       {
         name: 'Omnara',
+        description: "Remote control app for monitoring and managing AI coding agents from desktop, mobile, or web.",
         url: 'https://www.omnara.com/',
       },
       {
         name: 'Superset',
+        description: "Code editor for orchestrating multiple CLI-based AI coding agents in parallel Git worktrees.",
         url: 'https://superset.sh/',
       },
       {
@@ -471,6 +494,7 @@ const tools = [
       },
       {
         name: 'Day.ai',
+        description: "AI-native CRM that auto-captures meetings, emails, and Slack into enriched contact records.",
         url: 'https://day.ai/',
       },
       {
@@ -480,6 +504,7 @@ const tools = [
       },
       {
         name: 'Monaco',
+        description: "AI-native revenue platform combining CRM, sales automation, and pipeline management for startups.",
         url: 'https://www.monaco.com/',
       },
       {
@@ -519,6 +544,7 @@ const tools = [
     stack: [
       {
         name: 'Aaru',
+        description: "Simulation platform using multi-agent modeling to predict human behavior without traditional surveys.",
         url: 'https://aaru.com/',
       },
       {
@@ -538,14 +564,17 @@ const tools = [
       },
       {
         name: 'Deepnote',
+        description: "Collaborative data notebook combining Python, SQL, and visualizations for analytics and ML workflows.",
         url: 'https://deepnote.com/',
       },
       {
         name: 'Eragon',
+        description: "Centralized AI workspace connecting company data sources to train custom business intelligence models.",
         url: 'https://www.eragon.ai/',
       },
       {
         name: 'Nominal',
+        description: "Industrial data platform helping hardware engineering teams manage data from instrumentation to analysis.",
         url: 'https://nominal.io/blog/series-b2',
       },
       {
@@ -555,6 +584,7 @@ const tools = [
       },
       {
         name: 'Sixtyfour',
+        description: "Enterprise data platform using AI agents to enrich profiles from social, contact, and proprietary data.",
         url: 'https://sixtyfour.ai/',
       },
     ],
@@ -614,14 +644,17 @@ const tools = [
     stack: [
       {
         name: 'Arcade Labs',
+        description: "Visual storytelling studio providing branding, UI/UX, and web design services for startups.",
         url: 'https://arcade.la/',
       },
       {
         name: 'Cavalry',
+        description: "2D animation software for creating motion graphics with real-time rendering and procedural workflows.",
         url: 'https://cavalry.scenegroup.co/',
       },
       {
         name: 'DesEngs',
+        description: "Curated resource hub of tools, articles, and jobs for design engineers.",
         url: 'https://desengs.com/',
       },
       {
@@ -646,10 +679,12 @@ const tools = [
       },
       {
         name: 'Pencil',
+        description: "Design tool that integrates into your IDE so developers can design and code simultaneously.",
         url: 'https://www.pencil.dev/',
       },
       {
         name: 'QuiverAI',
+        description: "AI vector design tools for generating, editing, and animating editable SVG assets.",
         url: 'https://quiver.ai/',
       },
       {
@@ -659,6 +694,7 @@ const tools = [
       },
       {
         name: 'Variant',
+        description: "AI design tool generating endless UI variations from a text idea, exportable as HTML or React.",
         url: 'https://variant.com/',
       },
     ],
@@ -678,6 +714,7 @@ const tools = [
       },
       {
         name: 'Bundui',
+        description: "Library of 100+ handcrafted UI components built with Tailwind CSS, React, and shadcn/ui.",
         url: 'https://bundui.io/',
       },
       {
@@ -707,6 +744,7 @@ const tools = [
       },
       {
         name: 'Knock',
+        description: "Customer engagement platform for sending product and marketing messages across multiple channels.",
         url: 'https://knock.app/',
       },
       {
@@ -771,6 +809,7 @@ const tools = [
       },
       {
         name: 'The Component Gallery',
+        description: "Reference repository of UI components cataloged from real-world design systems.",
         url: 'https://component.gallery/',
       },
     ],
@@ -800,6 +839,7 @@ const tools = [
       },
       {
         name: 'Extend',
+        description: "AI document processing platform that extracts and parses complex layouts with vision models.",
         url: 'https://www.extend.ai/',
       },
       {
@@ -869,6 +909,7 @@ const tools = [
     stack: [
       {
         name: 'Lightfern',
+        description: "Chrome extension using AI to autocomplete emails in Gmail as you type.",
         url: 'https://lightfern.com/',
       },
       {
@@ -913,6 +954,7 @@ const tools = [
     stack: [
       {
         name: 'Astor',
+        description: "AI investment advisor app providing personalized portfolio advice and market analysis via chat.",
         url: 'https://www.astor.app/',
       },
       {
@@ -932,6 +974,7 @@ const tools = [
       },
       {
         name: 'Natural',
+        description: "Agentic payments platform enabling AI agents to send and receive money through APIs and tool calls.",
         url: 'https://www.natural.co/',
       },
       {
@@ -986,10 +1029,12 @@ const tools = [
     stack: [
       {
         name: 'Boil the Ocean',
+        description: "Essay arguing superintelligence should inspire ambitious entrepreneurship, not fear.",
         url: 'https://garryslist.org/posts/boil-the-ocean',
       },
       {
         name: 'Clay\'s EA Take-Home',
+        description: "Take-home assessment for Clay executive assistant hiring process.",
         url: 'https://docs.google.com/document/d/1Jct3sKsza5QAn-IQrdnG2Givs7WlQgn2nY5IIcwt_Vw/edit?dub_id=2Dg5uaQVeT3nT8RR&tab=t.0',
       },
       {
@@ -1009,10 +1054,12 @@ const tools = [
     stack: [
       {
         name: 'Ambience Healthcare',
+        description: "AI platform automating clinical documentation and medical coding within Epic EHR systems.",
         url: 'https://www.ambiencehealthcare.com/',
       },
       {
         name: 'Datavant',
+        description: "Healthcare data collaboration platform enabling secure exchange of health records across organizations.",
         url: 'https://www.datavant.com/',
       },
       {
@@ -1027,18 +1074,22 @@ const tools = [
       },
       {
         name: 'Komodo Health',
+        description: "Healthcare analytics platform providing de-identified patient data and AI-powered insights.",
         url: 'https://www.komodohealth.com/',
       },
       {
         name: 'Latent Health',
+        description: "AI clinical platform that accelerates medication access by automating prior authorizations in EHRs.",
         url: 'https://latenthealth.com/',
       },
       {
         name: 'Qualified Health',
+        description: "Enterprise AI platform for deploying and governing generative AI across health system workflows.",
         url: 'https://www.qualifiedhealthai.com/',
       },
       {
         name: 'Tennr',
+        description: "Agentic platform automating pre-visit patient operations, payer requirements, and care routing.",
         url: 'https://www.tennr.com/',
       },
     ],
@@ -1053,6 +1104,7 @@ const tools = [
       },
       {
         name: 'Legora',
+        description: "AI platform helping lawyers automate legal research, drafting, and document review.",
         url: 'https://legora.com/',
       },
     ],
@@ -1062,6 +1114,7 @@ const tools = [
     stack: [
       {
         name: 'Beej\'s Guide to Computer Science',
+        description: "Free guide teaching problem-solving skills and learning strategies for computer science.",
         url: 'https://beej.us/guide/bglcs/html/#understanding-the-problem',
       },
       {
@@ -1071,6 +1124,7 @@ const tools = [
       },
       {
         name: 'Learn Notion in 12 Hours',
+        description: "Free 12-hour video course teaching Notion from basics through advanced automation.",
         url: 'https://www.freecodecamp.org/news/lean-notion-in-12-hours/',
       },
       {
@@ -1085,6 +1139,7 @@ const tools = [
       },
       {
         name: 'The Transformers',
+        description: "Visual guide explaining transformer architecture from tokenization through self-attention.",
         url: 'https://www.vizuaranewsletter.com/p/the-transformers?r=5b5pyd',
       },
       {
@@ -1119,6 +1174,7 @@ const tools = [
     stack: [
       {
         name: 'Arena Magazine',
+        description: "Quarterly publication covering technology, capitalism, and civilization through long-form journalism.",
         url: 'https://arenamag.com/',
       },
       {
@@ -1168,6 +1224,7 @@ const tools = [
       },
       {
         name: 'foam',
+        description: "AI debugging platform that detects production errors, correlates issues, and notifies via Slack.",
         url: 'https://sdk.foam.ai/',
       },
       {
@@ -1192,6 +1249,7 @@ const tools = [
     stack: [
       {
         name: 'Angus Emmerson',
+        description: "Video editor creating commercials for brands like Formula 1, Netflix, and Disney.",
         url: 'https://angusemmerson.com/',
       },
       {
@@ -1241,6 +1299,7 @@ const tools = [
       },
       {
         name: 'TAO TAJIMA',
+        description: "Filmmaker at TANGRAM creating concept videos and commercial content for brands and artists.",
         url: 'https://taotajima.jp/',
       },
       {
@@ -1275,6 +1334,7 @@ const tools = [
     stack: [
       {
         name: 'Chronicle',
+        description: "AI presentation tool that generates professional slides from notes with full customization.",
         url: 'https://chroniclehq.com/',
       },
       {
@@ -1389,6 +1449,7 @@ const tools = [
       },
       {
         name: 'Sunday Robotics',
+        description: "Robotics company building Memo, an autonomous home robot for household tasks like dishwashing.",
         url: 'https://www.sunday.ai/journal/series-b',
       },
     ],
@@ -1408,6 +1469,7 @@ const tools = [
       },
       {
         name: 'Cardinal',
+        description: "AI platform consolidating outbound sales operations into a single tool for growing teams.",
         url: 'https://trycardinal.ai/',
       },
       {
@@ -1422,10 +1484,12 @@ const tools = [
       },
       {
         name: 'Clodo',
+        description: "AI people search platform finding individuals via natural language and automating outreach.",
         url: 'https://clodo.ai/',
       },
       {
         name: 'GTM Goose Skills Library',
+        description: "Collection of AI skills automating go-to-market tasks like prospecting and competitive intel.",
         url: 'https://skills.gooseworks.ai/',
       },
       {
@@ -1435,6 +1499,7 @@ const tools = [
       },
       {
         name: 'Orange Slice',
+        description: "AI platform automating lead discovery, enrichment, and CRM syncing for go-to-market teams.",
         url: 'https://www.orangeslice.ai/',
       },
     ],
@@ -1444,14 +1509,17 @@ const tools = [
     stack: [
       {
         name: 'AIUC',
+        description: "Company that certifies and insures AI agents against the AIUC-1 standard for enterprise adoption.",
         url: 'https://aiuc.com/',
       },
       {
         name: 'Cylake',
+        description: "AI-native cybersecurity startup delivering on-premise security with total data sovereignty.",
         url: 'https://greylock.com/portfolio-news/introducing-cylake-ai-native-cybersecurity-with-total-data-sovereignty/',
       },
       {
         name: 'The Antifraud Company',
+        description: "AI-powered investigative platform detecting corporate fraud in government spending programs.",
         url: 'https://antifraudcompany.com/',
       },
       {
@@ -1461,6 +1529,7 @@ const tools = [
       },
       {
         name: 'Vanta',
+        description: "Compliance platform automating evidence collection and monitoring across 35+ security frameworks.",
         url: 'https://www.vanta.com/',
       },
     ],
@@ -1545,10 +1614,12 @@ const tools = [
     stack: [
       {
         name: 'Anchor',
+        description: "Cloud browser platform giving AI agents secure, authenticated environments for web automation.",
         url: 'https://anchorbrowser.io/',
       },
       {
         name: 'Browser Use',
+        description: "Platform providing scalable undetectable browsers for AI agents to interact with websites.",
         url: 'https://browser-use.com/',
       },
       {
@@ -1583,6 +1654,7 @@ const tools = [
       },
       {
         name: 'TinyFish',
+        description: "Enterprise API enabling AI web agents to navigate, authenticate, and transact across websites at scale.",
         url: 'https://www.tinyfish.ai/',
       },
     ],
