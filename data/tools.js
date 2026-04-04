@@ -94,7 +94,7 @@ const tools = [
       },
       {
         name: 'Alpha by a16z speedrun',
-        url: 'https://alpha.speedrun.a16z.com/',
+        url: 'https://alpha.a16zspeedrun.com/',
       },
     ],
   },
@@ -167,23 +167,23 @@ const tools = [
       },
       {
         name: 'Prime Intellect',
-        url: 'https://www.primeintel.ai/',
+        url: 'https://www.primeintellect.ai/',
       },
       {
         name: 'Anchor',
-        url: 'https://www.useanchor.ai/',
+        url: 'https://anchorbrowser.io/',
       },
       {
         name: 'Sana',
-        url: 'https://www.sana.ai/',
+        url: 'https://sanalabs.com/',
       },
       {
         name: 'TinyFish',
-        url: 'https://tinyfish.ai/',
+        url: 'https://www.tinyfish.ai/',
       },
       {
         name: 'Softmax',
-        url: 'https://softmax.ai/',
+        url: 'https://softmax.com/',
       },
       {
         name: 'Wordware',
@@ -191,11 +191,11 @@ const tools = [
       },
       {
         name: 'Context',
-        url: 'https://context.ai/',
+        url: 'https://www.context.ai/',
       },
       {
         name: 'AIUC',
-        url: 'https://aiuc.ai/',
+        url: 'https://aiuc.com/',
       },
       {
         name: 'Extend',
@@ -207,43 +207,43 @@ const tools = [
       },
       {
         name: 'Subconscious',
-        url: 'https://subconscious.ai/',
+        url: 'https://www.subconscious.dev/',
       },
       {
         name: 'Eragon',
-        url: 'https://eragon.ai/',
+        url: 'https://www.eragon.ai/',
       },
       {
         name: 'Browser Use',
         url: 'https://browser-use.com/',
       },
       {
-        name: 'Deeptune',
-        url: 'https://deeptune.ai/',
-      },
-      {
         name: 'Hornet',
-        url: 'https://hornet.ai/',
+        url: 'https://hornet.dev/',
       },
       {
-        name: 'Generalist AI',
-        url: 'https://generalist.ai/',
+        name: 'Ndea',
+        url: 'https://ndea.com/',
+      },
+      {
+        name: 'Deeptune',
+        url: 'https://deeptune.com/',
       },
       {
         name: 'Aaru',
-        url: 'https://aaru.ai/',
+        url: 'https://aaru.com/',
       },
       {
         name: 'Natural',
-        url: 'https://www.natural.com/',
+        url: 'https://www.natural.co/',
       },
       {
-        name: 'Boil the Ocean',
-        url: 'https://boiltheocean.ai/',
+        name: 'Arena',
+        url: 'https://www.arenaphysica.com/',
       },
       {
         name: 'Brain Interfaces',
-        url: 'https://braininterfaces.ai/',
+        url: 'https://www.neuralace.co/',
       },
     ],
   },
@@ -267,11 +267,11 @@ const tools = [
       },
       {
         name: 'Town Assistant',
-        url: 'https://townassistant.com/',
+        url: 'http://town.com/',
       },
       {
         name: 'Pronto',
-        url: 'https://pronto.ai/',
+        url: 'https://www.withpronto.com/',
       },
     ],
   },
@@ -383,6 +383,14 @@ const tools = [
         description: 'Also put together by the team at V1.',
         url: 'https://v1team.notion.site/Software-Building-Resources-dcdf772230ad4f3195d2399f74964969',
       },
+      {
+        name: 'Tulip',
+        url: 'https://tulip.co/',
+      },
+      {
+        name: 'Caretta',
+        url: 'https://www.caretta.so/',
+      },
     ],
   },
   {
@@ -465,15 +473,11 @@ const tools = [
       },
       {
         name: 'Superset',
-        url: 'https://supersetai.com/',
+        url: 'https://superset.sh/',
       },
       {
         name: 'Omnara',
-        url: 'https://omnara.dev/',
-      },
-      {
-        name: 'foam',
-        url: 'https://foambubble.github.io/foam/',
+        url: 'https://www.omnara.com/',
       },
     ],
   },
@@ -492,7 +496,7 @@ const tools = [
       },
       {
         name: 'Qualified Health',
-        url: 'https://qualifiedhealth.ai/',
+        url: 'https://www.qualifiedhealthai.com/',
       },
       {
         name: 'Ambience Healthcare',
@@ -508,7 +512,7 @@ const tools = [
       },
       {
         name: 'Tennr',
-        url: 'https://tennr.com/',
+        url: 'https://www.tennr.com/',
       },
     ],
   },
@@ -575,16 +579,20 @@ const tools = [
         url: 'https://cosmograph.app/',
       },
       {
-        name: 'Datacurve',
-        url: 'https://datacurve.ai/',
-      },
-      {
         name: 'Deepnote',
         url: 'https://deepnote.com/',
       },
       {
         name: 'Datavant',
-        url: 'https://datavant.com/',
+        url: 'https://www.datavant.com/',
+      },
+      {
+        name: 'Datacurve',
+        url: 'https://knock.app/',
+      },
+      {
+        name: 'Nominal',
+        url: 'https://nominal.io/blog/series-b2',
       },
     ],
   },
@@ -638,7 +646,7 @@ const tools = [
       },
       {
         name: 'Pencil',
-        url: 'https://pencil.li/',
+        url: 'https://www.pencil.dev/',
       },
       {
         name: 'Paper',
@@ -646,11 +654,11 @@ const tools = [
       },
       {
         name: 'Arcade Labs',
-        url: 'https://www.arcadelabs.co/',
+        url: 'https://arcade.la/',
       },
       {
         name: 'Bundui',
-        url: 'https://bundui.com/',
+        url: 'https://bundui.io/',
       },
       {
         name: 'The Component Gallery',
@@ -662,15 +670,15 @@ const tools = [
       },
       {
         name: 'Variant',
-        url: 'https://variant.style/',
+        url: 'https://variant.com/',
       },
       {
         name: 'DesEngs',
-        url: 'https://desengs.co/',
+        url: 'https://desengs.com/',
       },
       {
         name: 'QuiverAI',
-        url: 'https://quiverai.com/',
+        url: 'https://quiver.ai/',
       },
     ],
   },
@@ -781,8 +789,8 @@ const tools = [
         url: 'https://chroniclehq.com/',
       },
       {
-        name: 'Lightfern',
-        url: 'https://lightfern.com/',
+        name: 'foam',
+        url: 'http://sdk.foam.ai/',
       },
     ],
   },
@@ -846,7 +854,7 @@ const tools = [
       },
       {
         name: 'Legora',
-        url: 'https://legora.ai/',
+        url: 'https://legora.com/',
       },
     ],
   },
@@ -980,7 +988,11 @@ const tools = [
       },
       {
         name: 'Astor',
-        url: 'https://www.astor.ai/',
+        url: 'https://www.astor.app/',
+      },
+      {
+        name: 'Legora Series D',
+        url: 'https://legora.com/blog/series-d',
       },
     ],
   },
@@ -1032,6 +1044,14 @@ const tools = [
         description: 'Comprehensive SF guide by Michelle Fang.',
         url: 'https://www.startertosf.guide/',
       },
+      {
+        name: 'Boil the Ocean',
+        url: 'https://garryslist.org/posts/boil-the-ocean',
+      },
+      {
+        name: 'Clay\'s EA Take-Home',
+        url: 'https://docs.google.com/document/d/1Jct3sKsza5QAn-IQrdnG2Givs7WlQgn2nY5IIcwt_Vw/edit?dub_id=2Dg5uaQVeT3nT8RR&tab=t.0',
+      },
     ],
   },
   {
@@ -1073,11 +1093,11 @@ const tools = [
       },
       {
         name: 'Beej\'s Guide to Computer Science',
-        url: 'https://beej.us/guide/',
+        url: 'https://beej.us/guide/bglcs/html/#understanding-the-problem',
       },
       {
         name: 'Learn Notion in 12 Hours',
-        url: 'https://www.notion.so/help',
+        url: 'https://www.freecodecamp.org/news/lean-notion-in-12-hours/',
       },
     ],
   },
@@ -1114,7 +1134,11 @@ const tools = [
       },
       {
         name: 'Arena Magazine',
-        url: 'https://arena.run/',
+        url: 'https://arenamag.com/',
+      },
+      {
+        name: 'The Transformers',
+        url: 'https://www.vizuaranewsletter.com/p/the-transformers?r=5b5pyd',
       },
     ],
   },
@@ -1173,11 +1197,7 @@ const tools = [
       },
       {
         name: 'Nozomio Labs',
-        url: 'https://nozomio.com/',
-      },
-      {
-        name: 'Arena',
-        url: 'https://arena.im/',
+        url: 'https://www.nozomio.com/',
       },
     ],
   },
@@ -1243,14 +1263,6 @@ const tools = [
         name: 'Zhou Xian',
         description: 'Co-founder of Genesis.',
         url: 'https://www.zhou-xian.com/',
-      },
-      {
-        name: 'Ndea',
-        url: 'https://ndea.co/',
-      },
-      {
-        name: 'Caretta',
-        url: 'https://www.caretta.so/',
       },
     ],
   },
@@ -1359,7 +1371,7 @@ const tools = [
       },
       {
         name: 'Tsenta',
-        url: 'https://tsenta.com/',
+        url: 'https://www.tsenta.com/',
       },
     ],
   },
@@ -1382,8 +1394,12 @@ const tools = [
         url: 'https://www.skild.ai/',
       },
       {
+        name: 'Generalist AI',
+        url: 'https://generalistai.com/',
+      },
+      {
         name: 'Sunday Robotics',
-        url: 'https://www.sundayrobotics.com/',
+        url: 'https://www.sunday.ai/journal/series-b',
       },
     ],
   },
@@ -1417,7 +1433,7 @@ const tools = [
       },
       {
         name: 'Cardinal',
-        url: 'https://www.cardinalapp.io/',
+        url: 'https://trycardinal.ai/',
       },
       {
         name: 'Clodo',
@@ -1429,11 +1445,11 @@ const tools = [
       },
       {
         name: 'GTM Goose Skills Library',
-        url: 'https://www.gtmgoose.com/',
+        url: 'https://skills.gooseworks.ai/',
       },
       {
         name: 'Monaco',
-        url: 'https://monaco.ai/',
+        url: 'https://www.monaco.com/',
       },
       {
         name: 'Sixtyfour',
@@ -1451,11 +1467,15 @@ const tools = [
       },
       {
         name: 'Cylake',
-        url: 'https://cylake.com/',
+        url: 'https://greylock.com/portfolio-news/introducing-cylake-ai-native-cybersecurity-with-total-data-sovereignty/',
       },
       {
         name: 'The Antifraud Company',
-        url: 'https://theantifraudcompany.com/',
+        url: 'https://antifraudcompany.com/',
+      },
+      {
+        name: 'Vanta',
+        url: 'https://www.vanta.com/',
       },
       {
         name: 'Vanta',
@@ -1595,6 +1615,10 @@ const tools = [
         name: 'Harper',
         description: 'Free, Open Source Grammar Checker for better writing.',
         url: 'https://writewithharper.com/',
+      },
+      {
+        name: 'Lightfern',
+        url: 'https://lightfern.com/',
       },
     ],
   },
