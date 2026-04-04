@@ -18,7 +18,13 @@
       "Bash(npm install:*)",
       "Bash(sed 's/:.*\\\\[//')",
       "Bash(sed 's/^\\\\s*//')",
-      "Bash(grep -E \"^  \\\\{$\" tools/index.html)"
+      "Bash(grep -E \"^  \\\\{$\" tools/index.html)",
+      "Bash(grep -v \"\\\\\\\\\\\\\\\\'\")",
+      "Bash(sed -i \"s/OpenAI's/OpenAI\\\\\\\\'s/g\" data/tools.js)",
+      "Bash(sed -i \"s/Andreessen Horowitz's/Andreessen Horowitz\\\\\\\\'s/g\" data/tools.js)",
+      "Bash(sed -i \"s/Google's/Google\\\\\\\\'s/g\" data/tools.js)",
+      "Bash(sed -i \"s/Palantir's/Palantir\\\\\\\\'s/g\" data/tools.js)",
+      "Bash(sed -i \"s/Pear VC's/Pear VC\\\\\\\\'s/g\" data/tools.js)"
     ]
   }
 }

@@ -1,5 +1,1257 @@
 const tools = [
   {
+    title: 'Models',
+    stack: [
+      {
+        name: 'ChatGPT',
+        description: 'OpenAI\'s advanced AI model.',
+        url: 'https://chatgpt.com/',
+      },
+      {
+        name: 'Claude',
+        description: 'Anthropic\'s advanced AI model.',
+        url: 'https://www.anthropic.com/',
+      },
+      {
+        name: 'Gemini',
+        description: 'Google\'s advanced AI model.',
+        url: 'https://gemini.google.com/',
+      },
+      {
+        name: 'Grok',
+        description: 'X.ai\'s advanced AI model.',
+        url: 'https://grok.com/',
+      },
+      {
+        name: 'Groq',
+        description: 'Purpose-built AI inference platform.',
+        url: 'https://groq.com/',
+      },
+    ],
+  },
+  {
+    title: 'AI Research Labs',
+    stack: [
+      {
+        name: 'Arena',
+        url: 'https://www.arenaphysica.com/',
+      },
+      {
+        name: 'Brain Interfaces',
+        url: 'https://www.neuralace.co/',
+      },
+      {
+        name: 'Essential AI',
+        description: 'Open platform for frontier AI research led by Transformer co-inventor Dr. Ashish Vaswani.',
+        url: 'https://www.essential.ai/',
+      },
+      {
+        name: 'Generalist AI',
+        url: 'https://generalistai.com/',
+      },
+      {
+        name: 'Google X',
+        description: 'Advanced technology research division focused on moonshot projects.',
+        url: 'https://x.company/',
+      },
+      {
+        name: 'LABS.GOOGLE',
+        description: 'Google\'s experimental AI research projects and cutting-edge technology demos.',
+        url: 'https://labs.google/',
+      },
+      {
+        name: 'Ndea',
+        url: 'https://ndea.com/',
+      },
+      {
+        name: 'Periodic Labs',
+        description: 'AI research company building autonomous laboratories and AI scientists for materials discovery.',
+        url: 'https://periodic.com/',
+      },
+      {
+        name: 'Prime Intellect',
+        url: 'https://www.primeintellect.ai/',
+      },
+      {
+        name: 'Softmax',
+        url: 'https://softmax.com/',
+      },
+    ],
+  },
+  {
+    title: 'AI Infrastructure',
+    stack: [
+      {
+        name: 'Deeptune',
+        url: 'https://deeptune.com/',
+      },
+      {
+        name: 'Hornet',
+        url: 'https://hornet.dev/',
+      },
+      {
+        name: 'Nozomio Labs',
+        url: 'https://www.nozomio.com/',
+      },
+      {
+        name: 'Subconscious',
+        url: 'https://www.subconscious.dev/',
+      },
+    ],
+  },
+  {
+    title: 'Coding',
+    stack: [
+      {
+        name: 'a0.dev',
+        description: 'Create Mobile Apps with AI-powered development tools.',
+        url: 'https://a0.dev/',
+      },
+      {
+        name: 'All Hands AI',
+        description: 'AI-powered coding assistant for software development.',
+        url: 'https://www.all-hands.dev/',
+      },
+      {
+        name: 'Augment Code',
+        description: 'AI coding platform designed for real-world software development.',
+        url: 'http://augmentcode.com',
+      },
+      {
+        name: 'BLACKBOX AI',
+        url: 'https://www.blackbox.ai/',
+      },
+      {
+        name: 'Cognition',
+        description: 'AI software engineering company building advanced developer tools.',
+        url: 'https://cognition-labs.com/',
+      },
+      {
+        name: 'Cubic',
+        description: 'Cursor for code review - streamlined code review process.',
+        url: 'https://www.cubic.dev/home',
+      },
+      {
+        name: 'Cursor',
+        description: 'AI-powered code editor that enhances development productivity.',
+        url: 'http://cursor.com',
+      },
+      {
+        name: 'Factory',
+        description: 'AI software development agents in a native IDE.',
+        url: 'https://factory.ai/',
+      },
+      {
+        name: 'Graphite',
+        description: 'End-to-end developer platform for modern software teams.',
+        url: 'https://graphite.dev/homepage',
+      },
+      {
+        name: 'Morph',
+        description: 'The fastest way to apply edits to files with AI assistance.',
+        url: 'https://morphllm.com/',
+      },
+      {
+        name: 'OB-1',
+        description: 'Terminal-based AI coding agent that\'s context-aware and model-agnostic.',
+        url: 'https://www.openblocklabs.com/',
+      },
+      {
+        name: 'Omnara',
+        url: 'https://www.omnara.com/',
+      },
+      {
+        name: 'Superset',
+        url: 'https://superset.sh/',
+      },
+      {
+        name: 'Windsurf',
+        description: 'Powerful AI code editor (formerly Codeium) for enhanced development workflows.',
+        url: 'http://windsurf.com',
+      },
+    ],
+  },
+  {
+    title: 'Developer Tools',
+    stack: [
+      {
+        name: 'Anima',
+        description: 'AI Design to Code - Figma to React, App, Website, and HTML conversion.',
+        url: 'https://www.animaapp.com/',
+      },
+      {
+        name: 'BlockNote',
+        description: 'Javascript Block-Based React rich text editor for modern applications.',
+        url: 'https://www.blocknotejs.org/',
+      },
+      {
+        name: 'Bundui',
+        url: 'https://bundui.io/',
+      },
+      {
+        name: 'Composio',
+        description: 'Access 250+ apps and services in just one line of code.',
+        url: 'https://composio.dev/',
+      },
+      {
+        name: 'Convex',
+        description: 'Fullstack TypeScript development platform for building modern applications.',
+        url: 'https://www.convex.dev/',
+      },
+      {
+        name: 'CrewAI',
+        description: 'The leading multi-agent platform for AI development.',
+        url: 'https://www.crewai.com/',
+      },
+      {
+        name: 'Effect',
+        description: 'TypeScript framework for building composable applications with error management, concurrency, and dependency injection.',
+        url: 'https://effectful.co/',
+      },
+      {
+        name: 'Feather',
+        description: 'Simple open source SVG icon library.',
+        url: 'https://feathericons.com/',
+      },
+      {
+        name: 'Knock',
+        url: 'https://knock.app/',
+      },
+      {
+        name: 'Linear',
+        description: 'Project management tool for software development teams.',
+        url: 'https://linear.app/',
+      },
+      {
+        name: 'Liveblocks',
+        description: 'Collaboration engine with AI copilots, comments, and multiplayer editing APIs.',
+        url: 'https://liveblocks.io/',
+      },
+      {
+        name: 'Magic Patterns',
+        description: 'AI-powered design pattern generation and development tools.',
+        url: 'https://www.magicpatterns.com/',
+      },
+      {
+        name: 'Mem0',
+        description: 'The Memory layer for your AI apps and applications.',
+        url: 'https://mem0.ai/',
+      },
+      {
+        name: 'Morphik',
+        description: 'RAG platform for building AI agents with visual-first retrieval and knowledge graphs.',
+        url: 'https://morphik.ai/',
+      },
+      {
+        name: 'Orama',
+        description: 'AI-powered data search and chat engine',
+        url: 'https://orama.com/',
+      },
+      {
+        name: 'React Bits',
+        description: 'Collection of React patterns, techniques, and best practices.',
+        url: 'https://reactbits.dev/',
+      },
+      {
+        name: 'Render',
+        description: 'Cloud application platform for hosting and deploying web applications.',
+        url: 'https://render.com/',
+      },
+      {
+        name: 'Resend',
+        description: 'Email API designed specifically for developers with excellent DX.',
+        url: 'https://resend.com/home',
+      },
+      {
+        name: 'Rube',
+        description: 'AI integration platform connecting 500+ apps to your chat and development environment.',
+        url: 'https://rube.composio.dev/',
+      },
+      {
+        name: 'Solar',
+        description: 'Build Apps for your Business with streamlined development tools.',
+        url: 'https://try.solar/',
+      },
+      {
+        name: 'Superflex',
+        description: 'Turn Figma to Code in Seconds with AI-powered conversion.',
+        url: 'https://www.superflex.ai/',
+      },
+      {
+        name: 'The Component Gallery',
+        url: 'https://component.gallery/',
+      },
+    ],
+  },
+  {
+    title: 'Databases',
+    stack: [
+      {
+        name: 'Firebase',
+        description: 'Google\'s backend-as-a-service platform.',
+        url: 'https://firebase.google.com/',
+      },
+      {
+        name: 'HelixDB',
+        description: 'Open-source graph-vector database built in Rust for RAG and AI applications.',
+        url: 'https://www.helix-db.com/',
+      },
+      {
+        name: 'Prisma',
+        description: 'Fast Postgres-based ORM for Node.js and TypeScript.',
+        url: 'https://www.prisma.io/',
+      },
+      {
+        name: 'Redis',
+        description: 'In-memory data structure store, used as a database, cache, and message broker.',
+        url: 'https://redis.io/',
+      },
+      {
+        name: 'Supabase',
+        description: 'Open-source Firebase alternative.',
+        url: 'https://supabase.com/',
+      },
+    ],
+  },
+  {
+    title: 'Authentication',
+    stack: [
+      {
+        name: 'Clerk',
+        description: 'Modern authentication and user management platform for developers.',
+        url: 'http://clerk.com',
+      },
+      {
+        name: 'Keycloak',
+        description: 'Open-source identity and access management solution.',
+        url: 'https://www.keycloak.org/',
+      },
+      {
+        name: 'WorkOS',
+        description: 'Make your application enterprise-ready with SSO, directory sync, and more.',
+        url: 'https://workos.com/',
+      },
+    ],
+  },
+  {
+    title: 'Testing/QA',
+    stack: [
+      {
+        name: 'Playwright',
+        description: 'Fast and reliable end-to-end testing for modern web apps.',
+        url: 'https://playwright.dev/',
+      },
+      {
+        name: 'QualGent',
+        description: 'AI-Powered Mobile App Testing Platform beyond traditional automation.',
+        url: 'https://qualgent.ai/',
+      },
+    ],
+  },
+  {
+    title: 'Documentation',
+    stack: [
+      {
+        name: 'GitBook',
+        description: 'Build product documentation your users will love.',
+        url: 'https://www.gitbook.com/',
+      },
+      {
+        name: 'Mintlify',
+        description: 'Beautiful, easy-to-maintain documentation for developers and teams.',
+        url: 'https://www.mintlify.com/',
+      },
+    ],
+  },
+  {
+    title: 'Web Browsers/Use',
+    stack: [
+      {
+        name: 'Anchor',
+        url: 'https://anchorbrowser.io/',
+      },
+      {
+        name: 'Browser Use',
+        url: 'https://browser-use.com/',
+      },
+      {
+        name: 'Browserbase',
+        description: 'A web browser designed for AI agents & applications.',
+        url: 'https://www.browserbase.com/',
+      },
+      {
+        name: 'Exa',
+        description: 'Advanced web search and intelligence platform for LLMs.',
+        url: 'https://exa.ai/',
+      },
+      {
+        name: 'Hyperbrowser',
+        description: 'AI-powered web browsing and automation.',
+        url: 'https://www.hyperbrowser.ai/',
+      },
+      {
+        name: 'Ladybird',
+        description: 'Truly independent web browser built from scratch by a non-profit.',
+        url: 'https://ladybird.org/',
+      },
+      {
+        name: 'Parallel',
+        description: 'Query the web with advanced parallel processing.',
+        url: 'https://parallel.ai/',
+      },
+      {
+        name: 'Tavily',
+        description: 'Advanced web search and information retrieval.',
+        url: 'https://www.tavily.com/',
+      },
+      {
+        name: 'TinyFish',
+        url: 'https://www.tinyfish.ai/',
+      },
+    ],
+  },
+  {
+    title: 'GPUs on the Cloud',
+    stack: [
+      {
+        name: 'Lambda',
+        description: 'GPU Compute for AI workloads and machine learning.',
+        url: 'https://lambda.ai/',
+      },
+      {
+        name: 'Modal',
+        description: 'High-performance AI infrastructure for running compute-intensive workloads.',
+        url: 'http://modal.com',
+      },
+    ],
+  },
+  {
+    title: 'Domain Names',
+    stack: [
+      {
+        name: 'Porkbun',
+        description: 'An oddly satisfying domain registration experience.',
+        url: 'https://porkbun.com/',
+      },
+    ],
+  },
+  {
+    title: 'Design',
+    stack: [
+      {
+        name: 'Arcade Labs',
+        url: 'https://arcade.la/',
+      },
+      {
+        name: 'Cavalry',
+        url: 'https://cavalry.scenegroup.co/',
+      },
+      {
+        name: 'DesEngs',
+        url: 'https://desengs.com/',
+      },
+      {
+        name: 'Flint',
+        description: 'Autonomous website platform that generates on-brand landing pages from existing brand systems.',
+        url: 'https://www.tryflint.com/',
+      },
+      {
+        name: 'Framer',
+        description: 'AI-powered website design tool with built-in CMS, SEO, and analytics.',
+        url: 'https://www.framer.com/',
+      },
+      {
+        name: 'lowercase',
+        description: 'Design and development done different - creative studio approach.',
+        url: 'https://www.lowercase.club/',
+      },
+      {
+        name: 'Paper',
+        description: 'Design canvas for creating art and digital experiences with fast, reliable tooling.',
+        url: 'https://paper.design/',
+      },
+      {
+        name: 'Pencil',
+        url: 'https://www.pencil.dev/',
+      },
+      {
+        name: 'QuiverAI',
+        url: 'https://quiver.ai/',
+      },
+      {
+        name: 'Softlight',
+        description: 'AI product discovery and design platform that learns your business and explores product ideas.',
+        url: 'https://softlight.com/',
+      },
+      {
+        name: 'Variant',
+        url: 'https://variant.com/',
+      },
+    ],
+  },
+  {
+    title: 'AI Art',
+    stack: [
+      {
+        name: 'Black Forest Labs',
+        description: 'AI research lab building FLUX image generation models with API and open-weight options.',
+        url: 'https://bfl.ai/',
+      },
+      {
+        name: 'Fourmula.ai',
+        url: 'https://fourmula.ai/',
+      },
+      {
+        name: 'Midjourney',
+        description: 'AI-powered image generation tool for creating stunning visual artwork.',
+        url: 'http://midjourney.com',
+      },
+      {
+        name: 'Reve',
+        description: 'Bring your creative ideas to life with advanced AI art generation.',
+        url: 'https://preview.reve.art/',
+      },
+    ],
+  },
+  {
+    title: 'Presentations',
+    stack: [
+      {
+        name: 'Chronicle',
+        url: 'https://chroniclehq.com/',
+      },
+      {
+        name: 'Gamma',
+        description: 'AI-powered presentation builder.',
+        url: 'https://gamma.app/',
+      },
+    ],
+  },
+  {
+    title: 'Voice',
+    stack: [
+      {
+        name: 'AssemblyAI',
+        description: 'Speech-to-text API with industry-leading accuracy.',
+        url: 'https://www.assemblyai.com/',
+      },
+      {
+        name: 'Brainbase',
+        description: 'Build your own AI workforce with voice capabilities.',
+        url: 'https://usebrainbase.com/',
+      },
+      {
+        name: 'Superwhisper',
+        description: 'Advanced voice recognition and transcription.',
+        url: 'https://superwhisper.com/',
+      },
+      {
+        name: 'Vapi',
+        description: 'Build Advanced Voice AI Agents for applications.',
+        url: 'https://vapi.ai/',
+      },
+      {
+        name: 'Wispr Flow',
+        description: 'Effortless Voice Dictation with AI.',
+        url: 'https://wisprflow.ai/',
+      },
+    ],
+  },
+  {
+    title: 'Writing',
+    stack: [
+      {
+        name: 'Grammarly',
+        description: 'AI-powered grammar and writing assistant.',
+        url: 'https://www.grammarly.com/',
+      },
+      {
+        name: 'Harper',
+        description: 'Free, Open Source Grammar Checker for better writing.',
+        url: 'https://writewithharper.com/',
+      },
+    ],
+  },
+  {
+    title: 'Social Media/Video/UGC',
+    stack: [
+      {
+        name: 'Argil',
+        description: 'Generate videos with your AI clone for content creation.',
+        url: 'https://www.argil.ai/',
+      },
+      {
+        name: 'Descript',
+        description: 'Edit Videos & Podcasts Like a Doc with AI-powered tools.',
+        url: 'https://www.descript.com/',
+      },
+      {
+        name: 'Memories.ai',
+        description: 'Large Visual Memory Model for AI-powered video search and editing.',
+        url: 'https://memories.ai/',
+      },
+      {
+        name: 'Mosaic',
+        description: 'AI Agents for Video Editing and content production.',
+        url: 'https://usemosaic.ai/',
+      },
+      {
+        name: 'Overlap',
+        description: 'Video Marketing AI Agents for social media.',
+        url: 'https://overlap.ai/',
+      },
+    ],
+  },
+  {
+    title: 'Blogging',
+    stack: [
+      {
+        name: 'Medium',
+        description: 'Online publishing platform for sharing ideas and stories.',
+        url: 'https://medium.com/',
+      },
+      {
+        name: 'Posthaven',
+        description: 'The safe place for all your posts forever.',
+        url: 'https://posthaven.com/',
+      },
+    ],
+  },
+  {
+    title: 'Sales/GTM/User Research',
+    stack: [
+      {
+        name: 'Apollo',
+        description: 'Sales Intelligence and Engagement Platform.',
+        url: 'https://www.apollo.io/',
+      },
+      {
+        name: 'Artificial Societies',
+        description: 'Simulate your product or idea in realistic AI-powered artificial societies.',
+        url: 'https://societies.io/',
+      },
+      {
+        name: 'Cardinal',
+        url: 'https://trycardinal.ai/',
+      },
+      {
+        name: 'Clado',
+        description: 'AI-powered sales and go-to-market solutions.',
+        url: 'https://clado.ai',
+      },
+      {
+        name: 'Clay',
+        description: 'AI-powered sales engagement and prospecting platform.',
+        url: 'https://clay.com/',
+      },
+      {
+        name: 'Clodo',
+        url: 'https://clodo.ai/',
+      },
+      {
+        name: 'GTM Goose Skills Library',
+        url: 'https://skills.gooseworks.ai/',
+      },
+      {
+        name: 'Harmonic',
+        description: 'Startup discovery engine for VCs and business development teams.',
+        url: 'https://harmonic.ai/',
+      },
+      {
+        name: 'Orange Slice',
+        url: 'https://www.orangeslice.ai/',
+      },
+    ],
+  },
+  {
+    title: 'CRMs',
+    stack: [
+      {
+        name: 'Attio',
+        description: 'Next-generation CRM built for modern sales and customer success teams.',
+        url: 'http://attio.com',
+      },
+      {
+        name: 'Day.ai',
+        url: 'https://day.ai/',
+      },
+      {
+        name: 'HubSpot',
+        description: 'Comprehensive software and tools for your business operations.',
+        url: 'http://hubspot.com',
+      },
+      {
+        name: 'Monaco',
+        url: 'https://www.monaco.com/',
+      },
+      {
+        name: 'Zero',
+        description: 'The zero-click CRM that automates customer relationship management.',
+        url: 'https://zero.inc/',
+      },
+    ],
+  },
+  {
+    title: 'Customer Experience',
+    stack: [
+      {
+        name: 'Decagon',
+        description: 'Conversational AI platform for enhanced customer experience.',
+        url: 'http://decagon.ai',
+      },
+      {
+        name: 'Forethought',
+        description: 'Customer Service & Support AI and CX Automation Platform.',
+        url: 'https://forethought.ai/',
+      },
+      {
+        name: 'Inkeep',
+        description: 'AI-powered support and documentation for your users and support team.',
+        url: 'https://inkeep.com/',
+      },
+      {
+        name: 'Siena',
+        description: 'AI-powered customer support and documentation for your users and support team.',
+        url: 'https://www.siena.cx/',
+      },
+    ],
+  },
+  {
+    title: 'Marketing',
+    stack: [
+      {
+        name: 'Conversion',
+        description: 'Enterprise AI marketing agents for SEO & Google Ads.',
+        url: 'https://conversion.ai/',
+      },
+      {
+        name: 'Hightouch',
+        description: 'Composable Customer Data Platform (CDP) & AI Decisioning.',
+        url: 'https://hightouch.com/',
+      },
+      {
+        name: 'Superscale AI',
+        description: 'AI-powered marketing automation and scaling.',
+        url: 'https://www.superscale.ai/',
+      },
+    ],
+  },
+  {
+    title: 'Generative Engine Optimization',
+    stack: [
+      {
+        name: 'Daydream',
+        description: 'AI-driven SEO and GEO agency.',
+        url: 'https://www.withdaydream.com/',
+      },
+      {
+        name: 'Profound',
+        description: 'AI Answer Engine Optimization for improved search visibility.',
+        url: 'https://www.tryprofound.com/',
+      },
+      {
+        name: 'Relixir',
+        description: 'The AI Generative Engine Optimization GEO Platform.',
+        url: 'https://relixir.ai/',
+      },
+      {
+        name: 'Split.dev',
+        description: 'LLM-Search Lead Attribution for Growth Teams.',
+        url: 'http://split.dev',
+      },
+    ],
+  },
+  {
+    title: 'Email',
+    stack: [
+      {
+        name: 'Lightfern',
+        url: 'https://lightfern.com/',
+      },
+      {
+        name: 'Loops',
+        description: 'Email platform for product, marketing, and transactional emails.',
+        url: 'https://loops.so/',
+      },
+      {
+        name: 'Resend',
+        description: 'Email API designed specifically for developers.',
+        url: 'http://resend.com',
+      },
+      {
+        name: 'Superhuman',
+        description: 'The most productive email app ever made for power users.',
+        url: 'http://superhuman.com',
+      },
+      {
+        name: 'Zero Email',
+        description: 'Email client focused on zero inbox methodology.',
+        url: 'https://0.email/',
+      },
+    ],
+  },
+  {
+    title: 'Data Analytics',
+    stack: [
+      {
+        name: 'Aaru',
+        url: 'https://aaru.com/',
+      },
+      {
+        name: 'Ario',
+        description: 'Turn Competitor Data into First Party Data.',
+        url: 'https://heyario.com/',
+      },
+      {
+        name: 'Conway',
+        description: 'Autonomous pattern discovery platform for data exploration using transformers.',
+        url: 'https://conway.ai/',
+      },
+      {
+        name: 'Cosmograph',
+        description: 'Privacy-first graph visualization and analytics for large network graphs and ML embeddings. Built on DuckDB.',
+        url: 'https://cosmograph.app/',
+      },
+      {
+        name: 'Deepnote',
+        url: 'https://deepnote.com/',
+      },
+      {
+        name: 'Eragon',
+        url: 'https://www.eragon.ai/',
+      },
+      {
+        name: 'Nominal',
+        url: 'https://nominal.io/blog/series-b2',
+      },
+      {
+        name: 'Reworkd',
+        description: 'AI-powered web automation and data extraction.',
+        url: 'https://www.reworkd.ai/',
+      },
+      {
+        name: 'Sixtyfour',
+        url: 'https://sixtyfour.ai/',
+      },
+    ],
+  },
+  {
+    title: 'Monitoring/Analytics',
+    stack: [
+      {
+        name: 'Better Stack',
+        description: 'Radically better observability stack for modern applications.',
+        url: 'https://betterstack.com/',
+      },
+      {
+        name: 'foam',
+        url: 'http://sdk.foam.ai/',
+      },
+      {
+        name: 'incident.io',
+        description: 'All-in-one incident management platform for engineering teams.',
+        url: 'https://incident.io/',
+      },
+      {
+        name: 'Keywords AI',
+        description: 'AI-powered keyword research and analytics platform.',
+        url: 'https://www.keywordsai.co/',
+      },
+      {
+        name: 'PostHog',
+        description: 'All-in-one platform for building successful products with analytics.',
+        url: 'http://posthog.com',
+      },
+    ],
+  },
+  {
+    title: 'Documents',
+    stack: [
+      {
+        name: 'Agree.com',
+        description: 'Free E-Signature & Integrated Payments Platform.',
+        url: 'https://agree.com/',
+      },
+      {
+        name: 'Extend',
+        url: 'https://www.extend.ai/',
+      },
+      {
+        name: 'Landing AI',
+        description: 'AI-powered document processing and automation.',
+        url: 'https://landing.ai/',
+      },
+    ],
+  },
+  {
+    title: 'Finance/Fintech',
+    stack: [
+      {
+        name: 'Astor',
+        url: 'https://www.astor.app/',
+      },
+      {
+        name: 'Autonomous',
+        description: 'AI-powered financial advisor with 0% advisory fees, offering institutional-grade strategies.',
+        url: 'https://becomeautonomous.com/',
+      },
+      {
+        name: 'Model ML',
+        description: 'Enterprise AI workspace for financial modeling, due diligence, and deal execution.',
+        url: 'https://www.modelml.com/',
+      },
+      {
+        name: 'Monarch Money',
+        description: 'Personal finance management tool.',
+        url: 'https://monarchmoney.com/',
+      },
+      {
+        name: 'Natural',
+        url: 'https://www.natural.co/',
+      },
+      {
+        name: 'Oscilar',
+        description: 'AI-powered risk platform handling fraud, credit, onboarding, and compliance.',
+        url: 'https://oscilar.com/',
+      },
+    ],
+  },
+  {
+    title: 'Banking',
+    stack: [
+      {
+        name: 'Brex',
+        description: 'Modern finance software platform for startups and growing businesses.',
+        url: 'http://brex.com',
+      },
+      {
+        name: 'Mercury',
+        description: 'Online business banking designed for startups and small businesses.',
+        url: 'http://mercury.com',
+      },
+      {
+        name: 'Rho',
+        description: 'Better banking platform for startups and small businesses.',
+        url: 'https://www.rho.co/',
+      },
+    ],
+  },
+  {
+    title: 'Accounting',
+    stack: [
+      {
+        name: 'Campfire',
+        description: 'The modern approach to accounting.',
+        url: 'https://meetcampfire.com/',
+      },
+      {
+        name: 'Open Ledger',
+        description: 'Embedded Accounting API for SaaS Platforms.',
+        url: 'https://www.openledger.com/',
+      },
+    ],
+  },
+  {
+    title: 'Cap Table Management',
+    stack: [
+      {
+        name: 'AngelList',
+        description: 'Build, Lead, Invest - Platform for startup fundraising and investing.',
+        url: 'http://angellist.com',
+      },
+      {
+        name: 'Carta',
+        description: 'The End-to-End Suite Connecting Private Capital.',
+        url: 'http://carta.com',
+      },
+      {
+        name: 'Pulley',
+        description: 'Equity management platform for startups and companies.',
+        url: 'https://pulley.com/',
+      },
+    ],
+  },
+  {
+    title: 'Law',
+    stack: [
+      {
+        name: 'Crosby',
+        description: 'Execute Contracts Faster with AI-powered legal automation.',
+        url: 'https://crosby.ai/',
+      },
+      {
+        name: 'Crosby',
+        url: 'https://www.crosby.ai/',
+      },
+      {
+        name: 'Legora',
+        url: 'https://legora.com/',
+      },
+      {
+        name: 'Legora Series D',
+        url: 'https://legora.com/blog/series-d',
+      },
+    ],
+  },
+  {
+    title: 'Recruiting',
+    stack: [
+      {
+        name: 'Ashby',
+        description: 'All-in-one recruiting software for ambitious teams.',
+        url: 'http://ashbyhq.com',
+      },
+      {
+        name: 'Eightfold.ai',
+        description: 'AI talent acquisition & recruiting platform.',
+        url: 'https://eightfold.ai/',
+      },
+    ],
+  },
+  {
+    title: 'Security',
+    stack: [
+      {
+        name: 'AIUC',
+        url: 'https://aiuc.com/',
+      },
+      {
+        name: 'Cylake',
+        url: 'https://greylock.com/portfolio-news/introducing-cylake-ai-native-cybersecurity-with-total-data-sovereignty/',
+      },
+      {
+        name: 'The Antifraud Company',
+        url: 'https://antifraudcompany.com/',
+      },
+      {
+        name: 'Tracebit',
+        description: 'Expect the unexpected with security canaries and monitoring.',
+        url: 'https://tracebit.com/',
+      },
+      {
+        name: 'Vanta',
+        url: 'https://www.vanta.com/',
+      },
+    ],
+  },
+  {
+    title: 'Defense Contracting',
+    stack: [
+      {
+        name: 'Candor',
+        description: 'AI-powered defense contracting and government solutions.',
+        url: 'http://usecandor.ai',
+      },
+      {
+        name: 'Sweetspot',
+        description: 'AI platform for finding, managing, and bidding on government contracts.',
+        url: 'https://www.sweetspot.so/',
+      },
+      {
+        name: 'Usul',
+        description: 'Defense technology and contracting platform.',
+        url: 'https://usul.com/',
+      },
+    ],
+  },
+  {
+    title: 'E-commerce',
+    stack: [
+      {
+        name: 'BigCommerce',
+        description: 'Open SaaS e-commerce platform for growing businesses.',
+        url: 'https://www.bigcommerce.com/',
+      },
+      {
+        name: 'Ecwid',
+        description: 'Free e-commerce platform for small businesses.',
+        url: 'https://www.ecwid.com/',
+      },
+      {
+        name: 'Fourthwall',
+        description: 'Platform for creators to sell custom products, memberships, and digital goods.',
+        url: 'https://fourthwall.com/',
+      },
+      {
+        name: 'Gumroad',
+        description: 'Simple platform for creators to sell digital products.',
+        url: 'https://gumroad.com/',
+      },
+      {
+        name: 'Lightspeed eCom',
+        description: 'E-commerce platform for retail businesses.',
+        url: 'https://www.lightspeedhq.com/ecommerce/',
+      },
+      {
+        name: 'Shopify',
+        description: 'Complete commerce platform for online stores.',
+        url: 'https://www.shopify.com/',
+      },
+      {
+        name: 'Square Online',
+        description: 'E-commerce solution integrated with Square payments.',
+        url: 'https://squareup.com/us/en/online-store',
+      },
+      {
+        name: 'WooCommerce',
+        description: 'Open-source e-commerce plugin for WordPress.',
+        url: 'https://woocommerce.com/',
+      },
+    ],
+  },
+  {
+    title: 'PropTech',
+    stack: [
+      {
+        name: 'WithJoy.AI',
+        description: 'AI Real Estate Agent for property search and management.',
+        url: 'https://withjoy.ai/',
+      },
+    ],
+  },
+  {
+    title: 'Healthcare AI',
+    stack: [
+      {
+        name: 'Ambience Healthcare',
+        url: 'https://www.ambiencehealthcare.com/',
+      },
+      {
+        name: 'Datavant',
+        url: 'https://www.datavant.com/',
+      },
+      {
+        name: 'Gaia',
+        description: 'Computational biology and bioinformatics platform.',
+        url: 'https://gaia.tatta.bio/',
+      },
+      {
+        name: 'Genbio AI',
+        description: 'AI-powered genomics and computational biology tools.',
+        url: 'https://genbio.ai/',
+      },
+      {
+        name: 'Komodo Health',
+        url: 'https://www.komodohealth.com/',
+      },
+      {
+        name: 'Latent Health',
+        url: 'https://latenthealth.com/',
+      },
+      {
+        name: 'Qualified Health',
+        url: 'https://www.qualifiedhealthai.com/',
+      },
+      {
+        name: 'Tennr',
+        url: 'https://www.tennr.com/',
+      },
+    ],
+  },
+  {
+    title: 'Quantum Computing',
+    stack: [
+      {
+        name: 'PsiQuantum',
+        description: 'Building the World\'s First Useful Quantum Computer.',
+        url: 'https://www.psiquantum.com/',
+      },
+    ],
+  },
+  {
+    title: 'Robotics',
+    stack: [
+      {
+        name: 'Genesis AI',
+        description: 'Physical AI lab building generalist robots with universal foundation models and open-source simulation.',
+        url: 'https://genesis-ai.company/',
+      },
+      {
+        name: 'Pittsburgh Robotics Network',
+        description: 'Pittsburgh\'s ecosystem supporting 125+ robotics companies.',
+        url: 'https://robopgh.org/',
+      },
+      {
+        name: 'Skild AI',
+        description: 'Scalable robotics foundation models.',
+        url: 'https://www.skild.ai/',
+      },
+      {
+        name: 'Sunday Robotics',
+        url: 'https://www.sunday.ai/journal/series-b',
+      },
+    ],
+  },
+  {
+    title: 'Assistants',
+    stack: [
+      {
+        name: 'Context',
+        url: 'https://www.context.ai/',
+      },
+      {
+        name: 'Cora',
+        description: 'AI email assistant that screens, categorizes, and drafts responses while providing daily briefings.',
+        url: 'https://cora.computer/',
+      },
+      {
+        name: 'Fyxer AI',
+        description: 'AI Executive Assistant for email and productivity.',
+        url: 'https://www.fyxer.com/',
+      },
+      {
+        name: 'Lindy.ai',
+        description: 'Meet your AI assistant for automating workflows and tasks.',
+        url: 'https://www.lindy.ai/',
+      },
+      {
+        name: 'Pronto',
+        url: 'https://www.withpronto.com/',
+      },
+      {
+        name: 'Sana',
+        url: 'https://sanalabs.com/',
+      },
+      {
+        name: 'Town Assistant',
+        url: 'http://town.com/',
+      },
+      {
+        name: 'Tsenta',
+        url: 'https://www.tsenta.com/',
+      },
+      {
+        name: 'Wordware',
+        url: 'https://www.wordware.ai/',
+      },
+    ],
+  },
+  {
+    title: 'Event Planning',
+    stack: [
+      {
+        name: 'Luma',
+        description: 'Delightful events platform for creating and managing gatherings.',
+        url: 'http://lu.ma',
+      },
+      {
+        name: 'Partiful',
+        description: 'Free online invitations with RSVP tracking for events.',
+        url: 'https://partiful.com/',
+      },
+    ],
+  },
+  {
+    title: 'Aviation',
+    stack: [
+      {
+        name: 'Rove Miles',
+        description: 'Travel the World for Free through innovative aviation rewards.',
+        url: 'https://www.rovemiles.com/',
+      },
+    ],
+  },
+  {
     title: 'Accelerators',
     stack: [
       {
@@ -18,6 +1270,10 @@ const tools = [
         url: 'https://aigrant.com/',
       },
       {
+        name: 'Alpha by a16z speedrun',
+        url: 'https://alpha.a16zspeedrun.com/',
+      },
+      {
         name: 'Databricks AI Accelerator',
         description: 'Invitation-only accelerator providing up to $250K funding for startups building on Databricks.',
         url: 'https://www.databricks.com/databricks-ai-accelerator-program',
@@ -28,14 +1284,14 @@ const tools = [
         url: 'https://www.elbowgrease.gutter.cc/',
       },
       {
-        name: 'fr8',
-        description: 'Amalgamation of hacker hotel/startup incubator/research lab in Sweden.',
-        url: 'https://fr8.so/',
-      },
-      {
         name: 'F.inc',
         description: 'Large build space/incubator in Fort Mason.',
         url: 'https://f.inc/',
+      },
+      {
+        name: 'fr8',
+        description: 'Amalgamation of hacker hotel/startup incubator/research lab in Sweden.',
+        url: 'https://fr8.so/',
       },
       {
         name: 'Google AI Futures Fund',
@@ -92,251 +1348,77 @@ const tools = [
         description: 'Fellowship program for ambitious builders and entrepreneurs.',
         url: 'https://zfellows.com/',
       },
+    ],
+  },
+  {
+    title: 'Programs/Scholarships',
+    stack: [
       {
-        name: 'Alpha by a16z speedrun',
-        url: 'https://alpha.a16zspeedrun.com/',
+        name: 'Anthropic Fellows Program',
+        description: 'Research fellowship program in AI safety and alignment.',
+        url: 'https://alignment.anthropic.com/2024/anthropic-fellows-program/',
+      },
+      {
+        name: 'Avra',
+        description: 'Program turning founders into great CEOs.',
+        url: 'https://www.avracap.com/',
+      },
+      {
+        name: 'External Researcher Access Program',
+        description: 'Anthropic\'s program for external AI research collaboration.',
+        url: 'https://support.anthropic.com/en/articles/9125743-what-is-the-external-researcher-access-program',
+      },
+      {
+        name: 'Felicis Fellows',
+        description: 'Fellowship program for emerging entrepreneurs.',
+        url: 'https://www.felicis.com/fellows',
+      },
+      {
+        name: 'Kauffman Fellows',
+        description: 'Two-year fellowship program for venture capital professionals.',
+        url: 'https://www.kauffmanfellows.org/',
+      },
+      {
+        name: 'MATS Program',
+        description: 'Machine learning alignment research program.',
+        url: 'https://www.matsprogram.org/',
       },
     ],
   },
   {
-    title: 'Accounting',
+    title: 'Learning',
     stack: [
       {
-        name: 'Campfire',
-        description: 'The modern approach to accounting.',
-        url: 'https://meetcampfire.com/',
+        name: 'Beej\'s Guide to Computer Science',
+        url: 'https://beej.us/guide/bglcs/html/#understanding-the-problem',
       },
       {
-        name: 'Open Ledger',
-        description: 'Embedded Accounting API for SaaS Platforms.',
-        url: 'https://www.openledger.com/',
-      },
-    ],
-  },
-  {
-    title: 'AI Art',
-    stack: [
-      {
-        name: 'Black Forest Labs',
-        description: 'AI research lab building FLUX image generation models with API and open-weight options.',
-        url: 'https://bfl.ai/',
+        name: 'Fast.ai',
+        description: 'Making neural nets uncool again - practical deep learning education.',
+        url: 'https://www.fast.ai/',
       },
       {
-        name: 'Midjourney',
-        description: 'AI-powered image generation tool for creating stunning visual artwork.',
-        url: 'http://midjourney.com',
+        name: 'Learn Notion in 12 Hours',
+        url: 'https://www.freecodecamp.org/news/lean-notion-in-12-hours/',
       },
       {
-        name: 'Reve',
-        description: 'Bring your creative ideas to life with advanced AI art generation.',
-        url: 'https://preview.reve.art/',
-      },
-    ],
-  },
-  {
-    title: 'Artificial Intelligence - Miscellaneous',
-    stack: [
-      {
-        name: 'Essential AI',
-        description: 'Open platform for frontier AI research led by Transformer co-inventor Dr. Ashish Vaswani.',
-        url: 'https://www.essential.ai/',
+        name: 'Miyagi Labs',
+        description: 'AI-powered learning and education platform.',
+        url: 'https://miyagilabs.ai/',
       },
       {
-        name: 'Google X',
-        description: 'Advanced technology research division focused on moonshot projects.',
-        url: 'https://x.company/',
+        name: 'Opennote',
+        description: 'AI-powered note-taking platform for personalized learning.',
+        url: 'https://www.opennote.com/',
       },
       {
-        name: 'LABS.GOOGLE',
-        description: 'Google\'s experimental AI research projects and cutting-edge technology demos.',
-        url: 'https://labs.google/',
+        name: 'The Transformers',
+        url: 'https://www.vizuaranewsletter.com/p/the-transformers?r=5b5pyd',
       },
       {
-        name: 'Periodic Labs',
-        description: 'AI research company building autonomous laboratories and AI scientists for materials discovery.',
-        url: 'https://periodic.com/',
-      },
-      {
-        name: 'The Way of Code',
-        description: 'Rick Rubin\'s collaboration with Anthropic on vibe coding.',
-        url: 'https://www.thewayofcode.com/',
-      },
-      {
-        name: 'BLACKBOX AI',
-        url: 'https://www.blackbox.ai/',
-      },
-      {
-        name: 'Prime Intellect',
-        url: 'https://www.primeintellect.ai/',
-      },
-      {
-        name: 'Anchor',
-        url: 'https://anchorbrowser.io/',
-      },
-      {
-        name: 'Sana',
-        url: 'https://sanalabs.com/',
-      },
-      {
-        name: 'TinyFish',
-        url: 'https://www.tinyfish.ai/',
-      },
-      {
-        name: 'Softmax',
-        url: 'https://softmax.com/',
-      },
-      {
-        name: 'Wordware',
-        url: 'https://www.wordware.ai/',
-      },
-      {
-        name: 'Context',
-        url: 'https://www.context.ai/',
-      },
-      {
-        name: 'AIUC',
-        url: 'https://aiuc.com/',
-      },
-      {
-        name: 'Extend',
-        url: 'https://www.extend.ai/',
-      },
-      {
-        name: 'Fourmula.ai',
-        url: 'https://fourmula.ai/',
-      },
-      {
-        name: 'Subconscious',
-        url: 'https://www.subconscious.dev/',
-      },
-      {
-        name: 'Eragon',
-        url: 'https://www.eragon.ai/',
-      },
-      {
-        name: 'Browser Use',
-        url: 'https://browser-use.com/',
-      },
-      {
-        name: 'Hornet',
-        url: 'https://hornet.dev/',
-      },
-      {
-        name: 'Ndea',
-        url: 'https://ndea.com/',
-      },
-      {
-        name: 'Deeptune',
-        url: 'https://deeptune.com/',
-      },
-      {
-        name: 'Aaru',
-        url: 'https://aaru.com/',
-      },
-      {
-        name: 'Natural',
-        url: 'https://www.natural.co/',
-      },
-      {
-        name: 'Arena',
-        url: 'https://www.arenaphysica.com/',
-      },
-      {
-        name: 'Brain Interfaces',
-        url: 'https://www.neuralace.co/',
-      },
-    ],
-  },
-  {
-    title: 'Assistants',
-    stack: [
-      {
-        name: 'Cora',
-        description: 'AI email assistant that screens, categorizes, and drafts responses while providing daily briefings.',
-        url: 'https://cora.computer/',
-      },
-      {
-        name: 'Fyxer AI',
-        description: 'AI Executive Assistant for email and productivity.',
-        url: 'https://www.fyxer.com/',
-      },
-      {
-        name: 'Lindy.ai',
-        description: 'Meet your AI assistant for automating workflows and tasks.',
-        url: 'https://www.lindy.ai/',
-      },
-      {
-        name: 'Town Assistant',
-        url: 'http://town.com/',
-      },
-      {
-        name: 'Pronto',
-        url: 'https://www.withpronto.com/',
-      },
-    ],
-  },
-  {
-    title: 'Authentication',
-    stack: [
-      {
-        name: 'Clerk',
-        description: 'Modern authentication and user management platform for developers.',
-        url: 'http://clerk.com',
-      },
-      {
-        name: 'Keycloak',
-        description: 'Open-source identity and access management solution.',
-        url: 'https://www.keycloak.org/',
-      },
-      {
-        name: 'WorkOS',
-        description: 'Make your application enterprise-ready with SSO, directory sync, and more.',
-        url: 'https://workos.com/',
-      },
-    ],
-  },
-  {
-    title: 'Aviation',
-    stack: [
-      {
-        name: 'Rove Miles',
-        description: 'Travel the World for Free through innovative aviation rewards.',
-        url: 'https://www.rovemiles.com/',
-      },
-    ],
-  },
-  {
-    title: 'Banking',
-    stack: [
-      {
-        name: 'Brex',
-        description: 'Modern finance software platform for startups and growing businesses.',
-        url: 'http://brex.com',
-      },
-      {
-        name: 'Mercury',
-        description: 'Online business banking designed for startups and small businesses.',
-        url: 'http://mercury.com',
-      },
-      {
-        name: 'Rho',
-        description: 'Better banking platform for startups and small businesses.',
-        url: 'https://www.rho.co/',
-      },
-    ],
-  },
-  {
-    title: 'Blogging',
-    stack: [
-      {
-        name: 'Posthaven',
-        description: 'The safe place for all your posts forever.',
-        url: 'https://posthaven.com/',
-      },
-      {
-        name: 'Medium',
-        description: 'Online publishing platform for sharing ideas and stories.',
-        url: 'https://medium.com/',
+        name: 'YouLearn AI',
+        description: 'AI-powered personalized learning experiences.',
+        url: 'http://youlearn.ai',
       },
     ],
   },
@@ -366,12 +1448,54 @@ const tools = [
     ],
   },
   {
+    title: 'Guides',
+    stack: [
+      {
+        name: 'Boil the Ocean',
+        url: 'https://garryslist.org/posts/boil-the-ocean',
+      },
+      {
+        name: 'Clay\'s EA Take-Home',
+        url: 'https://docs.google.com/document/d/1Jct3sKsza5QAn-IQrdnG2Givs7WlQgn2nY5IIcwt_Vw/edit?dub_id=2Dg5uaQVeT3nT8RR&tab=t.0',
+      },
+      {
+        name: 'Starter to SF',
+        description: 'Comprehensive SF guide by Michelle Fang.',
+        url: 'https://www.startertosf.guide/',
+      },
+      {
+        name: 'The Way of Code',
+        description: 'Rick Rubin\'s collaboration with Anthropic on vibe coding.',
+        url: 'https://www.thewayofcode.com/',
+      },
+    ],
+  },
+  {
+    title: 'Principles',
+    stack: [
+      {
+        name: 'iNaval',
+        description: 'Online twin of Naval Ravikant.',
+        url: 'https://inav.al/',
+      },
+      {
+        name: 'Startup Principles by Abhay Venkatesh',
+        description: 'Collection of startup principles.',
+        url: 'https://docs.google.com/document/d/1QFR3scxuGSY848qA7JDYEHI2uVB7f5nzIj_jIH7ihZQ/edit?tab=t.0',
+      },
+    ],
+  },
+  {
     title: 'Building Resources',
     stack: [
       {
         name: 'Build in College',
         description: 'List of free tools, software credits, and fellowships for college builders.',
         url: 'https://www.buildincollege.com/',
+      },
+      {
+        name: 'Caretta',
+        url: 'https://www.caretta.so/',
       },
       {
         name: 'Hardware Building Resources',
@@ -387,823 +1511,15 @@ const tools = [
         name: 'Tulip',
         url: 'https://tulip.co/',
       },
-      {
-        name: 'Caretta',
-        url: 'https://www.caretta.so/',
-      },
-    ],
-  },
-  {
-    title: 'Cap Table Management',
-    stack: [
-      {
-        name: 'AngelList',
-        description: 'Build, Lead, Invest - Platform for startup fundraising and investing.',
-        url: 'http://angellist.com',
-      },
-      {
-        name: 'Carta',
-        description: 'The End-to-End Suite Connecting Private Capital.',
-        url: 'http://carta.com',
-      },
-      {
-        name: 'Pulley',
-        description: 'Equity management platform for startups and companies.',
-        url: 'https://pulley.com/',
-      },
-    ],
-  },
-  {
-    title: 'Coding',
-    stack: [
-      {
-        name: 'a0.dev',
-        description: 'Create Mobile Apps with AI-powered development tools.',
-        url: 'https://a0.dev/',
-      },
-      {
-        name: 'All Hands AI',
-        description: 'AI-powered coding assistant for software development.',
-        url: 'https://www.all-hands.dev/',
-      },
-      {
-        name: 'Augment Code',
-        description: 'AI coding platform designed for real-world software development.',
-        url: 'http://augmentcode.com',
-      },
-      {
-        name: 'Cognition',
-        description: 'AI software engineering company building advanced developer tools.',
-        url: 'https://cognition-labs.com/',
-      },
-      {
-        name: 'Cubic',
-        description: 'Cursor for code review - streamlined code review process.',
-        url: 'https://www.cubic.dev/home',
-      },
-      {
-        name: 'Cursor',
-        description: 'AI-powered code editor that enhances development productivity.',
-        url: 'http://cursor.com',
-      },
-      {
-        name: 'Factory',
-        description: 'AI software development agents in a native IDE.',
-        url: 'https://factory.ai/',
-      },
-      {
-        name: 'Graphite',
-        description: 'End-to-end developer platform for modern software teams.',
-        url: 'https://graphite.dev/homepage',
-      },
-      {
-        name: 'Morph',
-        description: 'The fastest way to apply edits to files with AI assistance.',
-        url: 'https://morphllm.com/',
-      },
-      {
-        name: 'OB-1',
-        description: 'Terminal-based AI coding agent that\'s context-aware and model-agnostic.',
-        url: 'https://www.openblocklabs.com/',
-      },
-      {
-        name: 'Windsurf',
-        description: 'Powerful AI code editor (formerly Codeium) for enhanced development workflows.',
-        url: 'http://windsurf.com',
-      },
-      {
-        name: 'Superset',
-        url: 'https://superset.sh/',
-      },
-      {
-        name: 'Omnara',
-        url: 'https://www.omnara.com/',
-      },
-    ],
-  },
-  {
-    title: 'Computational Biology',
-    stack: [
-      {
-        name: 'Gaia',
-        description: 'Computational biology and bioinformatics platform.',
-        url: 'https://gaia.tatta.bio/',
-      },
-      {
-        name: 'Genbio AI',
-        description: 'AI-powered genomics and computational biology tools.',
-        url: 'https://genbio.ai/',
-      },
-      {
-        name: 'Qualified Health',
-        url: 'https://www.qualifiedhealthai.com/',
-      },
-      {
-        name: 'Ambience Healthcare',
-        url: 'https://www.ambiencehealthcare.com/',
-      },
-      {
-        name: 'Latent Health',
-        url: 'https://latenthealth.com/',
-      },
-      {
-        name: 'Komodo Health',
-        url: 'https://www.komodohealth.com/',
-      },
-      {
-        name: 'Tennr',
-        url: 'https://www.tennr.com/',
-      },
-    ],
-  },
-  {
-    title: 'CRMs',
-    stack: [
-      {
-        name: 'Attio',
-        description: 'Next-generation CRM built for modern sales and customer success teams.',
-        url: 'http://attio.com',
-      },
-      {
-        name: 'HubSpot',
-        description: 'Comprehensive software and tools for your business operations.',
-        url: 'http://hubspot.com',
-      },
-      {
-        name: 'Zero',
-        description: 'The zero-click CRM that automates customer relationship management.',
-        url: 'https://zero.inc/',
-      },
-      {
-        name: 'Day.ai',
-        url: 'https://day.ai/',
-      },
-    ],
-  },
-  {
-    title: 'Customer Experience',
-    stack: [
-      {
-        name: 'Decagon',
-        description: 'Conversational AI platform for enhanced customer experience.',
-        url: 'http://decagon.ai',
-      },
-      {
-        name: 'Forethought',
-        description: 'Customer Service & Support AI and CX Automation Platform.',
-        url: 'https://forethought.ai/',
-      },
-      {
-        name: 'Inkeep',
-        description: 'AI-powered support and documentation for your users and support team.',
-        url: 'https://inkeep.com/',
-      },
-      {
-        name: 'Siena',
-        description: 'AI-powered customer support and documentation for your users and support team.',
-        url: 'https://www.siena.cx/',
-      },
-    ],
-  },
-  {
-    title: 'Data Analytics',
-    stack: [
-      {
-        name: 'Conway',
-        description: 'Autonomous pattern discovery platform for data exploration using transformers.',
-        url: 'https://conway.ai/',
-      },
-      {
-        name: 'Cosmograph',
-        description: 'Privacy-first graph visualization and analytics for large network graphs and ML embeddings. Built on DuckDB.',
-        url: 'https://cosmograph.app/',
-      },
-      {
-        name: 'Deepnote',
-        url: 'https://deepnote.com/',
-      },
-      {
-        name: 'Datavant',
-        url: 'https://www.datavant.com/',
-      },
-      {
-        name: 'Datacurve',
-        url: 'https://knock.app/',
-      },
-      {
-        name: 'Nominal',
-        url: 'https://nominal.io/blog/series-b2',
-      },
-    ],
-  },
-  {
-    title: 'Defense Contracting',
-    stack: [
-      {
-        name: 'Candor',
-        description: 'AI-powered defense contracting and government solutions.',
-        url: 'http://usecandor.ai',
-      },
-      {
-        name: 'Sweetspot',
-        description: 'AI platform for finding, managing, and bidding on government contracts.',
-        url: 'https://www.sweetspot.so/',
-      },
-      {
-        name: 'Usul',
-        description: 'Defense technology and contracting platform.',
-        url: 'https://usul.com/',
-      },
-    ],
-  },
-  {
-    title: 'Design',
-    stack: [
-      {
-        name: 'Flint',
-        description: 'Autonomous website platform that generates on-brand landing pages from existing brand systems.',
-        url: 'https://www.tryflint.com/',
-      },
-      {
-        name: 'Framer',
-        description: 'AI-powered website design tool with built-in CMS, SEO, and analytics.',
-        url: 'https://www.framer.com/',
-      },
-      {
-        name: 'lowercase',
-        description: 'Design and development done different - creative studio approach.',
-        url: 'https://www.lowercase.club/',
-      },
-      {
-        name: 'Paper',
-        description: 'Design canvas for creating art and digital experiences with fast, reliable tooling.',
-        url: 'https://paper.design/',
-      },
-      {
-        name: 'Softlight',
-        description: 'AI product discovery and design platform that learns your business and explores product ideas.',
-        url: 'https://softlight.com/',
-      },
-      {
-        name: 'Pencil',
-        url: 'https://www.pencil.dev/',
-      },
-      {
-        name: 'Paper',
-        url: 'https://paper.design/',
-      },
-      {
-        name: 'Arcade Labs',
-        url: 'https://arcade.la/',
-      },
-      {
-        name: 'Bundui',
-        url: 'https://bundui.io/',
-      },
-      {
-        name: 'The Component Gallery',
-        url: 'https://component.gallery/',
-      },
-      {
-        name: 'Cavalry',
-        url: 'https://cavalry.scenegroup.co/',
-      },
-      {
-        name: 'Variant',
-        url: 'https://variant.com/',
-      },
-      {
-        name: 'DesEngs',
-        url: 'https://desengs.com/',
-      },
-      {
-        name: 'QuiverAI',
-        url: 'https://quiver.ai/',
-      },
-    ],
-  },
-  {
-    title: 'Developer Tools',
-    stack: [
-      {
-        name: 'Anima',
-        description: 'AI Design to Code - Figma to React, App, Website, and HTML conversion.',
-        url: 'https://www.animaapp.com/',
-      },
-      {
-        name: 'BlockNote',
-        description: 'Javascript Block-Based React rich text editor for modern applications.',
-        url: 'https://www.blocknotejs.org/',
-      },
-      {
-        name: 'Composio',
-        description: 'Access 250+ apps and services in just one line of code.',
-        url: 'https://composio.dev/',
-      },
-      {
-        name: 'Convex',
-        description: 'Fullstack TypeScript development platform for building modern applications.',
-        url: 'https://www.convex.dev/',
-      },
-      {
-        name: 'CrewAI',
-        description: 'The leading multi-agent platform for AI development.',
-        url: 'https://www.crewai.com/',
-      },
-      {
-        name: 'Effect',
-        description: 'TypeScript framework for building composable applications with error management, concurrency, and dependency injection.',
-        url: 'https://effectful.co/',
-      },
-      {
-        name: 'Feather',
-        description: 'Simple open source SVG icon library.',
-        url: 'https://feathericons.com/',
-      },
-      {
-        name: 'Linear',
-        description: 'Project management tool for software development teams.',
-        url: 'https://linear.app/',
-      },
-      {
-        name: 'Liveblocks',
-        description: 'Collaboration engine with AI copilots, comments, and multiplayer editing APIs.',
-        url: 'https://liveblocks.io/',
-      },
-      {
-        name: 'Magic Patterns',
-        description: 'AI-powered design pattern generation and development tools.',
-        url: 'https://www.magicpatterns.com/',
-      },
-      {
-        name: 'Mem0',
-        description: 'The Memory layer for your AI apps and applications.',
-        url: 'https://mem0.ai/',
-      },
-      {
-        name: 'Morphik',
-        description: 'RAG platform for building AI agents with visual-first retrieval and knowledge graphs.',
-        url: 'https://morphik.ai/',
-      },
-      {
-        name: 'Orama',
-        description: 'AI-powered data search and chat engine',
-        url: 'https://orama.com/',
-      },
-      {
-        name: 'React Bits',
-        description: 'Collection of React patterns, techniques, and best practices.',
-        url: 'https://reactbits.dev/',
-      },
-      {
-        name: 'Rube',
-        description: 'AI integration platform connecting 500+ apps to your chat and development environment.',
-        url: 'https://rube.composio.dev/',
-      },
-      {
-        name: 'Render',
-        description: 'Cloud application platform for hosting and deploying web applications.',
-        url: 'https://render.com/',
-      },
-      {
-        name: 'Resend',
-        description: 'Email API designed specifically for developers with excellent DX.',
-        url: 'https://resend.com/home',
-      },
-      {
-        name: 'Solar',
-        description: 'Build Apps for your Business with streamlined development tools.',
-        url: 'https://try.solar/',
-      },
-      {
-        name: 'Superflex',
-        description: 'Turn Figma to Code in Seconds with AI-powered conversion.',
-        url: 'https://www.superflex.ai/',
-      },
-      {
-        name: 'Knock',
-        url: 'https://knock.app/',
-      },
-      {
-        name: 'Chronicle',
-        url: 'https://chroniclehq.com/',
-      },
-      {
-        name: 'foam',
-        url: 'http://sdk.foam.ai/',
-      },
-    ],
-  },
-  {
-    title: 'Databases',
-    stack: [
-      {
-        name: 'Firebase',
-        description: 'Google\'s backend-as-a-service platform.',
-        url: 'https://firebase.google.com/',
-      },
-      {
-        name: 'HelixDB',
-        description: 'Open-source graph-vector database built in Rust for RAG and AI applications.',
-        url: 'https://www.helix-db.com/',
-      },
-      {
-        name: 'Prisma',
-        description: 'Fast Postgres-based ORM for Node.js and TypeScript.',
-        url: 'https://www.prisma.io/',
-      },
-      {
-        name: 'Redis',
-        description: 'In-memory data structure store, used as a database, cache, and message broker.',
-        url: 'https://redis.io/',
-      },
-      {
-        name: 'Supabase',
-        description: 'Open-source Firebase alternative.',
-        url: 'https://supabase.com/',
-      },
-    ],
-  },
-  {
-    title: 'Documentation',
-    stack: [
-      {
-        name: 'GitBook',
-        description: 'Build product documentation your users will love.',
-        url: 'https://www.gitbook.com/',
-      },
-      {
-        name: 'Mintlify',
-        description: 'Beautiful, easy-to-maintain documentation for developers and teams.',
-        url: 'https://www.mintlify.com/',
-      },
-    ],
-  },
-  {
-    title: 'Documents',
-    stack: [
-      {
-        name: 'Agree.com',
-        description: 'Free E-Signature & Integrated Payments Platform.',
-        url: 'https://agree.com/',
-      },
-      {
-        name: 'Landing AI',
-        description: 'AI-powered document processing and automation.',
-        url: 'https://landing.ai/',
-      },
-      {
-        name: 'Legora',
-        url: 'https://legora.com/',
-      },
-    ],
-  },
-  {
-    title: 'E-commerce',
-    stack: [
-      {
-        name: 'Ario',
-        description: 'Turn Competitor Data into First Party Data.',
-        url: 'https://heyario.com/',
-      },
-      {
-        name: 'BigCommerce',
-        description: 'Open SaaS e-commerce platform for growing businesses.',
-        url: 'https://www.bigcommerce.com/',
-      },
-      {
-        name: 'Ecwid',
-        description: 'Free e-commerce platform for small businesses.',
-        url: 'https://www.ecwid.com/',
-      },
-      {
-        name: 'Fourthwall',
-        description: 'Platform for creators to sell custom products, memberships, and digital goods.',
-        url: 'https://fourthwall.com/',
-      },
-      {
-        name: 'Gumroad',
-        description: 'Simple platform for creators to sell digital products.',
-        url: 'https://gumroad.com/',
-      },
-      {
-        name: 'Lightspeed eCom',
-        description: 'E-commerce platform for retail businesses.',
-        url: 'https://www.lightspeedhq.com/ecommerce/',
-      },
-      {
-        name: 'Shopify',
-        description: 'Complete commerce platform for online stores.',
-        url: 'https://www.shopify.com/',
-      },
-      {
-        name: 'Square Online',
-        description: 'E-commerce solution integrated with Square payments.',
-        url: 'https://squareup.com/us/en/online-store',
-      },
-      {
-        name: 'WooCommerce',
-        description: 'Open-source e-commerce plugin for WordPress.',
-        url: 'https://woocommerce.com/',
-      },
-    ],
-  },
-  {
-    title: 'Domain Names',
-    stack: [
-      {
-        name: 'Porkbun',
-        description: 'An oddly satisfying domain registration experience.',
-        url: 'https://porkbun.com/',
-      },
-    ],
-  },
-  {
-    title: 'Email',
-    stack: [
-      {
-        name: 'Conversion',
-        description: 'Enterprise AI marketing agents for SEO & Google Ads.',
-        url: 'https://conversion.ai/',
-      },
-      {
-        name: 'Loops',
-        description: 'Email platform for product, marketing, and transactional emails.',
-        url: 'https://loops.so/',
-      },
-      {
-        name: 'Resend',
-        description: 'Email API designed specifically for developers.',
-        url: 'http://resend.com',
-      },
-      {
-        name: 'Superhuman',
-        description: 'The most productive email app ever made for power users.',
-        url: 'http://superhuman.com',
-      },
-      {
-        name: 'Zero Email',
-        description: 'Email client focused on zero inbox methodology.',
-        url: 'https://0.email/',
-      },
-    ],
-  },
-  {
-    title: 'Event Planning',
-    stack: [
-      {
-        name: 'Luma',
-        description: 'Delightful events platform for creating and managing gatherings.',
-        url: 'http://lu.ma',
-      },
-      {
-        name: 'Partiful',
-        description: 'Free online invitations with RSVP tracking for events.',
-        url: 'https://partiful.com/',
-      },
-    ],
-  },
-  {
-    title: 'Finance/Fintech',
-    stack: [
-      {
-        name: 'Autonomous',
-        description: 'AI-powered financial advisor with 0% advisory fees, offering institutional-grade strategies.',
-        url: 'https://becomeautonomous.com/',
-      },
-      {
-        name: 'Model ML',
-        description: 'Enterprise AI workspace for financial modeling, due diligence, and deal execution.',
-        url: 'https://www.modelml.com/',
-      },
-      {
-        name: 'Monarch Money',
-        description: 'Personal finance management tool.',
-        url: 'https://monarchmoney.com/',
-      },
-      {
-        name: 'Oscilar',
-        description: 'AI-powered risk platform handling fraud, credit, onboarding, and compliance.',
-        url: 'https://oscilar.com/',
-      },
-      {
-        name: 'Astor',
-        url: 'https://www.astor.app/',
-      },
-      {
-        name: 'Legora Series D',
-        url: 'https://legora.com/blog/series-d',
-      },
-    ],
-  },
-  {
-    title: 'Generative Engine Optimization',
-    stack: [
-      {
-        name: 'Daydream',
-        description: 'AI-driven SEO and GEO agency.',
-        url: 'https://www.withdaydream.com/',
-      },
-      {
-        name: 'Profound',
-        description: 'AI Answer Engine Optimization for improved search visibility.',
-        url: 'https://www.tryprofound.com/',
-      },
-      {
-        name: 'Relixir',
-        description: 'The AI Generative Engine Optimization GEO Platform.',
-        url: 'https://relixir.ai/',
-      },
-      {
-        name: 'Split.dev',
-        description: 'LLM-Search Lead Attribution for Growth Teams.',
-        url: 'http://split.dev',
-      },
-    ],
-  },
-  {
-    title: 'GPUs on the Cloud',
-    stack: [
-      {
-        name: 'Lambda',
-        description: 'GPU Compute for AI workloads and machine learning.',
-        url: 'https://lambda.ai/',
-      },
-      {
-        name: 'Modal',
-        description: 'High-performance AI infrastructure for running compute-intensive workloads.',
-        url: 'http://modal.com',
-      },
-    ],
-  },
-  {
-    title: 'Guides',
-    stack: [
-      {
-        name: 'Starter to SF',
-        description: 'Comprehensive SF guide by Michelle Fang.',
-        url: 'https://www.startertosf.guide/',
-      },
-      {
-        name: 'Boil the Ocean',
-        url: 'https://garryslist.org/posts/boil-the-ocean',
-      },
-      {
-        name: 'Clay\'s EA Take-Home',
-        url: 'https://docs.google.com/document/d/1Jct3sKsza5QAn-IQrdnG2Givs7WlQgn2nY5IIcwt_Vw/edit?dub_id=2Dg5uaQVeT3nT8RR&tab=t.0',
-      },
-    ],
-  },
-  {
-    title: 'Law',
-    stack: [
-      {
-        name: 'Crosby',
-        description: 'Execute Contracts Faster with AI-powered legal automation.',
-        url: 'https://crosby.ai/',
-      },
-      {
-        name: 'Crosby',
-        url: 'https://www.crosby.ai/',
-      },
-    ],
-  },
-  {
-    title: 'Learning',
-    stack: [
-      {
-        name: 'Fast.ai',
-        description: 'Making neural nets uncool again - practical deep learning education.',
-        url: 'https://www.fast.ai/',
-      },
-      {
-        name: 'Miyagi Labs',
-        description: 'AI-powered learning and education platform.',
-        url: 'https://miyagilabs.ai/',
-      },
-      {
-        name: 'Opennote',
-        description: 'AI-powered note-taking platform for personalized learning.',
-        url: 'https://www.opennote.com/',
-      },
-      {
-        name: 'YouLearn AI',
-        description: 'AI-powered personalized learning experiences.',
-        url: 'http://youlearn.ai',
-      },
-      {
-        name: 'Beej\'s Guide to Computer Science',
-        url: 'https://beej.us/guide/bglcs/html/#understanding-the-problem',
-      },
-      {
-        name: 'Learn Notion in 12 Hours',
-        url: 'https://www.freecodecamp.org/news/lean-notion-in-12-hours/',
-      },
-    ],
-  },
-  {
-    title: 'Marketing',
-    stack: [
-      {
-        name: 'Hightouch',
-        description: 'Composable Customer Data Platform (CDP) & AI Decisioning.',
-        url: 'https://hightouch.com/',
-      },
-      {
-        name: 'Superscale AI',
-        description: 'AI-powered marketing automation and scaling.',
-        url: 'https://www.superscale.ai/',
-      },
-    ],
-  },
-  {
-    title: 'Media',
-    stack: [
-      {
-    name: 'Yesterday Media',
-        description: 'Recorded interviews and written biographies profiling founders and investors.',
-        url: 'https://yesterdayy.com/',
-      },
-      {
-        name: 'Angus Emmerson',
-        url: 'https://angusemmerson.com/',
-      },
-      {
-        name: 'TAO TAJIMA',
-        url: 'https://taotajima.jp/',
-      },
-      {
-        name: 'Arena Magazine',
-        url: 'https://arenamag.com/',
-      },
-      {
-        name: 'The Transformers',
-        url: 'https://www.vizuaranewsletter.com/p/the-transformers?r=5b5pyd',
-      },
-    ],
-  },
-  {
-    title: 'Models',
-    stack: [
-      {
-        name: 'ChatGPT',
-        description: 'OpenAI\'s advanced AI model.',
-        url: 'https://chatgpt.com/',
-      },
-      {
-        name: 'Claude',
-        description: 'Anthropic\'s advanced AI model.',
-        url: 'https://www.anthropic.com/',
-      },
-      {
-        name: 'Gemini',
-        description: 'Google\'s advanced AI model.',
-        url: 'https://gemini.google.com/',
-      },
-      {
-        name: 'Grok',
-        description: 'X.ai\'s advanced AI model.',
-        url: 'https://grok.com/',
-      },
-      {
-        name: 'Groq',
-        description: 'Purpose-built AI inference platform.',
-        url: 'https://groq.com/',
-      },
-    ],
-  },
-  {
-    title: 'Monitoring/Analytics',
-    stack: [
-      {
-        name: 'Better Stack',
-        description: 'Radically better observability stack for modern applications.',
-        url: 'https://betterstack.com/',
-      },
-      {
-        name: 'incident.io',
-        description: 'All-in-one incident management platform for engineering teams.',
-        url: 'https://incident.io/',
-      },
-      {
-        name: 'Keywords AI',
-        description: 'AI-powered keyword research and analytics platform.',
-        url: 'https://www.keywordsai.co/',
-      },
-      {
-        name: 'PostHog',
-        description: 'All-in-one platform for building successful products with analytics.',
-        url: 'http://posthog.com',
-      },
-      {
-        name: 'Nozomio Labs',
-        url: 'https://www.nozomio.com/',
-      },
     ],
   },
   {
     title: 'Personal Websites',
     stack: [
+      {
+        name: 'Angus Emmerson',
+        url: 'https://angusemmerson.com/',
+      },
       {
         name: 'Deedy Das',
         description: 'Principal at Menlo Ventures.',
@@ -1250,6 +1566,10 @@ const tools = [
         url: 'https://sonith.org/',
       },
       {
+        name: 'TAO TAJIMA',
+        url: 'https://taotajima.jp/',
+      },
+      {
         name: 'Todd Goldberg',
         description: 'Early-stage VC, co-founder of Curated.',
         url: 'https://toddgoldberg.com/index.html',
@@ -1267,6 +1587,20 @@ const tools = [
     ],
   },
   {
+    title: 'Media',
+    stack: [
+      {
+        name: 'Arena Magazine',
+        url: 'https://arenamag.com/',
+      },
+      {
+        name: 'Yesterday Media',
+        description: 'Recorded interviews and written biographies profiling founders and investors.',
+        url: 'https://yesterdayy.com/',
+      },
+    ],
+  },
+  {
     title: 'Philanthropic Organizations',
     stack: [
       {
@@ -1276,352 +1610,6 @@ const tools = [
       },
     ],
   },
-  {
-    title: 'Presentations',
-    stack: [
-      {
-        name: 'Gamma',
-        description: 'AI-powered presentation builder.',
-        url: 'https://gamma.app/',
-      },
-    ],
-  },
-  {
-    title: 'Principles',
-    stack: [
-      {
-        name: 'iNaval',
-        description: 'Online twin of Naval Ravikant.',
-        url: 'https://inav.al/',
-      },
-      {
-        name: 'Startup Principles by Abhay Venkatesh',
-        description: 'Collection of startup principles.',
-        url: 'https://docs.google.com/document/d/1QFR3scxuGSY848qA7JDYEHI2uVB7f5nzIj_jIH7ihZQ/edit?tab=t.0',
-      },
-    ],
-  },
-  {
-    title: 'Programs/Scholarships',
-    stack: [
-      {
-        name: 'Anthropic Fellows Program',
-        description: 'Research fellowship program in AI safety and alignment.',
-        url: 'https://alignment.anthropic.com/2024/anthropic-fellows-program/',
-      },
-      {
-        name: 'Avra',
-        description: 'Program turning founders into great CEOs.',
-        url: 'https://www.avracap.com/',
-      },
-      {
-        name: 'External Researcher Access Program',
-        description: 'Anthropic\'s program for external AI research collaboration.',
-        url: 'https://support.anthropic.com/en/articles/9125743-what-is-the-external-researcher-access-program',
-      },
-      {
-        name: 'Felicis Fellows',
-        description: 'Fellowship program for emerging entrepreneurs.',
-        url: 'https://www.felicis.com/fellows',
-      },
-      {
-        name: 'Kauffman Fellows',
-        description: 'Two-year fellowship program for venture capital professionals.',
-        url: 'https://www.kauffmanfellows.org/',
-      },
-      {
-        name: 'MATS Program',
-        description: 'Machine learning alignment research program.',
-        url: 'https://www.matsprogram.org/',
-      },
-    ],
-  },
-  {
-    title: 'PropTech',
-    stack: [
-      {
-        name: 'WithJoy.AI',
-        description: 'AI Real Estate Agent for property search and management.',
-        url: 'https://withjoy.ai/',
-      },
-    ],
-  },
-  {
-    title: 'Quantum Computing',
-    stack: [
-      {
-        name: 'PsiQuantum',
-        description: 'Building the World\'s First Useful Quantum Computer.',
-        url: 'https://www.psiquantum.com/',
-      },
-    ],
-  },
-  {
-    title: 'Recruiting',
-    stack: [
-      {
-        name: 'Ashby',
-        description: 'All-in-one recruiting software for ambitious teams.',
-        url: 'http://ashbyhq.com',
-      },
-      {
-        name: 'Eightfold.ai',
-        description: 'AI talent acquisition & recruiting platform.',
-        url: 'https://eightfold.ai/',
-      },
-      {
-        name: 'Tsenta',
-        url: 'https://www.tsenta.com/',
-      },
-    ],
-  },
-  {
-    title: 'Robotics',
-    stack: [
-      {
-        name: 'Genesis AI',
-        description: 'Physical AI lab building generalist robots with universal foundation models and open-source simulation.',
-        url: 'https://genesis-ai.company/',
-      },
-      {
-        name: 'Pittsburgh Robotics Network',
-        description: 'Pittsburgh\'s ecosystem supporting 125+ robotics companies.',
-        url: 'https://robopgh.org/',
-      },
-      {
-        name: 'Skild AI',
-        description: 'Scalable robotics foundation models.',
-        url: 'https://www.skild.ai/',
-      },
-      {
-        name: 'Generalist AI',
-        url: 'https://generalistai.com/',
-      },
-      {
-        name: 'Sunday Robotics',
-        url: 'https://www.sunday.ai/journal/series-b',
-      },
-    ],
-  },
-  {
-    title: 'Sales/GTM/User Research',
-    stack: [
-      {
-        name: 'Apollo',
-        description: 'Sales Intelligence and Engagement Platform.',
-        url: 'https://www.apollo.io/',
-      },
-      {
-        name: 'Artificial Societies',
-        description: 'Simulate your product or idea in realistic AI-powered artificial societies.',
-        url: 'https://societies.io/',
-      },
-      {
-        name: 'Clado',
-        description: 'AI-powered sales and go-to-market solutions.',
-        url: 'https://clado.ai',
-      },
-      {
-        name: 'Clay',
-        description: 'AI-powered sales engagement and prospecting platform.',
-        url: 'https://clay.com/',
-      },
-      {
-        name: 'Harmonic',
-        description: 'Startup discovery engine for VCs and business development teams.',
-        url: 'https://harmonic.ai/',
-      },
-      {
-        name: 'Cardinal',
-        url: 'https://trycardinal.ai/',
-      },
-      {
-        name: 'Clodo',
-        url: 'https://clodo.ai/',
-      },
-      {
-        name: 'Orange Slice',
-        url: 'https://www.orangeslice.ai/',
-      },
-      {
-        name: 'GTM Goose Skills Library',
-        url: 'https://skills.gooseworks.ai/',
-      },
-      {
-        name: 'Monaco',
-        url: 'https://www.monaco.com/',
-      },
-      {
-        name: 'Sixtyfour',
-        url: 'https://sixtyfour.ai/',
-      },
-    ],
-  },
-  {
-    title: 'Security',
-    stack: [
-      {
-        name: 'Tracebit',
-        description: 'Expect the unexpected with security canaries and monitoring.',
-        url: 'https://tracebit.com/',
-      },
-      {
-        name: 'Cylake',
-        url: 'https://greylock.com/portfolio-news/introducing-cylake-ai-native-cybersecurity-with-total-data-sovereignty/',
-      },
-      {
-        name: 'The Antifraud Company',
-        url: 'https://antifraudcompany.com/',
-      },
-      {
-        name: 'Vanta',
-        url: 'https://www.vanta.com/',
-      },
-      {
-        name: 'Vanta',
-        url: 'https://www.vanta.com/',
-      },
-    ],
-  },
-  {
-    title: 'Social Media/Video/UGC',
-    stack: [
-      {
-        name: 'Argil',
-        description: 'Generate videos with your AI clone for content creation.',
-        url: 'https://www.argil.ai/',
-      },
-      {
-        name: 'Descript',
-        description: 'Edit Videos & Podcasts Like a Doc with AI-powered tools.',
-        url: 'https://www.descript.com/',
-      },
-      {
-        name: 'Memories.ai',
-        description: 'Large Visual Memory Model for AI-powered video search and editing.',
-        url: 'https://memories.ai/',
-      },
-      {
-        name: 'Mosaic',
-        description: 'AI Agents for Video Editing and content production.',
-        url: 'https://usemosaic.ai/',
-      },
-      {
-        name: 'Overlap',
-        description: 'Video Marketing AI Agents for social media.',
-        url: 'https://overlap.ai/',
-      },
-      {
-        name: 'Superscale AI',
-        description: 'AI-powered social media and video scaling.',
-        url: 'https://www.superscale.ai/',
-      },
-    ],
-  },
-  {
-    title: 'Testing/QA',
-    stack: [
-      {
-        name: 'QualGent',
-        description: 'AI-Powered Mobile App Testing Platform beyond traditional automation.',
-        url: 'https://qualgent.ai/',
-      },
-    ],
-  },
-  {
-    title: 'Voice',
-    stack: [
-      {
-        name: 'AssemblyAI',
-        description: 'Speech-to-text API with industry-leading accuracy.',
-        url: 'https://www.assemblyai.com/',
-      },
-      {
-        name: 'Brainbase',
-        description: 'Build your own AI workforce with voice capabilities.',
-        url: 'https://usebrainbase.com/',
-      },
-      {
-        name: 'Superwhisper',
-        description: 'Advanced voice recognition and transcription.',
-        url: 'https://superwhisper.com/',
-      },
-      {
-        name: 'Vapi',
-        description: 'Build Advanced Voice AI Agents for applications.',
-        url: 'https://vapi.ai/',
-      },
-      {
-        name: 'Wispr Flow',
-        description: 'Effortless Voice Dictation with AI.',
-        url: 'https://wisprflow.ai/',
-      },
-    ],
-  },
-  {
-    title: 'Web Browsers/Use',
-    stack: [
-      {
-        name: 'Browserbase',
-        description: 'A web browser designed for AI agents & applications.',
-        url: 'https://www.browserbase.com/',
-      },
-      {
-        name: 'Exa',
-        description: 'Advanced web search and intelligence platform for LLMs.',
-        url: 'https://exa.ai/',
-      },
-      {
-        name: 'Ladybird',
-        description: 'Truly independent web browser built from scratch by a non-profit.',
-        url: 'https://ladybird.org/',
-      },
-      {
-        name: 'Hyperbrowser',
-        description: 'AI-powered web browsing and automation.',
-        url: 'https://www.hyperbrowser.ai/',
-      },
-      {
-        name: 'Parallel',
-        description: 'Query the web with advanced parallel processing.',
-        url: 'https://parallel.ai/',
-      },
-      {
-        name: 'Playwright',
-        description: 'Fast and reliable end-to-end testing for modern web apps.',
-        url: 'https://playwright.dev/',
-      },
-      {
-        name: 'Reworkd',
-        description: 'AI-powered web automation and data extraction.',
-        url: 'https://www.reworkd.ai/',
-      },
-      {
-        name: 'Tavily',
-        description: 'Advanced web search and information retrieval.',
-        url: 'https://www.tavily.com/',
-      },
-    ],
-  },
-  {
-    title: 'Writing',
-    stack: [
-      {
-        name: 'Grammarly',
-        description: 'AI-powered grammar and writing assistant.',
-        url: 'https://www.grammarly.com/',
-      },
-      {
-        name: 'Harper',
-        description: 'Free, Open Source Grammar Checker for better writing.',
-        url: 'https://writewithharper.com/',
-      },
-      {
-        name: 'Lightfern',
-        url: 'https://lightfern.com/',
-      },
-    ],
-  },
 ]
 
-export default tools 
+export default tools
