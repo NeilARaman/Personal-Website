@@ -18,14 +18,6 @@ function escapeAttr(str) {
   return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
-// Build table of contents
-let toc = '    <div class="tools-nav">\n';
-for (const category of tools) {
-  const slug = slugify(category.title);
-  toc += `      <a href="#${slug}">${category.title}</a>\n`;
-}
-toc += '    </div>\n';
-
 let toolsHtml = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +37,7 @@ let toolsHtml = `<!DOCTYPE html>
   </nav>
   <main class="tools-page">
     <h1>Tools</h1>
-${toc}`;
+`;
 
 for (const category of tools) {
   const slug = slugify(category.title);
