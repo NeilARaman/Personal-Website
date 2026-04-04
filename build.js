@@ -8,6 +8,24 @@ const toolsSrc = fs.readFileSync('./data/tools.js', 'utf8');
 const cleanSrc = toolsSrc.replace(/export default tools\s*;?/, '').replace(/^const tools = /, 'var tools = ');
 eval(cleanSrc);
 
+// Generate slugified id from category title
+function slugify(str) {
+  return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
+
+// Escape HTML for title attributes
+function escapeAttr(str) {
+  return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+// Build table of contents
+let toc = '    <div class="tools-nav">\n';
+for (const category of tools) {
+  const slug = slugify(category.title);
+  toc += `      <a href="#${slug}">${category.title}</a>\n`;
+}
+toc += '    </div>\n';
+
 let toolsHtml = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,16 +43,19 @@ let toolsHtml = `<!DOCTYPE html>
       <a href="/tools">Tools</a>
     </div>
   </nav>
-  <main>
+  <main class="tools-page">
     <h1>Tools</h1>
-`;
+${toc}`;
 
 for (const category of tools) {
-  toolsHtml += `    <section class="tool-category">\n`;
-  toolsHtml += `      <h2>${category.title}</h2>\n`;
+  const slug = slugify(category.title);
+  const count = category.stack.length;
+  toolsHtml += `    <section class="tool-category" id="${slug}">\n`;
+  toolsHtml += `      <h2>${category.title} <span>${count}</span></h2>\n`;
   toolsHtml += `      <ul>\n`;
   for (const tool of category.stack) {
-    toolsHtml += `        <li><a href="${tool.url}" target="_blank" rel="noopener">${tool.name}</a></li>\n`;
+    const title = tool.description ? ` title="${escapeAttr(tool.description)}"` : '';
+    toolsHtml += `        <li><a href="${tool.url}"${title} target="_blank" rel="noopener">${tool.name}</a></li>\n`;
   }
   toolsHtml += `      </ul>\n`;
   toolsHtml += `    </section>\n`;

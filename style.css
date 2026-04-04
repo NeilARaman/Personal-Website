@@ -143,28 +143,80 @@ a:hover {
 }
 
 /* Tools page */
+.tools-page {
+  max-width: 900px;
+}
+
+.tools-nav {
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.tools-nav a {
+  color: #999;
+  text-decoration: none;
+  margin-right: 16px;
+  white-space: nowrap;
+}
+
+.tools-nav a:hover {
+  color: #000;
+}
+
 .tool-category {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #eee;
+}
+
+.tool-category:first-of-type {
+  border-top: none;
+  padding-top: 0;
 }
 
 .tool-category h2 {
   font-size: 15px;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   color: #000;
+}
+
+.tool-category h2 span {
+  font-weight: 400;
+  color: #999;
+  font-size: 13px;
+  margin-left: 6px;
 }
 
 .tool-category ul {
   list-style: none;
   padding: 0;
+  columns: 2;
+  column-gap: 32px;
 }
 
 .tool-category li {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   font-size: 14px;
-  color: #666;
+  break-inside: avoid;
 }
 
 .tool-category li a {
   color: #333;
+}
+
+.tool-category li a:hover {
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  .tools-page {
+    max-width: 100%;
+  }
+  .tool-category ul {
+    columns: 1;
+  }
 }

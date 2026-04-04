@@ -15,7 +15,10 @@
       "Bash(rm:*)",
       "Bash(npx -y serve . -p 3000)",
       "Bash(npm init:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(sed 's/:.*\\\\[//')",
+      "Bash(sed 's/^\\\\s*//')",
+      "Bash(grep -E \"^  \\\\{$\" tools/index.html)"
     ]
   }
 }
