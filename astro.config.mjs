@@ -17,5 +17,19 @@ export default defineConfig({
         ],
       },
     },
+    {
+      provider: fontProviders.local(),
+      name: 'Lora Variable',
+      cssVariable: '--font-lora',
+      options: {
+        variants: [
+          {
+            src: ['./src/assets/fonts/Lora-Variable.woff2'],
+            weight: '400 700',
+            style: 'normal',
+          },
+        ],
+      },
+    },
   ],
 });

@@ -1,80 +1,23 @@
 ---
 import Base from '../layouts/Base.astro';
-import NavyDot from '../components/NavyDot.astro';
 ---
-<Base title="Design System Test -- Neil Raman">
-  <h1>Design System Test</h1>
-  <p>This page exercises every design token to verify the design system works end-to-end.</p>
-
-  <section>
-    <h2>Type Scale</h2>
-    <h1>Heading 1 -- Inter Sans at 2.747rem</h1>
-    <h2>Heading 2 -- Inter Sans at 2.197rem</h2>
-    <h3>Heading 3 -- Inter Sans at 1.758rem</h3>
-    <h4>Heading 4 -- Inter Sans at 1.406rem</h4>
-    <p>Body text in Inter sans-serif at 18px base. The line-height is set to 1.6 for comfortable reading. This paragraph tests that the body font, size, color, and spacing tokens all render correctly. Good typography and whitespace are the product.</p>
-  </section>
-
-  <div class="dot-separator">
-    <NavyDot />
+<Base title="Neil Raman">
+  <div class="intro">
+    <h1>Neil Raman</h1>
+    <p>Sophomore at Carnegie Mellon studying Information Systems and Economics. Building the best entrepreneurship environment at CMU through Foundry and scouting for impactful startups at Mangusta Capital.</p>
   </div>
-
-  <section>
-    <h2>Colors and Links</h2>
-    <p>This is a <a href="https://neilraman.com">deep navy link</a> demonstrating the accent color token. Hover to see the darker state.</p>
-    <p class="muted-text">This paragraph uses the muted color token for secondary information.</p>
-    <hr class="rule" />
-    <p>The horizontal rule above uses the <code>--color-rule</code> token.</p>
-  </section>
-
-  <div class="dot-separator">
-    <NavyDot />
-  </div>
-
-  <section>
-    <h2>Spacing and Layout</h2>
-    <p>Content is constrained to approximately 720px (45rem) with horizontal padding on both sides. On narrow viewports, the padding prevents text from touching screen edges.</p>
-    <p>The spacing scale uses an 8px base with balanced progression: 4px, 8px, 16px, 24px, 32px, 48px, 64px, 96px.</p>
-  </section>
 </Base>
 
 <style>
+  .intro {
+    padding-top: var(--space-4xl);
+  }
+
   h1 {
-    margin-bottom: var(--space-md);
-  }
-
-  section {
-    margin-bottom: var(--space-2xl);
-  }
-
-  section h2 {
     margin-bottom: var(--space-lg);
   }
 
-  section p {
-    margin-bottom: var(--space-md);
-  }
-
-  .dot-separator {
-    display: flex;
-    justify-content: center;
-    padding: var(--space-xl) 0;
-  }
-
-  .muted-text {
-    color: var(--color-muted);
-  }
-
-  .rule {
-    border: none;
-    border-top: 1px solid var(--color-rule);
-    margin: var(--space-lg) 0;
-  }
-
-  code {
-    font-size: var(--font-size-sm);
-    background-color: var(--color-rule);
-    padding: 0.1em 0.4em;
-    border-radius: 3px;
+  p {
+    max-width: 36rem;
   }
 </style>
