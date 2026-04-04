@@ -6,8 +6,8 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.6;
   color: #333;
   background: #fff;
   -webkit-font-smoothing: antialiased;
@@ -25,7 +25,7 @@ nav {
 nav a {
   color: #333;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 nav a:hover {
@@ -34,6 +34,7 @@ nav a:hover {
 
 nav > a {
   font-weight: 600;
+  font-size: 20px;
 }
 
 nav div {
@@ -52,7 +53,7 @@ main {
 }
 
 h1 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   margin-bottom: 16px;
 }
@@ -71,4 +72,78 @@ a {
 
 a:hover {
   text-decoration-color: #333;
+}
+
+/* Articles list */
+.articles {
+  list-style: none;
+  padding: 0;
+}
+
+.articles li {
+  margin-bottom: 12px;
+}
+
+.articles a {
+  display: block;
+  color: #333;
+}
+
+.articles time {
+  font-size: 13px;
+  color: #999;
+}
+
+/* Article page */
+.article-header {
+  margin-bottom: 24px;
+}
+
+.article-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.article-header time {
+  font-size: 13px;
+  color: #999;
+}
+
+.article h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 24px 0 8px;
+}
+
+.article h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 20px 0 8px;
+}
+
+/* Tools page */
+.tool-category {
+  margin-bottom: 24px;
+}
+
+.tool-category h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.tool-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tool-category li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #666;
+}
+
+.tool-category li a {
+  color: #333;
 }
