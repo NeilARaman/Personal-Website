@@ -1,19 +1,17 @@
-// Simple build script: generates tools/index.html and introducing-foundry/index.html
+// Build script: generates all static pages, sitemap.xml, and robots.txt
 const fs = require('fs');
-const path = require('path');
+const matter = require('gray-matter');
+const { marked } = require('marked');
 
-// --- Tools page ---
-const toolsSrc = fs.readFileSync('./data/tools.js', 'utf8');
-// Strip ES module syntax so we can eval it
-const cleanSrc = toolsSrc.replace(/export default tools\s*;?/, '').replace(/^const tools = /, 'var tools = ');
-eval(cleanSrc);
+const SITE = 'https://neilraman.com';
+const pages = []; // collect URLs for sitemap
 
-// Generate slugified id from category title
+// --- Helpers ---
+
 function slugify(str) {
   return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
-// Escape HTML for attributes and content
 function escapeAttr(str) {
   return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
@@ -27,26 +25,54 @@ function sanitizeUrl(url) {
   return 'https://' + url;
 }
 
-let toolsHtml = `<!DOCTYPE html>
+function head({ title, description, path, type = 'website' }) {
+  const url = SITE + path;
+  return `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tools — Neil Raman</title>
-  <meta name="description" content="Tools and resources curated by Neil Raman.">
+  <title>${escapeHtml(title)}</title>
+  <meta name="description" content="${escapeAttr(description)}">
+  <link rel="canonical" href="${url}">
+  <meta property="og:title" content="${escapeAttr(title)}">
+  <meta property="og:description" content="${escapeAttr(description)}">
+  <meta property="og:url" content="${url}">
+  <meta property="og:type" content="${type}">
+  <meta property="og:site_name" content="Neil Raman">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="${escapeAttr(title)}">
+  <meta name="twitter:description" content="${escapeAttr(description)}">
   <link rel="stylesheet" href="/style.css">
-</head>
+</head>`;
+}
+
+function nav() {
+  return `
 <body>
-  <nav>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <nav aria-label="Main navigation">
     <a href="/">Neil Raman</a>
     <div>
       <a href="/articles">Articles</a>
       <a href="/tools">Tools</a>
     </div>
-  </nav>
-  <main class="tools-page">
-    <h1>Tools</h1>
-`;
+  </nav>`;
+}
+
+// --- Tools page ---
+
+const toolsSrc = fs.readFileSync('./data/tools.js', 'utf8');
+const cleanSrc = toolsSrc.replace(/export default tools\s*;?/, '').replace(/^const tools = /, 'var tools = ');
+eval(cleanSrc);
+
+let toolsHtml = head({
+  title: 'Tools — Neil Raman',
+  description: 'Tools and resources curated by Neil Raman.',
+  path: '/tools',
+});
+toolsHtml += nav();
+toolsHtml += `\n  <main id="main" class="tools-page">\n    <h1>Tools</h1>\n`;
 
 for (const category of tools) {
   const slug = slugify(category.title);
@@ -67,15 +93,12 @@ toolsHtml += `  </main>\n</body>\n</html>\n`;
 
 fs.mkdirSync('./tools', { recursive: true });
 fs.writeFileSync('./tools/index.html', toolsHtml);
+pages.push('/tools');
 console.log('Built tools/index.html');
 
-// --- Article page ---
-const matter = require('gray-matter');
-const { marked } = require('marked');
+// --- Article pages ---
 
-// Configure marked to add target="_blank" rel="noopener" to external links
 const renderer = new marked.Renderer();
-const originalLink = renderer.link.bind(renderer);
 renderer.link = function({ href, title, text }) {
   const titleAttr = title ? ` title="${escapeAttr(title)}"` : '';
   if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
@@ -85,34 +108,27 @@ renderer.link = function({ href, title, text }) {
 };
 marked.setOptions({ renderer });
 
-const articleSrc = fs.readFileSync('./articles/introducing-foundry.md', 'utf8');
-const { data, content } = matter(articleSrc);
+const articleFiles = fs.readdirSync('./articles').filter(f => f.endsWith('.md'));
 
-const articleBody = marked.parse(content);
+for (const file of articleFiles) {
+  const articleSrc = fs.readFileSync(`./articles/${file}`, 'utf8');
+  const { data, content } = matter(articleSrc);
+  const slug = file.replace(/\.md$/, '');
+  const articleBody = marked.parse(content);
+  const dateStr = new Date(data.date).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 
-const articleHtml = `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${escapeHtml(data.title)} — Neil Raman</title>
-  <meta name="description" content="${escapeAttr(data.description)}">
-  <meta property="og:title" content="${escapeAttr(data.title)}">
-  <meta property="og:description" content="${escapeAttr(data.description)}">
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-  <nav>
-    <a href="/">Neil Raman</a>
-    <div>
-      <a href="/articles">Articles</a>
-      <a href="/tools">Tools</a>
-    </div>
-  </nav>
-  <main class="article">
+  let articleHtml = head({
+    title: `${data.title} — Neil Raman`,
+    description: data.description || '',
+    path: `/${slug}`,
+    type: 'article',
+  });
+  articleHtml += nav();
+  articleHtml += `
+  <main id="main" class="article">
     <header class="article-header">
       <h1 class="article-title">${escapeHtml(data.title)}</h1>
-      <time datetime="${data.date}">${new Date(data.date).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}</time>
+      <time datetime="${data.date}">${dateStr}</time>
     </header>
     ${articleBody}
   </main>
@@ -120,6 +136,28 @@ const articleHtml = `<!DOCTYPE html>
 </html>
 `;
 
-fs.mkdirSync('./introducing-foundry', { recursive: true });
-fs.writeFileSync('./introducing-foundry/index.html', articleHtml);
-console.log('Built introducing-foundry/index.html');
+  fs.mkdirSync(`./${slug}`, { recursive: true });
+  fs.writeFileSync(`./${slug}/index.html`, articleHtml);
+  pages.push(`/${slug}`);
+  console.log(`Built ${slug}/index.html`);
+}
+
+// --- Sitemap ---
+
+pages.push('/');
+pages.push('/articles');
+
+const today = new Date().toISOString().split('T')[0];
+let sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+for (const p of pages) {
+  sitemap += `  <url><loc>${SITE}${p}</loc><lastmod>${today}</lastmod></url>\n`;
+}
+sitemap += `</urlset>\n`;
+
+fs.writeFileSync('./sitemap.xml', sitemap);
+console.log('Built sitemap.xml');
+
+// --- robots.txt ---
+
+fs.writeFileSync('./robots.txt', `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`);
+console.log('Built robots.txt');

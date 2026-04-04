@@ -13,6 +13,28 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 8px;
+  background: #000;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 14px;
+  text-decoration: none;
+  z-index: 100;
+  border-radius: 4px;
+}
+
+.skip-link:focus {
+  top: 8px;
+}
+
+:focus-visible {
+  outline: 2px solid #333;
+  outline-offset: 2px;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -199,5 +221,29 @@ a:hover {
   }
   .tool-category ul {
     columns: 1;
+  }
+}
+
+@media print {
+  nav, .skip-link {
+    display: none;
+  }
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 12pt;
+  }
+  main {
+    max-width: 100%;
+    padding: 0;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    color: #666;
   }
 }
