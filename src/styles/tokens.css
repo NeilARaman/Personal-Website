@@ -22,7 +22,7 @@
 
   /* Type scale -- 1.25 Major Third ratio, 18px base */
   --font-size-sm: 0.889rem;   /* ~14.2px */
-  --font-size-base: 1.125rem; /* 18px */
+  --font-size-base: 0.95rem;  /* ~15px */
   --font-size-md: 1.406rem;   /* ~22.5px */
   --font-size-lg: 1.758rem;   /* ~28.1px */
   --font-size-xl: 2.197rem;   /* ~35.2px */
@@ -40,6 +40,6 @@
 
   /* Layout */
   --content-width: 45rem;    /* ~720px */
-  --line-height-body: 1.6;
+  --line-height-body: 1.5;
   --line-height-heading: 1.2;
 }
