@@ -1422,6 +1422,11 @@ const tools = [
         description: "AI talent acquisition & recruiting platform.",
         url: 'https://eightfold.ai/',
       },
+      {
+        name: 'Greenhouse',
+        description: "Hiring platform with structured interviewing, ATS, and onboarding tools.",
+        url: 'https://www.greenhouse.com/',
+      },
     ],
   },
   {
