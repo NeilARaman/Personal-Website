@@ -1,7 +1,7 @@
 {
   "name": "neilraman.com",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal website for Neil Raman",
   "main": "build.js",
   "scripts": {
     "build": "node build.js",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/NeilARaman/Personal-Website.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Neil Raman",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {

@@ -166,7 +166,7 @@ a:hover {
 
 /* Tools page */
 .tools-page {
-  max-width: 900px;
+  max-width: 600px;
 }
 
 .tool-category {
@@ -216,9 +216,6 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-  .tools-page {
-    max-width: 100%;
-  }
   .tool-category ul {
     columns: 1;
   }

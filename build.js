@@ -49,15 +49,16 @@ function head({ title, description, path, type = 'website' }) {
 </head>`;
 }
 
-function nav() {
+function nav(currentPage) {
+  const ariaCurrent = (page) => currentPage === page ? ' aria-current="page"' : '';
   return `
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
   <nav aria-label="Main navigation">
-    <a href="/">Neil Raman</a>
+    <a href="/"${ariaCurrent('/')}>Neil Raman</a>
     <div>
-      <a href="/articles">Articles</a>
-      <a href="/tools">Tools</a>
+      <a href="/articles"${ariaCurrent('/articles')}>Articles</a>
+      <a href="/tools"${ariaCurrent('/tools')}>Tools</a>
     </div>
   </nav>`;
 }
@@ -78,7 +79,7 @@ let toolsHtml = head({
   description: 'Tools and resources curated by Neil Raman.',
   path: '/tools',
 });
-toolsHtml += nav();
+toolsHtml += nav('/tools');
 toolsHtml += `\n  <main id="main" class="tools-page">\n    <h1>Tools</h1>\n`;
 
 for (const category of tools) {
@@ -135,7 +136,7 @@ for (const file of articleFiles) {
       path: `/${slug}`,
       type: 'article',
     });
-    articleHtml += nav();
+    articleHtml += nav(`/${slug}`);
     articleHtml += `
   <main id="main" class="article">
     <header class="article-header">
