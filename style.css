@@ -51,7 +51,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #000;
+  opacity: 0.6;
 }
 
 nav > a {
@@ -90,7 +90,7 @@ a {
   color: #333;
   text-decoration: underline;
   text-underline-offset: 2px;
-  text-decoration-color: #ccc;
+  text-decoration-color: #999;
 }
 
 a:hover {
@@ -114,7 +114,7 @@ a:hover {
 
 .articles time {
   font-size: 13px;
-  color: #767676;
+  color: #666;
 }
 
 /* Article page */
@@ -130,7 +130,7 @@ a:hover {
 
 .article-header time {
   font-size: 13px;
-  color: #767676;
+  color: #666;
 }
 
 .article h2 {
@@ -189,7 +189,7 @@ a:hover {
 
 .tool-category h2 span {
   font-weight: 400;
-  color: #767676;
+  color: #666;
   font-size: 13px;
   margin-left: 6px;
 }

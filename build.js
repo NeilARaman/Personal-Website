@@ -21,6 +21,8 @@ function escapeHtml(str) {
 }
 
 function sanitizeUrl(url) {
+  // Block dangerous protocols
+  if (/^(javascript|data|vbscript):/i.test(url)) return '#';
   if (/^https?:\/\//i.test(url)) return url;
   return 'https://' + url;
 }
@@ -60,11 +62,16 @@ function nav() {
   </nav>`;
 }
 
-// --- Tools page ---
+// --- Load tools data safely (no eval) ---
 
 const toolsSrc = fs.readFileSync('./data/tools.js', 'utf8');
-const cleanSrc = toolsSrc.replace(/export default tools\s*;?/, '').replace(/^const tools = /, 'var tools = ');
-eval(cleanSrc);
+// Extract the array from the JS file using Function constructor (safer than eval)
+const cleanSrc = toolsSrc
+  .replace(/export default tools\s*;?/, '')
+  .replace(/^const tools = /, 'var tools = ');
+const tools = new Function(cleanSrc + '; return tools;')();
+
+// --- Tools page ---
 
 let toolsHtml = head({
   title: 'Tools — Neil Raman',
@@ -100,31 +107,36 @@ console.log('Built tools/index.html');
 
 const renderer = new marked.Renderer();
 renderer.link = function({ href, title, text }) {
+  // Block dangerous protocols in markdown links
+  if (href && /^(javascript|data|vbscript):/i.test(href)) href = '#';
   const titleAttr = title ? ` title="${escapeAttr(title)}"` : '';
+  // Escape link text to prevent XSS via inline HTML in markdown
+  const safeText = escapeHtml(text);
   if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
-    return `<a href="${escapeAttr(href)}"${titleAttr} target="_blank" rel="noopener">${text}</a>`;
+    return `<a href="${escapeAttr(href)}"${titleAttr} target="_blank" rel="noopener">${safeText}</a>`;
   }
-  return `<a href="${escapeAttr(href)}"${titleAttr}>${text}</a>`;
+  return `<a href="${escapeAttr(href)}"${titleAttr}>${safeText}</a>`;
 };
 marked.setOptions({ renderer });
 
 const articleFiles = fs.readdirSync('./articles').filter(f => f.endsWith('.md'));
 
 for (const file of articleFiles) {
-  const articleSrc = fs.readFileSync(`./articles/${file}`, 'utf8');
-  const { data, content } = matter(articleSrc);
-  const slug = file.replace(/\.md$/, '');
-  const articleBody = marked.parse(content);
-  const dateStr = new Date(data.date).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+  try {
+    const articleSrc = fs.readFileSync(`./articles/${file}`, 'utf8');
+    const { data, content } = matter(articleSrc);
+    const slug = file.replace(/\.md$/, '');
+    const articleBody = marked.parse(content);
+    const dateStr = new Date(data.date).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 
-  let articleHtml = head({
-    title: `${data.title} — Neil Raman`,
-    description: data.description || '',
-    path: `/${slug}`,
-    type: 'article',
-  });
-  articleHtml += nav();
-  articleHtml += `
+    let articleHtml = head({
+      title: `${data.title} — Neil Raman`,
+      description: data.description || '',
+      path: `/${slug}`,
+      type: 'article',
+    });
+    articleHtml += nav();
+    articleHtml += `
   <main id="main" class="article">
     <header class="article-header">
       <h1 class="article-title">${escapeHtml(data.title)}</h1>
@@ -136,10 +148,13 @@ for (const file of articleFiles) {
 </html>
 `;
 
-  fs.mkdirSync(`./${slug}`, { recursive: true });
-  fs.writeFileSync(`./${slug}/index.html`, articleHtml);
-  pages.push(`/${slug}`);
-  console.log(`Built ${slug}/index.html`);
+    fs.mkdirSync(`./${slug}`, { recursive: true });
+    fs.writeFileSync(`./${slug}/index.html`, articleHtml);
+    pages.push(`/${slug}`);
+    console.log(`Built ${slug}/index.html`);
+  } catch (err) {
+    console.error(`Error building ${file}: ${err.message}`);
+  }
 }
 
 // --- Sitemap ---

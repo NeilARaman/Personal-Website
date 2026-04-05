@@ -379,7 +379,7 @@ const tools = [
       },
       {
         name: 'Hardware Building Resources',
-        description: "Put together by the team at V1. Sometimes specific to UMich, but very useful nontheless.",
+        description: "Put together by the team at V1. Sometimes specific to UMich, but very useful nonetheless.",
         url: 'https://v1team.notion.site/Hardware-Building-Resources-20f82307c07d81fcadcadfd882479f4c',
       },
       {
