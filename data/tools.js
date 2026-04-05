@@ -987,11 +987,6 @@ const tools = [
         description: "The AI Generative Engine Optimization GEO Platform.",
         url: 'https://relixir.ai/',
       },
-      {
-        name: 'Split.dev',
-        description: "LLM-Search Lead Attribution for Growth Teams.",
-        url: 'https://split.dev',
-      },
     ],
   },
   {
