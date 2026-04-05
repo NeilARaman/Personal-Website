@@ -183,7 +183,12 @@ const tools = [
         url: 'https://www.arenaphysica.com/',
       },
       {
-        name: 'Brain Interfaces',
+        name: 'Merge Labs',
+        description: "Research lab bridging biological and artificial intelligence through next-generation brain-computer interfaces.",
+        url: 'https://www.merge.io/blog',
+      },
+      {
+        name: 'Neuralace',
         description: "Research team building personal brain-computer interfaces for direct neural communication.",
         url: 'https://www.neuralace.co/',
       },
