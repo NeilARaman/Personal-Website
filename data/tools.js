@@ -1258,6 +1258,11 @@ const tools = [
         url: 'https://debarghyadas.com/',
       },
       {
+        name: 'Gokul Rajaram',
+        description: "Early-stage investor and product leader who helped build Alphabet, Block, Coinbase, DoorDash, Meta, Pinterest, and The Trade Desk.",
+        url: 'https://www.gokulrajaram.com/',
+      },
+      {
         name: 'Dwarkesh Patel',
         description: "Host of the Dwarkesh Podcast.",
         url: 'https://www.dwarkesh.com/',
