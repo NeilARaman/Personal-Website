@@ -202,9 +202,15 @@ a:hover {
 }
 
 .tool-category li {
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   font-size: 14px;
   break-inside: avoid;
+}
+
+.tool-category li a {
+  display: inline-block;
+  padding: 4px 0;
+  min-height: 24px;
 }
 
 .tool-category li a {
