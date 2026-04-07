@@ -138,6 +138,11 @@ const tools = [
         url: 'https://fourmula.ai/',
       },
       {
+        name: 'Lica',
+        description: "AI platform turning visuals into editable layers, routing each to the best model or human for brand content.",
+        url: 'https://lica.world/',
+      },
+      {
         name: 'Midjourney',
         description: "AI-powered image generation tool for creating stunning visual artwork.",
         url: 'https://midjourney.com',
