@@ -443,6 +443,11 @@ const tools = [
         url: 'https://www.blackbox.ai/',
       },
       {
+        name: 'Capy',
+        description: "IDE for orchestrating parallel coding agents from one dashboard with sandboxed environments.",
+        url: 'https://capy.ai/',
+      },
+      {
         name: 'Cognition',
         description: "AI software engineering company building advanced developer tools.",
         url: 'https://cognition-labs.com/',
@@ -658,6 +663,11 @@ const tools = [
         url: 'https://www.tryflint.com/',
       },
       {
+        name: 'Fiddle',
+        description: "Visual web editor that imports from GitHub for spot edits, animations, and submitting PRs.",
+        url: 'https://www.fiddle.is/',
+      },
+      {
         name: 'Framer',
         description: "AI-powered website design tool with built-in CMS, SEO, and analytics.",
         url: 'https://www.framer.com/',
@@ -686,6 +696,11 @@ const tools = [
         name: 'Softlight',
         description: "AI product discovery and design platform that learns your business and explores product ideas.",
         url: 'https://softlight.com/',
+      },
+      {
+        name: 'Tailwind Plus',
+        description: "Professionally designed UI components, templates, and starter kits built by the makers of Tailwind CSS.",
+        url: 'https://tailwindcss.com/plus',
       },
       {
         name: 'Variant',
@@ -1026,6 +1041,11 @@ const tools = [
         name: 'Clay\'s EA Take-Home',
         description: "Take-home assessment for Clay executive assistant hiring process.",
         url: 'https://docs.google.com/document/d/1Jct3sKsza5QAn-IQrdnG2Givs7WlQgn2nY5IIcwt_Vw/edit?dub_id=2Dg5uaQVeT3nT8RR&tab=t.0',
+      },
+      {
+        name: 'Sequoia PMF Framework',
+        description: "Sequoia Arc's four terrifying questions framework for finding and achieving product-market fit.",
+        url: 'https://sequoiacap.com/article/pmf-framework-2/',
       },
       {
         name: 'Starter to SF',
