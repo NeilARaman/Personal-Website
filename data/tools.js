@@ -773,6 +773,11 @@ const tools = [
         url: 'https://feathericons.com/',
       },
       {
+        name: 'GitReverse',
+        description: "Converts GitHub repos into plain-language vibe coding prompts.",
+        url: 'https://www.gitreverse.com/',
+      },
+      {
         name: 'InsForge',
         description: "Backend-as-a-service built for AI coding agents with database, auth, storage, and deployment.",
         url: 'https://insforge.dev/',
@@ -1016,6 +1021,21 @@ const tools = [
         name: 'Oscilar',
         description: "AI-powered risk platform handling fraud, credit, onboarding, and compliance.",
         url: 'https://oscilar.com/',
+      },
+    ],
+  },
+  {
+    title: 'Fundraising',
+    stack: [
+      {
+        name: 'Signal',
+        description: "NFX's investor relationship platform for founders to find, track, and get intros to VCs.",
+        url: 'https://signal.nfx.com/investors',
+      },
+      {
+        name: 'VCSheet',
+        description: "Searchable database of VC funds and investors filtered by stage, sector, and geography.",
+        url: 'https://www.vcsheet.com/',
       },
     ],
   },
@@ -1468,9 +1488,19 @@ const tools = [
         url: 'https://www.healthcare-brew.com/stories/2025/03/05/a16z-healthcare-investor-decides-which-companies',
       },
       {
+        name: 'How to Lose a Startup in 730 Days',
+        description: "Brooke Martin's candid post-mortem on shutting down her startup, with lessons on hiring, fundraising, and founder wellness.",
+        url: 'https://friendsknowbest.substack.com/p/how-to-lose-a-startup-in-730-days',
+      },
+      {
         name: 'Inngest',
         description: "Inngest's Series A announcement on why iteration speed is the new product moat.",
         url: 'https://www.inngest.com/blog/announcing-inngest-series-a',
+      },
+      {
+        name: 'Sequoia AI Ascent',
+        description: "Breakdown of Sequoia's AI Ascent on the agent economy, application layer value, and building AI companies.",
+        url: 'https://www.theaiopportunities.com/p/sequoia-ai-ascent-ai-might-be-the',
       },
     ],
   },
@@ -1581,6 +1611,11 @@ const tools = [
         name: 'AIUC',
         description: "Company that certifies and insures AI agents against the AIUC-1 standard for enterprise adoption.",
         url: 'https://aiuc.com/',
+      },
+      {
+        name: 'Corridor',
+        description: "AI code security platform that prevents vulnerabilities before they're written with proactive guardrails.",
+        url: 'https://www.corridor.dev/',
       },
       {
         name: 'Cylake',
