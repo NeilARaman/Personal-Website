@@ -122,6 +122,11 @@ const tools = [
         description: "Accounting software for small businesses to manage expenses, invoicing, and payroll.",
         url: 'https://quickbooks.intuit.com/',
       },
+      {
+        name: 'Warp',
+        description: "AI-powered employee management platform handling payroll, compliance, benefits, and IT.",
+        url: 'https://www.warp.co/',
+      },
     ],
   },
   {
@@ -377,6 +382,11 @@ const tools = [
         description: "Economics book by Robin Hanson analyzing a future dominated by brain emulation technology.",
         url: 'https://ageofem.com/',
       },
+      {
+        name: 'The Way of Code',
+        description: "Rick Rubin's collaboration with Anthropic on vibe coding.",
+        url: 'https://www.thewayofcode.com/',
+      },
     ],
   },
   {
@@ -491,6 +501,11 @@ const tools = [
         name: 'Superset',
         description: "Code editor for orchestrating multiple CLI-based AI coding agents in parallel Git worktrees.",
         url: 'https://superset.sh/',
+      },
+      {
+        name: 'Warp',
+        description: "Agentic development environment with a modern terminal and cloud agent orchestration.",
+        url: 'https://www.warp.dev/',
       },
       {
         name: 'Windsurf',
@@ -723,6 +738,11 @@ const tools = [
         url: 'https://www.blocknotejs.org/',
       },
       {
+        name: 'Blacksmith',
+        description: "Faster, cheaper GitHub Actions runners on bare metal with co-located caching and Docker layer persistence.",
+        url: 'https://www.blacksmith.sh/',
+      },
+      {
         name: 'Bundui',
         description: "Library of 100+ handcrafted UI components built with Tailwind CSS, React, and shadcn/ui.",
         url: 'https://bundui.io/',
@@ -751,6 +771,11 @@ const tools = [
         name: 'Feather',
         description: "Simple open source SVG icon library.",
         url: 'https://feathericons.com/',
+      },
+      {
+        name: 'InsForge',
+        description: "Backend-as-a-service built for AI coding agents with database, auth, storage, and deployment.",
+        url: 'https://insforge.dev/',
       },
       {
         name: 'Knock',
@@ -1033,11 +1058,6 @@ const tools = [
     title: 'Guides',
     stack: [
       {
-        name: 'Boil the Ocean',
-        description: "Essay arguing superintelligence should inspire ambitious entrepreneurship, not fear.",
-        url: 'https://garryslist.org/posts/boil-the-ocean',
-      },
-      {
         name: 'Clay\'s EA Take-Home',
         description: "Take-home assessment for Clay executive assistant hiring process.",
         url: 'https://docs.google.com/document/d/1Jct3sKsza5QAn-IQrdnG2Givs7WlQgn2nY5IIcwt_Vw/edit?dub_id=2Dg5uaQVeT3nT8RR&tab=t.0',
@@ -1051,11 +1071,6 @@ const tools = [
         name: 'Starter to SF',
         description: "Comprehensive SF guide by Michelle Fang.",
         url: 'https://www.startertosf.guide/',
-      },
-      {
-        name: 'The Way of Code',
-        description: "Rick Rubin's collaboration with Anthropic on vibe coding.",
-        url: 'https://www.thewayofcode.com/',
       },
     ],
   },
@@ -1388,6 +1403,11 @@ const tools = [
         url: 'https://alignment.anthropic.com/2024/anthropic-fellows-program/',
       },
       {
+        name: 'Angel Track',
+        description: "First Round's program teaching angel investing through frameworks, case studies, and community.",
+        url: 'https://www.firstround.com/angel-track',
+      },
+      {
         name: 'Avra',
         description: "Program turning founders into great CEOs.",
         url: 'https://www.avracap.com/',
@@ -1431,6 +1451,26 @@ const tools = [
         name: 'PsiQuantum',
         description: "Building the World's First Useful Quantum Computer.",
         url: 'https://www.psiquantum.com/',
+      },
+    ],
+  },
+  {
+    title: 'Reading',
+    stack: [
+      {
+        name: 'Boil the Ocean',
+        description: "Essay arguing superintelligence should inspire ambitious entrepreneurship, not fear.",
+        url: 'https://garryslist.org/posts/boil-the-ocean',
+      },
+      {
+        name: 'How an a16z healthcare investor decides which companies to bet on',
+        description: "Healthcare Brew interview with a16z's Julie Yoo on vetting healthcare startups and AI in clinical care.",
+        url: 'https://www.healthcare-brew.com/stories/2025/03/05/a16z-healthcare-investor-decides-which-companies',
+      },
+      {
+        name: 'Inngest',
+        description: "Inngest's Series A announcement on why iteration speed is the new product moat.",
+        url: 'https://www.inngest.com/blog/announcing-inngest-series-a',
       },
     ],
   },
