@@ -378,6 +378,11 @@ const tools = [
         url: 'https://situational-awareness.ai/',
       },
       {
+        name: 'SW101',
+        description: "Marko's curated cheatsheet of software engineering patterns and concepts across seniority levels, with diagrams and multi-language code samples.",
+        url: 'https://learn.withmarko.com/sw101',
+      },
+      {
         name: 'The Age of Em',
         description: "Economics book by Robin Hanson analyzing a future dominated by brain emulation technology.",
         url: 'https://ageofem.com/',
@@ -1501,6 +1506,11 @@ const tools = [
         name: 'Sequoia AI Ascent',
         description: "Breakdown of Sequoia's AI Ascent on the agent economy, application layer value, and building AI companies.",
         url: 'https://www.theaiopportunities.com/p/sequoia-ai-ascent-ai-might-be-the',
+      },
+      {
+        name: 'The Whole Year is a Performance Review',
+        description: "Patrick Thompson's Founder Therapy essay on replacing annual reviews with continuous feedback and biannual calibration.",
+        url: 'https://patrickthompson.substack.com/p/the-whole-year-is-a-performance-review',
       },
     ],
   },
