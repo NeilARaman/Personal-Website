@@ -1027,6 +1027,11 @@ const tools = [
         description: "AI-powered risk platform handling fraud, credit, onboarding, and compliance.",
         url: 'https://oscilar.com/',
       },
+      {
+        name: 'Q4',
+        description: "Unified IR Ops platform for public companies covering earnings, investor events, IR websites, and engagement analytics.",
+        url: 'https://www.q4inc.com/',
+      },
     ],
   },
   {
@@ -1501,6 +1506,11 @@ const tools = [
         name: 'Inngest',
         description: "Inngest's Series A announcement on why iteration speed is the new product moat.",
         url: 'https://www.inngest.com/blog/announcing-inngest-series-a',
+      },
+      {
+        name: 'Inside the Palantir Mafia',
+        description: "Aliza Narin on how Palantir's forward-deployed culture, spike-over-balance ethos, and build-don't-pitch bias turn employees into reluctant founders.",
+        url: 'https://alizanarin.substack.com/p/inside-the-palantir-mafia',
       },
       {
         name: 'Sequoia AI Ascent',
