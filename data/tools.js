@@ -603,6 +603,11 @@ const tools = [
         url: 'https://nominal.io/',
       },
       {
+        name: 'Riveter',
+        description: "YC-backed AI agent that automates web data extraction, dataset building, and monitoring into structured outputs via API.",
+        url: 'https://riveterhq.com/',
+      },
+      {
         name: 'Sixtyfour',
         description: "Enterprise data platform using AI agents to enrich profiles from social, contact, and proprietary data.",
         url: 'https://sixtyfour.ai/',
@@ -1072,6 +1077,11 @@ const tools = [
   {
     title: 'GPUs on the Cloud',
     stack: [
+      {
+        name: 'Crusoe',
+        description: "AI factory company offering managed inference, GPU cloud, and energy-aligned data center infrastructure. Fast Company's 2026 Most Innovative Companies.",
+        url: 'https://www.crusoe.ai/',
+      },
       {
         name: 'Lambda',
         description: "GPU Compute for AI workloads and machine learning.",
