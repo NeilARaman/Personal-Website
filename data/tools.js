@@ -1193,6 +1193,11 @@ const tools = [
         url: 'https://beej.us/guide/bglcs/html/#understanding-the-problem',
       },
       {
+        name: 'CS50',
+        description: "Harvard's introduction to computer science and the art of programming.",
+        url: 'https://cs50.harvard.edu/x/',
+      },
+      {
         name: 'Fast.ai',
         description: "Making neural nets uncool again - practical deep learning education.",
         url: 'https://www.fast.ai/',
