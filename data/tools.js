@@ -415,6 +415,16 @@ const tools = [
     ],
   },
   {
+    title: 'CAD',
+    stack: [
+      {
+        name: 'Adam',
+        description: "AI agent that performs tasks inside CAD platforms — part editing, feature tree optimization, and parametrization via prompts.",
+        url: 'https://adam.new/',
+      },
+    ],
+  },
+  {
     title: 'Cap Table Management',
     stack: [
       {
@@ -696,6 +706,11 @@ const tools = [
         name: 'Framer',
         description: "AI-powered website design tool with built-in CMS, SEO, and analytics.",
         url: 'https://www.framer.com/',
+      },
+      {
+        name: 'fromanother',
+        description: "Artist-led creative studio working across art direction, brand, film, CGI, and immersive experiences for clients like Louis Vuitton, Chanel, and Dior.",
+        url: 'https://www.fromanother.love/',
       },
       {
         name: 'lowercase',
