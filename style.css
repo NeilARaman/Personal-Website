@@ -228,7 +228,7 @@ a:hover {
 }
 
 @media print {
-  nav, .skip-link {
+  nav, .skip-link, .palette {
     display: none;
   }
   body {
@@ -249,4 +249,89 @@ a:hover {
     font-size: 10pt;
     color: #666;
   }
+}
+
+/* Command palette */
+.palette {
+  border: none;
+  padding: 0;
+  background: transparent;
+  width: calc(100% - 32px);
+  max-width: 520px;
+  margin: 15vh auto 0;
+}
+
+.palette::backdrop {
+  background: rgba(20, 20, 20, 0.35);
+}
+
+.palette-box {
+  background: #faf8f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+
+.palette-input {
+  width: 100%;
+  border: none;
+  padding: 14px 16px;
+  font: inherit;
+  font-size: 15px;
+  background: transparent;
+  color: #222;
+  outline: none;
+  border-bottom: 1px solid #eee;
+}
+
+.palette-input::placeholder {
+  color: #999;
+}
+
+.palette-list {
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.palette-item,
+.palette-empty {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+}
+
+.palette-empty {
+  cursor: default;
+  color: #888;
+  font-style: italic;
+}
+
+.palette-item.selected {
+  background: #f0ede5;
+  color: #000;
+}
+
+.palette-title {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.palette-kind {
+  font-size: 12px;
+  color: #888;
+  flex-shrink: 0;
+}
+
+.palette-item.selected .palette-kind {
+  color: #666;
 }

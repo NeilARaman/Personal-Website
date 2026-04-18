@@ -24,7 +24,25 @@
       "Bash(sed -i \"s/Andreessen Horowitz's/Andreessen Horowitz\\\\\\\\'s/g\" data/tools.js)",
       "Bash(sed -i \"s/Google's/Google\\\\\\\\'s/g\" data/tools.js)",
       "Bash(sed -i \"s/Palantir's/Palantir\\\\\\\\'s/g\" data/tools.js)",
-      "Bash(sed -i \"s/Pear VC's/Pear VC\\\\\\\\'s/g\" data/tools.js)"
+      "Bash(sed -i \"s/Pear VC's/Pear VC\\\\\\\\'s/g\" data/tools.js)",
+      "Bash(curl -s \"https://registry.npmjs.org/ninja-keys\")",
+      "Bash(python -c \"import sys, json; d=json.load\\(sys.stdin\\); print\\('latest:', d.get\\('dist-tags',{}\\).get\\('latest'\\)\\); print\\('modified:', d.get\\('time',{}\\).get\\('modified'\\)\\); v=d.get\\('dist-tags',{}\\).get\\('latest'\\); print\\('repo:', d.get\\('repository',{}\\).get\\('url'\\)\\); print\\('desc:', d.get\\('description'\\)\\)\")",
+      "Bash(curl -s \"https://registry.npmjs.org/@getkirby/cmdk\" \"https://registry.npmjs.org/command-k\" \"https://registry.npmjs.org/klik\")",
+      "Bash(python -c \"import sys, json; data=sys.stdin.read\\(\\); [print\\(x[:200]\\) for x in data.split\\('}{'\\)[:5]]\")",
+      "Bash(curl -s \"https://api.github.com/repos/ssleptsov/ninja-keys\")",
+      "Bash(python -c \"import sys, json; d=json.load\\(sys.stdin\\); print\\('stars:', d.get\\('stargazers_count'\\)\\); print\\('pushed:', d.get\\('pushed_at'\\)\\); print\\('archived:', d.get\\('archived'\\)\\); print\\('open_issues:', d.get\\('open_issues_count'\\)\\)\")",
+      "Bash(curl -s \"https://registry.npmjs.org/@algolia/autocomplete-js\")",
+      "Bash(python -c \"import sys, json; d=json.load\\(sys.stdin\\); print\\('latest:', d.get\\('dist-tags',{}\\).get\\('latest'\\)\\); print\\('modified:', d.get\\('time',{}\\).get\\('modified'\\)\\)\")",
+      "Bash(curl -s \"https://api.github.com/repos/algolia/autocomplete\")",
+      "Bash(python -c \"import sys, json; d=json.load\\(sys.stdin\\); print\\('stars:', d.get\\('stargazers_count'\\)\\); print\\('pushed:', d.get\\('pushed_at'\\)\\); print\\('archived:', d.get\\('archived'\\)\\)\")",
+      "Bash(curl -sS http://127.0.0.1:3000/)",
+      "Bash(curl -sSI http://127.0.0.1:3000/tools)",
+      "Bash(curl -sSI http://127.0.0.1:3000/palette.js)",
+      "Bash(curl -sSI http://127.0.0.1:3000/search-index.json)",
+      "Bash(PORT=4000 node serve.js)",
+      "Bash(curl -sSI http://127.0.0.1:4000/)",
+      "Bash(curl -sS http://127.0.0.1:4000/palette.js)",
+      "Bash(curl -sSI http://127.0.0.1:4000/palette.js)"
     ]
   }
 }

@@ -5,6 +5,7 @@ const { marked } = require('marked');
 
 const SITE = 'https://neilraman.com';
 const pages = []; // collect URLs for sitemap
+const searchIndex = []; // collect entries for /search-index.json
 
 // --- Helpers ---
 
@@ -46,6 +47,7 @@ function head({ title, description, path, type = 'website' }) {
   <meta name="twitter:title" content="${escapeAttr(title)}">
   <meta name="twitter:description" content="${escapeAttr(description)}">
   <link rel="stylesheet" href="/style.css">
+  <script src="/palette.js" defer></script>
 </head>`;
 }
 
@@ -88,10 +90,14 @@ for (const category of tools) {
   toolsHtml += `    <section class="tool-category" id="${slug}">\n`;
   toolsHtml += `      <h2>${escapeHtml(category.title)} <span>${count}</span></h2>\n`;
   toolsHtml += `      <ul>\n`;
+  searchIndex.push({ t: category.title, h: `/tools#${slug}`, k: 'category' });
   for (const tool of category.stack) {
     const title = tool.description ? ` title="${escapeAttr(tool.description)}"` : '';
     const url = sanitizeUrl(tool.url);
     toolsHtml += `        <li><a href="${escapeAttr(url)}"${title} target="_blank" rel="noopener">${escapeHtml(tool.name)}</a></li>\n`;
+    const entry = { t: tool.name, h: url, k: 'tool', c: category.title };
+    if (tool.description) entry.d = tool.description;
+    searchIndex.push(entry);
   }
   toolsHtml += `      </ul>\n`;
   toolsHtml += `    </section>\n`;
@@ -152,6 +158,9 @@ for (const file of articleFiles) {
     fs.mkdirSync(`./${slug}`, { recursive: true });
     fs.writeFileSync(`./${slug}/index.html`, articleHtml);
     pages.push(`/${slug}`);
+    const articleEntry = { t: data.title, h: `/${slug}`, k: 'article' };
+    if (data.description) articleEntry.d = data.description;
+    searchIndex.push(articleEntry);
     console.log(`Built ${slug}/index.html`);
   } catch (err) {
     console.error(`Error building ${file}: ${err.message}`);
@@ -177,3 +186,14 @@ console.log('Built sitemap.xml');
 
 fs.writeFileSync('./robots.txt', `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`);
 console.log('Built robots.txt');
+
+// --- Search index for command palette ---
+
+const topLevel = [
+  { t: 'Home', h: '/', k: 'page' },
+  { t: 'Articles', h: '/articles', k: 'page' },
+  { t: 'Tools', h: '/tools', k: 'page' },
+];
+const fullIndex = topLevel.concat(searchIndex);
+fs.writeFileSync('./search-index.json', JSON.stringify(fullIndex));
+console.log(`Built search-index.json (${fullIndex.length} entries)`);
