@@ -3,6 +3,7 @@
   let dialog, input, list;
   let items = [];
   let selected = 0;
+  let rafId = 0;
 
   function escapeHtml(s) {
     return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -20,8 +21,18 @@
     document.body.appendChild(dialog);
     input = dialog.querySelector('.palette-input');
     list = dialog.querySelector('.palette-list');
-    input.addEventListener('input', render);
+    input.addEventListener('input', scheduleRender);
     input.addEventListener('keydown', onKey);
+    list.addEventListener('click', (e) => {
+      const el = e.target.closest('.palette-item');
+      if (el) go(items[parseInt(el.dataset.i, 10)]);
+    });
+    list.addEventListener('mouseover', (e) => {
+      const el = e.target.closest('.palette-item');
+      if (!el) return;
+      const i = parseInt(el.dataset.i, 10);
+      if (i !== selected) { selected = i; updateSelected(); }
+    });
     dialog.addEventListener('click', (e) => { if (e.target === dialog) dialog.close(); });
     dialog.addEventListener('close', () => { input.value = ''; selected = 0; });
   }
@@ -37,6 +48,11 @@
     return 0;
   }
 
+  function scheduleRender() {
+    if (rafId) return;
+    rafId = requestAnimationFrame(() => { rafId = 0; render(); });
+  }
+
   function render() {
     if (!index) {
       list.innerHTML = '<li class="palette-empty">Loading…</li>';
@@ -46,31 +62,31 @@
     if (!q) {
       items = index.slice(0, 40);
     } else {
-      items = index
-        .map((x) => Object.assign({ s: score(q, x) }, x))
-        .filter((x) => x.s > 0)
-        .sort((a, b) => b.s - a.s)
-        .slice(0, 40);
+      const scored = [];
+      for (let i = 0; i < index.length; i++) {
+        const s = score(q, index[i]);
+        if (s > 0) scored.push([s, index[i]]);
+      }
+      scored.sort((a, b) => b[0] - a[0]);
+      const n = Math.min(scored.length, 40);
+      items = new Array(n);
+      for (let i = 0; i < n; i++) items[i] = scored[i][1];
     }
     selected = 0;
     if (items.length === 0) {
       list.innerHTML = '<li class="palette-empty">No results</li>';
       return;
     }
-    list.innerHTML = items.map((it, i) => {
+    let html = '';
+    for (let i = 0; i < items.length; i++) {
+      const it = items[i];
       const meta = it.c || it.k || '';
       const metaHtml = meta ? '<span class="palette-kind">' + escapeHtml(meta) + '</span>' : '';
-      return '<li class="palette-item' + (i === selected ? ' selected' : '') +
+      html += '<li class="palette-item' + (i === selected ? ' selected' : '') +
         '" data-i="' + i + '" role="option">' +
         '<span class="palette-title">' + escapeHtml(it.t) + '</span>' + metaHtml + '</li>';
-    }).join('');
-    list.querySelectorAll('.palette-item').forEach((el) => {
-      el.addEventListener('mouseenter', () => {
-        selected = parseInt(el.dataset.i, 10);
-        updateSelected();
-      });
-      el.addEventListener('click', () => go(items[parseInt(el.dataset.i, 10)]));
-    });
+    }
+    list.innerHTML = html;
   }
 
   function updateSelected() {
