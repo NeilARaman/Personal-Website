@@ -1562,6 +1562,11 @@ const tools = [
         description: "Hiring platform with structured interviewing, ATS, and onboarding tools.",
         url: 'https://www.greenhouse.com/',
       },
+      {
+        name: 'Paraform',
+        description: "Hiring marketplace pairing expert recruiters with AI agents to fill roles.",
+        url: 'https://www.paraform.com/',
+      },
     ],
   },
   {
