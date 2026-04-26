@@ -405,16 +405,6 @@ const tools = [
     ],
   },
   {
-    title: 'CAD',
-    stack: [
-      {
-        name: 'Adam',
-        description: "AI agent that performs tasks inside CAD platforms — part editing, feature tree optimization, and parametrization via prompts.",
-        url: 'https://adam.new/',
-      },
-    ],
-  },
-  {
     title: 'Cap Table Management',
     stack: [
       {
@@ -516,6 +506,11 @@ const tools = [
         name: 'Windsurf',
         description: "Powerful AI code editor (formerly Codeium) for enhanced development workflows.",
         url: 'https://windsurf.com',
+      },
+      {
+        name: 'Zed',
+        description: "High-performance code editor written in Rust with built-in AI agents.",
+        url: 'https://zed.dev',
       },
     ],
   },
@@ -913,6 +908,11 @@ const tools = [
     title: 'Email',
     stack: [
       {
+        name: 'BuildForever',
+        description: "Software studio building consumer products that feel personal and human, starting with extra.email.",
+        url: 'https://www.buildforever.com/',
+      },
+      {
         name: 'Lightfern',
         description: "Chrome extension using AI to autocomplete emails in Gmail as you type.",
         url: 'https://lightfern.com/',
@@ -1006,6 +1006,11 @@ const tools = [
         name: 'Q4',
         description: "Unified IR Ops platform for public companies covering earnings, investor events, IR websites, and engagement analytics.",
         url: 'https://www.q4inc.com/',
+      },
+      {
+        name: 'USVC',
+        description: "Closed-end fund from AngelList Asset Management broadening retail access to venture capital with a $500 minimum and no performance fee.",
+        url: 'https://usvc.com/',
       },
     ],
   },
@@ -1255,6 +1260,21 @@ const tools = [
     ],
   },
   {
+    title: 'Modeling',
+    stack: [
+      {
+        name: 'Adam',
+        description: "AI agent that performs tasks inside CAD platforms — part editing, feature tree optimization, and parametrization via prompts.",
+        url: 'https://adam.new/',
+      },
+      {
+        name: 'Iterating Inc.',
+        description: "Software studio building open hydraulic and water-distribution modeling tools, including Mastering Water Models and epanet-js. Founded 2025 by Luke and Sam.",
+        url: 'https://iterating.ca/',
+      },
+    ],
+  },
+  {
     title: 'Monitoring/Analytics',
     stack: [
       {
@@ -1331,6 +1351,11 @@ const tools = [
         name: 'Angus Emmerson',
         description: "Video editor creating commercials for brands like Formula 1, Netflix, and Disney.",
         url: 'https://angusemmerson.com/',
+      },
+      {
+        name: 'Daksh Gupta',
+        description: "Co-founder of Greptile, building AI agents that autonomously review code.",
+        url: 'https://dakshgupta.com/',
       },
       {
         name: 'Deedy Das',
@@ -1538,6 +1563,11 @@ const tools = [
         url: 'https://www.theaiopportunities.com/p/sequoia-ai-ascent-ai-might-be-the',
       },
       {
+        name: 'Specs, Not Sprints',
+        description: "Rishi Kavikondala on how Abnormal AI swapped two-week sprints for a Monday-spec/Friday-demo rhythm built around Claude Code and parallel coding agents.",
+        url: 'https://abnormalbuilders.substack.com/p/specs-not-sprints',
+      },
+      {
         name: 'The Whole Year is a Performance Review',
         description: "Patrick Thompson's Founder Therapy essay on replacing annual reviews with continuous feedback and biannual calibration.",
         url: 'https://patrickthompson.substack.com/p/the-whole-year-is-a-performance-review',
@@ -1696,6 +1726,11 @@ const tools = [
         name: 'Argil',
         description: "Generate videos with your AI clone for content creation.",
         url: 'https://www.argil.ai/',
+      },
+      {
+        name: 'Buffer',
+        description: "Social media workspace for publishing, scheduling, community replies, and analytics across Instagram, LinkedIn, TikTok, X, and more.",
+        url: 'https://buffer.com/',
       },
       {
         name: 'Descript',

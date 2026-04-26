@@ -60,7 +60,7 @@ function nav(currentPage) {
     <a href="/"${ariaCurrent('/')}>Neil Raman</a>
     <div>
       <a href="/articles"${ariaCurrent('/articles')}>Articles</a>
-      <a href="/tools"${ariaCurrent('/tools')}>Tools</a>
+      <a href="/tools"${ariaCurrent('/tools')}>Tools/Companies</a>
     </div>
   </nav>`;
 }
@@ -77,12 +77,12 @@ const tools = new Function(cleanSrc + '; return tools;')();
 // --- Tools page ---
 
 let toolsHtml = head({
-  title: 'Tools — Neil Raman',
-  description: 'Tools and resources curated by Neil Raman.',
+  title: 'Tools/Companies — Neil Raman',
+  description: 'Tools and companies curated by Neil Raman.',
   path: '/tools',
 });
 toolsHtml += nav('/tools');
-toolsHtml += `\n  <main id="main" class="tools-page">\n    <h1>Tools</h1>\n`;
+toolsHtml += `\n  <main id="main" class="tools-page">\n    <h1>Tools/Companies</h1>\n`;
 
 for (const category of tools) {
   const slug = slugify(category.title);
@@ -192,7 +192,7 @@ console.log('Built robots.txt');
 const topLevel = [
   { t: 'Home', h: '/', k: 'page' },
   { t: 'Articles', h: '/articles', k: 'page' },
-  { t: 'Tools', h: '/tools', k: 'page' },
+  { t: 'Tools/Companies', h: '/tools', k: 'page' },
 ];
 const fullIndex = topLevel.concat(searchIndex);
 fs.writeFileSync('./search-index.json', JSON.stringify(fullIndex));

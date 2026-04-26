@@ -42,7 +42,20 @@
       "Bash(PORT=4000 node serve.js)",
       "Bash(curl -sSI http://127.0.0.1:4000/)",
       "Bash(curl -sS http://127.0.0.1:4000/palette.js)",
-      "Bash(curl -sSI http://127.0.0.1:4000/palette.js)"
+      "Bash(curl -sSI http://127.0.0.1:4000/palette.js)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(curl -sL https://dakshgupta.com/)",
+      "Bash(curl -sLI \"https://substack.com/inbox/post/182563447?r=2998n6&showWelcomeOnShare=true&triedRedirect=true\")",
+      "Bash(curl -sL \"https://substack.com/inbox/post/182563447?r=2998n6&showWelcomeOnShare=true&triedRedirect=true\")",
+      "Bash(grep -oE '\"canonical_url\":\"[^\"]*\"|\"publication\":{[^}]*\"name\":\"[^\"]*\"|\"author\":[^,]*\"name\":\"[^\"]*\"|\"byline\":\"[^\"]*\"|\"subdomain\":\"[^\"]*\"|publication_logo_url')",
+      "Bash(curl -sL https://greptile.com/about)",
+      "Bash(curl -sL \"https://twitter.com/dakshgup\")",
+      "Bash(curl -sL \"https://www.ycombinator.com/companies/greptile\")",
+      "Bash(grep -iEo '\\(daksh [^<]*|ceo[^<]{0,50}|founder[^<]{0,50}\\)')",
+      "Bash(curl -sL https://www.buildforever.com/)",
+      "Bash(curl -sL https://extra.email/)"
     ]
   }
 }
