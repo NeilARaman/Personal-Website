@@ -213,6 +213,11 @@ const tools = [
         url: 'https://labs.google/',
       },
       {
+        name: 'Lila Sciences',
+        description: "AI research lab building autonomous laboratories and AI scientists for discovery across therapeutics, materials, energy, and more.",
+        url: 'https://www.lila.ai/',
+      },
+      {
         name: 'Ndea',
         description: "AI research lab pursuing artificial general intelligence through deep learning and program synthesis.",
         url: 'https://ndea.com/',
@@ -1192,6 +1197,11 @@ const tools = [
   {
     title: 'Learning',
     stack: [
+      {
+        name: 'animations.dev',
+        description: "Interactive course on the theory and practice of crafting web animations with CSS and Framer Motion, by Emil Kowalski.",
+        url: 'https://animations.dev/',
+      },
       {
         name: 'Beej\'s Guide to Computer Science',
         description: "Free guide teaching problem-solving skills and learning strategies for computer science.",
