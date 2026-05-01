@@ -168,6 +168,16 @@ const tools = [
         url: 'https://hornet.dev/',
       },
       {
+        name: 'Linkup',
+        description: "AI search engine and web search API delivering fast, fresh results for LLMs and AI agents.",
+        url: 'https://www.linkup.so/',
+      },
+      {
+        name: 'Nexthop AI',
+        description: "AI infrastructure networking — switches and systems optimized for hyperscalers and cloud operators.",
+        url: 'https://nexthop.ai/',
+      },
+      {
         name: 'Nozomio Labs',
         description: "Applied research lab building context infrastructure for AI systems.",
         url: 'https://www.nozomio.com/',
@@ -201,6 +211,11 @@ const tools = [
         name: 'Essential AI',
         description: "Open platform for frontier AI research led by Transformer co-inventor Dr. Ashish Vaswani.",
         url: 'https://www.essential.ai/',
+      },
+      {
+        name: 'Gimlet Labs',
+        description: "Applied research lab designing next-generation computing infrastructure for running AI workloads efficiently at scale.",
+        url: 'https://gimletlabs.ai/',
       },
       {
         name: 'Google X',
@@ -430,6 +445,21 @@ const tools = [
     ],
   },
   {
+    title: 'Coaching',
+    stack: [
+      {
+        name: 'Avra',
+        description: "Invite-only 7-week program for post-Series A founders, pairing peer learning with mentorship from seasoned operators. Founded by ex-YC Growth MD Anu Hariharan.",
+        url: 'https://www.avracap.com/',
+      },
+      {
+        name: 'Titan',
+        description: "Curated coaching network matching Series A to C founders with vetted coaches who've scaled startups, exited, or coached unicorn founders.",
+        url: 'https://www.withtitan.com/',
+      },
+    ],
+  },
+  {
     title: 'Coding',
     stack: [
       {
@@ -637,6 +667,16 @@ const tools = [
   {
     title: 'Defense Contracting',
     stack: [
+      {
+        name: 'Northwood',
+        description: "End-to-end ground infrastructure provider for space missions, with rapid deployment and resilient networking.",
+        url: 'https://www.northwoodspace.io/',
+      },
+      {
+        name: 'Smack Technologies',
+        description: "Frontier AI lab for national security, building domain-specific models for U.S. DoD and allied military decision-making.",
+        url: 'https://smacktechnologies.com/',
+      },
       {
         name: 'Sweetspot',
         description: "AI platform for finding, managing, and bidding on government contracts.",
@@ -1013,6 +1053,11 @@ const tools = [
         url: 'https://www.q4inc.com/',
       },
       {
+        name: 'Rogo',
+        description: "Purpose-built AI platform for financial institutions, automating modeling, due diligence, investment memos, and complex workflows.",
+        url: 'https://rogo.ai/',
+      },
+      {
         name: 'USVC',
         description: "Closed-end fund from AngelList Asset Management broadening retail access to venture capital with a $500 minimum and no performance fee.",
         url: 'https://usvc.com/',
@@ -1107,6 +1152,11 @@ const tools = [
   {
     title: 'Hardware Engineering',
     stack: [
+      {
+        name: 'Heron Power',
+        description: "Industrial power electronics company developing solid-state transformers to modernize the grid for renewables and AI data centers.",
+        url: 'https://heronpower.com/',
+      },
       {
         name: 'Nominal',
         description: "All-in-one data platform for hardware engineering teams — telemetry, logs, video, and simulation results unified for test and operations across aviation, space, ground, maritime, and energy.",
@@ -1246,6 +1296,11 @@ const tools = [
         name: 'Hightouch',
         description: "Composable Customer Data Platform (CDP) & AI Decisioning.",
         url: 'https://hightouch.com/',
+      },
+      {
+        name: 'Mutiny',
+        description: "AI agent platform for GTM teams to spin up branded landing pages, proposals, and case studies without designer or marketing dependencies.",
+        url: 'https://www.mutinyhq.com/',
       },
       {
         name: 'Superscale AI',
@@ -1493,11 +1548,6 @@ const tools = [
         url: 'https://alignment.anthropic.com/2024/anthropic-fellows-program/',
       },
       {
-        name: 'Avra',
-        description: "Program turning founders into great CEOs.",
-        url: 'https://www.avracap.com/',
-      },
-      {
         name: 'External Researcher Access Program',
         description: "Anthropic's program for external AI research collaboration.",
         url: 'https://support.anthropic.com/en/articles/9125743-what-is-the-external-researcher-access-program',
@@ -1578,6 +1628,11 @@ const tools = [
         url: 'https://abnormalbuilders.substack.com/p/specs-not-sprints',
       },
       {
+        name: 'The Anduril Thesis',
+        description: "Contrary Research deep-dive on how Anduril is rebuilding the American defense industry through autonomous systems and modern warfare innovation.",
+        url: 'https://research.contrary.com/report/the-anduril-thesis',
+      },
+      {
         name: 'The Whole Year is a Performance Review',
         description: "Patrick Thompson's Founder Therapy essay on replacing annual reviews with continuous feedback and biannual calibration.",
         url: 'https://patrickthompson.substack.com/p/the-whole-year-is-a-performance-review',
@@ -1613,6 +1668,11 @@ const tools = [
     title: 'Robotics',
     stack: [
       {
+        name: 'Atoms',
+        description: "Holding company building physical automation across food, mining, and transport through seven specialized robotics and autonomy subsidiaries.",
+        url: 'https://atoms.co/',
+      },
+      {
         name: 'Generalist AI',
         description: "Robotics company developing embodied foundation models for physical world manipulation.",
         url: 'https://generalistai.com/',
@@ -1621,6 +1681,11 @@ const tools = [
         name: 'Genesis AI',
         description: "Physical AI lab building generalist robots with universal foundation models and open-source simulation.",
         url: 'https://genesis-ai.company/',
+      },
+      {
+        name: 'Mind Robotics',
+        description: "Industrial robotics company building collaborative robot platforms for automotive manufacturing, partnered with Rivian.",
+        url: 'https://www.mindrobotics.com/',
       },
       {
         name: 'Pittsburgh Robotics Network',
@@ -1688,6 +1753,11 @@ const tools = [
         url: 'https://harmonic.ai/',
       },
       {
+        name: 'Listen Labs',
+        description: "AI customer research platform automating recruiting, AI-moderated interviews, and analysis to deliver consumer insights in hours instead of weeks.",
+        url: 'https://listenlabs.ai/',
+      },
+      {
         name: 'Orange Slice',
         description: "AI platform automating lead discovery, enrichment, and CRM syncing for go-to-market teams.",
         url: 'https://www.orangeslice.ai/',
@@ -1706,6 +1776,11 @@ const tools = [
         name: 'AIUC',
         description: "Company that certifies and insures AI agents against the AIUC-1 standard for enterprise adoption.",
         url: 'https://aiuc.com/',
+      },
+      {
+        name: 'Artemis Security',
+        description: "AI-native security operations platform that learns your environment and correlates identity, cloud, endpoint, and network signals to detect and respond to threats.",
+        url: 'https://artemissecurity.com/',
       },
       {
         name: 'Corridor',
