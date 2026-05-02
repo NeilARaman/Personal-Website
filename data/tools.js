@@ -158,6 +158,11 @@ const tools = [
     title: 'AI Infrastructure',
     stack: [
       {
+        name: 'Anyscale',
+        description: "Unified compute platform built on Ray for scaling AI workloads from data processing to training, fine-tuning, and serving.",
+        url: 'https://www.anyscale.com/',
+      },
+      {
         name: 'Deeptune',
         description: "Simulation environments where AI agents practice tasks like coding and spreadsheets to improve.",
         url: 'https://deeptune.com/',
@@ -1178,9 +1183,24 @@ const tools = [
         url: 'https://www.ambiencehealthcare.com/',
       },
       {
+        name: 'Anterior',
+        description: "AI clinical reasoning platform automating utilization management and prior authorization decisions for health insurers.",
+        url: 'https://anterior.com/',
+      },
+      {
+        name: 'Commure',
+        description: "Healthcare operating system unifying ambient AI scribes, scheduling, billing, and care coordination across provider organizations.",
+        url: 'https://www.commure.com/',
+      },
+      {
         name: 'Datavant',
         description: "Healthcare data collaboration platform enabling secure exchange of health records across organizations.",
         url: 'https://www.datavant.com/',
+      },
+      {
+        name: 'Hippocratic AI',
+        description: "Healthcare-specific LLM company building safety-focused generative AI agents for patient-facing care navigation and chronic care management.",
+        url: 'https://hippocraticai.com/',
       },
       {
         name: 'Komodo Health',
