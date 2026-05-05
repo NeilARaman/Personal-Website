@@ -1525,6 +1525,16 @@ const tools = [
     ],
   },
   {
+    title: 'Podcasts',
+    stack: [
+      {
+        name: 'Incumbents and Insurgents',
+        description: "Eric Larsen on the collision and collaboration between healthcare and technology — how incumbents adopt AI and startups challenge traditional models.",
+        url: 'https://www.incumbentsandinsurgents.com/',
+      },
+    ],
+  },
+  {
     title: 'Presentations',
     stack: [
       {
