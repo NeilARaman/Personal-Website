@@ -1373,6 +1373,16 @@ const tools = [
     title: 'Longevity',
     stack: [
       {
+        name: 'Function Health',
+        description: "Annual membership delivering 160+ lab tests twice yearly through Quest Diagnostics — early detection signals for 1000+ diseases at $365/year.",
+        url: 'https://www.functionhealth.com/',
+      },
+      {
+        name: 'Superpower',
+        description: "Health testing platform analyzing 100+ biomarkers via blood draw, paired with AI guidance and 24/7 clinical care for personalized health protocols.",
+        url: 'https://www.superpower.com/',
+      },
+      {
         name: 'The Protocole',
         description: "Membership platform offering access to medical-grade peptides prescribed by licensed clinicians through trusted U.S. pharmacies.",
         url: 'https://theprotocole.com/',
