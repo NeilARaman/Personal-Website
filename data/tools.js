@@ -173,6 +173,16 @@ const tools = [
         url: 'https://hornet.dev/',
       },
       {
+        name: 'Inferact',
+        description: "Inference engine company commercializing vLLM to make LLM serving cheaper and faster at scale.",
+        url: 'https://inferact.ai/',
+      },
+      {
+        name: 'Layerbrain',
+        description: "AI platform building intelligent machine architectures that observe work, infer state, and operate software — progressively automating laboratory operations.",
+        url: 'https://layerbrain.com/',
+      },
+      {
         name: 'Linkup',
         description: "AI search engine and web search API delivering fast, fresh results for LLMs and AI agents.",
         url: 'https://www.linkup.so/',
@@ -251,6 +261,11 @@ const tools = [
         name: 'Prime Intellect',
         description: "Distributed compute platform for training, evaluating, and deploying agentic AI models on GPUs.",
         url: 'https://www.primeintellect.ai/',
+      },
+      {
+        name: 'Sentient',
+        description: "Open-source AI lab focused on reasoning models and decentralized infrastructure for community-owned AI.",
+        url: 'https://www.sentient.xyz/',
       },
       {
         name: 'Softmax',
@@ -568,6 +583,11 @@ const tools = [
         url: 'https://day.ai/',
       },
       {
+        name: 'Goodword',
+        description: "Networking copilot helping professionals maintain relationships by surfacing the right connections and remembering context across them.",
+        url: 'https://www.goodword.com/',
+      },
+      {
         name: 'HubSpot',
         description: "Comprehensive software and tools for your business operations.",
         url: 'https://hubspot.com',
@@ -631,6 +651,11 @@ const tools = [
         name: 'Deepnote',
         description: "Collaborative data notebook combining Python, SQL, and visualizations for analytics and ML workflows.",
         url: 'https://deepnote.com/',
+      },
+      {
+        name: 'Hilbert',
+        description: "AI-native growth analytics for B2C teams — detects anomalies, identifies root causes, and automates actions across products, marketing, and finance.",
+        url: 'https://hilberts.ai/',
       },
       {
         name: 'Riveter',
@@ -998,6 +1023,11 @@ const tools = [
         url: 'https://www.context.ai/',
       },
       {
+        name: 'HappyRobot',
+        description: "Agentic AI workforce platform deploying autonomous workers across customer support, sales, collections, recruiting, and operations.",
+        url: 'https://www.happyrobot.ai/',
+      },
+      {
         name: 'Sana',
         description: "Enterprise AI platform for finding knowledge across company apps, automating tasks, generating docs and dashboards, and running workflows. Now part of Workday.",
         url: 'https://sanalabs.com/',
@@ -1031,6 +1061,11 @@ const tools = [
         name: 'Autonomous',
         description: "AI-powered financial advisor with 0% advisory fees, offering institutional-grade strategies.",
         url: 'https://becomeautonomous.com/',
+      },
+      {
+        name: 'Better Money',
+        description: "Stablecoin clearinghouse enabling companies to swap between stablecoins at par with fixed fees and guaranteed settlement times.",
+        url: 'https://bettermoney.com/',
       },
       {
         name: 'Model ML',
@@ -1198,6 +1233,11 @@ const tools = [
         url: 'https://www.datavant.com/',
       },
       {
+        name: 'Foresight Health',
+        description: "Managed service handling chronic care management for neurology clinics — patient outreach, monitoring, and Medicare billing documentation.",
+        url: 'https://www.foresighthealth.ai/',
+      },
+      {
         name: 'Hippocratic AI',
         description: "Healthcare-specific LLM company building safety-focused generative AI agents for patient-facing care navigation and chronic care management.",
         url: 'https://hippocraticai.com/',
@@ -1301,6 +1341,16 @@ const tools = [
         name: 'YouLearn AI',
         description: "AI-powered personalized learning experiences.",
         url: 'https://youlearn.ai',
+      },
+    ],
+  },
+  {
+    title: 'Longevity',
+    stack: [
+      {
+        name: 'The Protocole',
+        description: "Membership platform offering access to medical-grade peptides prescribed by licensed clinicians through trusted U.S. pharmacies.",
+        url: 'https://theprotocole.com/',
       },
     ],
   },
@@ -1593,6 +1643,11 @@ const tools = [
         url: 'https://www.kauffmanfellows.org/',
       },
       {
+        name: 'Leaders in Tech',
+        description: "Leadership fellowship combining intensive retreats and peer learning for tech founders, CEOs, and executives across three programs.",
+        url: 'https://www.leadersintech.org/',
+      },
+      {
         name: 'MATS Program',
         description: "Machine learning alignment research program.",
         url: 'https://www.matsprogram.org/',
@@ -1656,6 +1711,11 @@ const tools = [
         name: 'Inside the Palantir Mafia',
         description: "Aliza Narin on how Palantir's forward-deployed culture, spike-over-balance ethos, and build-don't-pitch bias turn employees into reluctant founders.",
         url: 'https://alizanarin.substack.com/p/inside-the-palantir-mafia',
+      },
+      {
+        name: 'RF Engineering is Black Magic',
+        description: "Hardware FYI and Benji Chia on how AI-assisted tools could democratize RF circuit design — historically a field of tribal knowledge.",
+        url: 'https://hardwarefyi.substack.com/p/rf-engineering-is-black-magic',
       },
       {
         name: 'Sequoia AI Ascent',
@@ -1831,6 +1891,11 @@ const tools = [
         name: 'Cylake',
         description: "AI-native cybersecurity platform delivering on-premise security with total data sovereignty.",
         url: 'https://cylake.com/',
+      },
+      {
+        name: 'depthfirst',
+        description: "AI-powered security platform finding vulnerabilities and giving developers actionable fixes across code, infrastructure, and business logic.",
+        url: 'https://depthfirst.com/',
       },
       {
         name: 'Tracebit',
