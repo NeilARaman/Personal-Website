@@ -1078,6 +1078,11 @@ const tools = [
         url: 'https://bettermoney.com/',
       },
       {
+        name: 'Liquid',
+        description: "Decentralized perpetuals trading platform offering 500+ markets across crypto, stocks, commodities, and forex with up to 200x leverage and 24/7 settlement.",
+        url: 'https://www.tryliquid.xyz/',
+      },
+      {
         name: 'Model ML',
         description: "Enterprise AI workspace for financial modeling, due diligence, and deal execution.",
         url: 'https://www.modelml.com/',
