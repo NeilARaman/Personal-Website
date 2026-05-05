@@ -403,6 +403,11 @@ const tools = [
         url: 'https://sebastianraschka.com/books/#machine-learning-q-and-ai',
       },
       {
+        name: 'Reinforcement Learning: An Overview',
+        description: "Kevin Murphy's manuscript surveying deep RL — value-based, policy-based, model-based, multi-agent, and LLM+RL methods with code examples.",
+        url: 'https://arxiv.org/abs/2412.05265',
+      },
+      {
         name: 'Situational Awareness',
         description: "Essay series on AI progress and AGI timelines by Leopold Aschenbrenner.",
         url: 'https://situational-awareness.ai/',
@@ -776,6 +781,11 @@ const tools = [
         name: 'QuiverAI',
         description: "AI vector design tools for generating, editing, and animating editable SVG assets.",
         url: 'https://quiver.ai/',
+      },
+      {
+        name: 'Refero',
+        description: "Curated library of UI/UX design references for finding visual patterns and inspiration across products.",
+        url: 'https://refero.design/',
       },
       {
         name: 'Softlight',
@@ -1318,6 +1328,11 @@ const tools = [
         url: 'https://beej.us/guide/bglcs/html/#understanding-the-problem',
       },
       {
+        name: 'Cartesian',
+        description: "Interactive offline handbook teaching data structures and algorithms through visualizations, executable code playback, and practice problems.",
+        url: 'https://cartesian.app/',
+      },
+      {
         name: 'CS50',
         description: "Harvard's introduction to computer science and the art of programming.",
         url: 'https://cs50.harvard.edu/x/',
@@ -1331,6 +1346,11 @@ const tools = [
         name: 'Learn Notion in 12 Hours',
         description: "Free 12-hour video course teaching Notion from basics through advanced automation.",
         url: 'https://www.freecodecamp.org/news/lean-notion-in-12-hours/',
+      },
+      {
+        name: 'RL Environments Guide',
+        description: "AdithyaSK's practical guide on Hugging Face for building and scaling reinforcement learning environments for the LLM era.",
+        url: 'https://huggingface.co/spaces/AdithyaSK/rl-environments-guide',
       },
       {
         name: 'The Transformers',
