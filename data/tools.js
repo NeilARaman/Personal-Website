@@ -1618,6 +1618,11 @@ const tools = [
         url: 'https://garryslist.org/posts/boil-the-ocean',
       },
       {
+        name: 'Get in the Token Path',
+        description: "Paul Klein on how AI infra companies can earn agent spend by optimizing the token bill — tokens are the wedge, agent spend is the prize.",
+        url: 'https://memos.hawkhill.ventures/p/get-in-the-token-path',
+      },
+      {
         name: 'Good Platforms, Good Platform Engineers',
         description: "Ryan Delgado on what makes developer platforms work — clear use cases, guardrails over options, and engineers with strong opinions and user empathy.",
         url: 'https://www.ryantime.dev/p/good-platforms-good-platform-engineers',
