@@ -2013,6 +2013,11 @@ const tools = [
         url: 'https://anchorbrowser.io/',
       },
       {
+        name: 'Brave',
+        description: "Privacy-focused Chromium browser that blocks ads and trackers by default, with built-in private search, VPN, and AI assistant.",
+        url: 'https://brave.com/',
+      },
+      {
         name: 'Browser Use',
         description: "Platform providing scalable undetectable browsers for AI agents to interact with websites.",
         url: 'https://browser-use.com/',
@@ -2041,6 +2046,11 @@ const tools = [
         name: 'Parallel',
         description: "Query the web with advanced parallel processing.",
         url: 'https://parallel.ai/',
+      },
+      {
+        name: 'Strawberry Browser',
+        description: "AI web browser that automates repetitive tasks like research, data extraction, and prospecting across tools like LinkedIn and CRMs.",
+        url: 'https://strawberrybrowser.com/',
       },
       {
         name: 'Tavily',
