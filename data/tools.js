@@ -398,6 +398,11 @@ const tools = [
         url: 'https://geometricdeeplearning.com/book/',
       },
       {
+        name: 'Hallucinopedia',
+        description: "AI-generated encyclopedia of a fictional universe whose entries appear as you visit them.",
+        url: 'https://halupedia.com/',
+      },
+      {
         name: 'Machine Learning Q and AI',
         description: "30 essential questions and answers on ML and AI concepts by Sebastian Raschka.",
         url: 'https://sebastianraschka.com/books/#machine-learning-q-and-ai',
@@ -848,6 +853,11 @@ const tools = [
         url: 'https://effectful.co/',
       },
       {
+        name: 'Entire',
+        description: "Open-source CLI capturing AI agent sessions during development and linking them to git commits to preserve reasoning behind code changes.",
+        url: 'https://entire.io/',
+      },
+      {
         name: 'Feather',
         description: "Simple open source SVG icon library.",
         url: 'https://feathericons.com/',
@@ -1042,6 +1052,11 @@ const tools = [
         description: "Enterprise AI platform for finding knowledge across company apps, automating tasks, generating docs and dashboards, and running workflows. Now part of Workday.",
         url: 'https://sanalabs.com/',
       },
+      {
+        name: 'Tessera',
+        description: "Enterprise AI platform compressing ERP modernization from years to weeks via governed multi-agent workflows.",
+        url: 'https://www.tesseralabs.ai/',
+      },
     ],
   },
   {
@@ -1191,6 +1206,16 @@ const tools = [
         name: 'Clay\'s EA Take-Home',
         description: "Take-home assessment for Clay executive assistant hiring process.",
         url: 'https://docs.google.com/document/d/1Jct3sKsza5QAn-IQrdnG2Givs7WlQgn2nY5IIcwt_Vw/edit?dub_id=2Dg5uaQVeT3nT8RR&tab=t.0',
+      },
+      {
+        name: 'GTM Atlas',
+        description: "Comprehensive guide by Attio mapping modern go-to-market strategies from lead capture through retention.",
+        url: 'https://atlas.attio.com/',
+      },
+      {
+        name: 'PostHog Handbook',
+        description: "Dan Trapp's searchable, installable reader of PostHog's public handbook with dated eBook editions of the company's operational practices.",
+        url: 'https://dantrapp.github.io/posthog-handbook/',
       },
       {
         name: 'Sequoia PMF Framework',
@@ -1466,6 +1491,11 @@ const tools = [
         name: 'PostHog',
         description: "All-in-one platform for building successful products with analytics.",
         url: 'https://posthog.com',
+      },
+      {
+        name: 'Raindrop',
+        description: "AI agent observability platform that detects, alerts on, and helps debug production failures in deployed agents.",
+        url: 'https://www.raindrop.ai/',
       },
       {
         name: 'Respan',
@@ -1797,6 +1827,11 @@ const tools = [
         description: "Hiring marketplace pairing expert recruiters with AI agents to fill roles.",
         url: 'https://www.paraform.com/',
       },
+      {
+        name: 'People Culture Talent',
+        description: "Boutique consulting firm helping venture-backed startups build teams through retained search, embedded recruiting, and people operations.",
+        url: 'https://www.peopleculturetalent.com/',
+      },
     ],
   },
   {
@@ -1876,6 +1911,11 @@ const tools = [
         name: 'Clodo',
         description: "AI people search platform finding individuals via natural language and automating outreach.",
         url: 'https://clodo.ai/',
+      },
+      {
+        name: 'Ethos',
+        description: "AI agent researching people and companies to surface context for finding customers, hires, and deals.",
+        url: 'https://agent.askethos.com/',
       },
       {
         name: 'GTM Goose Skills Library',
