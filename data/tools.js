@@ -248,6 +248,11 @@ const tools = [
         url: 'https://www.lila.ai/',
       },
       {
+        name: 'Meridian Labs',
+        description: "Nonprofit building an open-source platform for understanding, evaluating, and testing AI models and agents.",
+        url: 'https://meridianlabs.ai/',
+      },
+      {
         name: 'Ndea',
         description: "AI research lab pursuing artificial general intelligence through deep learning and program synthesis.",
         url: 'https://ndea.com/',
