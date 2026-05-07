@@ -1308,6 +1308,11 @@ const tools = [
     title: 'HR/Payroll',
     stack: [
       {
+        name: 'Corridor Advisors',
+        description: "Health insurance brokerage using AI to help small businesses find coverage for their employees.",
+        url: 'https://corridoradvisors.com/',
+      },
+      {
         name: 'Deel',
         description: "Global HR platform handling payroll, contractor payments, compliance, and benefits across 150+ countries.",
         url: 'https://www.deel.com/',
@@ -1722,6 +1727,11 @@ const tools = [
   {
     title: 'Proptech',
     stack: [
+      {
+        name: 'Drafted',
+        description: "AI tool for designing residential house plans, with a gallery of 88,000+ user-made floorplans and exterior renders across styles.",
+        url: 'https://www.drafted.ai/',
+      },
       {
         name: 'WithJoy.AI',
         description: "AI Real Estate Agent for property search and management.",
