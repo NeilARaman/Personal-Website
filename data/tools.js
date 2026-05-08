@@ -202,11 +202,26 @@ const tools = [
         description: "Infrastructure platform enabling LLMs to run as autonomous background agents with tool calling.",
         url: 'https://www.subconscious.dev/',
       },
+      {
+        name: 'Supergood',
+        description: "Converts enterprise portal interfaces into production-ready APIs that AI agents can call directly, replacing slow browser automation with millisecond responses.",
+        url: 'https://supergood.ai/',
+      },
     ],
   },
   {
     title: 'AI Research Labs',
     stack: [
+      {
+        name: 'Ai2',
+        description: "Allen Institute for AI — nonprofit research lab building open AI breakthroughs for science, environment, and society.",
+        url: 'https://allenai.org/',
+      },
+      {
+        name: 'Andon Labs',
+        description: "AI safety research lab developing benchmarks and deploying frontier systems to test autonomous agents operating without human oversight.",
+        url: 'https://andonlabs.com/',
+      },
       {
         name: 'Arena',
         description: "Company developing electromagnetic intelligence and sensing technology.",
@@ -276,6 +291,11 @@ const tools = [
         name: 'Softmax',
         description: "Research lab behind Cogames, a multiplayer benchmark for measuring AI social intelligence.",
         url: 'https://softmax.com/',
+      },
+      {
+        name: 'Standard Intelligence',
+        description: "AI research lab building general-purpose models that perform complex computer actions and learn interactively.",
+        url: 'https://si.inc/',
       },
     ],
   },
@@ -1048,6 +1068,11 @@ const tools = [
         url: 'https://www.context.ai/',
       },
       {
+        name: 'Distyl AI',
+        description: "Production AI platform helping Fortune 500 enterprises rearchitect operations and decision-making infrastructure across telecom, healthcare, manufacturing, insurance, and retail.",
+        url: 'https://distyl.ai/',
+      },
+      {
         name: 'HappyRobot',
         description: "Agentic AI workforce platform deploying autonomous workers across customer support, sales, collections, recruiting, and operations.",
         url: 'https://www.happyrobot.ai/',
@@ -1061,6 +1086,11 @@ const tools = [
         name: 'Sana',
         description: "Enterprise AI platform for finding knowledge across company apps, automating tasks, generating docs and dashboards, and running workflows. Now part of Workday.",
         url: 'https://sanalabs.com/',
+      },
+      {
+        name: 'Speakeasy',
+        description: "Centralized AI control platform for connecting, governing, and monitoring AI agents and integrations across an enterprise.",
+        url: 'https://www.speakeasy.com/',
       },
       {
         name: 'Tessera',
@@ -1376,6 +1406,11 @@ const tools = [
         name: 'Cartesian',
         description: "Interactive offline handbook teaching data structures and algorithms through visualizations, executable code playback, and practice problems.",
         url: 'https://cartesian.app/',
+      },
+      {
+        name: 'CodeCrafters',
+        description: "Programming challenges where experienced developers rebuild real systems like Redis, Git, and SQLite from scratch in their own IDE.",
+        url: 'https://codecrafters.io/',
       },
       {
         name: 'CS50',
@@ -1822,6 +1857,11 @@ const tools = [
         description: "Patrick Thompson's Founder Therapy essay on replacing annual reviews with continuous feedback and biannual calibration.",
         url: 'https://patrickthompson.substack.com/p/the-whole-year-is-a-performance-review',
       },
+      {
+        name: 'Time Horizons',
+        description: "AI Digest essay on how AI agents' time horizons for completing complex coding tasks are doubling roughly every 7 months.",
+        url: 'https://theaidigest.org/time-horizons',
+      },
     ],
   },
   {
@@ -1973,9 +2013,19 @@ const tools = [
         url: 'https://aiuc.com/',
       },
       {
+        name: 'Alice',
+        description: "Security and safety platform for testing, protecting, and monitoring generative AI apps, agents, and models throughout their lifecycle.",
+        url: 'https://alice.io/',
+      },
+      {
         name: 'Artemis Security',
         description: "AI-native security operations platform that learns your environment and correlates identity, cloud, endpoint, and network signals to detect and respond to threats.",
         url: 'https://artemissecurity.com/',
+      },
+      {
+        name: 'Cogent Security',
+        description: "Agentic AI that automatically investigates, prioritizes, and remediates vulnerabilities for enterprise security teams.",
+        url: 'https://www.cogent.com/',
       },
       {
         name: 'Corridor',
