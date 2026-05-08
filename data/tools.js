@@ -253,6 +253,11 @@ const tools = [
         url: 'https://x.company/',
       },
       {
+        name: 'Inception Labs',
+        description: "AI research lab building diffusion-based language models that generate tokens in parallel for faster, cheaper inference than autoregressive LLMs.",
+        url: 'https://www.inceptionlabs.ai/',
+      },
+      {
         name: 'LABS.GOOGLE',
         description: "Google's experimental AI research projects and cutting-edge technology demos.",
         url: 'https://labs.google/',
