@@ -1053,6 +1053,11 @@ const tools = [
         url: 'https://www.happyrobot.ai/',
       },
       {
+        name: 'Onyx',
+        description: "Open-source AI chat platform connecting to enterprise docs, apps, and people for knowledge search and conversational AI.",
+        url: 'https://onyx.app/',
+      },
+      {
         name: 'Sana',
         description: "Enterprise AI platform for finding knowledge across company apps, automating tasks, generating docs and dashboards, and running workflows. Now part of Workday.",
         url: 'https://sanalabs.com/',
@@ -1996,6 +2001,16 @@ const tools = [
         name: 'Vanta',
         description: "Compliance platform automating evidence collection and monitoring across 35+ security frameworks.",
         url: 'https://www.vanta.com/',
+      },
+    ],
+  },
+  {
+    title: 'Skills',
+    stack: [
+      {
+        name: 'Event Prospecting',
+        description: "Browserbase skill that automates lead generation by extracting conference attendees and ranking them by ICP fit with rationales.",
+        url: 'https://skills.sh/browserbase/skills/event-prospecting',
       },
     ],
   },
