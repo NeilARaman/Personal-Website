@@ -1623,6 +1623,11 @@ const tools = [
         url: 'https://angusemmerson.com/',
       },
       {
+        name: 'Astro Teller',
+        description: "Captain of Moonshots at X, Alphabet's Moonshot Factory.",
+        url: 'https://www.astroteller.net/',
+      },
+      {
         name: 'Daksh Gupta',
         description: "Co-founder of Greptile, building AI agents that autonomously review code.",
         url: 'https://dakshgupta.com/',
