@@ -243,6 +243,11 @@ const tools = [
         url: 'https://www.essential.ai/',
       },
       {
+        name: 'Flapping Airplanes',
+        description: "Frontier data efficiency lab in stealth pursuing paradigm-shifting research toward AI models that match human sample efficiency.",
+        url: 'https://flappingairplanes.com/',
+      },
+      {
         name: 'Gimlet Labs',
         description: "Applied research lab designing next-generation computing infrastructure for running AI workloads efficiently at scale.",
         url: 'https://gimletlabs.ai/',
@@ -251,6 +256,11 @@ const tools = [
         name: 'Google X',
         description: "Advanced technology research division focused on moonshot projects.",
         url: 'https://x.company/',
+      },
+      {
+        name: 'humans&',
+        description: "Human-centric frontier AI lab building models that strengthen relationships and communities, focused on long-horizon multi-agent RL, memory, and user understanding.",
+        url: 'https://humansand.ai/',
       },
       {
         name: 'Inception Labs',
@@ -286,6 +296,11 @@ const tools = [
         name: 'Prime Intellect',
         description: "Distributed compute platform for training, evaluating, and deploying agentic AI models on GPUs.",
         url: 'https://www.primeintellect.ai/',
+      },
+      {
+        name: 'Ricursive Intelligence',
+        description: "Frontier AI lab developing self-improving systems to revolutionize chip design and accelerate hardware development.",
+        url: 'https://www.ricursive.com/',
       },
       {
         name: 'Sentient',
