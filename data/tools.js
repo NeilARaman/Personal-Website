@@ -1293,6 +1293,11 @@ const tools = [
     title: 'Hardware Engineering',
     stack: [
       {
+        name: 'Andrenam',
+        description: "Maritime sensing company building AI-powered distributed networks of mass-manufactured sonar systems for persistent autonomous awareness from surface to seabed.",
+        url: 'https://andrenam.com/',
+      },
+      {
         name: 'Heron Power',
         description: "Industrial power electronics company developing solid-state transformers to modernize the grid for renewables and AI data centers.",
         url: 'https://heronpower.com/',
