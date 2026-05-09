@@ -750,22 +750,27 @@ const tools = [
     ],
   },
   {
-    title: 'Defense Contracting',
+    title: 'Defense Tech',
     stack: [
+      {
+        name: 'Andrenam',
+        description: "Maritime sensing company building AI-powered distributed networks of mass-manufactured sonar systems for persistent autonomous awareness from surface to seabed.",
+        url: 'https://andrenam.com/',
+      },
       {
         name: 'Northwood',
         description: "End-to-end ground infrastructure provider for space missions, with rapid deployment and resilient networking.",
         url: 'https://www.northwoodspace.io/',
       },
       {
+        name: 'Ornadyne',
+        description: "YC-backed company building near-silent, AI-powered flapping-wing drones that look and fly like birds for covert reconnaissance.",
+        url: 'https://ornadyne.com/',
+      },
+      {
         name: 'Smack Technologies',
         description: "Frontier AI lab for national security, building domain-specific models for U.S. DoD and allied military decision-making.",
         url: 'https://smacktechnologies.com/',
-      },
-      {
-        name: 'Sweetspot',
-        description: "AI platform for finding, managing, and bidding on government contracts.",
-        url: 'https://www.sweetspot.so/',
       },
       {
         name: 'Usul',
@@ -1233,6 +1238,11 @@ const tools = [
     title: 'Govtech',
     stack: [
       {
+        name: 'Sweetspot',
+        description: "AI platform for finding, managing, and bidding on government contracts.",
+        url: 'https://www.sweetspot.so/',
+      },
+      {
         name: 'The Antifraud Company',
         description: "AI-powered investigative platform detecting corporate fraud in government spending programs.",
         url: 'https://antifraudcompany.com/',
@@ -1292,11 +1302,6 @@ const tools = [
   {
     title: 'Hardware Engineering',
     stack: [
-      {
-        name: 'Andrenam',
-        description: "Maritime sensing company building AI-powered distributed networks of mass-manufactured sonar systems for persistent autonomous awareness from surface to seabed.",
-        url: 'https://andrenam.com/',
-      },
       {
         name: 'Heron Power',
         description: "Industrial power electronics company developing solid-state transformers to modernize the grid for renewables and AI data centers.",
@@ -1916,6 +1921,11 @@ const tools = [
         name: 'Greenhouse',
         description: "Hiring platform with structured interviewing, ATS, and onboarding tools.",
         url: 'https://www.greenhouse.com/',
+      },
+      {
+        name: 'Jack & Jill',
+        description: "AI recruiting platform with two agents — Jack helps candidates find roles and direct intros, Jill briefs roles and surfaces qualified talent for companies.",
+        url: 'https://www.jackandjill.ai/',
       },
       {
         name: 'Paraform',
