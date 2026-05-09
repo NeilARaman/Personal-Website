@@ -1403,6 +1403,11 @@ const tools = [
         url: 'https://crosby.ai/',
       },
       {
+        name: 'Extraordinary',
+        description: "Visa services for O-1 and EB-1A applicants combining top immigration lawyers with software for fast, high-quality outcomes.",
+        url: 'https://extraordinary.com/',
+      },
+      {
         name: 'Harvey',
         description: "AI platform purpose-built for legal professionals to automate research, drafting, and analysis.",
         url: 'https://www.harvey.ai/',
