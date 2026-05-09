@@ -308,6 +308,11 @@ const tools = [
         url: 'https://www.sentient.xyz/',
       },
       {
+        name: 'Smack Technologies',
+        description: "Frontier AI lab for national security, building domain-specific models for U.S. DoD and allied military decision-making.",
+        url: 'https://smacktechnologies.com/',
+      },
+      {
         name: 'Softmax',
         description: "Research lab behind Cogames, a multiplayer benchmark for measuring AI social intelligence.",
         url: 'https://softmax.com/',
@@ -752,11 +757,6 @@ const tools = [
   {
     title: 'Defense Contracting',
     stack: [
-      {
-        name: 'Smack Technologies',
-        description: "Frontier AI lab for national security, building domain-specific models for U.S. DoD and allied military decision-making.",
-        url: 'https://smacktechnologies.com/',
-      },
       {
         name: 'Sweetspot',
         description: "AI platform for finding, managing, and bidding on government contracts.",
