@@ -750,12 +750,37 @@ const tools = [
     ],
   },
   {
+    title: 'Defense Contracting',
+    stack: [
+      {
+        name: 'Smack Technologies',
+        description: "Frontier AI lab for national security, building domain-specific models for U.S. DoD and allied military decision-making.",
+        url: 'https://smacktechnologies.com/',
+      },
+      {
+        name: 'Sweetspot',
+        description: "AI platform for finding, managing, and bidding on government contracts.",
+        url: 'https://www.sweetspot.so/',
+      },
+      {
+        name: 'Usul',
+        description: "Defense technology and contracting platform.",
+        url: 'https://usul.com/',
+      },
+    ],
+  },
+  {
     title: 'Defense Tech',
     stack: [
       {
         name: 'Andrenam',
         description: "Maritime sensing company building AI-powered distributed networks of mass-manufactured sonar systems for persistent autonomous awareness from surface to seabed.",
         url: 'https://andrenam.com/',
+      },
+      {
+        name: 'Anduril',
+        description: "Defense technology company building autonomous systems and AI software for U.S. defense and allied militaries.",
+        url: 'https://www.anduril.com/',
       },
       {
         name: 'Northwood',
@@ -766,16 +791,6 @@ const tools = [
         name: 'Ornadyne',
         description: "YC-backed company building near-silent, AI-powered flapping-wing drones that look and fly like birds for covert reconnaissance.",
         url: 'https://ornadyne.com/',
-      },
-      {
-        name: 'Smack Technologies',
-        description: "Frontier AI lab for national security, building domain-specific models for U.S. DoD and allied military decision-making.",
-        url: 'https://smacktechnologies.com/',
-      },
-      {
-        name: 'Usul',
-        description: "Defense technology and contracting platform.",
-        url: 'https://usul.com/',
       },
     ],
   },
@@ -1237,11 +1252,6 @@ const tools = [
   {
     title: 'Govtech',
     stack: [
-      {
-        name: 'Sweetspot',
-        description: "AI platform for finding, managing, and bidding on government contracts.",
-        url: 'https://www.sweetspot.so/',
-      },
       {
         name: 'The Antifraud Company',
         description: "AI-powered investigative platform detecting corporate fraud in government spending programs.",
