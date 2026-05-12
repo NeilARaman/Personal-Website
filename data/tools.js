@@ -168,6 +168,11 @@ const tools = [
         url: 'https://deeptune.com/',
       },
       {
+        name: 'Hermes Agent',
+        description: "Open-source autonomous agent from Nous Research that lives on your server, remembers what it learns, and grows more capable the longer it runs.",
+        url: 'https://hermes-agent.nousresearch.com/',
+      },
+      {
         name: 'Hornet',
         description: "Retrieval engine built for AI agents, handling iterative queries across multiple data sources.",
         url: 'https://hornet.dev/',
@@ -792,6 +797,11 @@ const tools = [
         description: "YC-backed company building near-silent, AI-powered flapping-wing drones that look and fly like birds for covert reconnaissance.",
         url: 'https://ornadyne.com/',
       },
+      {
+        name: 'Overland AI',
+        description: "Defense technology company building autonomous ground vehicles and command-and-control systems for military operations in challenging terrain.",
+        url: 'https://www.overland.ai/',
+      },
     ],
   },
   {
@@ -1260,7 +1270,7 @@ const tools = [
     ],
   },
   {
-    title: 'GPUs on the Cloud',
+    title: 'GPUs',
     stack: [
       {
         name: 'Crusoe',
@@ -1276,6 +1286,11 @@ const tools = [
         name: 'Modal',
         description: "High-performance AI infrastructure for running compute-intensive workloads.",
         url: 'https://modal.com',
+      },
+      {
+        name: 'Starcloud',
+        description: "Orbital data centers powered by continuous solar energy and radiative cooling for scalable, cost-effective AI compute.",
+        url: 'https://www.starcloud.com/',
       },
     ],
   },
@@ -1883,6 +1898,11 @@ const tools = [
         url: 'https://alizanarin.substack.com/p/inside-the-palantir-mafia',
       },
       {
+        name: 'Mythos finds a curl vulnerability',
+        description: "Daniel Stenberg on how Anthropic's Mythos AI model found a real security flaw in curl, distributed via Project Glasswing through the Linux Foundation's Alpha Omega initiative.",
+        url: 'https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/',
+      },
+      {
         name: 'RF Engineering is Black Magic',
         description: "Hardware FYI and Benji Chia on how AI-assisted tools could democratize RF circuit design — historically a field of tribal knowledge.",
         url: 'https://hardwarefyi.substack.com/p/rf-engineering-is-black-magic',
@@ -2018,6 +2038,11 @@ const tools = [
         url: 'https://www.caretta.so/',
       },
       {
+        name: 'Cedar',
+        description: "AI-native sales platform from YC built on the Cedar-OS open-source framework, helping teams execute the best sales playbook in the industry.",
+        url: 'https://mail.cedarcopilot.com/',
+      },
+      {
         name: 'Clay',
         description: "AI-powered sales engagement and prospecting platform.",
         url: 'https://clay.com/',
@@ -2051,6 +2076,11 @@ const tools = [
         name: 'Orange Slice',
         description: "AI platform automating lead discovery, enrichment, and CRM syncing for go-to-market teams.",
         url: 'https://www.orangeslice.ai/',
+      },
+      {
+        name: 'Simile',
+        description: "AI simulation platform from Stanford spinout that models human behavior to help companies rehearse decisions, test products, and predict customer reactions.",
+        url: 'https://simile.ai/',
       },
       {
         name: 'Sixtyfour',
