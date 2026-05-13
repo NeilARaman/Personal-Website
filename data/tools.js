@@ -125,6 +125,21 @@ const tools = [
     ],
   },
   {
+    title: 'Aerospace',
+    stack: [
+      {
+        name: 'Astranis',
+        description: "Designs and manufactures small, radiation-hardened satellites for high-orbit communications, government missions, and positioning services worldwide.",
+        url: 'https://www.astranis.com/',
+      },
+      {
+        name: 'Cowboy Space',
+        description: "Builds solar-powered space-based data centers in Low Earth Orbit to deliver AI compute beyond Earth's grid capacity.",
+        url: 'https://www.cowboyspace.com/',
+      },
+    ],
+  },
+  {
     title: 'AI Art',
     stack: [
       {
@@ -166,6 +181,11 @@ const tools = [
         name: 'Deeptune',
         description: "Simulation environments where AI agents practice tasks like coding and spreadsheets to improve.",
         url: 'https://deeptune.com/',
+      },
+      {
+        name: 'Fireworks AI',
+        description: "Cloud platform for fast inference and deployment of open-source generative AI models without managing infrastructure.",
+        url: 'https://fireworks.ai/',
       },
       {
         name: 'Hermes Agent',
@@ -426,6 +446,11 @@ const tools = [
         name: 'Genbio AI',
         description: "AI-powered genomics and computational biology tools.",
         url: 'https://genbio.ai/',
+      },
+      {
+        name: 'Phylo',
+        description: "AI platform with collaborative agents that help biologists run research, collaborate, and accelerate discoveries in an integrated biology workspace.",
+        url: 'https://phylo.bio/',
       },
     ],
   },
@@ -688,6 +713,11 @@ const tools = [
         url: 'https://inkeep.com/',
       },
       {
+        name: 'Pylon',
+        description: "AI-native B2B support platform consolidating ticketing, chat, knowledge base, and account intelligence across Slack, Teams, email, and Discord.",
+        url: 'https://www.usepylon.com/',
+      },
+      {
         name: 'Siena',
         description: "Autonomous customer service agent for e-commerce handling orders, returns, and shipping questions across email, chat, SMS, and social channels.",
         url: 'https://www.siena.cx/',
@@ -718,6 +748,11 @@ const tools = [
         url: 'https://deepnote.com/',
       },
       {
+        name: 'Hex',
+        description: "AI-powered analytics platform for exploring data, building interactive dashboards, and getting insights via agentic notebooks, conversational analytics, and semantic models.",
+        url: 'https://hex.tech/',
+      },
+      {
         name: 'Hilbert',
         description: "AI-native growth analytics for B2C teams — detects anomalies, identifies root causes, and automates actions across products, marketing, and finance.",
         url: 'https://hilberts.ai/',
@@ -741,6 +776,11 @@ const tools = [
         name: 'HelixDB',
         description: "Open-source graph-vector database built in Rust for RAG and AI applications.",
         url: 'https://www.helix-db.com/',
+      },
+      {
+        name: 'PlanetScale',
+        description: "Cloud database platform offering managed Vitess/MySQL and Postgres with horizontal sharding, unlimited IOPS via NVMe, and online schema changes.",
+        url: 'https://planetscale.com/',
       },
       {
         name: 'Prisma',
@@ -1058,6 +1098,11 @@ const tools = [
     title: 'E-commerce',
     stack: [
       {
+        name: 'District',
+        description: "AI commerce platform for building shopping apps, marketplaces, and live shopping experiences by chatting with AI — no code required.",
+        url: 'https://district.net/',
+      },
+      {
         name: 'Fourthwall',
         description: "Platform for creators to sell custom products, memberships, and digital goods.",
         url: 'https://fourthwall.com/',
@@ -1112,6 +1157,11 @@ const tools = [
   {
     title: 'Enterprise AI',
     stack: [
+      {
+        name: 'Ciridae',
+        description: "AI-powered operating systems that automate scheduling, vendor management, and financial processes for services businesses.",
+        url: 'https://www.ciridae.com/',
+      },
       {
         name: 'Context',
         description: "Enterprise AI platform deploying autonomous agents that execute real workflows inside company systems.",
@@ -1388,6 +1438,16 @@ const tools = [
         url: 'https://latenthealth.com/',
       },
       {
+        name: 'Leona',
+        description: "AI WhatsApp assistant for healthcare professionals — automates patient communication, scheduling, and administrative work.",
+        url: 'https://www.leona.health/en',
+      },
+      {
+        name: 'Pearl Health',
+        description: "AI-powered platform helping providers deliver value-based care by automating workflows, predicting high-risk patients, and aligning financial incentives.",
+        url: 'https://www.pearlhealth.com/',
+      },
+      {
         name: 'Qualified Health',
         description: "Enterprise AI platform for deploying and governing generative AI across health system workflows.",
         url: 'https://www.qualifiedhealthai.com/',
@@ -1565,6 +1625,16 @@ const tools = [
     ],
   },
   {
+    title: 'Mining',
+    stack: [
+      {
+        name: 'Mariana Minerals',
+        description: "Software-first minerals company extracting and supplying critical materials like lithium, copper, and nickel for energy, AI, and defense industries.",
+        url: 'https://marianaminerals.com/',
+      },
+    ],
+  },
+  {
     title: 'Modeling',
     stack: [
       {
@@ -1598,6 +1668,11 @@ const tools = [
         url: 'https://incident.io/',
       },
       {
+        name: 'Judgment Labs',
+        description: "Continuous-improvement stack for AI agents — monitors production, triages failures via Slack, and tests fixes to prevent regressions.",
+        url: 'https://www.judgmentlabs.ai/',
+      },
+      {
         name: 'PostHog',
         description: "All-in-one platform for building successful products with analytics.",
         url: 'https://posthog.com',
@@ -1611,6 +1686,16 @@ const tools = [
         name: 'Respan',
         description: "AI observability and evaluation platform for tracing, debugging, and improving AI agent behavior.",
         url: 'https://respan.ai/',
+      },
+    ],
+  },
+  {
+    title: 'Music',
+    stack: [
+      {
+        name: 'UnitedMasters',
+        description: "Music distribution platform that releases independent artists to 50+ streaming services while letting them keep ownership of their masters and royalties.",
+        url: 'https://unitedmasters.com/',
       },
     ],
   },
@@ -1973,6 +2058,11 @@ const tools = [
     title: 'Robotics',
     stack: [
       {
+        name: 'Antioch',
+        description: "Cloud-based simulation platform for autonomy teams to build, evaluate, and deploy robots and physical AI without elaborate physical test environments.",
+        url: 'https://antioch.com/',
+      },
+      {
         name: 'Atoms',
         description: "Holding company building physical automation across food, mining, and transport through seven specialized robotics and autonomy subsidiaries.",
         url: 'https://atoms.co/',
@@ -2076,6 +2166,11 @@ const tools = [
         name: 'Orange Slice',
         description: "AI platform automating lead discovery, enrichment, and CRM syncing for go-to-market teams.",
         url: 'https://www.orangeslice.ai/',
+      },
+      {
+        name: 'Roadrunner',
+        description: "AI-native CPQ replacement — sales teams prompt for quotes and route deal-desk, finance, legal, and executive approvals in parallel.",
+        url: 'https://roadrunner.ai/',
       },
       {
         name: 'Simile',
