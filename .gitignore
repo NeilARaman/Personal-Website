@@ -115,6 +115,9 @@ temp/
 # Local Netlify folder
 .netlify
 
+# Claude Code local config
+.claude/settings.local.json
+
 # Project Specific Files
 PERFORMANCE.md
 
