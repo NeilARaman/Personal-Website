@@ -1038,6 +1038,11 @@ const tools = [
         url: 'https://render.com/',
       },
       {
+        name: 'Stainless',
+        description: "Generates production-ready SDKs, API documentation, and MCP servers from OpenAPI specifications.",
+        url: 'https://www.stainless.com/',
+      },
+      {
         name: 'Superflex',
         description: "Turn Figma to Code in Seconds with AI-powered conversion.",
         url: 'https://www.superflex.ai/',
