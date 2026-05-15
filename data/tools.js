@@ -243,6 +243,11 @@ const tools = [
     title: 'AI Research Labs',
     stack: [
       {
+        name: 'Adaption Labs',
+        description: "Builds adaptive AI systems that continuously learn and evolve for specific use cases, rather than relying on static one-size-fits-all models.",
+        url: 'https://www.adaptionlabs.ai/',
+      },
+      {
         name: 'Ai2',
         description: "Allen Institute for AI — nonprofit research lab building open AI breakthroughs for science, environment, and society.",
         url: 'https://allenai.org/',
