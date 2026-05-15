@@ -913,6 +913,11 @@ const tools = [
         url: 'https://refero.design/',
       },
       {
+        name: 'Slope',
+        description: "Brand and creative agency offering brand identity, web design, product design, and marketing for high-growth startups and venture firms.",
+        url: 'https://www.slope.agency/',
+      },
+      {
         name: 'Softlight',
         description: "AI product discovery and design platform that learns your business and explores product ideas.",
         url: 'https://softlight.com/',
