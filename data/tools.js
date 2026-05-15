@@ -183,6 +183,11 @@ const tools = [
         url: 'https://deeptune.com/',
       },
       {
+        name: 'E2B',
+        description: "Open-source, secure cloud sandboxes for AI agents to execute code, run data analysis, and interact with real-world tools.",
+        url: 'https://e2b.dev/',
+      },
+      {
         name: 'Fireworks AI',
         description: "Cloud platform for fast inference and deployment of open-source generative AI models without managing infrastructure.",
         url: 'https://fireworks.ai/',
