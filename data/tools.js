@@ -1198,6 +1198,11 @@ const tools = [
         url: 'https://distyl.ai/',
       },
       {
+        name: 'Dust',
+        description: "Multiplayer AI workspace where teams and agents collaborate as co-contributors, with a semantic layer that synthesizes company knowledge across tools.",
+        url: 'https://dust.tt/',
+      },
+      {
         name: 'HappyRobot',
         description: "Agentic AI workforce platform deploying autonomous workers across customer support, sales, collections, recruiting, and operations.",
         url: 'https://www.happyrobot.ai/',
