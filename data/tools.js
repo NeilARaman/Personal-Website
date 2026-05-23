@@ -1503,6 +1503,11 @@ const tools = [
         url: 'https://www.deel.com/',
       },
       {
+        name: 'Lattice',
+        description: "Performance management platform combining HR and AI tools for goals, reviews, engagement, compensation, and career growth.",
+        url: 'https://lattice.com/',
+      },
+      {
         name: 'Rippling',
         description: "Unified workforce platform handling HR, IT, and finance — payroll, benefits, devices, and app provisioning from one system.",
         url: 'https://www.rippling.com/',
