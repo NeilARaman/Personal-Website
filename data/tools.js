@@ -1183,6 +1183,11 @@ const tools = [
         url: 'https://www.ciridae.com/',
       },
       {
+        name: 'Console',
+        description: "AI-native IT service desk that auto-resolves employee requests using natural-language playbooks, access policies, and knowledge base integrations.",
+        url: 'https://www.console.com/',
+      },
+      {
         name: 'Context',
         description: "Enterprise AI platform deploying autonomous agents that execute real workflows inside company systems.",
         url: 'https://www.context.ai/',
