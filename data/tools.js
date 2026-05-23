@@ -323,6 +323,11 @@ const tools = [
         url: 'https://ndea.com/',
       },
       {
+        name: 'Patronus AI',
+        description: "Frontier lab training Digital World Models that simulate agent actions in digital workflows to generate training data for frontier AI models.",
+        url: 'https://www.patronus.ai/',
+      },
+      {
         name: 'Periodic Labs',
         description: "AI research company building autonomous laboratories and AI scientists for materials discovery.",
         url: 'https://periodic.com/',
