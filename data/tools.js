@@ -178,6 +178,11 @@ const tools = [
         url: 'https://www.anyscale.com/',
       },
       {
+        name: 'BenchFlow',
+        description: "High-signal evaluation environments for AI agents, with expert-curated benchmarks and a unified hub aggregating 60+ environments.",
+        url: 'https://www.benchflow.ai/',
+      },
+      {
         name: 'Deeptune',
         description: "Simulation environments where AI agents practice tasks like coding and spreadsheets to improve.",
         url: 'https://deeptune.com/',
