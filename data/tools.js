@@ -1068,6 +1068,11 @@ const tools = [
         url: 'https://www.superflex.ai/',
       },
       {
+        name: 'Temporal',
+        description: "Durable execution platform — write workflows and AI agents in any language with automatic state persistence, retries, and crash recovery built in.",
+        url: 'https://temporal.io/',
+      },
+      {
         name: 'The Component Gallery',
         description: "Reference repository of UI components cataloged from real-world design systems.",
         url: 'https://component.gallery/',
