@@ -1130,6 +1130,16 @@ const tools = [
     ],
   },
   {
+    title: 'Drone Delivery',
+    stack: [
+      {
+        name: 'Zipline',
+        description: "Drone delivery platform for food, groceries, and medicine — fast, emission-free aerial delivery operating across multiple continents.",
+        url: 'https://www.zipline.com/',
+      },
+    ],
+  },
+  {
     title: 'E-commerce',
     stack: [
       {
