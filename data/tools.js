@@ -1988,6 +1988,11 @@ const tools = [
         url: 'https://www.drafted.ai/',
       },
       {
+        name: 'EliseAI',
+        description: "AI automation platform for housing and healthcare operators — handles tenant and patient communications across text, email, chat, and voice in 50+ languages.",
+        url: 'https://eliseai.com/',
+      },
+      {
         name: 'WithJoy.AI',
         description: "AI Real Estate Agent for property search and management.",
         url: 'https://withjoy.ai/',
