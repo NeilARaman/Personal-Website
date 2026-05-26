@@ -113,6 +113,11 @@ const tools = [
         url: 'https://www.tryfondo.com/',
       },
       {
+        name: 'Glimpse',
+        description: "AI deductions management for consumer brands — recovers revenue from retailer chargebacks via automated dispute, cash application, and reconciliation.",
+        url: 'https://www.tryglimpse.com/',
+      },
+      {
         name: 'Open Ledger',
         description: "Embedded Accounting API for SaaS Platforms.",
         url: 'https://www.openledger.com/',
