@@ -1333,6 +1333,11 @@ const tools = [
         url: 'https://oscilar.com/',
       },
       {
+        name: 'Pillar',
+        description: "Automated commodity and currency hedging platform — links every hedge to specific transactions for real-time, precise risk management.",
+        url: 'https://www.pillarhq.com/',
+      },
+      {
         name: 'Q4',
         description: "Unified IR Ops platform for public companies covering earnings, investor events, IR websites, and engagement analytics.",
         url: 'https://www.q4inc.com/',
