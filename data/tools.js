@@ -1583,6 +1583,11 @@ const tools = [
         url: 'https://crosby.ai/',
       },
       {
+        name: 'Eve Legal',
+        description: "Legal AI workforce for plaintiff law firms — handles case intake, medical chronologies, demand letters, discovery, and nightly value-driver audits.",
+        url: 'https://www.eve.legal/',
+      },
+      {
         name: 'Extraordinary',
         description: "Visa services for O-1 and EB-1A applicants combining top immigration lawyers with software for fast, high-quality outcomes.",
         url: 'https://extraordinary.com/',
