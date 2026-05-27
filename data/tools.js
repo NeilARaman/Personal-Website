@@ -462,6 +462,11 @@ const tools = [
         description: "Compliance-first AI voice agents for US consumer lenders — automates collections, customer service, disputes, chargebacks, and total-loss mitigation.",
         url: 'https://www.trysalient.com/',
       },
+      {
+        name: 'Stitch',
+        description: "Operating system for financial institutions — unified platform for issuing cards, ledgers, lending, deposits, and other regulated financial products.",
+        url: 'https://www.stitch.co/',
+      },
     ],
   },
   {
