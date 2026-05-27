@@ -1303,6 +1303,11 @@ const tools = [
         url: 'https://becomeautonomous.com/',
       },
       {
+        name: 'Bastion',
+        description: "Stablecoin infrastructure for enterprises — regulated issuance, custody, and fiat-stablecoin conversion across 60+ countries.",
+        url: 'https://bastion.com/',
+      },
+      {
         name: 'Better Money',
         description: "Stablecoin clearinghouse enabling companies to swap between stablecoins at par with fixed fees and guaranteed settlement times.",
         url: 'https://bettermoney.com/',
