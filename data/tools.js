@@ -488,6 +488,11 @@ const tools = [
         url: 'https://genbio.ai/',
       },
       {
+        name: 'Perceptic',
+        description: "AI operating system for drug development — unifies evidence, reasoning, and decisions across the lifecycle so insights from one team shape choices in another.",
+        url: 'https://www.perceptic.com/',
+      },
+      {
         name: 'Phylo',
         description: "AI platform with collaborative agents that help biologists run research, collaborate, and accelerate discoveries in an integrated biology workspace.",
         url: 'https://phylo.bio/',
