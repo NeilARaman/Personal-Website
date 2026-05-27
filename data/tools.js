@@ -127,6 +127,11 @@ const tools = [
         description: "Accounting software for small businesses to manage expenses, invoicing, and payroll.",
         url: 'https://quickbooks.intuit.com/',
       },
+      {
+        name: 'Synthetic',
+        description: "Autonomous bookkeeping agent for startups — connects to bank accounts, payroll, and business tools to deliver accrual-basis books end-to-end.",
+        url: 'https://synthetic.ai/',
+      },
     ],
   },
   {
