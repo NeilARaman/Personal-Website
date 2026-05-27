@@ -457,6 +457,11 @@ const tools = [
         description: "Better banking platform for startups and small businesses.",
         url: 'https://www.rho.co/',
       },
+      {
+        name: 'Salient',
+        description: "Compliance-first AI voice agents for US consumer lenders — automates collections, customer service, disputes, chargebacks, and total-loss mitigation.",
+        url: 'https://www.trysalient.com/',
+      },
     ],
   },
   {
