@@ -173,6 +173,11 @@ const tools = [
         url: 'https://midjourney.com',
       },
       {
+        name: 'Reface',
+        description: "Consumer AI app studio behind face-swap, photo and video filters, AI avatars, and try-on apps with 300M+ downloads.",
+        url: 'https://reface.ai/',
+      },
+      {
         name: 'Reve',
         description: "Bring your creative ideas to life with advanced AI art generation.",
         url: 'https://preview.reve.art/',
