@@ -1627,6 +1627,11 @@ const tools = [
         description: "AI platform helping lawyers automate legal research, drafting, and document review.",
         url: 'https://legora.com/',
       },
+      {
+        name: 'Stilta',
+        description: "Agentic AI for high-stakes patent work — runs invalidity, infringement, and freedom-to-operate analyses across patents, scientific literature, and archived web in minutes.",
+        url: 'https://www.stilta.com/',
+      },
     ],
   },
   {
