@@ -1285,6 +1285,16 @@ const tools = [
     ],
   },
   {
+    title: 'Entertainment',
+    stack: [
+      {
+        name: 'Status',
+        description: "AI-native social media platform where you can be anyone in your own world — Sims-style virtual lives meets social network.",
+        url: 'https://www.statusai.com/',
+      },
+    ],
+  },
+  {
     title: 'Event Planning',
     stack: [
       {
