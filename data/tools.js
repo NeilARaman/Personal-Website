@@ -748,6 +748,11 @@ const tools = [
     title: 'Customer Experience',
     stack: [
       {
+        name: 'Cresta',
+        description: "Generative AI platform for contact centers — unifies AI voice agents, real-time agent assist, and conversation intelligence across the customer journey.",
+        url: 'https://cresta.com/',
+      },
+      {
         name: 'Decagon',
         description: "Conversational AI platform for enhanced customer experience.",
         url: 'https://decagon.ai',
