@@ -1493,6 +1493,11 @@ const tools = [
         url: 'https://heronpower.com/',
       },
       {
+        name: 'Itera',
+        description: "Stealth VC-backed startup commercializing a new invention in electronics manufacturing, combining high-volume manufacturing techniques with materials science.",
+        url: 'https://www.itera.co/',
+      },
+      {
         name: 'Nominal',
         description: "All-in-one data platform for hardware engineering teams — telemetry, logs, video, and simulation results unified for test and operations across aviation, space, ground, maritime, and energy.",
         url: 'https://nominal.io/',
