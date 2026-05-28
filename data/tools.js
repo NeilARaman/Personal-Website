@@ -1538,6 +1538,11 @@ const tools = [
         url: 'https://www.pearlhealth.com/',
       },
       {
+        name: 'Prosper AI',
+        description: "AI voice agents for healthcare patient access and revenue cycle — handles scheduling, benefit verification, prior auth, billing, and payor switchboard calls.",
+        url: 'https://www.getprosper.ai/',
+      },
+      {
         name: 'Qualified Health',
         description: "Enterprise AI platform for deploying and governing generative AI across health system workflows.",
         url: 'https://www.qualifiedhealthai.com/',
