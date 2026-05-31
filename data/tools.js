@@ -173,6 +173,11 @@ const tools = [
         url: 'https://midjourney.com',
       },
       {
+        name: 'Raspberry AI',
+        description: "Generative AI platform for fashion creatives covering sketch-to-render, lifestyle and product photography, prints, and on-body virtual try-on.",
+        url: 'https://www.raspberry.ai/',
+      },
+      {
         name: 'Reface',
         description: "Consumer AI app studio behind face-swap, photo and video filters, AI avatars, and try-on apps with 300M+ downloads.",
         url: 'https://reface.ai/',
@@ -321,6 +326,11 @@ const tools = [
         name: 'Inception Labs',
         description: "AI research lab building diffusion-based language models that generate tokens in parallel for faster, cheaper inference than autoregressive LLMs.",
         url: 'https://www.inceptionlabs.ai/',
+      },
+      {
+        name: 'Ineffable Intelligence',
+        description: "AI lab led by David Silver building superlearners that discover knowledge through reinforcement learning from experience, without relying on human data.",
+        url: 'https://www.ineffable.ai/',
       },
       {
         name: 'LABS.GOOGLE',
@@ -897,6 +907,11 @@ const tools = [
         description: "Defense technology company building autonomous ground vehicles and command-and-control systems for military operations in challenging terrain.",
         url: 'https://www.overland.ai/',
       },
+      {
+        name: 'Ulysses',
+        description: "Builds autonomous underwater vehicles for maritime missions—ecological restoration, subsea surveillance, and infrastructure defense—with modular payloads and swarm capability.",
+        url: 'https://www.theoceancompany.com/',
+      },
     ],
   },
   {
@@ -1056,6 +1071,11 @@ const tools = [
         name: 'Linear',
         description: "Project management tool for software development teams.",
         url: 'https://linear.app/',
+      },
+      {
+        name: 'Lisse',
+        description: "JavaScript library for rendering squircle corners — the same continuous curve used by iOS and Figma — with React, Vue, and Svelte bindings, per-corner control, borders, and shadows.",
+        url: 'https://corne.rs/',
       },
       {
         name: 'Liveblocks',
@@ -1506,6 +1526,11 @@ const tools = [
         name: 'Tulip',
         description: "Composable operations platform for manufacturers to build apps and manage production workflows.",
         url: 'https://tulip.co/',
+      },
+      {
+        name: 'Unlimited',
+        description: "AI-native, vertically integrated engineering and construction company building large-scale industrial projects in energy, advanced manufacturing, mining, and data centers.",
+        url: 'https://www.unlimitedindustries.com/',
       },
     ],
   },
@@ -2058,6 +2083,11 @@ const tools = [
     title: 'Proptech',
     stack: [
       {
+        name: 'Casa',
+        description: "Home maintenance membership pairing in-house handymen and a concierge with a digital twin of your home — 3D model, appliances, paint, fixtures, and recurring care plans.",
+        url: 'https://getcasa.com/',
+      },
+      {
         name: 'Drafted',
         description: "AI tool for designing residential house plans, with a gallery of 88,000+ user-made floorplans and exterior renders across styles.",
         url: 'https://www.drafted.ai/',
@@ -2236,6 +2266,11 @@ const tools = [
         name: 'Sunday Robotics',
         description: "Robotics company building Memo, an autonomous home robot for household tasks like dishwashing.",
         url: 'https://www.sunday.ai/journal/series-b',
+      },
+      {
+        name: 'Synphony',
+        description: "End-to-end platform combining AI and human-in-the-loop systems to train, validate, and deploy robots into real-world workflows.",
+        url: 'https://www.synphony.co/',
       },
     ],
   },
@@ -2446,6 +2481,11 @@ const tools = [
         name: 'Superwhisper',
         description: "Advanced voice recognition and transcription.",
         url: 'https://superwhisper.com/',
+      },
+      {
+        name: 'Thoughtly',
+        description: "CRM-driven voice AI agents that call inbound leads in seconds, then follow up across SMS, email, and WhatsApp until they convert.",
+        url: 'https://thoughtly.com/',
       },
       {
         name: 'Vapi',
