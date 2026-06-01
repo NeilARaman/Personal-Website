@@ -908,6 +908,11 @@ const tools = [
         url: 'https://www.overland.ai/',
       },
       {
+        name: 'Picogrid',
+        description: "Defense technology company building an open integration layer that unifies sensors, platforms, and C2 systems across land, sea, air, and space into a single decision-ready picture.",
+        url: 'https://picogrid.com/',
+      },
+      {
         name: 'Ulysses',
         description: "Builds autonomous underwater vehicles for maritime missions—ecological restoration, subsea surveillance, and infrastructure defense—with modular payloads and swarm capability.",
         url: 'https://www.theoceancompany.com/',
@@ -1776,6 +1781,11 @@ const tools = [
         name: 'Arena Magazine',
         description: "Quarterly publication covering technology, capitalism, and civilization through long-form journalism.",
         url: 'https://arenamag.com/',
+      },
+      {
+        name: 'startups.gallery',
+        description: "Curated daily gallery of 1,200+ outstanding early-stage startups, with funding news and a jobs board, filterable by stage, industry, investor, and city.",
+        url: 'https://startups.gallery/',
       },
       {
         name: 'Yesterday Media',
