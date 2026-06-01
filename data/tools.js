@@ -1818,6 +1818,11 @@ const tools = [
         url: 'https://adam.new/',
       },
       {
+        name: 'Endra AI',
+        description: "AI platform for MEP (mechanical, electrical, plumbing) building design, natively integrated with Revit — auto-generates 2D/3D models and engineering documentation for fire-alarm, electrical, HVAC, and plumbing systems.",
+        url: 'https://www.endra.ai/',
+      },
+      {
         name: 'Iterating Inc.',
         description: "Software studio building open hydraulic and water-distribution modeling tools, including Mastering Water Models and epanet-js. Founded 2025 by Luke and Sam.",
         url: 'https://iterating.ca/',
