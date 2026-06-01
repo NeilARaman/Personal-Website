@@ -963,6 +963,11 @@ const tools = [
         url: 'https://www.lowercase.club/',
       },
       {
+        name: 'Mouthwash Studio',
+        description: "Design studio partnering with leading brands and innovators to influence culture, with an ecosystem spanning a research center, an LA café, a culture newsletter, and a print magazine.",
+        url: 'https://mouthwash.studio/',
+      },
+      {
         name: 'Paper',
         description: "Design canvas for creating art and digital experiences with fast, reliable tooling.",
         url: 'https://paper.design/',
