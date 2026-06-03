@@ -893,6 +893,11 @@ const tools = [
         url: 'https://www.anduril.com/',
       },
       {
+        name: 'Mach Industries',
+        description: "Defense technology company mass-manufacturing asymmetric aerospace and defense systems — attack drones, precision munitions, high-altitude pseudo-satellites, interceptors, and energetics.",
+        url: 'https://machindustries.com/',
+      },
+      {
         name: 'Northwood',
         description: "End-to-end ground infrastructure provider for space missions, with rapid deployment and resilient networking.",
         url: 'https://www.northwoodspace.io/',
@@ -911,6 +916,11 @@ const tools = [
         name: 'Picogrid',
         description: "Defense technology company building an open integration layer that unifies sensors, platforms, and C2 systems across land, sea, air, and space into a single decision-ready picture.",
         url: 'https://picogrid.com/',
+      },
+      {
+        name: 'Saronic',
+        description: "Defense company building autonomous surface vessels (USVs) for maritime missions, with modular payloads, edge autonomy, and manned-unmanned teaming in contested waters.",
+        url: 'https://www.saronic.com/',
       },
       {
         name: 'Ulysses',
@@ -1541,6 +1551,11 @@ const tools = [
         name: 'Unlimited',
         description: "AI-native, vertically integrated engineering and construction company building large-scale industrial projects in energy, advanced manufacturing, mining, and data centers.",
         url: 'https://www.unlimitedindustries.com/',
+      },
+      {
+        name: 'Westmag',
+        description: "Vertically integrated American manufacturer designing and producing drone motors and robot actuators at scale, with an NDAA-compliant US and allied supply chain.",
+        url: 'https://www.westmag.com/',
       },
     ],
   },
