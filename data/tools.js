@@ -2133,6 +2133,11 @@ const tools = [
     title: 'Proptech',
     stack: [
       {
+        name: 'Arcway',
+        description: "Real-time 3D design and sales environment for homebuilders — buyers explore, customize, and commit to homes via photoreal walkthroughs while sales teams track what's working.",
+        url: 'https://arcway.ai/',
+      },
+      {
         name: 'Casa',
         description: "Home maintenance membership pairing in-house handymen and a concierge with a digital twin of your home — 3D model, appliances, paint, fixtures, and recurring care plans.",
         url: 'https://getcasa.com/',
