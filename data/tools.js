@@ -392,6 +392,11 @@ const tools = [
         description: "AI research lab building general-purpose models that perform complex computer actions and learn interactively.",
         url: 'https://si.inc/',
       },
+      {
+        name: 'Tzafon',
+        description: "Applied research lab building foundation models and scalable compute for computer-use agents that operate software and interact with the real world.",
+        url: 'https://www.tzafon.ai/',
+      },
     ],
   },
   {
@@ -492,6 +497,11 @@ const tools = [
   {
     title: 'Biotech',
     stack: [
+      {
+        name: 'Apoha',
+        description: "Biophysical sensing platform whose Liquid Brain measures how molecules behave under stress, flagging antibody developability risks early in therapeutic drug discovery.",
+        url: 'https://www.apoha.com/',
+      },
       {
         name: 'Chai Discovery',
         description: "AI-native biotech lab building foundation models for molecular structure prediction and drug discovery.",
@@ -1357,6 +1367,11 @@ const tools = [
   {
     title: 'Finance/Fintech',
     stack: [
+      {
+        name: 'AlphaSense',
+        description: "AI market intelligence and search platform surfacing insights from company filings, broker research, and expert call transcripts with sentence-level citations.",
+        url: 'https://www.alpha-sense.com/',
+      },
       {
         name: 'Astor',
         description: "AI investment advisor app providing personalized portfolio advice and market analysis via chat.",
@@ -2501,6 +2516,16 @@ const tools = [
         name: 'QualGent',
         description: "AI-Powered Mobile App Testing Platform beyond traditional automation.",
         url: 'https://qualgent.ai/',
+      },
+    ],
+  },
+  {
+    title: 'Travel',
+    stack: [
+      {
+        name: 'Odessia',
+        description: "AI travel agent that plans and books entire trips — flights, hotels, and experiences — in a single visual conversation, price-shopping on your behalf.",
+        url: 'https://odessia.com/',
       },
     ],
   },
