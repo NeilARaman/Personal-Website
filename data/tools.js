@@ -1810,6 +1810,16 @@ const tools = [
     ],
   },
   {
+    title: 'Math',
+    stack: [
+      {
+        name: 'Corca',
+        description: "Fast, intuitive collaborative math editor — type expressions like search, work through problems in real time, and export to LaTeX.",
+        url: 'https://corca.app/',
+      },
+    ],
+  },
+  {
     title: 'Media',
     stack: [
       {
