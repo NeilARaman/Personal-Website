@@ -2057,6 +2057,11 @@ const tools = [
         description: "Modern approach to philanthropic giving and impact.",
         url: 'https://renaissancephilanthropy.org/',
       },
+      {
+        name: 'SAIR',
+        description: "Foundation for Science and AI Research co-founded by Terence Tao, uniting Nobel, Turing, and Fields laureates to fund frontier research and ground AI in scientific principles.",
+        url: 'https://sair.foundation/',
+      },
     ],
   },
   {
