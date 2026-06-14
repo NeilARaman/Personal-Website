@@ -193,6 +193,11 @@ const tools = [
     title: 'AI Infrastructure',
     stack: [
       {
+        name: 'Abundant',
+        description: "Builds reinforcement learning environments, datasets, and verifiers for training and evaluating AI models.",
+        url: 'https://www.abundant.ai/',
+      },
+      {
         name: 'Anyscale',
         description: "Unified compute platform built on Ray for scaling AI workloads from data processing to training, fine-tuning, and serving.",
         url: 'https://www.anyscale.com/',
@@ -226,6 +231,11 @@ const tools = [
         name: 'Hornet',
         description: "Retrieval engine built for AI agents, handling iterative queries across multiple data sources.",
         url: 'https://hornet.dev/',
+      },
+      {
+        name: 'HUD',
+        description: "Platform for building reinforcement learning environments, evals, and post-training data to align AI agents to real-world work.",
+        url: 'https://www.hud.ai/',
       },
       {
         name: 'Inferact',
@@ -291,6 +301,11 @@ const tools = [
         name: 'Brainbase',
         description: "Applied AI research lab building Kafka, the first AI employee with its own computer, email, and phone number.",
         url: 'https://usebrainbase.com/',
+      },
+      {
+        name: 'Eliza',
+        description: "Stealth frontier AI lab and public benefit corporation at the intersection of youth empowerment and AI, founded by Eliza Kosoy (MIT, UC Berkeley, DeepMind, Character.AI).",
+        url: 'https://www.eliza.cool/',
       },
       {
         name: 'Eragon',
@@ -1613,6 +1628,11 @@ const tools = [
         url: 'https://www.komodohealth.com/',
       },
       {
+        name: 'Lassie',
+        description: "AI that runs the back office for doctor's and dental practices — handling insurance enrollments, payment posting, EFT reconciliation, and claims autonomously.",
+        url: 'https://www.lassie.ai/',
+      },
+      {
         name: 'Latent Health',
         description: "AI clinical platform that accelerates medication access by automating prior authorizations in EHRs.",
         url: 'https://latenthealth.com/',
@@ -1771,6 +1791,11 @@ const tools = [
         name: 'Function Health',
         description: "Annual membership delivering 160+ lab tests twice yearly through Quest Diagnostics — early detection signals for 1000+ diseases at $365/year.",
         url: 'https://www.functionhealth.com/',
+      },
+      {
+        name: 'Nourish',
+        description: "AI-native metabolic care platform connecting patients with registered dietitians over telehealth, covered by insurance, to reverse chronic disease.",
+        url: 'https://www.nourish.com/',
       },
       {
         name: 'Superpower',
@@ -1956,6 +1981,16 @@ const tools = [
         name: 'Synchron',
         description: "Brain-computer interface company behind the Stentrode, a minimally invasive endovascular BCI implanted without open-brain surgery.",
         url: 'https://synchron.com/',
+      },
+    ],
+  },
+  {
+    title: 'Parenting',
+    stack: [
+      {
+        name: 'Nanit',
+        description: "Smart baby monitor using computer vision to track sleep and breathing motion without wearables, with real-time safety notifications and science-backed sleep insights.",
+        url: 'https://www.nanit.com/',
       },
     ],
   },
@@ -2546,6 +2581,16 @@ const tools = [
         name: 'Odessia',
         description: "AI travel agent that plans and books entire trips — flights, hotels, and experiences — in a single visual conversation, price-shopping on your behalf.",
         url: 'https://odessia.com/',
+      },
+    ],
+  },
+  {
+    title: 'Venture Studios',
+    stack: [
+      {
+        name: 'Special',
+        description: "Holding company that builds and operates AI-native businesses across critical American industries — like senior care — on a shared operating system, backed by a16z.",
+        url: 'https://www.special.co/',
       },
     ],
   },
