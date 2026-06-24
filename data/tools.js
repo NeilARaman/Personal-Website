@@ -338,6 +338,11 @@ const tools = [
         url: 'https://humansand.ai/',
       },
       {
+        name: 'Imbue',
+        description: "AI research lab building personal AI tools that are loyal to the user rather than the company that built them, founded by Kanjun Qiu and Josh Albrecht.",
+        url: 'https://imbue.com/',
+      },
+      {
         name: 'Inception Labs',
         description: "AI research lab building diffusion-based language models that generate tokens in parallel for faster, cheaper inference than autoregressive LLMs.",
         url: 'https://www.inceptionlabs.ai/',
@@ -1336,6 +1341,11 @@ const tools = [
         name: 'Onyx',
         description: "Open-source AI chat platform connecting to enterprise docs, apps, and people for knowledge search and conversational AI.",
         url: 'https://onyx.app/',
+      },
+      {
+        name: 'Runlayer',
+        description: "Enterprise platform for adopting AI agents safely, pairing a governed MCP gateway with shadow-AI discovery, access controls, runtime security scanning, and spend management.",
+        url: 'https://www.runlayer.com/',
       },
       {
         name: 'Sana',
@@ -2376,6 +2386,11 @@ const tools = [
         name: 'Synphony',
         description: "End-to-end platform combining AI and human-in-the-loop systems to train, validate, and deploy robots into real-world workflows.",
         url: 'https://www.synphony.co/',
+      },
+      {
+        name: 'XDOF',
+        description: "Infrastructure company building teleoperation, simulation, and annotation pipelines to supply frontier AI labs and robotics companies with robot training data.",
+        url: 'https://www.xdof.ai/',
       },
     ],
   },
