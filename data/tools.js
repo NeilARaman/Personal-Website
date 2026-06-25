@@ -1438,6 +1438,11 @@ const tools = [
         url: 'https://www.natural.co/',
       },
       {
+        name: 'Ornn',
+        description: "Financial infrastructure for the compute market — benchmark price indices for GPU compute (the OCPI), market intelligence, hedging and risk-transfer products, and capacity finance.",
+        url: 'https://ornn.com/',
+      },
+      {
         name: 'Oscilar',
         description: "AI-powered risk platform handling fraud, credit, onboarding, and compliance.",
         url: 'https://oscilar.com/',
