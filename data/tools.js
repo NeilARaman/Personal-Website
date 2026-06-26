@@ -263,6 +263,11 @@ const tools = [
         url: 'https://www.nozomio.com/',
       },
       {
+        name: 'Sail Research',
+        description: "Infrastructure platform for long-horizon AI agents, combining high-throughput, cost-efficient model inference with hosted sandboxes via an OpenAI-compatible API.",
+        url: 'https://www.sailresearch.com/',
+      },
+      {
         name: 'Subconscious',
         description: "Infrastructure platform enabling LLMs to run as autonomous background agents with tool calling.",
         url: 'https://www.subconscious.dev/',
@@ -701,6 +706,11 @@ const tools = [
         name: 'Cursor',
         description: "AI-powered code editor that enhances development productivity.",
         url: 'https://cursor.com',
+      },
+      {
+        name: 'Detail',
+        description: "Autonomously exercises your codebase to surface high-signal latent bugs, delivering prioritized writeups to Linear, Jira, GitHub Issues, or email.",
+        url: 'https://detail.dev/',
       },
       {
         name: 'Factory',
