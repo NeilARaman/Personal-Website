@@ -1843,11 +1843,6 @@ const tools = [
         url: 'https://hightouch.com/',
       },
       {
-        name: 'Mutiny',
-        description: "AI agent platform for GTM teams to spin up branded landing pages, proposals, and case studies without designer or marketing dependencies.",
-        url: 'https://www.mutinyhq.com/',
-      },
-      {
         name: 'Superscale AI',
         description: "AI-powered marketing automation and scaling.",
         url: 'https://www.superscale.ai/',
@@ -2471,6 +2466,11 @@ const tools = [
         name: 'Listen Labs',
         description: "AI customer research platform automating recruiting, AI-moderated interviews, and analysis to deliver consumer insights in hours instead of weeks.",
         url: 'https://listenlabs.ai/',
+      },
+      {
+        name: 'Mutiny',
+        description: "AI GTM agent that takes accounts from cold to closed — account research, personalized decks, landing pages, and deal rooms, plus follow-ups, multithreading, and pipeline review across sales and marketing.",
+        url: 'https://www.mutinyhq.com/',
       },
       {
         name: 'Orange Slice',
