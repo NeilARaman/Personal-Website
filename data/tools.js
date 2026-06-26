@@ -1952,6 +1952,11 @@ const tools = [
         description: "AI observability and evaluation platform for tracing, debugging, and improving AI agent behavior.",
         url: 'https://respan.ai/',
       },
+      {
+        name: 'Workweave',
+        description: "Engineering intelligence platform that measures human and AI-agent output, normalizing engineering work into benchmarked units to quantify AI's impact on velocity, code quality, and review throughput.",
+        url: 'https://workweave.dev/',
+      },
     ],
   },
   {
