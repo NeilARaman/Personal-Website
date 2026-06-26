@@ -1843,6 +1843,11 @@ const tools = [
         url: 'https://hightouch.com/',
       },
       {
+        name: 'Ploy',
+        description: "AI marketing platform that turns your website into a growth engine — its agents continuously monitor your site and competitors, then write content, fix SEO, build pages, run experiments, and attribute ad spend.",
+        url: 'https://ploy.ai/',
+      },
+      {
         name: 'Superscale AI',
         description: "AI-powered marketing automation and scaling.",
         url: 'https://www.superscale.ai/',
