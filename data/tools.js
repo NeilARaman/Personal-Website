@@ -718,11 +718,6 @@ const tools = [
         url: 'https://factory.ai/',
       },
       {
-        name: 'Graphite',
-        description: "End-to-end developer platform for modern software teams.",
-        url: 'https://graphite.dev/homepage',
-      },
-      {
         name: 'Morph',
         description: "The fastest way to apply edits to files with AI assistance.",
         url: 'https://morphllm.com/',
