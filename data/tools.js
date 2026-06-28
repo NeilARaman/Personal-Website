@@ -2538,6 +2538,11 @@ const tools = [
         url: 'https://depthfirst.com/',
       },
       {
+        name: 'Terra Security',
+        description: "Agentic offensive security platform running continuous, human-governed penetration testing across AI systems, external networks, and web apps.",
+        url: 'https://www.terra.security/',
+      },
+      {
         name: 'Tracebit',
         description: "Expect the unexpected with security canaries and monitoring.",
         url: 'https://tracebit.com/',
