@@ -108,6 +108,11 @@ const tools = [
         url: 'https://meetcampfire.com/',
       },
       {
+        name: 'Fifteenth',
+        description: "Full-service personal tax planning and filing for high earners in tech, combining expert CPAs with modern AI-powered software.",
+        url: 'https://www.fifteenth.com/',
+      },
+      {
         name: 'Fondo',
         description: "Tax and accounting platform built specifically for startups, handling R&D credits and compliance.",
         url: 'https://www.tryfondo.com/',
@@ -1743,6 +1748,11 @@ const tools = [
         url: 'https://legora.com/',
       },
       {
+        name: 'Sandstone',
+        description: "Legal relationship management platform for in-house counsel, with AI agents that intake, triage, route, and execute legal work across systems.",
+        url: 'https://sandstone.com/',
+      },
+      {
         name: 'Stilta',
         description: "Agentic AI for high-stakes patent work — runs invalidity, infringement, and freedom-to-operate analyses across patents, scientific literature, and archived web in minutes.",
         url: 'https://www.stilta.com/',
@@ -2536,6 +2546,11 @@ const tools = [
         name: 'depthfirst',
         description: "AI-powered security platform finding vulnerabilities and giving developers actionable fixes across code, infrastructure, and business logic.",
         url: 'https://depthfirst.com/',
+      },
+      {
+        name: 'Iru',
+        description: "Unified endpoint management, identity, and compliance platform that secures every device through one lightweight agent (formerly Kandji).",
+        url: 'https://www.iru.com/',
       },
       {
         name: 'Terra Security',
