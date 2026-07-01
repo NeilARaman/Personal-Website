@@ -1353,6 +1353,11 @@ const tools = [
         url: 'https://onyx.app/',
       },
       {
+        name: 'Poetic',
+        description: "Enterprise AI that learns a company's procedures from documents and operator feedback, then runs end-to-end processes like fraud decisioning, KYC, and disputes.",
+        url: 'https://poetic.com/',
+      },
+      {
         name: 'Runlayer',
         description: "Enterprise platform for adopting AI agents safely, pairing a governed MCP gateway with shadow-AI discovery, access controls, runtime security scanning, and spend management.",
         url: 'https://www.runlayer.com/',
