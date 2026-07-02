@@ -863,6 +863,11 @@ const tools = [
         url: 'https://hilberts.ai/',
       },
       {
+        name: 'Paradigm',
+        description: "AI-native spreadsheet workspace where each cell is a research agent, building and enriching structured, cited datasets to run research workflows at scale.",
+        url: 'https://www.paradigmai.com/',
+      },
+      {
         name: 'Riveter',
         description: "YC-backed AI agent that automates web data extraction, dataset building, and monitoring into structured outputs via API.",
         url: 'https://riveterhq.com/',
@@ -2056,6 +2061,11 @@ const tools = [
         name: 'Angus Emmerson',
         description: "Video editor creating commercials for brands like Formula 1, Netflix, and Disney.",
         url: 'https://angusemmerson.com/',
+      },
+      {
+        name: 'Anna Monaco',
+        description: "Founder and CEO of Paradigm, the AI-native spreadsheet workspace.",
+        url: 'https://annamona.co/',
       },
       {
         name: 'Astro Teller',
