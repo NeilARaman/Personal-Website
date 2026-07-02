@@ -1453,6 +1453,11 @@ const tools = [
         url: 'https://www.natural.co/',
       },
       {
+        name: 'Open Standard',
+        description: "Collectively governed stablecoin standard behind Open USD (OUSD), returning most reserve economics to adopters with no fees to mint or redeem.",
+        url: 'https://joinopenstandard.com/',
+      },
+      {
         name: 'Ornn',
         description: "Financial infrastructure for the compute market — benchmark price indices for GPU compute (the OCPI), market intelligence, hedging and risk-transfer products, and capacity finance.",
         url: 'https://ornn.com/',
@@ -1951,6 +1956,11 @@ const tools = [
         name: 'Judgment Labs',
         description: "Continuous-improvement stack for AI agents — monitors production, triages failures via Slack, and tests fixes to prevent regressions.",
         url: 'https://www.judgmentlabs.ai/',
+      },
+      {
+        name: 'Langfuse',
+        description: "Open-source LLM engineering platform unifying tracing, observability, evals, prompt management, and experiments for AI agents and apps.",
+        url: 'https://langfuse.com/',
       },
       {
         name: 'PostHog',
