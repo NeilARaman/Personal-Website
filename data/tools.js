@@ -2108,6 +2108,11 @@ const tools = [
         url: 'https://jackeinhorn.com/',
       },
       {
+        name: 'Mallory Contois',
+        description: "Community lead at Lovable and founder of The Old Girls Club.",
+        url: 'https://www.mallorycontois.com/',
+      },
+      {
         name: 'Michael Seibel',
         description: "Partner Emeritus of Y Combinator.",
         url: 'https://www.michaelseibel.com/',
