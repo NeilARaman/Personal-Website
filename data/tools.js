@@ -1868,6 +1868,11 @@ const tools = [
         url: 'https://ploy.ai/',
       },
       {
+        name: 'Rostra',
+        description: "Communications firm helping founder-led companies go direct — owning their narrative on social and email to build a movement instead of relying on traditional PR gatekeepers.",
+        url: 'https://rostra.co/',
+      },
+      {
         name: 'Superscale AI',
         description: "AI-powered marketing automation and scaling.",
         url: 'https://www.superscale.ai/',
@@ -2076,6 +2081,11 @@ const tools = [
         name: 'Emil Kowalski',
         description: "Design engineer at Linear, creator of Sonner and Vaul React components.",
         url: 'https://emilkowal.ski/',
+      },
+      {
+        name: 'Gaby Goldberg',
+        description: "Writer and first hire at Rostra, previously an early-stage crypto investor at The Chernin Group.",
+        url: 'https://gaby.gold/',
       },
       {
         name: 'Gokul Rajaram',
