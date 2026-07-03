@@ -760,6 +760,16 @@ const tools = [
     ],
   },
   {
+    title: 'Communications',
+    stack: [
+      {
+        name: 'Rostra',
+        description: "Communications firm helping founder-led companies go direct — owning their narrative on social and email to build a movement instead of relying on traditional PR gatekeepers.",
+        url: 'https://rostra.co/',
+      },
+    ],
+  },
+  {
     title: 'CRMs',
     stack: [
       {
@@ -1813,6 +1823,11 @@ const tools = [
         url: 'https://www.freecodecamp.org/news/lean-notion-in-12-hours/',
       },
       {
+        name: 'Oboe',
+        description: "Generalized AI learning platform that instantly generates personalized, interactive courses on any topic.",
+        url: 'https://oboe.com/',
+      },
+      {
         name: 'RL Environments Guide',
         description: "AdithyaSK's practical guide on Hugging Face for building and scaling reinforcement learning environments for the LLM era.",
         url: 'https://huggingface.co/spaces/AdithyaSK/rl-environments-guide',
@@ -1871,11 +1886,6 @@ const tools = [
         name: 'Ploy',
         description: "AI marketing platform that turns your website into a growth engine — its agents continuously monitor your site and competitors, then write content, fix SEO, build pages, run experiments, and attribute ad spend.",
         url: 'https://ploy.ai/',
-      },
-      {
-        name: 'Rostra',
-        description: "Communications firm helping founder-led companies go direct — owning their narrative on social and email to build a movement instead of relying on traditional PR gatekeepers.",
-        url: 'https://rostra.co/',
       },
       {
         name: 'Superscale AI',
