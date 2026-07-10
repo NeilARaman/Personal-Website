@@ -223,6 +223,11 @@ const tools = [
         url: 'https://e2b.dev/',
       },
       {
+        name: 'Eigen Labs',
+        description: "Builds verifiable infrastructure for human-agent coordination — the team behind EigenLayer and EigenCloud, focused on governing and constraining autonomous AI systems.",
+        url: 'https://www.eigenlabs.org/',
+      },
+      {
         name: 'Fireworks AI',
         description: "Cloud platform for fast inference and deployment of open-source generative AI models without managing infrastructure.",
         url: 'https://fireworks.ai/',
@@ -993,6 +998,11 @@ const tools = [
         url: 'https://arcade.la/',
       },
       {
+        name: 'basement.studio',
+        description: "Digital studio and branding powerhouse crafting high-performance websites, brand systems, and 3D experiences for brands like Vercel, Linear, and MrBeast.",
+        url: 'https://basement.studio/',
+      },
+      {
         name: 'Cavalry',
         description: "2D animation software for creating motion graphics with real-time rendering and procedural workflows.",
         url: 'https://cavalry.scenegroup.co/',
@@ -1607,6 +1617,11 @@ const tools = [
   {
     title: 'Hardware Engineering',
     stack: [
+      {
+        name: 'American Turbines',
+        description: "Builds mass-manufacturable compact gas turbines for rapid-deploy, modular power generation that clusters into larger systems to scale electricity capacity with demand.",
+        url: 'https://americanturbines.com/',
+      },
       {
         name: 'Heron Power',
         description: "Industrial power electronics company developing solid-state transformers to modernize the grid for renewables and AI data centers.",
