@@ -1603,6 +1603,11 @@ const tools = [
         url: 'https://atlas.attio.com/',
       },
       {
+        name: 'Humanity\'s Last Machine',
+        description: "A deep dive on humanoid hardware — covering components, the competitive landscape, suppliers, and the geopolitics of humanoid robotics.",
+        url: 'https://www.humanityslastmachine.com/',
+      },
+      {
         name: 'PostHog Handbook',
         description: "Dan Trapp's searchable, installable reader of PostHog's public handbook with dated eBook editions of the company's operational practices.",
         url: 'https://dantrapp.github.io/posthog-handbook/',
