@@ -383,6 +383,11 @@ const tools = [
         url: 'https://meridianlabs.ai/',
       },
       {
+        name: 'MIRA',
+        description: "Real-time multiplayer world model by General Intuition and Kyutai (with Epic Games) — a playable neural simulation of Rocket League learned from 10k hours of gameplay.",
+        url: 'https://mira-wm.com/',
+      },
+      {
         name: 'Ndea',
         description: "AI research lab pursuing artificial general intelligence through deep learning and program synthesis.",
         url: 'https://ndea.com/',
