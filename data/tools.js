@@ -1838,6 +1838,11 @@ const tools = [
         url: 'https://cs50.harvard.edu/x/',
       },
       {
+        name: 'Ergo',
+        description: "Nonprofit publishing free, ad-free long-form philosophy lectures — filmed courses from renowned thinkers spanning Descartes and Kant to quantum mechanics, infinity, and computation.",
+        url: 'https://ergo.org/',
+      },
+      {
         name: 'Fast.ai',
         description: "Making neural nets uncool again - practical deep learning education.",
         url: 'https://www.fast.ai/',
