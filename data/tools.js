@@ -1883,6 +1883,11 @@ const tools = [
         url: 'https://www.functionhealth.com/',
       },
       {
+        name: 'Neko Health',
+        description: "Preventive health company with in-house-built body scanners capturing millions of data points across skin, heart, blood, circulation, and body composition in a single 60-minute clinician visit.",
+        url: 'https://www.nekohealth.com/us/en',
+      },
+      {
         name: 'Nourish',
         description: "AI-native metabolic care platform connecting patients with registered dietitians over telehealth, covered by insurance, to reverse chronic disease.",
         url: 'https://www.nourish.com/',
