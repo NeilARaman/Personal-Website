@@ -1378,6 +1378,11 @@ const tools = [
         url: 'https://www.happyrobot.ai/',
       },
       {
+        name: 'Oasis',
+        description: "Multiplayer AI workspace where humans and agents work together in shared rooms — collaborating live on docs, spreadsheets, and code, with a living memory that carries context across agents.",
+        url: 'https://joinoasis.com/',
+      },
+      {
         name: 'Onyx',
         description: "Open-source AI chat platform connecting to enterprise docs, apps, and people for knowledge search and conversational AI.",
         url: 'https://onyx.app/',
