@@ -2798,6 +2798,11 @@ const tools = [
         url: 'https://exa.ai/',
       },
       {
+        name: 'Flipbook',
+        description: "Infinite visual browser where every page is an image generated on demand, explored by clicking anything you see.",
+        url: 'https://flipbook.page/',
+      },
+      {
         name: 'Hyperbrowser',
         description: "AI-powered web browsing and automation.",
         url: 'https://www.hyperbrowser.ai/',
