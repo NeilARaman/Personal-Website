@@ -273,6 +273,11 @@ const tools = [
         url: 'https://www.nozomio.com/',
       },
       {
+        name: 'Router',
+        description: "LLM gateway from Ramp — one OpenAI-compatible endpoint across OpenAI, Anthropic, and open models, routing each request to the cheapest model that clears your quality bar to cut inference costs ~40%.",
+        url: 'https://router.com/',
+      },
+      {
         name: 'Sail Research',
         description: "Infrastructure platform for long-horizon AI agents, combining high-throughput, cost-efficient model inference with hosted sandboxes via an OpenAI-compatible API.",
         url: 'https://www.sailresearch.com/',
@@ -411,6 +416,11 @@ const tools = [
         name: 'Ricursive Intelligence',
         description: "Frontier AI lab developing self-improving systems to revolutionize chip design and accelerate hardware development.",
         url: 'https://www.ricursive.com/',
+      },
+      {
+        name: 'Rubric Labs',
+        description: "Applied AI lab that acts as embedded engineering firepower for client teams, taking intelligent products from concept to shipped in weeks.",
+        url: 'https://rubriclabs.com/',
       },
       {
         name: 'Sentient',
@@ -1196,6 +1206,11 @@ const tools = [
         name: 'Orama',
         description: "AI-powered data search and chat engine",
         url: 'https://orama.com/',
+      },
+      {
+        name: 'Pierre Computer Company',
+        description: "Builds low-level, composable product infrastructure for machine work — code.storage plus the open-source Diffs, Trees, and DiffsHub.",
+        url: 'https://pierre.computer/',
       },
       {
         name: 'React Bits',
@@ -2756,6 +2771,16 @@ const tools = [
         name: 'AssemblyAI',
         description: "Speech-to-text API with industry-leading accuracy.",
         url: 'https://www.assemblyai.com/',
+      },
+      {
+        name: 'Daily',
+        description: "Global WebRTC infrastructure for ultra-low-latency voice and video, and the team behind Pipecat, the open-source orchestration framework for realtime voice AI agents.",
+        url: 'https://www.daily.co/',
+      },
+      {
+        name: 'Retell AI',
+        description: "Voice AI agent platform for automating phone calls — a proprietary turn-taking model and ~600ms latency for receptionist, appointment setting, and support workloads at call-center scale.",
+        url: 'https://www.retellai.com/',
       },
       {
         name: 'Superwhisper',
