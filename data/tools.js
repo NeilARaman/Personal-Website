@@ -548,6 +548,11 @@ const tools = [
         url: 'https://www.chaidiscovery.com/',
       },
       {
+        name: 'Formation Bio',
+        description: "AI-native pharma company that acquires clinical-stage drugs and runs development on its own tech platform to reach approval faster.",
+        url: 'https://www.formation.bio/',
+      },
+      {
         name: 'Genbio AI',
         description: "AI-powered genomics and computational biology tools.",
         url: 'https://genbio.ai/',
@@ -1886,6 +1891,11 @@ const tools = [
         name: 'Function Health',
         description: "Annual membership delivering 160+ lab tests twice yearly through Quest Diagnostics — early detection signals for 1000+ diseases at $365/year.",
         url: 'https://www.functionhealth.com/',
+      },
+      {
+        name: 'Loyal',
+        description: "Clinical-stage biotech developing the first longevity drugs for dogs — targeting the metabolic drivers of aging to extend healthy lifespan in senior and large-breed dogs.",
+        url: 'https://loyal.com/',
       },
       {
         name: 'Neko Health',
