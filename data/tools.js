@@ -608,6 +608,11 @@ const tools = [
         url: 'https://halupedia.com/',
       },
       {
+        name: 'Linear Algebra Done Wrong',
+        description: "Sergei Treil's free honors linear algebra textbook from Brown — a first course that doubles as an introduction to rigorous proof, weighted toward analysis, geometry, and probability.",
+        url: 'https://sites.google.com/a/brown.edu/sergei-treil-homepage/linear-algebra-done-wrong',
+      },
+      {
         name: 'Machine Learning Q and AI',
         description: "30 essential questions and answers on ML and AI concepts by Sebastian Raschka.",
         url: 'https://sebastianraschka.com/books/#machine-learning-q-and-ai',
@@ -1967,11 +1972,21 @@ const tools = [
         description: "Fast, intuitive collaborative math editor — type expressions like search, work through problems in real time, and export to LaTeX.",
         url: 'https://corca.app/',
       },
+      {
+        name: 'Pickup Sticks & Pi',
+        description: "Interactive Buffon's Needle module from the University of Louisville — drop virtual sticks across parallel lines to estimate pi, with a walkthrough of the geometric probability and Monte Carlo methods behind it.",
+        url: 'https://prancer.physics.louisville.edu/modules/pi/index.html',
+      },
     ],
   },
   {
     title: 'Media',
     stack: [
+      {
+        name: 'Alien Life and the Myelin Sheath Solution to the Fermi Paradox',
+        description: "John Michael Godier video essay arguing that the retrovirus-dependent evolution of the myelin sheath may be the rare bottleneck gating intelligent life in the galaxy.",
+        url: 'https://www.youtube.com/watch?v=ABb7uodJRCY',
+      },
       {
         name: 'Arena Magazine',
         description: "Quarterly publication covering technology, capitalism, and civilization through long-form journalism.",
@@ -2643,6 +2658,11 @@ const tools = [
         url: 'https://artemissecurity.com/',
       },
       {
+        name: 'Caution',
+        description: "Verifiable confidential compute platform that deploys workloads to secure enclaves with cryptographic proof the running binary matches the reviewed source, verified down to the compiler and kernel.",
+        url: 'https://caution.co/',
+      },
+      {
         name: 'Cogent Security',
         description: "Agentic AI that automatically investigates, prioritizes, and remediates vulnerabilities for enterprise security teams.",
         url: 'https://www.cogent.com/',
@@ -2659,7 +2679,7 @@ const tools = [
       },
       {
         name: 'depthfirst',
-        description: "AI-powered security platform finding vulnerabilities and giving developers actionable fixes across code, infrastructure, and business logic.",
+        description: "Security platform for humans and AI agents, powered by its own dfs-large1 model — dependency firewalling, code security review, agentic pentesting, and autonomous remediation across the supply chain.",
         url: 'https://depthfirst.com/',
       },
       {
@@ -2732,6 +2752,11 @@ const tools = [
   {
     title: 'Testing/QA',
     stack: [
+      {
+        name: 'Momentic',
+        description: "AI testing platform for web and mobile — write end-to-end tests in plain English, then have them built, run, and auto-healed as the product changes.",
+        url: 'https://momentic.ai/',
+      },
       {
         name: 'Playwright',
         description: "Fast and reliable end-to-end testing for modern web apps.",
