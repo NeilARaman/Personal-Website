@@ -1983,11 +1983,6 @@ const tools = [
     title: 'Media',
     stack: [
       {
-        name: 'Alien Life and the Myelin Sheath Solution to the Fermi Paradox',
-        description: "John Michael Godier video essay arguing that the retrovirus-dependent evolution of the myelin sheath may be the rare bottleneck gating intelligent life in the galaxy.",
-        url: 'https://www.youtube.com/watch?v=ABb7uodJRCY',
-      },
-      {
         name: 'Arena Magazine',
         description: "Quarterly publication covering technology, capitalism, and civilization through long-form journalism.",
         url: 'https://arenamag.com/',
@@ -2906,6 +2901,16 @@ const tools = [
         name: 'Harper',
         description: "Free, Open Source Grammar Checker for better writing.",
         url: 'https://writewithharper.com/',
+      },
+    ],
+  },
+  {
+    title: 'YouTube Videos',
+    stack: [
+      {
+        name: 'Alien Life and the Myelin Sheath Solution to the Fermi Paradox',
+        description: "John Michael Godier video essay arguing that the retrovirus-dependent evolution of the myelin sheath may be the rare bottleneck gating intelligent life in the galaxy.",
+        url: 'https://www.youtube.com/watch?v=ABb7uodJRCY',
       },
     ],
   },
