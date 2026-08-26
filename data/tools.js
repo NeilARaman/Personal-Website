@@ -1088,6 +1088,11 @@ const tools = [
         url: 'https://refero.design/',
       },
       {
+        name: 'Silver Creative',
+        description: "Creative company led by cinematographer Sterling Adgate and art director Monica Ellis, covering cinematography, production ops, and creative direction for brands like Nike, Louis Vuitton, Rimowa, and On Running.",
+        url: 'https://silvercreative.co/',
+      },
+      {
         name: 'Slope',
         description: "Brand and creative agency offering brand identity, web design, product design, and marketing for high-growth startups and venture firms.",
         url: 'https://www.slope.agency/',
