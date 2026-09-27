@@ -208,6 +208,11 @@ const tools = [
         url: 'https://www.anyscale.com/',
       },
       {
+        name: 'Arga Labs',
+        description: "Real-world sandboxes for testing and training AI agents — stateful twins of APIs, CLIs, and MCPs with scenarios, evals, and full run evidence.",
+        url: 'https://www.argalabs.com/',
+      },
+      {
         name: 'BenchFlow',
         description: "High-signal evaluation environments for AI agents, with expert-curated benchmarks and a unified hub aggregating 60+ environments.",
         url: 'https://www.benchflow.ai/',
@@ -221,11 +226,6 @@ const tools = [
         name: 'E2B',
         description: "Open-source, secure cloud sandboxes for AI agents to execute code, run data analysis, and interact with real-world tools.",
         url: 'https://e2b.dev/',
-      },
-      {
-        name: 'Eigen Labs',
-        description: "Builds verifiable infrastructure for human-agent coordination — the team behind EigenLayer and EigenCloud, focused on governing and constraining autonomous AI systems.",
-        url: 'https://www.eigenlabs.org/',
       },
       {
         name: 'Fireworks AI',
@@ -321,6 +321,11 @@ const tools = [
         name: 'Brainbase',
         description: "Applied AI research lab building Kafka, the first AI employee with its own computer, email, and phone number.",
         url: 'https://usebrainbase.com/',
+      },
+      {
+        name: 'Eigen Labs',
+        description: "AI research lab building technologies for human-agent coordination — research prototypes and verifiable infrastructure to govern autonomous systems in a post-AGI world.",
+        url: 'https://www.eigenlabs.org/',
       },
       {
         name: 'Eliza',
@@ -566,6 +571,11 @@ const tools = [
         name: 'Genbio AI',
         description: "AI-powered genomics and computational biology tools.",
         url: 'https://genbio.ai/',
+      },
+      {
+        name: 'Mithrl',
+        description: "Scientific decision engine for drug R&D — a biomedical world model that turns experimental data into validated targets, biomarkers, and mechanism-of-action insights.",
+        url: 'https://www.mithrl.com/',
       },
       {
         name: 'Perceptic',
@@ -1551,6 +1561,16 @@ const tools = [
         name: 'USVC',
         description: "Closed-end fund from AngelList Asset Management broadening retail access to venture capital with a $500 minimum and no performance fee.",
         url: 'https://usvc.com/',
+      },
+    ],
+  },
+  {
+    title: 'Food/Beverage',
+    stack: [
+      {
+        name: 'Loonen',
+        description: "Spring-sourced bottled water — membrane-filtered, mineral-balanced, third-party tested for microplastics and PFAS, and bottled exclusively in glass.",
+        url: 'https://loonen.com/',
       },
     ],
   },
@@ -2906,6 +2926,11 @@ const tools = [
         name: 'Harper',
         description: "Free, Open Source Grammar Checker for better writing.",
         url: 'https://writewithharper.com/',
+      },
+      {
+        name: 'Pangram',
+        description: "AI detector for text and images — checks content for ChatGPT, Claude, Gemini, and other generators with third-party-verified accuracy for schools and enterprises.",
+        url: 'https://www.pangram.com/',
       },
     ],
   },
