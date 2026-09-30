@@ -1793,6 +1793,11 @@ const tools = [
         url: 'https://www.qualifiedhealthai.com/',
       },
       {
+        name: 'Sword',
+        description: "Whole-person AI care platform pairing clinicians with AI for muscle and joint pain, women's health, cardiometabolic health, and mental health — sold to employers to cut healthcare costs.",
+        url: 'https://sword.com/',
+      },
+      {
         name: 'Tennr',
         description: "Agentic platform automating pre-visit patient operations, payer requirements, and care routing.",
         url: 'https://www.tennr.com/',
