@@ -1748,6 +1748,11 @@ const tools = [
         url: 'https://www.foresighthealth.ai/',
       },
       {
+        name: 'Heidi Health',
+        description: "Clinical-grade ambient AI for physicians and health systems — listens to visits, writes notes and follow-up documents, and handles visit admin across 77 languages.",
+        url: 'https://www.heidihealth.com/en-us',
+      },
+      {
         name: 'Hippocratic AI',
         description: "Healthcare-specific LLM company building safety-focused generative AI agents for patient-facing care navigation and chronic care management.",
         url: 'https://hippocraticai.com/',
