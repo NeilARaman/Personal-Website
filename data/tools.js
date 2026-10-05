@@ -263,6 +263,11 @@ const tools = [
         url: 'https://www.linkup.so/',
       },
       {
+        name: 'LiteLLM',
+        description: "Open-source AI gateway and LLM proxy — one OpenAI-compatible API across 140+ providers with spend controls, routing, and observability for platform teams.",
+        url: 'https://www.litellm.ai/',
+      },
+      {
         name: 'Nexthop AI',
         description: "AI infrastructure networking — switches and systems optimized for hyperscalers and cloud operators.",
         url: 'https://nexthop.ai/',
@@ -446,6 +451,16 @@ const tools = [
         name: 'Standard Intelligence',
         description: "AI research lab building general-purpose models that perform complex computer actions and learn interactively.",
         url: 'https://si.inc/',
+      },
+      {
+        name: 'Tavus',
+        description: "AI research lab pioneering human computing — foundational models for real-time face-to-face AI (PALs) that see, hear, speak, and join video calls like a person.",
+        url: 'https://www.tavus.io/',
+      },
+      {
+        name: 'TypeSafe AI',
+        description: "AI research lab building System One Models like Jev — machine-native models that return typed decisions with calibrated confidence for software automation, not chat.",
+        url: 'https://typesafe.ai/',
       },
       {
         name: 'Tzafon',
@@ -956,6 +971,11 @@ const tools = [
         name: 'Supabase',
         description: "Open-source Firebase alternative.",
         url: 'https://supabase.com/',
+      },
+      {
+        name: 'Tigris',
+        description: "S3-compatible object storage for any cloud — one global endpoint, low-latency access worldwide, and zero egress fees.",
+        url: 'https://www.tigrisdata.com/',
       },
     ],
   },
@@ -2283,6 +2303,11 @@ const tools = [
     title: 'Philanthropic Organizations',
     stack: [
       {
+        name: 'Ballast',
+        description: "Double Impact company that builds, operates, and backs businesses and philanthropies — for-profit ventures with 50% of profits supporting humanitarian, social justice, environmental, and constitutional work.",
+        url: 'https://ballast.org/',
+      },
+      {
         name: 'Renaissance Philanthropy',
         description: "Modern approach to philanthropic giving and impact.",
         url: 'https://renaissancephilanthropy.org/',
@@ -2796,6 +2821,11 @@ const tools = [
         name: 'QualGent',
         description: "AI-Powered Mobile App Testing Platform beyond traditional automation.",
         url: 'https://qualgent.ai/',
+      },
+      {
+        name: 'TesterArmy',
+        description: "AI QA platform that tests web and mobile apps with browser agents — plain-English tests, PR checks, screenshots, and recordings without maintaining scripts.",
+        url: 'https://tester.army/',
       },
     ],
   },
