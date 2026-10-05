@@ -423,6 +423,11 @@ const tools = [
         url: 'https://www.primeintellect.ai/',
       },
       {
+        name: 'Reflection',
+        description: "Open AI lab building open-weight models like Beam, open-source AI stack software, and deployable infrastructure so builders can inspect, fine-tune, and run models on their own terms.",
+        url: 'https://reflection.ai/',
+      },
+      {
         name: 'Ricursive Intelligence',
         description: "Frontier AI lab developing self-improving systems to revolutionize chip design and accelerate hardware development.",
         url: 'https://www.ricursive.com/',
