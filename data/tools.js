@@ -173,6 +173,11 @@ const tools = [
         url: 'https://lica.world/',
       },
       {
+        name: 'Melius',
+        description: "AI-native operating system for creatives — concept treatments, campaign variants, and on-the-fly graphics for agencies, marketers, and GTM teams without learning tools or writing prompts.",
+        url: 'https://www.melius.com/',
+      },
+      {
         name: 'Midjourney',
         description: "AI-powered image generation tool for creating stunning visual artwork.",
         url: 'https://midjourney.com',
@@ -486,6 +491,11 @@ const tools = [
         name: 'Fyxer AI',
         description: "AI Executive Assistant for email and productivity.",
         url: 'https://www.fyxer.com/',
+      },
+      {
+        name: 'Hark',
+        description: "Personal AI assistant with persistent memory, projects, and Handoff — a computer-use agent that browses, researches, and completes tasks from its own secure browser.",
+        url: 'https://hark.com/',
       },
       {
         name: 'Lindy.ai',
@@ -2296,6 +2306,11 @@ const tools = [
         name: 'Will Robbins',
         description: "GP at Contrary",
         url: 'https://willrobbins.com',
+      },
+      {
+        name: 'Young Kim',
+        description: "Co-founder and CTO of Melius; previously co-founder and CTO of Venue (acquired by Ramp), where he scaled procure-to-pay engineering.",
+        url: 'https://www.youngkim.co/',
       },
       {
         name: 'Zhou Xian',
