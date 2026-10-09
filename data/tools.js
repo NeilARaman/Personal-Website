@@ -2558,6 +2558,11 @@ const tools = [
         url: 'https://www.jackandjill.ai/',
       },
       {
+        name: 'Noon',
+        description: "Autonomous AI recruiter that sources, evaluates, ranks, and contacts candidates across the web — with calibration from hiring-manager feedback, multi-channel outreach, and ATS integrations.",
+        url: 'https://www.noon.ai/',
+      },
+      {
         name: 'Paraform',
         description: "Hiring marketplace pairing expert recruiters with AI agents to fill roles.",
         url: 'https://www.paraform.com/',
