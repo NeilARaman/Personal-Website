@@ -1798,6 +1798,11 @@ const tools = [
         url: 'https://www.datavant.com/',
       },
       {
+        name: 'Eden',
+        description: "Clinical superintelligence for medical imaging — diagnostic OS, frontier AI, and workflows that turn imaging into precise clinical answers at health-system scale.",
+        url: 'https://edenmed.com/',
+      },
+      {
         name: 'Foresight Health',
         description: "Managed service handling chronic care management for neurology clinics — patient outreach, monitoring, and Medicare billing documentation.",
         url: 'https://www.foresighthealth.ai/',
