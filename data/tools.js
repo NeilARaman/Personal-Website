@@ -200,6 +200,36 @@ const tools = [
     ],
   },
   {
+    title: 'AI Clouds',
+    stack: [
+      {
+        name: 'CoreWeave',
+        description: "The Essential Cloud for AI — purpose-built platform for training and inference, trusted by leading foundation model labs.",
+        url: 'https://www.coreweave.com/',
+      },
+      {
+        name: 'Crusoe',
+        description: "The AI factory company — managed inference, GPU cloud, and energy-aligned data center infrastructure for training and serving models at scale.",
+        url: 'https://www.crusoe.ai/',
+      },
+      {
+        name: 'Fireworks AI',
+        description: "AI cloud for training and inference — specialize open models with RL and serve them with high-throughput, low-latency infrastructure.",
+        url: 'https://fireworks.ai/',
+      },
+      {
+        name: 'Lambda',
+        description: "The Superintelligence Cloud — AI factories and GPU clusters for training foundation models and serving inference at scale.",
+        url: 'https://lambda.ai/',
+      },
+      {
+        name: 'Together AI',
+        description: "The AI Native Cloud — full-stack platform for open-source models, inference, fine-tuning, and GPU clusters.",
+        url: 'https://www.together.ai/',
+      },
+    ],
+  },
+  {
     title: 'AI Infrastructure',
     stack: [
       {
@@ -231,11 +261,6 @@ const tools = [
         name: 'E2B',
         description: "Open-source, secure cloud sandboxes for AI agents to execute code, run data analysis, and interact with real-world tools.",
         url: 'https://e2b.dev/',
-      },
-      {
-        name: 'Fireworks AI',
-        description: "Cloud platform for fast inference and deployment of open-source generative AI models without managing infrastructure.",
-        url: 'https://fireworks.ai/',
       },
       {
         name: 'Hermes Agent',
@@ -491,6 +516,11 @@ const tools = [
         name: 'Fyxer AI',
         description: "AI Executive Assistant for email and productivity.",
         url: 'https://www.fyxer.com/',
+      },
+      {
+        name: 'Ghost AI',
+        description: "Personal AI computer (Core) that runs models on device, connects to your apps and devices, and builds continuous context to help you over time.",
+        url: 'https://ghost.ai/',
       },
       {
         name: 'Hark',
@@ -1658,16 +1688,6 @@ const tools = [
     title: 'GPUs',
     stack: [
       {
-        name: 'Crusoe',
-        description: "AI factory company offering managed inference, GPU cloud, and energy-aligned data center infrastructure. Fast Company's 2026 Most Innovative Companies.",
-        url: 'https://www.crusoe.ai/',
-      },
-      {
-        name: 'Lambda',
-        description: "GPU Compute for AI workloads and machine learning.",
-        url: 'https://lambda.ai/',
-      },
-      {
         name: 'Modal',
         description: "High-performance AI infrastructure for running compute-intensive workloads.",
         url: 'https://modal.com',
@@ -1826,6 +1846,11 @@ const tools = [
         name: 'Qualified Health',
         description: "Enterprise AI platform for deploying and governing generative AI across health system workflows.",
         url: 'https://www.qualifiedhealthai.com/',
+      },
+      {
+        name: 'R1 RCM',
+        description: "Technology-driven revenue cycle management for hospitals, health systems, and physician groups — patient access through coding, billing, collections, and denials, with automation and AI.",
+        url: 'https://www.r1rcm.com/',
       },
       {
         name: 'Sword',
@@ -2886,6 +2911,11 @@ const tools = [
         name: 'Daily',
         description: "Global WebRTC infrastructure for ultra-low-latency voice and video, and the team behind Pipecat, the open-source orchestration framework for realtime voice AI agents.",
         url: 'https://www.daily.co/',
+      },
+      {
+        name: 'LiveKit',
+        description: "Open-source framework and cloud platform for realtime voice, video, and physical AI agents — WebRTC infrastructure with STT/LLM/TTS orchestration, telephony, and observability.",
+        url: 'https://livekit.com/',
       },
       {
         name: 'Retell AI',

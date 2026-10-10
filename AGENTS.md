@@ -4,8 +4,10 @@
 - If a URL is already listed, say so and do not add a duplicate; offer a category move when the current placement seems wrong
 - Prefer relocating a tool to another category when asked to move, rather than listing it in multiple categories
 - Saying "push", "add and push", or "Great push" means commit the tools/build artifacts and push to origin (`main`)
+- For GPU/cloud vendors, place under AI Clouds when they brand as an AI-native / AI factory / superintelligence cloud; leave raw GPU rental or general serverless compute under GPUs, and research their positioning before choosing
 
 ## Learned Workspace Facts
 
 - Tools catalog source of truth is `data/tools.js`; after edits, run `npm run build` and include regenerated `tools/index.html`, `search-index.json`, and `sitemap.xml` with commits
 - Tool-addition commits follow `feat: add …` style (see recent `git log`)
+- AI Clouds holds AI-native cloud platforms; GPUs holds remaining GPU/compute entries that are not AI-native clouds
