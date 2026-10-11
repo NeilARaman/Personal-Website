@@ -618,6 +618,11 @@ const tools = [
         url: 'https://www.apoha.com/',
       },
       {
+        name: 'Capable',
+        description: "Biotech building AI-driven peptide and nucleotide therapeutics — starting with sleep, collapsing the loop between research, synthesis, and testing.",
+        url: 'https://capable.com/',
+      },
+      {
         name: 'Chai Discovery',
         description: "AI-native biotech lab building foundation models for molecular structure prediction and drug discovery.",
         url: 'https://www.chaidiscovery.com/',
