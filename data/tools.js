@@ -253,6 +253,11 @@ const tools = [
         url: 'https://www.benchflow.ai/',
       },
       {
+        name: 'Chalk',
+        description: "Platform for production AI — live feature/context serving, model and agent runtime, sandboxes, evals, and fine-tuning in one execution path.",
+        url: 'https://chalk.ai/',
+      },
+      {
         name: 'Deeptune',
         description: "Simulation environments where AI agents practice tasks like coding and spreadsheets to improve.",
         url: 'https://deeptune.com/',
