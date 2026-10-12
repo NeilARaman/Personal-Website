@@ -1063,6 +1063,11 @@ const tools = [
         url: 'https://www.anduril.com/',
       },
       {
+        name: 'Dominion',
+        description: "Autonomy, sensing, communications, and C2 stack for Arctic and extreme-environment defence — edge AI and data fusion for persistent awareness in infrastructure-constrained theaters.",
+        url: 'https://www.defendthedominion.com/',
+      },
+      {
         name: 'Mach Industries',
         description: "Defense technology company mass-manufacturing asymmetric aerospace and defense systems — attack drones, precision munitions, high-altitude pseudo-satellites, interceptors, and energetics.",
         url: 'https://machindustries.com/',
