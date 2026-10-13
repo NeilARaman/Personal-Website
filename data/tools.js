@@ -253,6 +253,11 @@ const tools = [
         url: 'https://www.benchflow.ai/',
       },
       {
+        name: 'Bespoke Labs',
+        description: "RL environments and infrastructure for training long-horizon agents — company-scale simulations, GEPA optimization, and production-grade benchmarking for frontier labs and enterprises.",
+        url: 'https://bespokelabs.ai/',
+      },
+      {
         name: 'Chalk',
         description: "Platform for production AI — live feature/context serving, model and agent runtime, sandboxes, evals, and fine-tuning in one execution path.",
         url: 'https://chalk.ai/',
