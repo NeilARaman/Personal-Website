@@ -878,6 +878,11 @@ const tools = [
     title: 'Communications',
     stack: [
       {
+        name: 'Ghost',
+        description: "Ghostwriting and content agency for founders, investors, and brands — culture books, content retainers, and custom storytelling projects.",
+        url: 'https://www.withghost.co/',
+      },
+      {
         name: 'Rostra',
         description: "Communications firm helping founder-led companies go direct — owning their narrative on social and email to build a movement instead of relying on traditional PR gatekeepers.",
         url: 'https://rostra.co/',
