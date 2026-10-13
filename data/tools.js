@@ -1943,6 +1943,11 @@ const tools = [
         url: 'https://www.harvey.ai/',
       },
       {
+        name: 'Legal Benchmarks',
+        description: "Independent, lawyer-led benchmarks and standards for legal AI — open-access model and application leaderboards grounded in real legal work.",
+        url: 'https://www.legalbenchmarks.ai/',
+      },
+      {
         name: 'Legora',
         description: "AI platform helping lawyers automate legal research, drafting, and document review.",
         url: 'https://legora.com/',
