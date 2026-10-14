@@ -258,6 +258,11 @@ const tools = [
         url: 'https://bespokelabs.ai/',
       },
       {
+        name: 'Caveman',
+        description: "Open-source tools and cloud that cut AI agent costs — compresses context, shortens replies, and routes each turn to the cheapest model that still gets the work right.",
+        url: 'https://caveman.so/',
+      },
+      {
         name: 'Chalk',
         description: "Platform for production AI — live feature/context serving, model and agent runtime, sandboxes, evals, and fine-tuning in one execution path.",
         url: 'https://chalk.ai/',
@@ -291,6 +296,11 @@ const tools = [
         name: 'Inferact',
         description: "Inference engine company commercializing vLLM to make LLM serving cheaper and faster at scale.",
         url: 'https://inferact.ai/',
+      },
+      {
+        name: 'Labelbox',
+        description: "Builds the training environments, expert data, and evals frontier labs use to post-train AI — plus Recursion agents that take on engineering and research backlogs.",
+        url: 'https://labelbox.com/',
       },
       {
         name: 'Layerbrain',
@@ -2176,6 +2186,11 @@ const tools = [
         name: 'incident.io',
         description: "All-in-one incident management platform for engineering teams.",
         url: 'https://incident.io/',
+      },
+      {
+        name: 'Interfere',
+        description: "Production visibility platform that detects previously unseen bugs, explains root cause and user impact, and helps resolve issues before customers report them.",
+        url: 'https://interfere.com/',
       },
       {
         name: 'Judgment Labs',
