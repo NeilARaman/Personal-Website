@@ -468,6 +468,11 @@ const tools = [
         url: 'https://ndea.com/',
       },
       {
+        name: 'Nous Research',
+        description: "Open AI research lab training models, building agents (Hermes), and developing infrastructure to proliferate open access to intelligence.",
+        url: 'https://nousresearch.com/',
+      },
+      {
         name: 'Patronus AI',
         description: "Frontier lab training Digital World Models that simulate agent actions in digital workflows to generate training data for frontier AI models.",
         url: 'https://www.patronus.ai/',
