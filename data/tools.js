@@ -328,6 +328,11 @@ const tools = [
         url: 'https://www.nozomio.com/',
       },
       {
+        name: 'Protege',
+        description: "Platform for AI-ready real-world training data across pre-training, fine-tuning, and evaluation — connecting model builders with curated, licensed datasets.",
+        url: 'https://withprotege.ai/',
+      },
+      {
         name: 'Router',
         description: "LLM gateway from Ramp — one OpenAI-compatible endpoint across OpenAI, Anthropic, and open models, routing each request to the cheapest model that clears your quality bar to cut inference costs ~40%.",
         url: 'https://router.com/',
@@ -1628,6 +1633,11 @@ const tools = [
         url: 'https://www.natural.co/',
       },
       {
+        name: 'Nevis',
+        description: "AI operating system for wealth management — agents, desktop, data connectors, and workflows that automate advisor and back-office work across CRM, custodians, and reporting.",
+        url: 'https://www.neviswealth.com/',
+      },
+      {
         name: 'Open Standard',
         description: "Collectively governed stablecoin standard behind Open USD (OUSD), returning most reserve economics to adopters with no fees to mint or redeem.",
         url: 'https://joinopenstandard.com/',
@@ -2681,6 +2691,11 @@ const tools = [
         name: 'Pittsburgh Robotics Network',
         description: "Pittsburgh's ecosystem supporting 125+ robotics companies.",
         url: 'https://robopgh.org/',
+      },
+      {
+        name: 'RoboSimStudio',
+        description: "Open interactive toolkit for agentic physics-based Real2Sim of robot manipulation — builds multiphysics simulations from smartphone video and a one-line prompt.",
+        url: 'https://robosimstudio.github.io/',
       },
       {
         name: 'Skild AI',
