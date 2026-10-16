@@ -228,6 +228,11 @@ const tools = [
         url: 'https://lambda.ai/',
       },
       {
+        name: 'Nebius',
+        description: "The Ultimate AI Cloud — GPU clusters, managed inference, and MLOps tooling for training and serving AI from experiments to global scale.",
+        url: 'https://nebius.com/',
+      },
+      {
         name: 'Together AI',
         description: "The AI Native Cloud — full-stack platform for open-source models, inference, fine-tuning, and GPU clusters.",
         url: 'https://www.together.ai/',
@@ -251,6 +256,11 @@ const tools = [
         name: 'Arga Labs',
         description: "Real-world sandboxes for testing and training AI agents — stateful twins of APIs, CLIs, and MCPs with scenarios, evals, and full run evidence.",
         url: 'https://www.argalabs.com/',
+      },
+      {
+        name: 'Axolotl',
+        description: "Open-source toolkit for accessible, scalable LLM fine-tuning — multi-GPU training, LoRA/PEFT, and YAML recipes across popular model families.",
+        url: 'https://axolotl.ai/',
       },
       {
         name: 'BenchFlow',
