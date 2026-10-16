@@ -168,6 +168,11 @@ const tools = [
         url: 'https://fourmula.ai/',
       },
       {
+        name: 'Krea',
+        description: "Creative AI suite for generating, enhancing, and editing images, video, and 3D — realtime canvas, LoRA fine-tuning, and access to leading generative models.",
+        url: 'https://www.krea.ai/',
+      },
+      {
         name: 'Lica',
         description: "AI platform turning visuals into editable layers, routing each to the best model or human for brand content.",
         url: 'https://lica.world/',
@@ -2256,6 +2261,11 @@ const tools = [
         name: 'Merge Labs',
         description: "Research lab bridging biological and artificial intelligence through next-generation brain-computer interfaces.",
         url: 'https://www.merge.io/blog',
+      },
+      {
+        name: 'Mave',
+        description: "Wearable tDCS headset and app that delivers gentle prefrontal stimulation to support focus, mood, sleep, and stress regulation for modern life.",
+        url: 'https://www.mavehealth.com/',
       },
       {
         name: 'Neurable',
