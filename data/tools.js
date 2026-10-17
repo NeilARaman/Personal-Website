@@ -2693,6 +2693,11 @@ const tools = [
         url: 'https://antioch.com/',
       },
       {
+        name: 'ASPIRE',
+        description: "NVIDIA GEAR continual learning system for robotics — writes and refines code-as-policy control programs from execution traces and compounds them into a reusable skill library.",
+        url: 'https://research.nvidia.com/labs/gear/aspire/',
+      },
+      {
         name: 'Atoms',
         description: "Holding company building physical automation across food, mining, and transport through seven specialized robotics and autonomy subsidiaries.",
         url: 'https://atoms.co/',
