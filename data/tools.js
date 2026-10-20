@@ -2147,6 +2147,11 @@ const tools = [
         description: "Interactive Buffon's Needle module from the University of Louisville — drop virtual sticks across parallel lines to estimate pi, with a walkthrough of the geometric probability and Monte Carlo methods behind it.",
         url: 'https://prancer.physics.louisville.edu/modules/pi/index.html',
       },
+      {
+        name: 'PySR',
+        description: "Open-source symbolic regression in Python and Julia — discovers interpretable mathematical expressions from data with a scikit-learn-style API.",
+        url: 'https://pysr.ai/',
+      },
     ],
   },
   {
