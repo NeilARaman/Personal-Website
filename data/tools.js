@@ -398,6 +398,11 @@ const tools = [
         url: 'https://usebrainbase.com/',
       },
       {
+        name: 'doubleAI',
+        description: "Frontier AI lab for science and engineering — idea search, formal verification, and Maxwell, a Code Execution Model that acts as an agent of the machine.",
+        url: 'https://www.doubleai.com/',
+      },
+      {
         name: 'Eigen Labs',
         description: "AI research lab building technologies for human-agent coordination — research prototypes and verifiable infrastructure to govern autonomous systems in a post-AGI world.",
         url: 'https://www.eigenlabs.org/',
@@ -576,6 +581,11 @@ const tools = [
         name: 'Lindy.ai',
         description: "Meet your AI assistant for automating workflows and tasks.",
         url: 'https://www.lindy.ai/',
+      },
+      {
+        name: 'Tolan',
+        description: "Friendly AI companion that guides people through everyday life — voice-first, character-driven support for emotional challenges and relationships.",
+        url: 'https://www.tolans.com/',
       },
       {
         name: 'Town Assistant',
@@ -2957,6 +2967,11 @@ const tools = [
   {
     title: 'Testing/QA',
     stack: [
+      {
+        name: 'Firegoat',
+        description: "Agent Experience (AX) platform that evaluates how coding agents use your product — failure modes, scenarios, benchmarks, and regression alerts so you can ship for agents.",
+        url: 'https://firegoat.ai/',
+      },
       {
         name: 'Momentic',
         description: "AI testing platform for web and mobile — write end-to-end tests in plain English, then have them built, run, and auto-healed as the product changes.",
