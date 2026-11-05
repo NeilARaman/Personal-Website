@@ -2048,6 +2048,11 @@ const tools = [
         url: 'https://cs50.harvard.edu/x/',
       },
       {
+        name: 'Design Software Systems Like a Senior Engineer',
+        description: "freeCodeCamp course on a five-step system design framework, grounded in production examples like Spotify, Booking.com, and WhatsApp.",
+        url: 'https://www.freecodecamp.org/news/learn-how-to-design-software-systems-like-a-senior-engineer-in-our-new-course/',
+      },
+      {
         name: 'Ergo',
         description: "Nonprofit publishing free, ad-free long-form philosophy lectures — filmed courses from renowned thinkers spanning Descartes and Kant to quantum mechanics, infinity, and computation.",
         url: 'https://ergo.org/',
@@ -2058,9 +2063,29 @@ const tools = [
         url: 'https://www.fast.ai/',
       },
       {
+        name: 'How AI Chips Are Made',
+        description: "freeCodeCamp course tracing an AI accelerator from silicon through design, fab, packaging, and rack-scale systems, focused on Nvidia Blackwell.",
+        url: 'https://www.freecodecamp.org/news/how-ai-chips-are-made/',
+      },
+      {
+        name: 'How Quantum Connectivity Shapes What Your Quantum Computer Can Actually Compute',
+        description: "freeCodeCamp article on how physical qubit connectivity, SWAP routing, and compiler mapping constrain what real quantum hardware can run.",
+        url: 'https://www.freecodecamp.org/news/how-quantum-connectivity-shapes-what-your-quantum-computer-can-actually-compute/',
+      },
+      {
+        name: 'Learn Data Structures and Algorithms Visually',
+        description: "freeCodeCamp course teaching DSA through real-world analogies — linear structures, graphs, sorting, and core algorithmic paradigms.",
+        url: 'https://www.freecodecamp.org/news/learn-data-structures-and-algorithms-visually/',
+      },
+      {
         name: 'Learn Notion in 12 Hours',
         description: "Free 12-hour video course teaching Notion from basics through advanced automation.",
         url: 'https://www.freecodecamp.org/news/lean-notion-in-12-hours/',
+      },
+      {
+        name: 'Learn Python Interactively',
+        description: "freeCodeCamp Python course from first syntax through three terminal projects covering logic, collections, functions, and error handling.",
+        url: 'https://www.freecodecamp.org/news/learn-python-interactively/',
       },
       {
         name: 'Oboe',
@@ -2071,6 +2096,16 @@ const tools = [
         name: 'RL Environments Guide',
         description: "AdithyaSK's practical guide on Hugging Face for building and scaling reinforcement learning environments for the LLM era.",
         url: 'https://huggingface.co/spaces/AdithyaSK/rl-environments-guide',
+      },
+      {
+        name: 'Secure by Design',
+        description: "freeCodeCamp handbook on engineering security into architecture before writing code — threat modeling, domain rules, and CI/CD gates.",
+        url: 'https://www.freecodecamp.org/news/secure-by-design-engineer-security-into-architecture-before-writing-code/',
+      },
+      {
+        name: 'The Paper That Created Modern AI',
+        description: "freeCodeCamp video on the 2017 \"Attention Is All You Need\" paper and how the Transformer architecture created modern generative AI.",
+        url: 'https://www.freecodecamp.org/news/the-paper-that-created-modern-ai-the-story-behind-the-transformer/',
       },
       {
         name: 'The Transformers',
@@ -2916,6 +2951,11 @@ const tools = [
         name: 'Vanta',
         description: "Compliance platform automating evidence collection and monitoring across 35+ security frameworks.",
         url: 'https://www.vanta.com/',
+      },
+      {
+        name: 'White Circle',
+        description: "Real-time control layer for AI — test failure modes, enforce policies across inputs/outputs/tools, audit decisions, and tune behavior from live signals.",
+        url: 'https://whitecircle.com/',
       },
     ],
   },
