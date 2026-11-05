@@ -898,6 +898,11 @@ const tools = [
         url: 'https://www.omnara.com/',
       },
       {
+        name: 'Orca',
+        description: "Open-source agent development environment for running Claude Code, Codex, and other coding agents in parallel — each in its own worktree, with terminals, diffs, browser, and a mobile companion.",
+        url: 'https://www.onorca.dev/',
+      },
+      {
         name: 'Superset',
         description: "Code editor for orchestrating multiple CLI-based AI coding agents in parallel Git worktrees.",
         url: 'https://superset.sh/',
