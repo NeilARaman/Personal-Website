@@ -2168,6 +2168,11 @@ const tools = [
     title: 'Marketing',
     stack: [
       {
+        name: 'Coframe',
+        description: "AI-powered CRO platform — agents build and run website and ad experiments, landing pages, and AEO/SEO so revenue wins go live faster.",
+        url: 'https://www.coframe.com/',
+      },
+      {
         name: 'Conversion',
         description: "Enterprise AI marketing agents for SEO & Google Ads.",
         url: 'https://conversion.ai/',
