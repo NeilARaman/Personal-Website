@@ -2178,6 +2178,11 @@ const tools = [
         url: 'https://hightouch.com/',
       },
       {
+        name: 'Letter',
+        description: "Autonomous growth agent that ships GEO, SEO, and marketing-site fixes via pull requests — build pages, fix issues, and run growth strategies in git.",
+        url: 'https://letter.dev/',
+      },
+      {
         name: 'Ploy',
         description: "AI marketing platform that turns your website into a growth engine — its agents continuously monitor your site and competitors, then write content, fix SEO, build pages, run experiments, and attribute ad spend.",
         url: 'https://ploy.ai/',
