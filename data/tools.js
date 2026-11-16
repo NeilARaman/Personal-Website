@@ -2308,6 +2308,11 @@ const tools = [
         url: 'https://respan.ai/',
       },
       {
+        name: 'Traversal',
+        description: "AI SRE for complex enterprise systems — triages alerts, finds root cause, and prevents incidents at petabyte scale with causal search and self-healing.",
+        url: 'https://www.traversal.com/',
+      },
+      {
         name: 'Workweave',
         description: "Engineering intelligence platform that measures human and AI-agent output, normalizing engineering work into benchmarked units to quantify AI's impact on velocity, code quality, and review throughput.",
         url: 'https://workweave.dev/',
