@@ -2633,6 +2633,11 @@ const tools = [
     title: 'Reading',
     stack: [
       {
+        name: 'alphaXiv',
+        description: "Research platform connecting papers, researchers, and organizations — follow the latest AI work with answers grounded in the underlying papers.",
+        url: 'https://www.alphaxiv.org/',
+      },
+      {
         name: 'Boil the Ocean',
         description: "Essay arguing superintelligence should inspire ambitious entrepreneurship, not fear.",
         url: 'https://garryslist.org/posts/boil-the-ocean',
