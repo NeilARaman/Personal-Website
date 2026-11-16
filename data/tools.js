@@ -1648,6 +1648,11 @@ const tools = [
         url: 'https://bettermoney.com/',
       },
       {
+        name: 'cfo.ai',
+        description: "AI CFO (Ari) that connects to your ledger, bank, and payroll, keeps a live company financial model current, and surfaces what changed before you ask.",
+        url: 'https://cfo.ai/',
+      },
+      {
         name: 'Liquid',
         description: "Decentralized perpetuals trading platform offering 500+ markets across crypto, stocks, commodities, and forex with up to 200x leverage and 24/7 settlement.",
         url: 'https://www.tryliquid.xyz/',
